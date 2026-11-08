@@ -26,7 +26,7 @@
     return `<article class="angles-card sheet${i===0?' is-lead':''}" data-sheet="angle-${i+1}">${visual}
 <h3 class="sheet-title"><span>論点${i+1}</span>${esc(c.title)}</h3>
 <div class="sheet-text"><p class="angles-lead">${esc(c.lead)}</p><p class="angles-basis">${esc(c.text)}</p>${quote(c.quote)}
-<p class="angles-check">${esc(c.check)}</p>
+<p class="angles-check"><span class="check-tag">次の決算で見るところ</span>${esc(c.check)}</p>
 <p class="sheet-source">出典：${sources(c.source)}　時点：${esc(c.asOf)}</p>
 <div class="angles-links">${(c.links||[]).map(v=>`<button type="button" onclick="anglesGo('${esc(v)}')">${esc(tabLabel(v))}</button>`).join('')}</div></div></article>`;
   }
@@ -50,5 +50,5 @@
     const base=setCompany;
     window.setCompany=function(k){const r=base.apply(this,arguments);render();return r};
   }
-  fetch('angles.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(j=>{angles=j;render()}).catch(e=>console.warn('angles.json を読めませんでした',e));
+  window.anglesReady=fetch('angles.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(j=>{angles=j;window.anglesData=j;render()}).catch(e=>console.warn('angles.json を読めませんでした',e));
 })();
