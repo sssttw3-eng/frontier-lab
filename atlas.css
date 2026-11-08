@@ -62,6 +62,8 @@ body.comparing .angles-band{display:none}
 .sheet-visual figcaption{font-size:12px;color:var(--muted);padding:6px 12px;border-top:1px solid var(--line)}
 .sheet-visual.is-logos .sheet-logos{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center;padding:26px 16px}
 .sheet-logos .logo-shell{width:150px;height:72px;border:1px solid var(--line);padding:12px}
+.sheet-logos img{background:transparent!important;max-height:100%!important}
+.sheet-visual .logo-shell img{background:transparent!important}
 .sheet-visual.is-diagram{padding:12px}
 .sheet-title{font-size:21px;line-height:1.55;color:var(--dark);margin:4px 0 0}
 .sheet-facts{margin:10px 0 0;padding:0;list-style:none}.sheet-facts li{font-size:17px;font-weight:700;color:var(--dark);line-height:1.7;padding:4px 0;border-bottom:1px dashed var(--line)}

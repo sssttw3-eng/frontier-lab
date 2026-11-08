@@ -7,129 +7,116 @@
   },
   "companies": {
     "p": {
-      "view": "AIのモデルを作る会社ではなく、企業や政府の現場にAIを入れる会社として、成長と利益を同時に伸ばしている。",
+      "view": "Palantirはモデルの性能を競う会社ではなく、モデルを現場の仕事につなぐ基盤の会社。いまはそのソフトの会社が米陸軍のTITANで製造にまで入ってきている。",
       "story": [
-        "Palantir（パランティア）は9.11後の米国の国防と情報機関の仕事から始まった会社です。",
-        "FDE（顧客の現場に入って仕組みを作るエンジニア）が顧客の中に入り、散らばったデータをオントロジーという共通の言葉でつなぐところから仕事が始まります。",
-        "その上にデータ基盤のFoundryとAIを業務に組み込むAIPが乗り、AIPブートキャンプで5日ほどの試作から全社展開へ広げる売り方に変わりました。",
+        "Palantir（パランティア）は9.11後の国家安全保障の仕事から生まれ、20年以上にわたって米国政府と組んで実績を積んできた会社です。",
+        "バラバラのデータを業務の意味でつなぐオントロジーと、顧客の現場に入って仕組みを作るエンジニアのFDEの2つが強さの土台になっています。",
+        "いまの入口はAIPブートキャンプで、顧客の経営層と一緒に数日で動く試作を作り、そこから全社展開へ広げます。",
         "2026年7〜9月期には米国の民間売上が9億8,400万ドル（約1,515億円）となり、米国政府の9億5,300万ドル（約1,468億円）を初めて上回りました。",
-        "各国が自前のAIを持ちたいという主権AIの需要も次の追い風になっていると見ています。"
+        "モデルがコモディティ化するほど、データを外に出さずにAIを使う主権AIの基盤に価値が残るのかなと思います。",
+        "そして2026年9月にはPalantirが米陸軍の地上局TITANの製造を元請けで受けるところまで来ています。"
       ],
       "cards": [
         {
-          "title": "米国の民間売上が政府を初めて超えた",
-          "visual": {
-            "type": "image",
-            "src": "assets/ceo-p.jpg",
-            "alt": "Alex Karp（アレックス・カープ）CEO",
-            "caption": "CEOのAlex Karp。共同創業者として会社を率いています。"
-          },
-          "lead": "Palantirの成長の中心が政府から米国の民間企業へ移ったと見ています。",
-          "text": "2026年7〜9月期の売上は23億1,300万ドル（約3,562億円）で前年比96%増でした。米国民間は9億8,400万ドル（約1,515億円）で148%増、米国政府は9億5,300万ドル（約1,468億円）で96%増です。",
-          "quote": {
-            "text": "当社の歴史で初めて、米国の民間売上が米国政府の売上を上回った",
-            "original": "Our U.S. commercial revenue has surpassed our U.S. government revenue for the first time in our company's history.",
-            "who": "Alex Karp（CEO）",
-            "where": "決算発表",
-            "date": "2026年11月2日"
-          },
-          "check": "決算発表の米国民間・米国政府の売上",
-          "source": [
-            {
-              "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "ask": "Palantirの米国民間の伸び、来期も100%を超えると思いますか",
-          "links": [
-            "growth",
-            "money"
-          ]
-        },
-        {
-          "title": "最初の契約が大きくなった理由",
+          "title": "Palantirは売れば売るほど利益が残る構造",
           "visual": {
             "type": "image",
             "src": "assets/palantir.png",
             "alt": "Palantirの製品画面",
             "caption": "Palantirの製品画面（公式サイト）"
           },
-          "lead": "FDEとブートキャンプで試作から本番までの時間を縮めたことで、最初の契約が大きくなったと見ています。",
-          "text": "7〜9月期に結んだ1,000万ドル以上の案件は64件、500万ドル以上は107件、100万ドル以上は212件でした。調整後営業利益率は62%で、売上の伸び率と利益率を足したRule of 40は158%に達しています。",
+          "lead": "Palantirの強さは製品の性能よりも、売り方の設計にあると見ています。",
+          "text": "2026年7〜9月期の売上は前年比96%増の23億1,300万ドル（約3,562億円）でした。一方で営業費用の合計は8億4,528万ドル（約1,302億円）で、46%増にとどまっています。オントロジーとFDEで最初の基盤を作り、AIPブートキャンプで顧客と一緒に試作し、コンサル会社と組んで売る人の不足を補う分業がこの差を生んでいます。ただ、1,000万ドル（約15億4,000万円）以上の大型案件は4〜6月期の73件から64件に減りました。",
           "quote": {
-            "text": "（最初の契約が）25万ドルではなく、2,500万ドルから始まる",
-            "original": "instead of being like $250,000, it's like $25 million to start",
+            "text": "Palantirはトークンを実際の経済的な価値に変えられると示した唯一の会社だ",
+            "original": "Palantir is the only company that has demonstrated it can transform tokens into actual economic value.",
             "who": "Alex Karp（CEO）",
-            "where": "決算説明会",
-            "date": "2026年11月2日",
-            "note": "25万ドルは約3,850万円、2,500万ドルは約38億5,000万円"
+            "where": "決算発表",
+            "date": "2026年8月3日"
           },
-          "check": "決算発表の大型案件の件数と調整後営業利益率",
+          "check": "決算発表の売上と営業費用の伸び、1,000万ドル以上の案件数",
           "source": [
             {
               "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
               "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
             },
             {
-              "label": "Palantir 決算説明会（2026年11月2日）の書き起こし",
-              "url": "https://www.tradingkey.com/news/transcripts/262266257-"
+              "label": "Palantir 2026年第2四半期 決算発表（SEC 8-K、2026年8月3日）",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm"
             }
           ],
           "asOf": "2026年7〜9月期",
-          "ask": "ブートキャンプ型の売り方、日本企業にも合うと思いますか",
+          "ask": "大型案件が減ったのは一時的だと思いますか",
           "links": [
             "map",
-            "videos"
+            "money"
           ]
         },
         {
-          "title": "主権AIの追い風と、短くなった契約",
+          "title": "モデルは横並びになり、価値はPalantirのような基盤へ",
           "visual": {
-            "type": "logos",
-            "items": [
-              {
-                "src": "assets/eco-fujitsu.svg",
-                "name": "富士通",
-                "bg": "#fff"
-              },
-              {
-                "src": "assets/eco-sompo.svg",
-                "name": "SOMPO",
-                "bg": "#fff"
-              },
-              {
-                "src": "assets/eco-airbus.svg",
-                "name": "Airbus",
-                "bg": "#172b3a"
-              }
-            ]
+            "type": "image",
+            "src": "assets/ceo-p.jpg",
+            "alt": "Alex Karp（アレックス・カープ）CEO",
+            "caption": "CEOのAlex Karp。共同創業者として会社を率いています。"
           },
-          "lead": "各国や大企業が自前のAIを持ちたいという主権AIの需要を次の伸びしろと見ています。",
-          "text": "ただ、7〜9月期に結んだ契約総額（TCV）は29億1,800万ドル（約4,494億円）で、前年比6%増にとどまりました。CFOのDavid Glazerは決算説明会で、通常より期間の短い大型契約を複数結んだと話しています。米国民間の残存契約額（RDV）は65億1,700万ドル（約1兆36億円）で、前年比79%増です。",
+          "lead": "モデルがコモディティ化するほど、モデルを現場につなぐPalantirのAIPやオントロジーに価値が残ると見ています。",
+          "text": "Palantirの米国民間売上は2026年7〜9月期に前年比148%増の9億8,400万ドル（約1,515億円）となり、初めて米国政府を上回りました。追い風になっているのが自社のデータを外に出さずにAIを使いたいという主権AIの需要です。Palantirはこれまで単なるツールとして見られてきました。いまのPalantirは企業の基盤そのものに入るので、1社あたりの取引が大きくなっていると見ています。",
           "quote": {
-            "text": "主権AIの動きによって、この30年のビジネスで見たことのないほど劇的な、持てる者と持たざる者の分断が生まれている",
-            "original": "The Sovereign AI movement is imposing the most dramatic dichotomy between haves and have nots that I have witnessed in 30 years of business.",
+            "text": "顧客の競争力の源を将来のモデルの学習データにしてはならない",
+            "original": "Their competitive advantage should never become the training data for future models.",
             "who": "Alex Karp（CEO）",
             "where": "決算発表",
-            "date": "2026年11月2日"
+            "date": "2026年8月3日"
           },
-          "check": "決算発表の契約総額（TCV）と米国民間の残存契約額（RDV）、決算説明会の契約期間の説明",
+          "check": "決算発表の米国民間・米国政府の売上",
           "source": [
             {
               "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
               "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
             },
             {
-              "label": "Palantir 決算説明会（2026年11月2日）の書き起こし",
-              "url": "https://www.tradingkey.com/news/transcripts/262266257-"
+              "label": "Palantir 2026年第2四半期 決算発表（SEC 8-K、2026年8月3日）",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm"
             }
           ],
           "asOf": "2026年7〜9月期",
-          "ask": "契約の短期化は強気と弱気どちらのサインだと思いますか",
+          "ask": "Palantirの米国民間の伸び、来期も100%を超えると思いますか",
+          "links": [
+            "growth",
+            "relations"
+          ]
+        },
+        {
+          "title": "ソフトの会社Palantirが工場へ",
+          "visual": {
+            "type": "image",
+            "src": "assets/factory.jpg",
+            "alt": "Palantir×L3Harrisの公式画像",
+            "caption": "Palantir×L3Harrisの公式画像（2025年）。AIで防衛の製造を立て直す取り組み"
+          },
+          "lead": "ソフトウェアの会社と思われがちなPalantirがハードの製造にまで入り込み始めたと見ています。",
+          "text": "2026年9月、Palantirは米陸軍の地上局TITANを元請けとして製造・納入する契約を結びました。AndurilやL3Harrisなどのハードの会社を束ねて作る形です。これまでのPalantirは国防向けにソフトを納める会社でした。米国政府向けの売上も2026年7〜9月期に9億5,300万ドル（約1,468億円）、前年比96%増と伸びています。お金がソフトから工場へ流れる中で、Palantirはその両方に関わる位置を取りにいっているのかなと思います。",
+          "check": "米陸軍とのTITAN契約の発表と、決算資料の政府向け事例のページ",
+          "source": [
+            {
+              "label": "Breaking Defense（2026年9月、TITANの契約）",
+              "url": "https://breakingdefense.com/2026/09/army-awards-192m-to-palantir-and-anduril-to-produce-titan-system/"
+            },
+            {
+              "label": "Palantir×L3Harris の公式記事（2025年）",
+              "url": "https://www.linkedin.com/pulse/palantir-andl3harris-reindustrializing-defense-through-u7cfe/"
+            },
+            {
+              "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
+              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
+            }
+          ],
+          "asOf": "2026年9月、数字は2026年7〜9月期",
+          "ask": "ソフトの会社が製造に入るのは強気の材料だと思いますか",
           "links": [
             "relations",
-            "money"
+            "videos"
           ]
         }
       ]
