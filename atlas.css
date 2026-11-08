@@ -102,3 +102,17 @@ body.comparing .angles-band{display:none}
 .presenter-bar{gap:10px}
 .presenter-bar button{font-size:16px!important;padding:8px 14px}
 .presenter-bar span,#presenter-position{font-size:18px!important}
+/* v2.1 見え方整理：論点カードは横3列をやめ、1枚ずつ縦に流す。本文は読みやすい行長に */
+.angles-cards{display:flex!important;flex-direction:column;gap:22px;margin-top:22px}
+.angles-band>*{max-width:980px;margin-left:auto!important;margin-right:auto!important}
+.angles-card,.angles-card.is-lead{width:100%;max-width:980px;align-self:center}
+.angles-card .sheet-text p,.angles-card .angles-quote{max-width:none}
+.angles-card,.angles-card.is-lead{display:flex;flex-direction:column;padding:0;border-radius:16px}
+.angles-card>.sheet-visual img,.angles-card.is-lead>.sheet-visual img{max-height:440px;padding:12px 0}
+.angles-card h3.sheet-title,.angles-card.is-lead h3.sheet-title{font-size:22px;padding:6px 24px 0}
+.angles-card .sheet-text{padding:0 24px 20px}
+.sheet-text p{max-width:46em}
+.angles-card .sheet-text{max-width:none}
+.angles-quote{max-width:46em}
+.unified-topic p,.topic-prose p{max-width:46em}
+@media(max-width:600px){.angles-card h3.sheet-title{font-size:19px;padding:4px 16px 0}.angles-card .sheet-text{padding:0 16px 16px}.angles-card>.sheet-visual img{max-height:300px}}
