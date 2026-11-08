@@ -1,0 +1,533 @@
+{
+  "key": "a",
+  "catalog": {
+    "name": "AMD",
+    "ticker": "AMD",
+    "desc": "CPU・GPUで\n幅広い計算を支える",
+    "sector": "半導体・計算基盤",
+    "summary": "パソコンやサーバーのCPU、AIや画像処理のGPU、産業機器向け半導体などを設計する会社。製造は外部に委託します。AIだけでなく製品別の需要、ソフトの対応、供給能力、利益率を合わせて見ると理解が深まります。",
+    "items": [
+      [
+        "パソコンからAIまで、計算する部品を設計する。",
+        "AMDはCPUやGPUなどの半導体を設計する会社です。パソコン、サーバー、ゲーム機、産業機器などに使われます。AI向けGPUは、その幅広い事業の一部です。",
+        [
+          "CPU：多様な処理を進める計算装置",
+          "GPU：多数の計算を並列に進める装置",
+          "製造：外部の半導体メーカーに委託"
+        ],
+        "たとえるなら、計算機の「頭脳」を設計するチーム。チップを設計する仕事と、工場で作る仕事は分かれています。",
+        "AMDを「AIのGPUだけの会社」と見ると何を見落とす？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ],
+      [
+        "速さだけでなく、電力や費用も減らしたい。",
+        "PCメーカーやサーバーメーカー、クラウド事業者などが製品を採用します。顧客は、処理の速さとともに電力、導入費用、使えるソフトを比較します。",
+        [
+          "PCメーカー：使いやすいパソコンを作る",
+          "クラウド・サーバー企業：大量の計算を運用する",
+          "機器メーカー：目的に合った処理を組み込む"
+        ],
+        "仮想例：同じ作業ができるサーバーでも、電力や設置台数が違えば、運用にかかるお金が変わります。",
+        "チップを買う会社と、その計算を使う人は同じ？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ],
+      [
+        "製品名は、使う場所と結びつける。",
+        "Ryzenは主にPC、EPYCはサーバー、InstinctはデータセンターのAIや科学計算、Radeonはグラフィックス向けです。ROCmは対応GPUでAIなどを動かすためのソフトウェア基盤です。",
+        [
+          "Ryzen・EPYC：PCやサーバーのCPU",
+          "Instinct・Radeon：AI計算や画像処理のGPU",
+          "ROCm：GPUを使うためのソフト基盤",
+          "FPGA・Adaptive SoC：用途に合わせて構成できる半導体"
+        ],
+        "CPUとGPUは組み合わせて使われます。どちらか一つだけで、あらゆる処理が最適になるわけではありません。",
+        "AIの性能を考えるとき、ソフトウェアも必要なのはなぜ？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ],
+      [
+        "製品を届けると売上、作る・開発するのは費用。",
+        "主に半導体製品の販売から収益を得ます。顧客向けの専用設計では、開発に対する対価もあります。販売数量や製品構成が売上と利益に影響します。",
+        [
+          "支払う相手：機器メーカー、クラウド企業、流通企業など",
+          "主な入口：CPU・GPUなどの製品販売",
+          "主な費用：製造委託、研究開発、販売など"
+        ],
+        "仮想例：製品を100で売っても、製造・調達に50、開発や販売に30かかれば、100がそのまま利益になるわけではありません。実際のAMDの比率ではありません。",
+        "売上が伸びたのは、数量・価格・製品構成のどれ？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ],
+      [
+        "設計・製造・販売・利用の間にいる。",
+        "AMDが設計し、製造企業がチップを作り、機器メーカーやクラウド企業が利用者に届けます。同じ会社が競合にも提携先にもなるため、役割を分けて見ると整理できます。",
+        [
+          "製造：TSMCなどの外部メーカー",
+          "製品化：PC・サーバーメーカーやクラウド",
+          "比較相手：CPU、GPU、専用チップごとに異なる"
+        ],
+        "たとえばMicrosoftはクラウドでAMD製品を使います。これはMicrosoft全体とAMD全体が同じ事業だという意味ではありません。",
+        "誰が設計し、誰が作り、誰がサービスにする？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ],
+      [
+        "部品の性能と、使える仕組みを合わせて確かめる。",
+        "CPU・GPU・組み込み向け製品の幅や、チップを組み合わせる設計が特徴です。採用の理由は性能だけでなく、電力、費用、ソフトの対応、供給の安定性でも変わります。",
+        [
+          "設計：用途に合わせた計算性能",
+          "ソフト：既存のアプリや開発環境との対応",
+          "導入：システム全体の費用と運用"
+        ],
+        "学習上の仮説：同じ仕事を少ない電力や費用で処理できれば、顧客が選ぶ理由になり得ます。同じ条件の実測や導入事例で確かめます。",
+        "ベンチマークの条件は、顧客の実際の仕事に近い？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ],
+      [
+        "売れるか、作れるか、使い続けられるか。",
+        "競合の製品、顧客の投資計画、製造・先端パッケージの供給能力、ソフト対応、輸出規制などが事業に影響します。PCやゲーム機の需要もAI需要とは違う動きをします。",
+        [
+          "需要：顧客の設備投資やPC買い替え",
+          "供給：製造委託先や部材の制約",
+          "競争：性能・費用・ソフトの比較",
+          "規制：販売できる地域や製品の条件"
+        ],
+        "仮想例：注文が増えても必要な製造能力を確保できなければ、予定どおり出荷できません。",
+        "成長の説明が崩れるのは、どんな変化が起きたとき？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ],
+      [
+        "どの製品が伸び、どれだけ利益が残ったか。",
+        "全社の売上だけでなく、事業別の動き、粗利益率、在庫、研究開発費、現金を確認します。買収による増加と、既存事業の成長も分けて読みます。",
+        [
+          "事業別売上：どこで増減したか",
+          "粗利益率：製品構成と製造費の影響",
+          "在庫・現金：出荷と資金の動き",
+          "買収・会計：比較の前提が同じか"
+        ],
+        "2022年にはXilinx買収がありました。前年比の増加を、すべて既存製品の販売増加だと考えないようにします。",
+        "売上の変化を、製品・需要・買収に分けて説明できる？",
+        "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+      ]
+    ],
+    "money": [
+      [
+        "機器メーカー・クラウド等",
+        "AMD",
+        "半導体製品等の購入対価"
+      ],
+      [
+        "AMD",
+        "製造・開発など",
+        "製造委託・研究開発等の費用"
+      ]
+    ],
+    "moneyNote": "矢印は支払いの概念図です。取引額や費用の割合は示していません。クラウド利用料の全額がAMDに入るわけではありません。"
+  },
+  "research": {
+    "ceo": "Lisa Su（リサ・スー）",
+    "ceoTitle": "会長・CEO",
+    "ceoImage": "assets/new-amd-ceo.jpg",
+    "ceoSource": "https://www.amd.com/en/corporate/leadership/lisa-su.html",
+    "ceoImageSource": "https://www.amd.com/content/dam/amd/en/images/photography/corporate/lisa-su/lisa-su-executive-photo.jpg",
+    "products": [
+      "Ryzen：PC向けCPU",
+      "EPYC：サーバーCPU",
+      "Instinct：AI・科学計算向けGPU",
+      "Radeon：グラフィックス",
+      "ROCm：GPU向けソフト基盤",
+      "FPGA・Adaptive SoC：用途に合わせた処理"
+    ],
+    "revenue": "CPU・GPUなどの半導体製品販売を中心とする。専用設計の開発対価なども含む。",
+    "risk": "製品競争、ソフト対応、顧客の投資、外部製造・部材、輸出規制。"
+  },
+  "lessons": [
+    [
+      "計算するチップを、設計する会社。",
+      [
+        "chip",
+        "AMDが設計",
+        "CPUやGPUの仕組みを考える"
+      ],
+      [
+        "building",
+        "製造企業が作る",
+        "外部の工場で半導体を製造"
+      ],
+      [
+        "people",
+        "いろいろな場所で使う",
+        "PC・サーバー・ゲーム・産業"
+      ],
+      "AI用GPUだけでなく、さまざまな計算を支える製品があります。"
+    ],
+    [
+      "同じ仕事を、速く・効率よく。",
+      [
+        "people",
+        "顧客の課題",
+        "計算に時間と電力がかかる"
+      ],
+      [
+        "chip",
+        "製品を選ぶ",
+        "CPUやGPUを組み合わせる"
+      ],
+      [
+        "chart",
+        "全体で比較",
+        "速さ・電力・費用を確かめる"
+      ],
+      "仮想例として、サーバーの台数や電力が減れば、運用費も変わります。製品価格だけでは決まりません。"
+    ],
+    [
+      "名前より、使う場所で覚えよう。",
+      [
+        "phone",
+        "Ryzen",
+        "主にパソコンのCPU"
+      ],
+      [
+        "cloud",
+        "EPYC・Instinct",
+        "サーバーのCPU・AI用GPU"
+      ],
+      [
+        "tools",
+        "ROCm",
+        "GPUで計算するソフトの基盤"
+      ],
+      "Radeonは画像処理などに使うGPU。産業機器向けにはFPGAなどもあります。"
+    ],
+    [
+      "買う会社から、AMDへ製品の代金。",
+      [
+        "building",
+        "顧客",
+        "CPUやGPUなどを購入"
+      ],
+      [
+        "money",
+        "AMDの売上",
+        "製品などの対価を受け取る"
+      ],
+      [
+        "tools",
+        "AMDの費用",
+        "製造・開発などに支払う"
+      ],
+      "チップを売った金額から、製造や開発の費用がかかります。売上と利益は別です。"
+    ],
+    [
+      "作る会社と、使う会社をつなぐ。",
+      [
+        "building",
+        "半導体の工場",
+        "AMDの設計を製造"
+      ],
+      [
+        "chip",
+        "AMDの製品",
+        "CPU・GPUなど"
+      ],
+      [
+        "cloud",
+        "機器・クラウド",
+        "顧客へ計算を届ける"
+      ],
+      "PCの購入代金やクラウド利用料が、全額AMDの売上になるわけではありません。"
+    ],
+    [
+      "性能の数字を、使う場面に戻そう。",
+      [
+        "chart",
+        "速さと電力",
+        "同じ仕事で比較する"
+      ],
+      [
+        "tools",
+        "ソフトの対応",
+        "使いたいアプリが動く？"
+      ],
+      [
+        "money",
+        "全体の費用",
+        "導入と運用にいくらかかる？"
+      ],
+      "一つのテストで良い結果でも、すべての用途で優れているとは限りません。"
+    ],
+    [
+      "需要と供給、両方を確認する。",
+      [
+        "people",
+        "顧客の投資",
+        "購入計画が変わる"
+      ],
+      [
+        "building",
+        "外部の製造",
+        "必要な量を作れる？"
+      ],
+      [
+        "warning",
+        "競争・規制",
+        "選ばれ続け、販売できる？"
+      ],
+      "AI向けが伸びても、PCやゲーム向けの動きは違うことがあります。会社全体を見ましょう。"
+    ],
+    [
+      "伸びた理由と、残ったお金を読む。",
+      [
+        "chart",
+        "事業別の売上",
+        "どの製品が伸びた？"
+      ],
+      [
+        "money",
+        "利益と現金",
+        "費用のあとに残った？"
+      ],
+      [
+        "search",
+        "比較の条件",
+        "買収や会計の変化は？"
+      ],
+      "売上の増加には、買収した会社の売上が加わる影響もあります。成長の中身を分けて考えます。"
+    ]
+  ],
+  "talk": [
+    {
+      "explain": "AMDはCPUやGPUなどの半導体を設計する会社です。パソコン、サーバー、ゲーム機、産業機器などに使われます。AI向けGPUは、その幅広い事業の一部です。 たとえるなら、計算機の「頭脳」を設計するチーム。チップを設計する仕事と、工場で作る仕事は分かれています。",
+      "bridge": "顧客がどんな計算で困っているかを見ましょう。"
+    },
+    {
+      "explain": "PCメーカーやサーバーメーカー、クラウド事業者などが製品を採用します。顧客は、処理の速さとともに電力、導入費用、使えるソフトを比較します。 仮想例：同じ作業ができるサーバーでも、電力や設置台数が違えば、運用にかかるお金が変わります。",
+      "bridge": "その課題を、どの製品が担うか整理します。"
+    },
+    {
+      "explain": "Ryzenは主にPC、EPYCはサーバー、InstinctはデータセンターのAIや科学計算、Radeonはグラフィックス向けです。ROCmは対応GPUでAIなどを動かすためのソフトウェア基盤です。 CPUとGPUは組み合わせて使われます。どちらか一つだけで、あらゆる処理が最適になるわけではありません。",
+      "bridge": "顧客が何にお金を払うのか確認します。"
+    },
+    {
+      "explain": "主に半導体製品の販売から収益を得ます。顧客向けの専用設計では、開発に対する対価もあります。販売数量や製品構成が売上と利益に影響します。 仮想例：製品を100で売っても、製造・調達に50、開発や販売に30かかれば、100がそのまま利益になるわけではありません。実際のAMDの比率ではありません。",
+      "bridge": "製造から利用まで、関わる会社を見ましょう。"
+    },
+    {
+      "explain": "AMDが設計し、製造企業がチップを作り、機器メーカーやクラウド企業が利用者に届けます。同じ会社が競合にも提携先にもなるため、役割を分けて見ると整理できます。 たとえばMicrosoftはクラウドでAMD製品を使います。これはMicrosoft全体とAMD全体が同じ事業だという意味ではありません。",
+      "bridge": "この中でAMDが選ばれる理由を考えます。"
+    },
+    {
+      "explain": "CPU・GPU・組み込み向け製品の幅や、チップを組み合わせる設計が特徴です。採用の理由は性能だけでなく、電力、費用、ソフトの対応、供給の安定性でも変わります。 学習上の仮説：同じ仕事を少ない電力や費用で処理できれば、顧客が選ぶ理由になり得ます。同じ条件の実測や導入事例で確かめます。",
+      "bridge": "その理由が成り立たなくなる条件も見ましょう。"
+    },
+    {
+      "explain": "競合の製品、顧客の投資計画、製造・先端パッケージの供給能力、ソフト対応、輸出規制などが事業に影響します。PCやゲーム機の需要もAI需要とは違う動きをします。 仮想例：注文が増えても必要な製造能力を確保できなければ、予定どおり出荷できません。",
+      "bridge": "次は、こうした見方を決算で確かめます。"
+    },
+    {
+      "explain": "全社の売上だけでなく、事業別の動き、粗利益率、在庫、研究開発費、現金を確認します。買収による増加と、既存事業の成長も分けて読みます。 2022年にはXilinx買収がありました。前年比の増加を、すべて既存製品の販売増加だと考えないようにします。",
+      "bridge": "誰のどんな計算を支える会社か、一言で説明してみましょう。"
+    }
+  ],
+  "moneyLayout": {
+    "nodes": [
+      [
+        "機器メーカー・クラウド等",
+        180,
+        200,
+        "building"
+      ],
+      [
+        "AMD",
+        500,
+        200,
+        "logo"
+      ],
+      [
+        "製造・開発など",
+        820,
+        200,
+        "tools"
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "製品などの購入代金",
+        "income",
+        340,
+        100
+      ],
+      [
+        1,
+        2,
+        "製造・開発の費用",
+        "cost",
+        660,
+        100
+      ]
+    ],
+    "tips": [
+      "顧客がCPUやGPUなどを購入する対価が、AMDの売上の主な入口です。",
+      "AMDは外部製造企業や、人材・研究開発などにお金を使います。売上のすべてが利益にはなりません。"
+    ]
+  },
+  "revenueIntro": "CPU・GPUなどの製品販売が主な収益の入口です。外部に委託する製造費や研究開発費などを負担します。",
+  "basics": {
+    "title": "まず知りたい、CPUとGPUと半導体",
+    "intro": "「計算する部品」を、作る人と使う人に分けて見てみましょう。",
+    "cards": [
+      {
+        "title": "CPUとGPUは、何が違う？",
+        "problem": "コンピューターに計算装置が複数あるのはなぜ？",
+        "explain": "CPUはさまざまな処理を柔軟に進め、GPUは多数の計算を並列に進めることが得意です。仕事の種類によって向き不向きがあり、組み合わせて使います。",
+        "analogy": "CPUは仕事を切り替えて進める担当、GPUは多くの似た計算を分担するチームというイメージ。",
+        "caution": "あくまで例えです。GPUがどんな仕事でもCPUより速いわけではありません。",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+        "icon": "chip"
+      },
+      {
+        "title": "設計する会社と、作る工場",
+        "problem": "AMDは自分の工場で全部作っている？",
+        "explain": "AMDは製品を設計し、半導体の製造をTSMCなどの外部企業に委託します。設計が完成しても、製造能力や部材、組み立てがそろわなければ出荷できません。",
+        "analogy": "設計図を作るチームと、その図をもとに作る専門工場の分業。",
+        "caution": "外部製造という言葉は、AMDが製品開発をしていないという意味ではありません。",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+        "icon": "building"
+      },
+      {
+        "title": "AIには、ソフトも必要",
+        "problem": "速いGPUを買えば、そのままAIが速くなる？",
+        "explain": "GPUで計算するには、対応するソフトウェアが必要です。AMDのROCmは、開発ツールや計算用ライブラリなどを提供する基盤です。",
+        "analogy": "道具があっても、使い方や作業の手順が必要になるイメージ。",
+        "caution": "ソフトごとに対応状況や性能が違います。導入先の条件で確認します。",
+        "source": "https://www.amd.com/en/products/software/rocm.html",
+        "icon": "tools"
+      }
+    ]
+  },
+  "growth": {
+    "name": "AMD",
+    "logo": "assets/new-amd-logo.svg",
+    "logoSource": "https://www.amd.com/content/dam/code/images/header/amd-header-logo.svg",
+    "logoBackground": "#172b3a",
+    "unit": "USD million",
+    "metric": "GAAP net revenue",
+    "fiscalNote": "12月最終土曜日に終了する52／53週の会計年度。暦年と完全には一致しない。2022年はXilinx買収の影響を含む。",
+    "revenue": [
+      {
+        "year": 2018,
+        "value": 6475,
+        "period": "FY2018：2018-12-29終了",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0001628280-21-001185/amd-20201226.htm",
+        "originalUnit": "USD millions"
+      },
+      {
+        "year": 2019,
+        "value": 6731,
+        "period": "FY2019：2019-12-28終了",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0001628280-21-001185/amd-20201226.htm",
+        "originalUnit": "USD millions"
+      },
+      {
+        "year": 2020,
+        "value": 9763,
+        "period": "FY2020：2020-12-26終了",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0001628280-21-001185/amd-20201226.htm",
+        "originalUnit": "USD millions"
+      },
+      {
+        "year": 2021,
+        "value": 16434,
+        "period": "FY2021：2021-12-25終了",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm",
+        "originalUnit": "USD millions"
+      },
+      {
+        "year": 2022,
+        "value": 23601,
+        "period": "FY2022：2022-12-31終了",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+        "originalUnit": "USD millions"
+      },
+      {
+        "year": 2023,
+        "value": 22680,
+        "period": "FY2023：2023-12-30終了",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+        "originalUnit": "USD millions"
+      },
+      {
+        "year": 2024,
+        "value": 25785,
+        "period": "FY2024：2024-12-28終了",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+        "originalUnit": "USD millions"
+      }
+    ],
+    "timeline": [
+      {
+        "year": 1969,
+        "title": "半導体企業として創業",
+        "text": "シリコンバレーで設立。計算を支える半導体の開発へ。",
+        "source": "https://www.amd.com/en/corporate.html"
+      },
+      {
+        "year": 2017,
+        "title": "Zen世代のRyzenを発売",
+        "text": "新しいCPU設計Zenを採用したRyzenデスクトップ製品を3月2日に発売。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today"
+      },
+      {
+        "year": 2022,
+        "title": "Xilinxの買収完了",
+        "text": "2月14日に買収完了。FPGAなど、用途に合わせた計算の製品群を拡大。",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm"
+      },
+      {
+        "year": 2023,
+        "title": "MI300とROCm 6を発表",
+        "text": "AI向けGPUとソフトの提供を進め、クラウドやサーバー企業の採用・計画を発表。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs"
+      }
+    ]
+  },
+  "ecosystem": {
+    "nodes": [
+      {
+        "name": "TSMC",
+        "type": "半導体製造委託",
+        "description": "先端CPU・GPUなどのウエハー製造を担います。2024年年次報告に記載された製造関係です。日付は提出日。",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+        "date": "2025-02-05"
+      },
+      {
+        "name": "Microsoft",
+        "type": "クラウド採用",
+        "description": "AzureのND MI300x v5仮想マシンにInstinct MI300Xを導入する取り組みを発表。利用者にはクラウドサービスとして届きます。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs",
+        "date": "2023-12-06"
+      },
+      {
+        "name": "Meta",
+        "type": "AI計算への採用",
+        "description": "データセンターにMI300XとROCm 6を加え、AIの推論処理に使うと発表。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs",
+        "date": "2023-12-06"
+      },
+      {
+        "name": "Dell",
+        "type": "サーバー製品化",
+        "description": "PowerEdge XE9680にMI300Xを組み込むと発表。AMDのチップを企業が導入するサーバーにして届ける役割。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs",
+        "date": "2023-12-06"
+      },
+      {
+        "name": "Xilinx",
+        "type": "買収・製品群の拡大",
+        "description": "全株式交換による買収完了。FPGAやAdaptive SoCなどの製品・技術がAMDに加わりました。",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm",
+        "date": "2022-02-14"
+      }
+    ],
+    "note": "記載日の公式発表・報告に基づく関係です。現在の契約額や、独占性、すべての取引条件を示すものではありません。"
+  }
+}

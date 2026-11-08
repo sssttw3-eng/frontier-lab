@@ -1,0 +1,145 @@
+{
+  "p": {
+    "ceo": "Alex Karp（アレックス・カープ）",
+    "ceoTitle": "共同創業者・CEO",
+    "ceoImage": "assets/ceo-p.jpg",
+    "ceoSource": "https://investors.palantir.com/management.html",
+    "ceoImageSource": "https://investors.palantir.com/images/pages/team/karp.jpg",
+    "products": [
+      "Foundry：データ運用と業務アプリ",
+      "AIP：AIを実際の業務へ接続",
+      "Apollo：展開・運用",
+      "Gotham：政府・防衛向け"
+    ],
+    "revenue": "政府・民間企業によるソフトウェアと関連サービスの契約。",
+    "risk": "顧客の導入効果、大口契約や政府予算、競争、株式報酬・希薄化。"
+  },
+  "s": {
+    "ceo": "Anthony Noto（アンソニー・ノト）",
+    "ceoTitle": "CEO",
+    "ceoImage": "assets/ceo-s.jpg",
+    "ceoSource": "https://www.sofi.com/our-leadership/",
+    "ceoImageSource": "https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/Noto_Headshot_Oct2023%402x.png",
+    "products": [
+      "Lending：融資",
+      "Financial Services：個人向け金融等",
+      "Technology Platform：企業向け技術基盤"
+    ],
+    "revenue": "利息収入、決済・仲介等の手数料、融資関連サービス、企業向け技術基盤。",
+    "risk": "信用損失、金利・調達費用、規制・資本、技術基盤事業の取扱量。"
+  },
+  "n": {
+    "ceo": "Jensen Huang（ジェンスン・フアン）",
+    "ceoTitle": "創業者・CEO",
+    "ceoImage": "assets/ceo-n.jpg",
+    "ceoSource": "https://investor.nvidia.com/governance/management-team/default.aspx",
+    "ceoImageSource": "https://s201.q4cdn.com/141608511/files/images/founders/nvidia-jensenhuang-headshots-js0400-c-w-lightened2x2.png",
+    "products": [
+      "GPU・AIシステム",
+      "ネットワーク製品",
+      "CUDAなどの開発基盤",
+      "GeForceなどのグラフィックス"
+    ],
+    "revenue": "GPU・システム・ネットワークなどの販売と、関連ソフトウェア・サービス。",
+    "risk": "顧客のAI投資、供給能力、輸出規制、競争・自社開発チップ、製品移行。",
+    "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/ar/2026-annual-report-web-Hyperlinks.pdf"
+  },
+  "i": {
+    "ceo": "Niccolo de Masi（ニッコロ・デ・マージ）",
+    "ceoTitle": "会長・CEO",
+    "ceoImage": "assets/ceo-i.jpg",
+    "ceoSource": "https://ionq.com/company",
+    "ceoImageSource": "https://cdn.prod.website-files.com/68836d4838193cb461ebc7d2/6908b34615380537ea2fe882_Nicco-de-Masi_022625_001-Edit.webp",
+    "products": [
+      "イオントラップ方式の量子コンピューター",
+      "量子ネットワーク",
+      "量子センシング・セキュリティ"
+    ],
+    "revenue": "量子システム、計算アクセス、研究・開発等の契約。事業別の最新内訳はIRで確認。",
+    "risk": "技術開発と商用化の時期、研究開発支出、契約・売上計上の時期、買収統合。",
+    "source": "https://investors.ionq.com/financials/annual-reports/default.aspx"
+  },
+  "relations": [
+    {
+      "from": "NVIDIA",
+      "to": "Palantir",
+      "type": "技術提携",
+      "description": "NVIDIAのアクセラレーテッド・コンピューティング、CUDA-X、NemotronとPalantir Ontology/AIPを組み合わせる協業。金銭の支払い方向や契約金額はこの発表から断定しない。",
+      "date": "2025-10-28",
+      "source": "https://nvidianews.nvidia.com/news/nvidia-palantir-ai-enterprise-data-intelligence/"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "Palantir",
+      "type": "導入・共同開発",
+      "description": "NVIDIA自身のサプライチェーンから始めるSovereign AIの協業。導入されるスタックはPalantir Foundry/AIPとNVIDIA Nemotron等を組み合わせる。",
+      "date": "2026-09-10",
+      "source": "https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains"
+    },
+    {
+      "from": "SoFi",
+      "to": "Galileo",
+      "type": "買収・傘下",
+      "description": "SoFiは2020年5月14日にGalileoの全株式を取得。企業向け決済・金融API基盤を保有。",
+      "date": "2020-05-14",
+      "source": "https://s27.q4cdn.com/749715820/files/doc_financials/2021/q4/2533ab52-232a-47de-869b-8d771622cdee.pdf"
+    },
+    {
+      "from": "SoFi",
+      "to": "Technisys",
+      "type": "買収・傘下",
+      "description": "SoFiが買収完了。クラウド型コアバンキング基盤をGalileoと組み合わせる戦略。発表時点の将来効果予測を実績扱いしない。",
+      "date": "2022-03-03",
+      "source": "https://investors.sofi.com/news/news-details/2022/SoFi-Completes-Acquisition-of-Technisys/default.aspx"
+    },
+    {
+      "from": "NVIDIA",
+      "to": "IonQ",
+      "type": "技術エコシステム協業",
+      "description": "IonQはNVIDIA NVQLinkに貢献する量子ハードウェア企業の一社。GPUと量子プロセッサーを結ぶハイブリッド計算の取り組み。",
+      "date": "2025-10-28",
+      "source": "https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing"
+    },
+    {
+      "from": "IonQ",
+      "to": "AstraZeneca / AWS / NVIDIA",
+      "type": "共同研究",
+      "description": "量子を用いた計算化学ワークフローを共同開発・実証。研究成果であり、商用売上や一般的な量子優位の証明とは区別する。",
+      "date": "2025-06-09",
+      "source": "https://www.ionq.com/news/ionq-speeds-quantum-accelerated-drug-development-application-with"
+    }
+  ],
+  "checkedAt": "2026-11-04",
+  "a": {
+    "ceo": "Lisa Su（リサ・スー）",
+    "ceoTitle": "会長・CEO",
+    "ceoImage": "assets/new-amd-ceo.jpg",
+    "ceoSource": "https://www.amd.com/en/corporate/leadership/lisa-su.html",
+    "ceoImageSource": "https://www.amd.com/content/dam/amd/en/images/photography/corporate/lisa-su/lisa-su-executive-photo.jpg",
+    "products": [
+      "Ryzen：PC向けCPU",
+      "EPYC：サーバーCPU",
+      "Instinct：AI・科学計算向けGPU",
+      "Radeon：グラフィックス",
+      "ROCm：GPU向けソフト基盤",
+      "FPGA・Adaptive SoC：用途に合わせた処理"
+    ],
+    "revenue": "CPU・GPUなどの半導体製品販売を中心とする。専用設計の開発対価なども含む。",
+    "risk": "製品競争、ソフト対応、顧客の投資、外部製造・部材、輸出規制。"
+  },
+  "t": {
+    "ceo": "Elon Musk（イーロン・マスク）",
+    "ceoTitle": "CEO（2008年10月から）",
+    "ceoImage": null,
+    "ceoSource": "https://ir.tesla.com/corporate/elon-musk",
+    "ceoImageSource": null,
+    "products": [
+      "電気自動車：Model 3、Model Yなど",
+      "蓄電：Powerwall、Megapack",
+      "FSD (Supervised)：運転者の監督が必要",
+      "Optimus：人型ロボット開発"
+    ],
+    "revenue": "自動車、蓄電・発電、充電・修理などの関連サービス。将来のロボット構想とは分ける。",
+    "risk": "価格競争、生産コスト、安全・品質、規制、開発の進捗と株価に含まれる期待。"
+  }
+}

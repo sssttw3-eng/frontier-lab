@@ -1,0 +1,517 @@
+{
+  "companies": {
+    "p": {
+      "name": "Palantir",
+      "logo": "assets/logo-p.svg",
+      "logoSource": "https://www.palantir.com/",
+      "logoBackground": "#172b3a",
+      "logoNote": "公式サイトの白いシンボルマーク。濃色背景で使用。",
+      "unit": "USD million",
+      "metric": "GAAP revenue",
+      "fiscalNote": "12月31日決算。2018〜2024は各暦年。",
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 595.409,
+          "period": "2018-01-01〜2018-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1321655/000119312521060650/d65934d10k.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2019,
+          "value": 742.555,
+          "period": "2019-01-01〜2019-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1321655/000119312521060650/d65934d10k.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2020,
+          "value": 1092.673,
+          "period": "2020-01-01〜2020-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1321655/000119312521060650/d65934d10k.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2021,
+          "value": 1541.889,
+          "period": "2021-01-01〜2021-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1321655/000132165523000011/pltr-20221231.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2022,
+          "value": 1905.871,
+          "period": "2022-01-01〜2022-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1321655/000132165523000011/pltr-20221231.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2023,
+          "value": 2225.012,
+          "period": "2023-01-01〜2023-12-31",
+          "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2024,
+          "value": 2865.507,
+          "period": "2024-01-01〜2024-12-31",
+          "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf",
+          "originalUnit": "USD thousands"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2003,
+          "title": "政府の課題から創業",
+          "text": "米国の情報機関の対テロ調査・業務を支えるソフトウェア開発から出発。",
+          "source": "https://www.palantir.com/about"
+        },
+        {
+          "year": 2020,
+          "title": "株式市場へ",
+          "text": "9月30日からNYSEで株式取引。公開企業として事業を拡大。",
+          "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf"
+        },
+        {
+          "year": 2023,
+          "title": "AIPの提供開始",
+          "text": "既存のデータ・業務基盤とLLMを組み合わせ、生成AIの業務利用へ展開。",
+          "source": "https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm"
+        },
+        {
+          "year": 2024,
+          "title": "Nasdaqへ市場変更",
+          "text": "11月26日からNasdaqで取引。事業成長と株式市場の出来事は分けて読む。",
+          "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf"
+        }
+      ]
+    },
+    "s": {
+      "name": "SoFi",
+      "logo": "assets/logo-s.svg",
+      "logoSource": "https://www.sofi.com/",
+      "unit": "USD million",
+      "metric": "GAAP total net revenue",
+      "fiscalNote": "12月31日決算。売上としてGAAP total net revenueを使用。調整後売上とは異なる。",
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 269.399,
+          "period": "2018-01-01〜2018-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000162828021006294/ipoe-20210401.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2019,
+          "value": 442.659,
+          "period": "2019-01-01〜2019-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000162828021006294/ipoe-20210401.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2020,
+          "value": 565.532,
+          "period": "2020-01-01〜2020-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000162828021006294/ipoe-20210401.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2021,
+          "value": 984.872,
+          "period": "2021-01-01〜2021-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887423000018/sofi-20221231.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2022,
+          "value": 1573.535,
+          "period": "2022-01-01〜2022-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000016/sofi-20241231.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2023,
+          "value": 2122.789,
+          "period": "2023-01-01〜2023-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000016/sofi-20241231.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2024,
+          "value": 2674.859,
+          "period": "2024-01-01〜2024-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000016/sofi-20241231.htm",
+          "originalUnit": "USD thousands"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2011,
+          "title": "学生向け融資から創業",
+          "text": "同窓生による資金提供と卒業生をつなぐ融資モデルから出発。",
+          "source": "https://www.sofi.com/our-story/"
+        },
+        {
+          "year": 2020,
+          "title": "Galileoを買収",
+          "text": "5月14日に全株式を取得。決済・金融APIという企業向けの技術基盤へ領域を広げる。",
+          "source": "https://s27.q4cdn.com/749715820/files/doc_financials/2021/q4/2533ab52-232a-47de-869b-8d771622cdee.pdf"
+        },
+        {
+          "year": 2022,
+          "title": "銀行としての運営開始",
+          "text": "2月の銀行合併により銀行持株会社となり、SoFi Bankとしての運営を開始。",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887424000026/sofi-20231231.htm"
+        },
+        {
+          "year": 2022,
+          "title": "Technisysを買収",
+          "text": "3月3日に買収完了。クラウド型コアバンキングとGalileoの技術を組み合わせる戦略。",
+          "source": "https://investors.sofi.com/news/news-details/2022/SoFi-Completes-Acquisition-of-Technisys/default.aspx"
+        }
+      ]
+    },
+    "n": {
+      "name": "NVIDIA",
+      "logo": "assets/logo-n.svg",
+      "logoSource": "https://www.nvidia.com/",
+      "unit": "USD million",
+      "metric": "GAAP revenue",
+      "fiscalNote": "NVIDIAは1月末決算。年はFY表記であり他3社の暦年と一致しない（FY2024は2024年1月28日終了）。",
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 9714,
+          "period": "FY2018：2018-01-28終了",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000010/nvda-2020x10k.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2019,
+          "value": 11716,
+          "period": "FY2019：2019-01-27終了",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000010/nvda-2020x10k.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2020,
+          "value": 10918,
+          "period": "FY2020：2020-01-26終了",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000010/nvda-2020x10k.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2021,
+          "value": 16675,
+          "period": "FY2021：2021-01-31終了",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000036/nvda-20220130.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2022,
+          "value": 26914,
+          "period": "FY2022：2022-01-30終了",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000036/nvda-20220130.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2023,
+          "value": 26974,
+          "period": "FY2023：2023-01-29終了",
+          "source": "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2024,
+          "value": 60922,
+          "period": "FY2024：2024-01-28終了",
+          "source": "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/",
+          "originalUnit": "USD millions"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 1993,
+          "title": "3Dグラフィックスから創業",
+          "text": "ゲームとマルチメディア市場に3Dグラフィックスを提供する構想で設立。",
+          "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
+        },
+        {
+          "year": 1999,
+          "title": "GPUの時代へ",
+          "text": "グラフィックス処理を担うGPUを投入し、並列計算の基盤を形成。",
+          "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
+        },
+        {
+          "year": 2006,
+          "title": "CUDAを発表",
+          "text": "GPUの並列処理能力を科学・研究へ広げる開発基盤を発表。",
+          "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
+        },
+        {
+          "year": 2012,
+          "title": "深層学習の転機",
+          "text": "AlexNetのニューラルネットワークの計算を支え、AI分野での利用が拡大。",
+          "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
+        }
+      ]
+    },
+    "i": {
+      "name": "IonQ",
+      "logo": "assets/logo-i.svg",
+      "logoSource": "https://ionq.com/",
+      "unit": "USD million",
+      "metric": "GAAP revenue",
+      "fiscalNote": "12月31日決算。Bookings（受注額）とは区別したGAAP売上高。2019年から掲載。2020年ゼロはワラント費用による売上控除を含む確定実績。2018年は欠損扱い。",
+      "revenue": [
+        {
+          "year": 2019,
+          "value": 0.2,
+          "period": "2019-01-01〜2019-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1824920/000119312521361128/d229016dex991.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2020,
+          "value": 0,
+          "period": "2020-01-01〜2020-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1824920/000119312521361128/d229016dex991.htm",
+          "originalUnit": "USD thousands",
+          "note": "GAAP売上高ゼロは実績値。顧客に発行したワラントの費用を売上から控除した影響を含む。欠損や受注額ゼロを意味しない。"
+        },
+        {
+          "year": 2021,
+          "value": 2.099,
+          "period": "2021-01-01〜2021-12-31",
+          "source": "https://investors.ionq.com/news/news-details/2022/IonQ-Announces-Full-Year-2021-Financial-Results-and-Provides-Business-Update/",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2022,
+          "value": 11.131,
+          "period": "2022-01-01〜2022-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1824920/000095017025027722/ionq-20241231.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2023,
+          "value": 22.042,
+          "period": "2023-01-01〜2023-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1824920/000095017025027722/ionq-20241231.htm",
+          "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2024,
+          "value": 43.073,
+          "period": "2024-01-01〜2024-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1824920/000095017025027722/ionq-20241231.htm",
+          "originalUnit": "USD thousands"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2015,
+          "title": "研究から企業へ",
+          "text": "Chris MonroeとJungsang Kimが設立。イオントラップ技術の研究成果を事業化へつなぐ。",
+          "source": "https://ionq.com/company"
+        },
+        {
+          "year": 2021,
+          "title": "NYSEに上場",
+          "text": "10月1日からIONQとして取引。SPACとの企業結合を通じて成長資金を調達。",
+          "source": "https://www.ionq.com/news/october-01-2021-ionq-listed-on-nyse"
+        },
+        {
+          "year": 2023,
+          "title": "Forteの商用提供を拡大",
+          "text": "6月22日、限定提供から世界の顧客向けへ商用アクセスを拡大。",
+          "source": "https://www.ionq.com/news/ionq-forte-launched-for-commercial-use-making-aq-29-available-for-customers"
+        },
+        {
+          "year": 2025,
+          "title": "ハイブリッド計算の共同研究",
+          "text": "AstraZeneca・AWS・NVIDIAと量子を用いた計算化学ワークフローを共同実証。",
+          "source": "https://www.ionq.com/news/ionq-speeds-quantum-accelerated-drug-development-application-with"
+        }
+      ]
+    },
+    "a": {
+      "name": "AMD",
+      "logo": "assets/new-amd-logo.svg",
+      "logoSource": "https://www.amd.com/content/dam/code/images/header/amd-header-logo.svg",
+      "logoBackground": "#172b3a",
+      "unit": "USD million",
+      "metric": "GAAP net revenue",
+      "fiscalNote": "12月最終土曜日に終了する52／53週の会計年度。暦年と完全には一致しない。2022年はXilinx買収の影響を含む。",
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 6475,
+          "period": "FY2018：2018-12-29終了",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0001628280-21-001185/amd-20201226.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2019,
+          "value": 6731,
+          "period": "FY2019：2019-12-28終了",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0001628280-21-001185/amd-20201226.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2020,
+          "value": 9763,
+          "period": "FY2020：2020-12-26終了",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0001628280-21-001185/amd-20201226.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2021,
+          "value": 16434,
+          "period": "FY2021：2021-12-25終了",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2022,
+          "value": 23601,
+          "period": "FY2022：2022-12-31終了",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2023,
+          "value": 22680,
+          "period": "FY2023：2023-12-30終了",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2024,
+          "value": 25785,
+          "period": "FY2024：2024-12-28終了",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+          "originalUnit": "USD millions"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 1969,
+          "title": "半導体企業として創業",
+          "text": "シリコンバレーで設立。計算を支える半導体の開発へ。",
+          "source": "https://www.amd.com/en/corporate.html"
+        },
+        {
+          "year": 2017,
+          "title": "Zen世代のRyzenを発売",
+          "text": "新しいCPU設計Zenを採用したRyzenデスクトップ製品を3月2日に発売。",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today"
+        },
+        {
+          "year": 2022,
+          "title": "Xilinxの買収完了",
+          "text": "2月14日に買収完了。FPGAなど、用途に合わせた計算の製品群を拡大。",
+          "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm"
+        },
+        {
+          "year": 2023,
+          "title": "MI300とROCm 6を発表",
+          "text": "AI向けGPUとソフトの提供を進め、クラウドやサーバー企業の採用・計画を発表。",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs"
+        }
+      ]
+    },
+    "t": {
+      "name": "Tesla",
+      "logo": "assets/new-tesla-logo.svg",
+      "logoSource": "https://ir.tesla.com/corporate/elon-musk",
+      "logoBackground": "#ffffff",
+      "logoNote": "Tesla公式IRページのワードマーク。形状を保持。",
+      "unit": "USD million",
+      "metric": "GAAP total revenues",
+      "fiscalNote": "12月31日決算。2018〜2024は各暦年の連結売上。将来構想の市場規模を含まない。",
+      "revenue": [
+        {
+          "year": 2018,
+          "value": 21461,
+          "period": "2018-01-01〜2018-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2019,
+          "value": 24578,
+          "period": "2019-01-01〜2019-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2020,
+          "value": 31536,
+          "period": "2020-01-01〜2020-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000156459021004599/tsla-10k_20201231.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2021,
+          "value": 53823,
+          "period": "2021-01-01〜2021-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2022,
+          "value": 81462,
+          "period": "2022-01-01〜2022-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/tsla-20221231.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2023,
+          "value": 96773,
+          "period": "2023-01-01〜2023-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
+          "originalUnit": "USD millions"
+        },
+        {
+          "year": 2024,
+          "value": 97690,
+          "period": "2024-01-01〜2024-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
+          "originalUnit": "USD millions"
+        }
+      ],
+      "timeline": [
+        {
+          "year": 2012,
+          "title": "Model Sの納車開始",
+          "text": "6月22日、Model Sを最初の顧客へ納車。",
+          "source": "https://ir.tesla.com/press-release/tesla-motors-delivers-worlds-first-premium-electric-sedan"
+        },
+        {
+          "year": 2015,
+          "title": "家庭用蓄電池へ",
+          "text": "5月に最初のPowerwallを設置。家庭で電気をためて使う製品を展開。",
+          "source": "https://www.tesla.com/powerwall"
+        },
+        {
+          "year": 2019,
+          "title": "Megapackを発表",
+          "text": "大型蓄電製品Megapackを導入すると、2019年第3四半期資料で説明。",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000156459019037581/tsla-ex991_154.htm"
+        },
+        {
+          "year": 2024,
+          "title": "蓄電の導入が拡大",
+          "text": "年間の蓄電導入量31.4GWh、エネルギー売上100.86億ドル。過去の年間実績。",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"
+        }
+      ]
+    }
+  },
+  "unit": "USD million",
+  "checkedAt": "2026-11-04",
+  "comparisonNote": "企業ごとの会計年度と売上指標の定義が異なる。特にNVIDIAは1月末決算、SoFiはGAAP total net revenue。株価や投資魅力のランキングではない。",
+  "animationNote": "2018〜2024の確定年次値（IonQは2019年から）。途中フレームの補間は表示アニメーションであり月次実績ではない。未掲載年度は欠損でありゼロではない。"
+}

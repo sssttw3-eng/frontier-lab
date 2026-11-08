@@ -1,0 +1,291 @@
+{
+  "p": {
+    "nodes": [
+      {
+        "name": "NVIDIA",
+        "type": "技術提携",
+        "description": "AIP・OntologyとNVIDIAのGPU／AI技術を組み合わせる提携を発表。資本関係を意味しません。",
+        "source": "https://nvidianews.nvidia.com/news/nvidia-palantir-ai-enterprise-data-intelligence/",
+        "date": "2025-10-28",
+        "logo": "assets/logo-n.svg",
+        "logoSource": "https://www.nvidia.com/"
+      },
+      {
+        "name": "Fujitsu",
+        "type": "導入支援・戦略提携",
+        "description": "富士通がAIP・Foundryの活用と顧客企業への導入支援を拡大。Global FDE Partnerとしての連携を発表。",
+        "source": "https://investors.palantir.com/news-details/2026/Palantir-and-Fujitsu-Deepen-Partnership-to-Advance-Enterprise-AI-Transformation-with-Fujitsu-Strengthening-as-a-Global-FDE-Partner/",
+        "date": "2026-09-10",
+        "logo": "assets/eco-fujitsu.svg",
+        "logoSource": "https://edge.sitecorecloud.io/fujitsulimi3ee2-nexusc5d4-nexusprod7316-5b84/media/Project/Fujitsu/Fujitsu-HQ/assets/img/logo-fujitsu.svg?iar=0&sc_lang=en-001"
+      },
+      {
+        "name": "Airbus",
+        "type": "顧客・共同開発",
+        "description": "航空データ基盤Skywiseを共同で発展させてきた関係。設計・生産・航空会社の運航を支えます。2026年Q1事業報告の7ページに複数年更新を記載。",
+        "source": "https://investors.palantir.com/files/Palantir%20-%20Q1%202026%20Business%20Update.pdf#page=7",
+        "date": "2026-Q1",
+        "announcementDate": "2026-02-10",
+        "announcementDateSource": "https://investors.palantir.com/news/",
+        "logo": "assets/eco-airbus.svg",
+        "logoSource": "https://www.airbus.com/themes/custom/airbus_web_experience_ui/logo.svg",
+        "logoBackground": "#172b3a"
+      },
+      {
+        "name": "SOMPO",
+        "type": "顧客・事業提携",
+        "description": "日本の合弁会社Palantir Technologies Japanを通じた複数年の提携拡大を発表。FoundryはSOMPOのReal Data Platformを支えます。",
+        "source": "https://investors.palantir.com/news-details/2025/Palantir-and-SOMPO-Expand-Partnership-in-Multi-Year-Agreement/",
+        "date": "2025-08-12",
+        "logo": "assets/eco-sompo.svg",
+        "logoSource": "https://www.sompo-hd.com/-/media/hd/en/new_images/common/logo_en.svg"
+      },
+      {
+        "name": "Databricks",
+        "type": "製品連携",
+        "description": "Databricksのデータ処理基盤とPalantirのAIP・Ontologyをつなぎ、企業のAIアプリ開発を支援する製品提携。",
+        "source": "https://www.databricks.com/company/newsroom/press-releases/palantir-and-databricks-announce-strategic-product-partnership",
+        "date": "2025-03-13",
+        "logo": "assets/eco-databricks.png",
+        "logoSource": "https://www.databricks.com/sites/default/files/2023-08/databricks-default.png",
+        "logoBackground": "#172b3a"
+      }
+    ],
+    "note": "出典：各社の公式発表・事業報告（日付は各項目に記載）。"
+  },
+  "s": {
+    "nodes": [
+      {
+        "name": "Galileo",
+        "type": "買収・技術基盤",
+        "description": "決済・口座管理のAPI基盤。SoFiは買収契約を発表し、金融アプリを支えるB2B事業へ広げました。日付は買収合意の発表日。",
+        "source": "https://www.sofi.com/newsroom/sofi-to-acquire-galileo/",
+        "date": "2020-04-07",
+        "logoFallback": "Galileo",
+        "logoNote": "公式ロゴ未取得のため社名で表示"
+      },
+      {
+        "name": "Technisys",
+        "type": "買収完了・技術基盤",
+        "description": "クラウド型コアバンキング企業の買収を完了。Galileoと組み合わせ、他の金融機関に基幹システムを提供する構想。",
+        "source": "https://investors.sofi.com/news/news-details/2022/SoFi-Completes-Acquisition-of-Technisys/default.aspx",
+        "date": "2022-03-03",
+        "logoFallback": "Technisys",
+        "logoNote": "公式ロゴ未取得のため社名で表示"
+      },
+      {
+        "name": "Fortress",
+        "type": "融資プラットフォーム提携",
+        "description": "Fortress関連ファンドとの契約を拡大。第三者資金を活用するLoan Platform Businessで、融資の組成・紹介と手数料収入をつなぎます。",
+        "source": "https://investors.sofi.com/news/news-details/2025/SoFi-Secures-3-2-Billion-Expansion-to-Loan-Platform-Business-Across-Agreements-with-Fortress-and-Edge-Focus/default.aspx",
+        "date": "2025-04-17",
+        "logo": "assets/eco-fortress.svg",
+        "logoSource": "https://www.fortress.com/images/layout/logo.svg",
+        "logoBackground": "#172b3a"
+      },
+      {
+        "name": "Edge Focus",
+        "type": "融資・技術提携",
+        "description": "Fortressとの共同事業を通じ、2年間の融資契約を発表。SoFiが借り手を集める力と外部パートナーの資金・技術を組み合わせます。",
+        "source": "https://investors.sofi.com/news/news-details/2025/SoFi-Secures-3-2-Billion-Expansion-to-Loan-Platform-Business-Across-Agreements-with-Fortress-and-Edge-Focus/default.aspx",
+        "date": "2025-04-17",
+        "logo": "assets/eco-edge-focus.svg",
+        "logoSource": "https://www.edgefocuspartners.com/",
+        "logoBackground": "#172b3a"
+      },
+      {
+        "name": "Mastercard",
+        "type": "決済ネットワーク提携",
+        "description": "SoFiUSDをMastercardの決済ネットワークで決済手段にするための提携発表。対応の検討・予定を含み、全面稼働済みという意味ではありません。",
+        "source": "https://investors.sofi.com/news/news-details/2026/SoFi-and-Mastercard-Partner-to-Enable-SoFiUSD-Settlement-Across-Mastercards-Global-Payments-Network/default.aspx",
+        "date": "2026-03-03",
+        "logo": "assets/eco-mastercard.svg",
+        "logoSource": "https://www.mastercard.com/content/dam/mccom/shared/header/ma_symbol.svg"
+      }
+    ],
+    "note": "出典：各社の公式発表・事業報告（日付は各項目に記載）。"
+  },
+  "n": {
+    "nodes": [
+      {
+        "name": "TSMC",
+        "type": "半導体製造",
+        "description": "NVIDIAが設計するBlackwellチップを製造するパートナー。アリゾナ工場で生産開始と発表。設計企業と製造企業の分業です。",
+        "source": "https://blogs.nvidia.com/blog/nvidia-manufacture-american-made-ai-supercomputers-us/",
+        "date": "2025-04-14",
+        "logo": "assets/eco-tsmc.png",
+        "logoSource": "https://www.tsmc.com/themes/custom/bootstrap_sass/images/logo.png"
+      },
+      {
+        "name": "Foxconn",
+        "type": "システム製造",
+        "description": "ヒューストンのAIスーパーコンピューター製造拠点を共同で整備すると発表。GPUを使えるシステムに組み上げる役割。",
+        "source": "https://blogs.nvidia.com/blog/nvidia-manufacture-american-made-ai-supercomputers-us/",
+        "date": "2025-04-14",
+        "logo": "assets/eco-foxconn.svg",
+        "logoSource": "https://image.honhai.com/upload/global/logo-en-us_202311301025578760108.svg",
+        "logoBackground": "#172b3a"
+      },
+      {
+        "name": "Wistron",
+        "type": "システム製造",
+        "description": "ダラスのAIスーパーコンピューター製造拠点を共同で整備すると発表。発表当時は量産拡大を今後12〜15か月に見込む計画。",
+        "source": "https://blogs.nvidia.com/blog/nvidia-manufacture-american-made-ai-supercomputers-us/",
+        "date": "2025-04-14",
+        "logo": "assets/eco-wistron.svg",
+        "logoSource": "https://www.wistron.com/_next/static/media/logo.8b542402.svg"
+      },
+      {
+        "name": "Dell",
+        "type": "製品化・販売経路",
+        "description": "Dell AI Factory with NVIDIAを展開。サーバー、NVIDIAのGPU・ソフトウェア、導入サービスを組み合わせ、企業に届けます。",
+        "source": "https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2025~05~dell-technologies-and-nvidia-unveil-next-generation-enterprise-ai-solutions.htm",
+        "date": "2025-05-19",
+        "logoFallback": "Dell",
+        "logoNote": "公式ロゴ未取得のため社名で表示"
+      },
+      {
+        "name": "Palantir",
+        "type": "ソフトウェア提携",
+        "description": "NVIDIAの計算基盤・AIモデルとPalantirの企業データ基盤を統合。企業業務でAIを動かすための連携です。",
+        "source": "https://nvidianews.nvidia.com/news/nvidia-palantir-ai-enterprise-data-intelligence/",
+        "date": "2025-10-28",
+        "logo": "assets/logo-p.svg",
+        "logoSource": "https://www.palantir.com/",
+        "logoBackground": "#172b3a"
+      }
+    ],
+    "note": "出典：各社の公式発表・事業報告（日付は各項目に記載）。"
+  },
+  "i": {
+    "nodes": [
+      {
+        "name": "Amazon Braket",
+        "type": "クラウド提供経路",
+        "description": "AWSのAmazon Braketを通じてIonQの量子コンピューターを利用できる提供経路。2021年の上場発表に記載された関係です。",
+        "source": "https://www.ionq.com/news/october-01-2021-ionq-listed-on-nyse",
+        "date": "2021-10-01",
+        "logoFallback": "Amazon Braket",
+        "logoNote": "公式ロゴ未取得のため社名で表示"
+      },
+      {
+        "name": "NVIDIA",
+        "type": "技術エコシステム",
+        "description": "量子プロセッサーとGPUをつなぐNVQLinkの協業企業にIonQが参加。協業への参加であり、売上契約額を示す発表ではありません。",
+        "source": "https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing",
+        "date": "2025-10-28",
+        "logo": "assets/logo-n.svg",
+        "logoSource": "https://www.nvidia.com/"
+      },
+      {
+        "name": "AstraZeneca",
+        "type": "創薬の共同研究",
+        "description": "AstraZeneca・AWS・NVIDIAと計算化学の共同研究。量子計算と従来計算を組み合わせた創薬向けワークフローを検証。",
+        "source": "https://www.ionq.com/news/ionq-speeds-quantum-accelerated-drug-development-application-with",
+        "date": "2025-06-09",
+        "logo": "assets/eco-astrazeneca.png",
+        "logoSource": "https://www.astrazeneca.com/etc/designs/az/img/logo-az.png"
+      },
+      {
+        "name": "Hyundai",
+        "type": "顧客・共同研究",
+        "description": "量子計算による計算化学の研究でAriaからForteの利用へ進むと発表。自動車産業での量子計算の用途探索です。",
+        "source": "https://www.ionq.com/news/ionq-forte-launched-for-commercial-use-making-aq-29-available-for-customers",
+        "date": "2023-06-22",
+        "logo": "assets/eco-hyundai.png",
+        "logoSource": "https://www.hyundai.com/etc/designs/hyundai/ww/en/images/common/logo.png"
+      },
+      {
+        "name": "Airbus",
+        "type": "顧客・共同開発",
+        "description": "Forteを使い、航空機の積載最適化アルゴリズムを共同開発すると発表。研究対象と実運用の普及は区別して読みます。",
+        "source": "https://www.ionq.com/news/ionq-forte-launched-for-commercial-use-making-aq-29-available-for-customers",
+        "date": "2023-06-22",
+        "logo": "assets/eco-airbus.svg",
+        "logoSource": "https://www.airbus.com/themes/custom/airbus_web_experience_ui/logo.svg",
+        "logoBackground": "#172b3a"
+      }
+    ],
+    "note": "出典：各社の公式発表・事業報告（日付は各項目に記載）。"
+  },
+  "a": {
+    "nodes": [
+      {
+        "name": "TSMC",
+        "type": "半導体製造委託",
+        "description": "先端CPU・GPUなどのウエハー製造を担います。2024年年次報告に記載された製造関係です。日付は提出日。",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+        "date": "2025-02-05"
+      },
+      {
+        "name": "Microsoft",
+        "type": "クラウド採用",
+        "description": "AzureのND MI300x v5仮想マシンにInstinct MI300Xを導入する取り組みを発表。利用者にはクラウドサービスとして届きます。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs",
+        "date": "2023-12-06"
+      },
+      {
+        "name": "Meta",
+        "type": "AI計算への採用",
+        "description": "データセンターにMI300XとROCm 6を加え、AIの推論処理に使うと発表。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs",
+        "date": "2023-12-06"
+      },
+      {
+        "name": "Dell",
+        "type": "サーバー製品化",
+        "description": "PowerEdge XE9680にMI300Xを組み込むと発表。AMDのチップを企業が導入するサーバーにして届ける役割。",
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs",
+        "date": "2023-12-06"
+      },
+      {
+        "name": "Xilinx",
+        "type": "買収・製品群の拡大",
+        "description": "全株式交換による買収完了。FPGAやAdaptive SoCなどの製品・技術がAMDに加わりました。",
+        "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm",
+        "date": "2022-02-14"
+      }
+    ],
+    "note": "出典：各社の公式発表・事業報告（日付は各項目に記載）。"
+  },
+  "t": {
+    "nodes": [
+      {
+        "name": "Panasonic",
+        "type": "電池供給・製造協力",
+        "description": "Gigafactoryの建設・運営で協力し、Panasonicが電池セルを製造・供給する契約を発表。発表時点の関係です。",
+        "date": "2014-07-31",
+        "source": "https://ir.tesla.com/press-release/panasonic-and-tesla-sign-agreement-gigafactory"
+      },
+      {
+        "name": "Ford",
+        "type": "充電網の共同利用",
+        "description": "北米のFord EV利用者がTesla Superchargerを利用するための合意を発表。自動車では競争相手です。",
+        "date": "2023-05-25",
+        "source": "https://shareholder.ford.com/files/doc_news/2023/05/ford-ev-customers-to-gain-access-to-tesla-superchargers-5-25-23.pdf"
+      },
+      {
+        "name": "General Motors",
+        "type": "充電規格・充電網の連携",
+        "description": "NACS採用とSuperchargerへのアクセス拡大を発表。全地域・全車種で同条件という意味ではありません。",
+        "date": "2023-06-08",
+        "source": "https://investor.gm.com/news-releases/news-release-details/general-motors-doubles-down-commitment-unified-charging-standard"
+      },
+      {
+        "name": "bp pulse",
+        "type": "充電設備の顧客",
+        "description": "Teslaの超急速充電設備を1億ドルで購入する計画を発表。bp独自の充電網向けの取引です。",
+        "date": "2023-10-26",
+        "source": "https://www.bp.com/content/dam/bp/country-sites/en_us/united-states/home/documents/news/press-releases/bp-boosts-ev-charging-network-with-100-million-dollar-order-of-tesla-ultra-fast-chargers.pdf"
+      },
+      {
+        "name": "Intersect Power",
+        "type": "大型蓄電設備の顧客",
+        "description": "2030年までの太陽光・蓄電事業向けに15.3GWhのMegapack契約を発表。契約容量と当期売上は別です。",
+        "date": "2024-07-18",
+        "source": "https://www.intersect.com/news/tesla-provides-intersect-with-15-3-gwh-of-megapacks-for-solar-storage-projects"
+      }
+    ],
+    "note": "出典：各社の公式発表・事業報告（日付は各項目に記載）。"
+  }
+}

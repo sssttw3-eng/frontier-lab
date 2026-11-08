@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "company": "a",
+      "kind": "解説",
+      "id": "wlrA2agR18k",
+      "title": "IonQ2Q決算速報｜売上287%増・SkyWater買収で「量子のNVIDIA」へ｜AMD・Astera Labs・SpaceXも決算速報解説【AIインフラ最前線】",
+      "publisher": "柏原迅",
+      "date": "2026-08-06",
+      "source": "https://yutura.net/channel/122116/video/wlrA2agR18k/",
+      "topic": "AMD・AIインフラ・決算",
+      "startSeconds": 1034
+    },
+    {
+      "company": "t",
+      "kind": "解説",
+      "id": "yiRTtVXq02k",
+      "title": "【Google×Tesla決算速報】Googleクラウド82%成長もTeslaはFSDサブスク+56%＆Optimus生産開始でAIロボティクス企業へ本格シフト！",
+      "publisher": "柏原迅",
+      "date": "2026-07-23",
+      "source": "https://yutura.net/channel/122116/video/yiRTtVXq02k/",
+      "topic": "Tesla・事業構造・決算",
+      "startSeconds": 63
+    }
+  ]
+}
