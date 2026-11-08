@@ -8,7 +8,7 @@
       "logoNote": "公式サイトの白いシンボルマーク。濃色背景で使用。",
       "unit": "USD million",
       "metric": "GAAP revenue",
-      "fiscalNote": "12月31日決算。2018〜2024は各暦年。",
+      "fiscalNote": "12月31日決算。2025年度（2025年1〜12月）まで。2026年度は7〜9月期まで累計中のため未掲載。",
       "revenue": [
         {
           "year": 2018,
@@ -58,6 +58,14 @@
           "period": "2024-01-01〜2024-12-31",
           "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf",
           "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2025,
+          "value": 4475.446,
+          "period": "2025-01-01〜2025-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm",
+          "originalUnit": "USD",
+          "filed": "2026-02-17"
         }
       ],
       "timeline": [
@@ -85,7 +93,9 @@
           "text": "11月26日からNasdaqで取引。事業成長と株式市場の出来事は分けて読む。",
           "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf"
         }
-      ]
+      ],
+      "latestYear": 2025,
+      "dataAsOf": "2025年度（年次報告書10-K、2026-02-17提出）まで"
     },
     "s": {
       "name": "SoFi",
@@ -93,7 +103,7 @@
       "logoSource": "https://www.sofi.com/",
       "unit": "USD million",
       "metric": "GAAP total net revenue",
-      "fiscalNote": "12月31日決算。売上としてGAAP total net revenueを使用。調整後売上とは異なる。",
+      "fiscalNote": "12月31日決算。GAAP total net revenue（調整後純収益とは異なる）。2025年度（2025年1〜12月）まで。",
       "revenue": [
         {
           "year": 2018,
@@ -143,6 +153,14 @@
           "period": "2024-01-01〜2024-12-31",
           "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000016/sofi-20241231.htm",
           "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2025,
+          "value": 3613.354,
+          "period": "2025-01-01〜2025-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887426000013/sofi-20251231.htm",
+          "originalUnit": "USD",
+          "filed": "2026-02-17"
         }
       ],
       "timeline": [
@@ -170,7 +188,9 @@
           "text": "3月3日に買収完了。クラウド型コアバンキングとGalileoの技術を組み合わせる戦略。",
           "source": "https://investors.sofi.com/news/news-details/2022/SoFi-Completes-Acquisition-of-Technisys/default.aspx"
         }
-      ]
+      ],
+      "latestYear": 2025,
+      "dataAsOf": "2025年度（年次報告書10-K、2026-02-17提出）まで"
     },
     "n": {
       "name": "NVIDIA",
@@ -178,7 +198,7 @@
       "logoSource": "https://www.nvidia.com/",
       "unit": "USD million",
       "metric": "GAAP revenue",
-      "fiscalNote": "NVIDIAは1月末決算。年はFY表記であり他3社の暦年と一致しない（FY2024は2024年1月28日終了）。",
+      "fiscalNote": "NVIDIAは1月末決算で、年はFY表記（FY2026は2026年1月25日終了）。FY2026（2025年2月〜2026年1月）まで。",
       "revenue": [
         {
           "year": 2018,
@@ -228,6 +248,22 @@
           "period": "FY2024：2024-01-28終了",
           "source": "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/",
           "originalUnit": "USD millions"
+        },
+        {
+          "year": 2025,
+          "value": 130497.0,
+          "period": "FY2025：2025-01-26終了",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+          "originalUnit": "USD",
+          "filed": "2026-02-25"
+        },
+        {
+          "year": 2026,
+          "value": 215938.0,
+          "period": "FY2026：2026-01-25終了",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+          "originalUnit": "USD",
+          "filed": "2026-02-25"
         }
       ],
       "timeline": [
@@ -255,7 +291,9 @@
           "text": "AlexNetのニューラルネットワークの計算を支え、AI分野での利用が拡大。",
           "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
         }
-      ]
+      ],
+      "latestYear": 2026,
+      "dataAsOf": "FY2026（年次報告書10-K、2026-02-25提出）まで"
     },
     "i": {
       "name": "IonQ",
@@ -263,7 +301,7 @@
       "logoSource": "https://ionq.com/",
       "unit": "USD million",
       "metric": "GAAP revenue",
-      "fiscalNote": "12月31日決算。Bookings（受注額）とは区別したGAAP売上高。2019年から掲載。2020年ゼロはワラント費用による売上控除を含む確定実績。2018年は欠損扱い。",
+      "fiscalNote": "12月31日決算。2025年度（2025年1〜12月）まで。SkyWater（2026年7月買収完了）は含まない。",
       "revenue": [
         {
           "year": 2019,
@@ -307,6 +345,14 @@
           "period": "2024-01-01〜2024-12-31",
           "source": "https://www.sec.gov/Archives/edgar/data/1824920/000095017025027722/ionq-20241231.htm",
           "originalUnit": "USD thousands"
+        },
+        {
+          "year": 2025,
+          "value": 130.016,
+          "period": "2025-01-01〜2025-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526071562/ionq-20251231.htm",
+          "originalUnit": "USD",
+          "filed": "2026-02-25"
         }
       ],
       "timeline": [
@@ -334,7 +380,9 @@
           "text": "AstraZeneca・AWS・NVIDIAと量子を用いた計算化学ワークフローを共同実証。",
           "source": "https://www.ionq.com/news/ionq-speeds-quantum-accelerated-drug-development-application-with"
         }
-      ]
+      ],
+      "latestYear": 2025,
+      "dataAsOf": "2025年度（年次報告書10-K、2026-02-25提出）まで"
     },
     "a": {
       "name": "AMD",
@@ -343,7 +391,7 @@
       "logoBackground": "#172b3a",
       "unit": "USD million",
       "metric": "GAAP net revenue",
-      "fiscalNote": "12月最終土曜日に終了する52／53週の会計年度。暦年と完全には一致しない。2022年はXilinx買収の影響を含む。",
+      "fiscalNote": "12月最終土曜日ごろの決算。2025年度（2025年12月27日終了）まで。",
       "revenue": [
         {
           "year": 2018,
@@ -393,6 +441,14 @@
           "period": "FY2024：2024-12-28終了",
           "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
           "originalUnit": "USD millions"
+        },
+        {
+          "year": 2025,
+          "value": 34639.0,
+          "period": "2024-12-29〜2025-12-27",
+          "source": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+          "originalUnit": "USD",
+          "filed": "2026-02-04"
         }
       ],
       "timeline": [
@@ -420,7 +476,9 @@
           "text": "AI向けGPUとソフトの提供を進め、クラウドやサーバー企業の採用・計画を発表。",
           "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs"
         }
-      ]
+      ],
+      "latestYear": 2025,
+      "dataAsOf": "2025年度（年次報告書10-K、2026-02-04提出）まで"
     },
     "t": {
       "name": "Tesla",
@@ -430,7 +488,7 @@
       "logoNote": "Tesla公式IRページのワードマーク。形状を保持。",
       "unit": "USD million",
       "metric": "GAAP total revenues",
-      "fiscalNote": "12月31日決算。2018〜2024は各暦年の連結売上。将来構想の市場規模を含まない。",
+      "fiscalNote": "12月31日決算。2025年度（2025年1〜12月）まで。",
       "revenue": [
         {
           "year": 2018,
@@ -480,6 +538,14 @@
           "period": "2024-01-01〜2024-12-31",
           "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm",
           "originalUnit": "USD millions"
+        },
+        {
+          "year": 2025,
+          "value": 94827.0,
+          "period": "2025-01-01〜2025-12-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+          "originalUnit": "USD",
+          "filed": "2026-01-29"
         }
       ],
       "timeline": [
@@ -507,11 +573,14 @@
           "text": "年間の蓄電導入量31.4GWh、エネルギー売上100.86億ドル。過去の年間実績。",
           "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"
         }
-      ]
+      ],
+      "latestYear": 2025,
+      "dataAsOf": "2025年度（年次報告書10-K、2026-01-29提出）まで"
     }
   },
   "unit": "USD million",
-  "checkedAt": "2026-11-04",
+  "checkedAt": "2026-11-09",
   "comparisonNote": "企業ごとの会計年度と売上指標の定義が異なる。特にNVIDIAは1月末決算、SoFiはGAAP total net revenue。株価や投資魅力のランキングではない。",
-  "animationNote": "2018〜2024の確定年次値（IonQは2019年から）。途中フレームの補間は表示アニメーションであり月次実績ではない。未掲載年度は欠損でありゼロではない。"
+  "animationNote": "2018〜2024の確定年次値（IonQは2019年から）。途中フレームの補間は表示アニメーションであり月次実績ではない。未掲載年度は欠損でありゼロではない。",
+  "coverageNote": "各社の最新の年次報告書（10-K）まで。NVIDIAはFY2026（2026年1月期）、他5社は2025年度（2025年12月期）。数字はSECのXBRL（10-Kの通期値）で照合。"
 }
