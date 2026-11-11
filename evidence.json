@@ -39,7 +39,7 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000062/sofitechnologies2024ars.pdf#page=14",
       "page": 14,
       "pageLabel": "PDF 14ページ（ファイル先頭から）",
-      "document": "SoFi 2024 Annual Report",
+      "document": "SoFi 2024 Annual Report（2024年度資料）",
       "section": "Our Reportable Segments",
       "topics": [
         0,
@@ -54,7 +54,7 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000062/sofitechnologies2024ars.pdf#page=149",
       "page": 149,
       "pageLabel": "PDF 149ページ（ファイル先頭から）",
-      "document": "SoFi 2024 Annual Report",
+      "document": "SoFi 2024 Annual Report（2024年度資料）",
       "section": "Consolidated Statements of Operations：revenue excerpt",
       "topics": [
         3,
@@ -71,7 +71,7 @@
       "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/annual/NVIDIA-2025-Annual-Report.pdf#page=97",
       "page": 97,
       "pageLabel": "PDF 97ページ（ファイル先頭から）",
-      "document": "NVIDIA 2025 Annual Report",
+      "document": "NVIDIA 2025 Annual Report（FY2025＝2025年1月終了の年度の資料。グラフはFY2026まで）",
       "section": "Our Businesses",
       "topics": [
         0,
@@ -87,7 +87,7 @@
       "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/annual/NVIDIA-2025-Annual-Report.pdf#page=144",
       "page": 144,
       "pageLabel": "PDF 144ページ（ファイル先頭から）",
-      "document": "NVIDIA 2025 Annual Report",
+      "document": "NVIDIA 2025 Annual Report（FY2025＝2025年1月終了の年度の資料。グラフはFY2026まで）",
       "section": "Consolidated Statements of Income",
       "topics": [
         3,
@@ -138,7 +138,7 @@
       "source": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-25-067185/0001193125-25-067185.pdf#page=75",
       "page": 75,
       "pageLabel": "PDF 75ページ（冊子表記59ページ）",
-      "document": "AMD 2024 Annual Report",
+      "document": "AMD 2024 Annual Report（2024年度資料）",
       "section": "Consolidated Statements of Operations",
       "topics": [
         3,
@@ -155,7 +155,7 @@
       "source": "https://ir.tesla.com/_flysystem/s3/sec/000162828025003063/tsla-20241231-gen.pdf#page=52",
       "page": 52,
       "pageLabel": "PDF 52ページ（冊子表記49ページ）",
-      "document": "Tesla 2024 Annual Report on Form 10-K",
+      "document": "Tesla 2024 Annual Report on Form 10-K（2024年度資料）",
       "section": "Consolidated Statements of Operations",
       "topics": [
         3,
