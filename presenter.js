@@ -151,7 +151,7 @@
     const r=baseCompany.apply(this,arguments);
     presenting=was;slides=[];
     const d=catalog.companies[company];
-    document.title=`${d.name}｜柏原迅の企業理解アトラス`;
+    document.title=`${d.name}｜FRONTIER LAB`;
     if(presenting)show(changed?0:presentIndex);
     syncURL();
     if(!booted){booted=true;if(firstStep>0)(window.anglesReady||Promise.resolve()).finally(()=>start(firstStep-1))}
