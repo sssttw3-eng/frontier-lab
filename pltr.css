@@ -2,8 +2,8 @@
    紙面の方針：濃紺の全面＋オフホワイトの文字＋差し色は金1色。見出しは明朝、本文はゴシック。
    区切りは1pxの罫線と余白だけ（枠・角丸・影なし）。PCは12カラムで非対称に組む。 */
 html.pltr-on{
-  --pb:#0C1730;--pb2:#0A1428;--pi:#EDE8DF;--pi2:rgba(237,232,223,.78);--pi3:rgba(237,232,223,.56);
-  --pr:rgba(237,232,223,.14);--pr2:rgba(237,232,223,.26);--pg:#C9A96E;
+  --pb:#0F2A57;--pb2:#0C2350;--pi:#EDE8DF;--pi2:rgba(237,232,223,.86);--pi3:rgba(237,232,223,.70);
+  --pr:rgba(237,232,223,.18);--pr2:rgba(237,232,223,.26);--pg:#2BAAF5;
   --serif:"Shippori Mincho B1","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
   background:var(--pb);color-scheme:dark}
@@ -289,7 +289,7 @@ html.pltr-on body>header nav [aria-current=page]{color:var(--pi)!important;borde
 .pl-ceo{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:56px;flex:1;min-height:0;align-items:stretch}
 .pl-ceo-photo{grid-column:1/6;margin:0;position:relative;min-height:0;overflow:hidden;background:#111}
 .pl-ceo-photo img{width:100%;height:100%;object-fit:cover;object-position:40% 30%;display:block;filter:grayscale(1) contrast(1.05)}
-.pl-ceo-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 40px 30px;background:linear-gradient(transparent,rgba(10,20,40,.88));color:var(--pi2);font-size:15px}
+.pl-ceo-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 40px 30px;background:linear-gradient(transparent,rgba(9,28,64,.88));color:var(--pi2);font-size:15px}
 .pl-ceo-photo figcaption b{display:block;font-family:var(--serif);font-size:26px;font-weight:600;color:var(--pi)}
 .pl-ceo-q{grid-column:6/13;align-self:center;padding-right:2%}
 #pltr .pl-ceo-q h2{font-family:var(--sans);font-size:16px;font-weight:500;color:var(--pg);padding-bottom:12px;border-bottom:1px solid var(--pr2);margin-bottom:28px}
@@ -309,8 +309,8 @@ html.pltr-on body>header nav [aria-current=page]{color:var(--pi)!important;borde
 .pl-shot img{width:100%;height:100%;display:block;object-fit:contain}
 .pl-box{position:absolute;border:2px solid var(--pg);background:transparent;border-radius:0;padding:0}
 .pl-box span{position:absolute;left:-2px;top:-2px;transform:translateY(-100%);min-width:24px;height:24px;background:var(--pg);color:var(--pb);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center}
-.pl-box:not(.is-on){border-color:rgba(201,169,110,.55)}
-.pl-box.is-on{border-width:3px;background:rgba(201,169,110,.10)}
+.pl-box:not(.is-on){border-color:rgba(43,170,245,.55)}
+.pl-box.is-on{border-width:3px;background:rgba(43,170,245,.10)}
 .pl-boxnotes{grid-column:9/13;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid var(--pr2)}
 .pl-boxnotes li{border-bottom:1px solid var(--pr)}
 .pl-boxnotes button{display:flex;gap:14px;align-items:baseline;width:100%;border:0;background:transparent;padding:10px 0;text-align:left}
@@ -371,7 +371,7 @@ html.pltr-on body>header nav [aria-current=page]{color:var(--pi)!important;borde
 html.pltr-on .site-footer{background:var(--pb);border-top:1px solid var(--pr);color:var(--pi3);padding:28px 6% 48px}
 html.pltr-on .site-footer b{color:var(--pi2)}
 html.pltr-on #media-dialog{background:var(--pb);color:var(--pi2);border:1px solid var(--pr2);border-radius:0;box-shadow:none}
-html.pltr-on #media-dialog::backdrop{background:rgba(5,10,22,.86)}
+html.pltr-on #media-dialog::backdrop{background:rgba(7,22,50,.86)}
 html.pltr-on #media-dialog .close{background:transparent;border:0;border-bottom:1px solid var(--pg);border-radius:0;color:var(--pi);padding:4px 0}
 html.pltr-on #media-dialog iframe{border-radius:0}
 .site-links{font-size:12px;color:var(--muted)}

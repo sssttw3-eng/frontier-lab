@@ -7,7 +7,7 @@
   const st={hist:-1,eco:0,quote:0,box:0,term:0,vid:0,x:0,kq:0};
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const YEN=154;
-  const COL={usc:'#C9A96E',usg:'#D9D3C7',ig:'#7189A6',ic:'#3F5674'};
+  const COL={usc:'#2BAAF5',usg:'#E3EAF3',ig:'#7FA3CC',ic:'#4A6C9A'};
   const desk=()=>matchMedia('(min-width:1024px)').matches;
   /* 百万ドル → 「23.1億ドル」と「約3,563億円」 */
   function usd(m){const oku=m/100;return (oku>=10?oku.toLocaleString('ja-JP',{maximumFractionDigits:1}):oku.toLocaleString('ja-JP',{maximumFractionDigits:2}))+'億ドル'}
