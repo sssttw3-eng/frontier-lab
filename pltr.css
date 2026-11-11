@@ -424,3 +424,185 @@ html.pltr-on body{background:#fff}
 .pl-next{grid-template-columns:1fr 1fr;align-items:center}
 .pl-next-note{font-size:20px;line-height:1.85;color:#2c4659;margin:0}
 @media (max-width:1023px){.pl-next{grid-template-columns:1fr}.pl-next-note{font-size:16px}}
+
+/* ===== 2026-11-11 夜：図解の作り直し ===== */
+/* 誰に売り、どう稼ぐか */
+.pl-md{flex:1;min-height:0;max-height:64vh;display:grid;grid-template-columns:1.15fr 56px 1fr 56px .95fr;grid-template-rows:auto auto 1fr 1fr auto;gap:10px 0;align-content:center}
+.pl-md-cap{font-size:15px;font-weight:700;color:#6b7f8e;grid-row:1}
+.pl-md-cap.c1{grid-column:1}.pl-md-cap.c3{grid-column:3}.pl-md-cap.c5{grid-column:5}
+.pl-md-prod{border-radius:12px;padding:14px 20px;display:flex;flex-direction:column;justify-content:center;gap:2px;grid-column:3}
+.pl-md-prod b{font-size:26px;line-height:1.2}
+.pl-md-prod span{font-size:16px;line-height:1.5}
+.pl-md-prod.is-aip{grid-row:2;background:#0078bb;color:#e3f2fb}.pl-md-prod.is-aip b{color:#fff}
+.pl-md-prod.is-gov{grid-row:3;background:#14324a;color:#c9dbe7}.pl-md-prod.is-gov b{color:#fff}
+.pl-md-prod.is-com{grid-row:4;background:#dcecf6;color:#2c4659}.pl-md-prod.is-com b{color:#0b4f7d}
+.pl-md-prod.is-apollo{grid-row:5;background:#fff;border:1px dashed #9db6c6;color:#4c6476;padding:10px 20px}.pl-md-prod.is-apollo b{font-size:20px;color:#14324a}
+.pl-md-prod.is-gov,.pl-md-prod.is-com{margin:0}
+.pl-md-who{grid-column:1;background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 20px;display:flex;flex-direction:column;gap:2px;justify-content:center}
+.pl-md-who.is-gov{grid-row:3}.pl-md-who.is-com{grid-row:4}
+.pl-md-share{display:flex;align-items:baseline;gap:14px}
+.pl-md-share b{font-size:28px;color:var(--ink)}
+.pl-md-share em{font-style:normal;font-size:40px;font-weight:800;line-height:1.1}
+.pl-md-who.is-gov em{color:#14324a}.pl-md-who.is-com em{color:#0078bb}
+.pl-md-who small{font-size:15px;font-weight:700;color:#6b7f8e}
+.pl-md-who p{margin:2px 0 0;font-size:15px;line-height:1.55;color:#2c4659}
+.pl-md-ar,.pl-md-ar2{grid-column:2;position:relative;align-self:center;height:2px;background:#9db6c6;margin:0 12px 0 8px}
+.pl-md-ar:after,.pl-md-ar2:after{content:"";position:absolute;right:-2px;top:-6px;border:7px solid transparent;border-left:10px solid #9db6c6;border-right:0}
+.pl-md-ar.r2{grid-row:3}.pl-md-ar.r3{grid-row:4}
+.pl-md-ar2{grid-column:4;grid-row:2/6}
+.pl-md-money{grid-column:5;grid-row:2/6;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.pl-md-money>div:not(.pl-md-big){background:#fff;border:1px solid var(--rule);border-radius:12px;padding:12px 18px;display:flex;flex-direction:column}
+.pl-md-money b{font-size:22px;color:var(--ink)}
+.pl-md-money span{font-size:16px;line-height:1.5}
+.pl-md-big{background:#eef6fb;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:2px}
+.pl-md-big small{font-size:15px;font-weight:700;line-height:1.5}
+.pl-md-big b{font-size:44px!important;line-height:1.15;color:#0078bb!important}
+.pl-md-big .pl-yen{font-size:16px}
+.pl-md-big em{font-style:normal;font-size:17px;font-weight:700;color:var(--ink)}
+
+/* 売上の内訳（面積で見せる） */
+.pl-mo{flex:1;min-height:0;display:flex;gap:14px;max-height:62vh}
+.pl-mo-c{display:flex;flex-direction:column;gap:8px;min-width:0}
+.pl-mo-c h3{font-size:24px;display:flex;align-items:baseline;gap:12px}
+.pl-mo-c h3 em{font-style:normal;font-size:34px;font-weight:800}
+.pl-mo-c:first-child h3 em{color:#14324a}.pl-mo-c:last-child h3 em{color:#0078bb}
+.pl-mo-tiles{flex:1;display:flex;flex-direction:column;gap:6px;min-height:0}
+.pl-mo-t{border-radius:12px;padding:16px 22px;display:flex;flex-direction:column;justify-content:center;min-height:64px;overflow:hidden}
+.pl-mo-t small{font-size:17px;font-weight:700}
+.pl-mo-t b{font-size:48px;line-height:1.15}
+.pl-mo-t span{font-size:17px}
+.pl-mo-t.is-usg{background:#14324a;color:#c9dbe7}.pl-mo-t.is-usg b{color:#fff}
+.pl-mo-t.is-usc{background:#0078bb;color:#e3f2fb}.pl-mo-t.is-usc b{color:#fff}
+.pl-mo-t.is-ig{background:#d5dee5;color:#2c4659;flex-direction:row;align-items:baseline;gap:16px;justify-content:flex-start}
+.pl-mo-t.is-ic{background:#cfe6f4;color:#2c4659;flex-direction:row;align-items:baseline;gap:16px;justify-content:flex-start}
+.pl-mo-t.is-ig b,.pl-mo-t.is-ic b{font-size:28px;color:var(--ink)}
+
+/* 四半期の折れ線 */
+.pl-lc{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.pl-lc svg{width:100%;height:100%;max-height:100%}
+.pl-lc .g{stroke:#e3ecf2;stroke-width:1}
+.pl-lc .ax{font-size:17px;fill:#6b7f8e}
+.pl-lc .v{font-size:24px;font-weight:800}
+.pl-lc .vl{font-size:30px}
+.pl-lc .vn{font-size:16px;font-weight:700}
+
+/* 年表：線に点 */
+.pl-tl2{display:grid;grid-template-columns:repeat(7,1fr);position:relative;padding:0 2%}
+.pl-tl2:before{content:"";position:absolute;left:2%;right:2%;top:47px;height:3px;background:#c3d4df;border-radius:2px}
+.pl-tl2 button{border:0;background:transparent;padding:0 6px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;position:relative}
+.pl-tl2 b{font-size:24px;color:var(--sub);line-height:1.2;height:30px}
+.pl-tl2 i{width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid #9db6c6;box-sizing:border-box;margin-top:1px}
+.pl-tl2 span{font-size:14px;line-height:1.45;color:var(--sub)}
+.pl-tl2 button:hover i{border-color:#0078bb}
+.pl-tl2 [aria-selected=true] b{color:#0078bb;font-size:28px}
+.pl-tl2 [aria-selected=true] i{background:#0078bb;border-color:#0078bb;transform:scale(1.35)}
+.pl-tl2 [aria-selected=true] span{color:var(--ink);font-weight:700}
+
+/* 注目ニュース */
+.pl-nw{display:flex;flex-direction:column;gap:8px}
+.pl-nw article{display:grid;grid-template-columns:110px 1fr 300px;gap:24px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:12px;padding:14px 24px}
+.pl-nw-d b{display:block;font-size:30px;color:var(--ink);line-height:1.1}
+.pl-nw-d small{font-size:14px;color:#6b7f8e;font-weight:700}
+.pl-nw-t h3{font-size:21px;line-height:1.45}
+.pl-nw-t p{font-size:16px;line-height:1.65;margin:4px 0 0}
+.pl-nw-f{text-align:right}
+.pl-nw-f b{display:block;font-size:36px;color:#0078bb;line-height:1.15}
+.pl-nw-f small{font-size:14px;color:#6b7f8e}
+.pl-nw article.is-top{background:#14324a;border-color:#14324a}
+#pltr .pl-nw .is-top h3,.pl-nw .is-top .pl-nw-d b{color:#fff}
+.pl-nw .is-top p,.pl-nw .is-top small{color:#b9d0df}
+.pl-nw .is-top .pl-nw-f b{color:#7cc4ee}
+
+/* ロゴ */
+.pl-lg{width:48px;height:48px;flex-shrink:0;border-radius:10px;border:1px solid #e3edf3;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.pl-lg img{max-width:82%;max-height:70%;object-fit:contain}
+.pl-lg.is-text{background:#14324a;color:#fff;font-weight:800;font-size:11px;line-height:1.1;text-align:center;padding:2px}
+
+/* 日本企業との取引 */
+.pl-jd{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center}
+.pl-jd-hub{display:flex;align-items:center;gap:12px;background:#14324a;color:#fff;border-radius:14px;padding:10px 22px 10px 12px;position:relative}
+.pl-jd-hub b{font-size:24px}
+.pl-jd-hub .pl-lg{width:44px;height:44px}
+.pl-jd-hub:after{content:"";position:absolute;left:50%;top:100%;width:3px;height:22px;background:#9db6c6;transform:translateX(-50%)}
+.pl-jd-cols{width:100%;display:grid;grid-template-columns:1.25fr 1.25fr .8fr;gap:18px;margin-top:22px;position:relative;padding-top:22px;flex:1;min-height:0}
+.pl-jd-cols:before{content:"";position:absolute;top:0;left:calc(100%*1.25/3.3/2);right:calc(100%*.8/3.3/2);height:3px;background:#9db6c6}
+.pl-jd-col{display:flex;flex-direction:column;align-items:stretch;position:relative;min-height:0}
+.pl-jd-col:before{content:"";position:absolute;left:50%;top:-22px;width:3px;height:22px;background:#9db6c6;transform:translateX(-50%)}
+.pl-jd-rel{align-self:center;background:#0078bb;color:#fff;font-weight:800;font-size:16px;border-radius:20px;padding:4px 16px;margin-bottom:10px}
+.pl-jd-col article{flex:1;background:#fff;border:1px solid var(--rule);border-radius:14px;padding:18px 22px;display:flex;flex-direction:column;gap:12px}
+.pl-jd-head{display:flex;align-items:center;gap:14px}
+.pl-jd-head .pl-lg{width:56px;height:56px}
+.pl-jd-head h3{font-size:22px}
+.pl-jd-head small{font-size:14px;font-weight:700;color:#6b7f8e}
+.pl-jd dl{margin:0;display:flex;flex-direction:column;gap:8px}
+.pl-jd dl div{display:flex;flex-direction:column}
+.pl-jd dt{font-size:26px;font-weight:800;color:#0078bb;line-height:1.2}
+.pl-jd dd{margin:0;font-size:15px;line-height:1.45}
+.pl-jd-col p{margin:0;font-size:16px;line-height:1.7;color:#2c4659}
+
+/* 規模と伸びの比較（日本3社・競合） */
+.pl-cmp{display:flex;flex-direction:column;gap:6px}
+.pl-cmp-h,.pl-cmp-r{display:grid;grid-template-columns:minmax(260px,1fr) 1.25fr 1.25fr;gap:24px;align-items:center}
+.pl-cmp-h span{font-size:15px;font-weight:700;color:#6b7f8e}
+.pl-cmp-r{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:10px 20px}
+.pl-cmp-r.is-self{background:#eef6fb;border-color:#b9d8ec}
+.pl-cmp-n{display:flex;align-items:center;gap:14px;min-width:0}
+.pl-cmp-n b{font-size:21px;color:var(--ink);display:block}
+.pl-cmp-n b em{font-style:normal;font-size:13px;color:#6b7f8e;margin-left:8px}
+.pl-cmp-n small{font-size:14px;line-height:1.4;display:block}
+.pl-cmp-b{display:flex;flex-direction:column;gap:4px;min-width:0}
+.pl-cmp-b i{display:block;height:14px;border-radius:7px;background:#14324a;min-width:4px}
+.pl-cmp-b.is-g i{background:#0078bb}
+.pl-cmp-b.is-neg i{background:#c4622d}
+.pl-cmp-b span{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.pl-cmp-b span b{font-size:22px;color:var(--ink);white-space:nowrap}
+.pl-cmp-b.is-g span b{color:#0078bb}.pl-cmp-b.is-neg span b{color:#b8452b}
+.pl-cmp-b span small{font-size:13px;color:#6b7f8e;line-height:1.4}
+.pl-cmp-r.is-self .pl-cmp-b i{box-shadow:0 0 0 2px #fff}
+
+/* どの層で重なるか */
+.pl-ly{flex:1;min-height:0;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.pl-ly-r{display:grid;grid-template-columns:220px minmax(0,1.1fr) minmax(0,1.3fr);gap:24px;align-items:center;background:#fff;border:1px solid var(--rule);border-radius:14px;padding:20px 26px}
+.pl-ly-r h3{font-size:24px}
+.pl-ly-r p{margin:0;font-size:18px;line-height:1.75;color:#2c4659}
+.pl-ly-who{display:flex;gap:12px;flex-wrap:wrap}
+.pl-ly-co{display:flex;align-items:center;gap:10px;background:#f3f8fb;border-radius:12px;padding:8px 14px 8px 8px}
+.pl-ly-co b{font-size:18px;color:var(--ink)}
+.pl-ly-r.is-self{background:#14324a;border-color:#14324a;padding:28px 26px}
+#pltr .pl-ly-r.is-self h3{color:#fff}
+.pl-ly-r.is-self p{color:#c9dbe7}
+.pl-ly-r.is-self .pl-ly-co{background:#24496a}
+.pl-ly-r.is-self .pl-ly-co b{color:#fff}
+.pl-ly-co.is-p{background:#0078bb!important;padding:10px 18px 10px 10px}
+.pl-ly-co.is-p b{font-size:22px}
+
+@media (max-width:1023px){
+  .pl-md{grid-template-columns:1fr;grid-template-rows:none;gap:8px}
+  .pl-md>*{grid-column:1!important;grid-row:auto!important}
+  .pl-md-cap,.pl-md-ar,.pl-md-ar2{display:none}
+  .pl-md-share em{font-size:30px}.pl-md-big b{font-size:32px!important}
+  .pl-mo{flex-direction:column;max-height:none}.pl-mo-tiles{min-height:300px}.pl-mo-t b{font-size:30px}
+  .pl-lc svg{height:auto}
+  .pl-tl2{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:120px;overflow-x:auto;padding-bottom:6px}
+  .pl-tl2:before{left:0;right:auto;width:840px}
+  .pl-tl2 span{font-size:12px}
+  .pl-nw article{grid-template-columns:70px 1fr;gap:12px;padding:12px 14px}
+  .pl-nw-f{grid-column:2;text-align:left}.pl-nw-f b{font-size:24px;display:inline;margin-right:8px}.pl-nw-d b{font-size:20px}.pl-nw-t h3{font-size:17px}.pl-nw-t p{font-size:14px}
+  .pl-jd-cols{grid-template-columns:1fr;padding-top:0;margin-top:16px}.pl-jd-cols:before,.pl-jd-col:before,.pl-jd-hub:after{display:none}
+  .pl-cmp-h{display:none}.pl-cmp-r{grid-template-columns:1fr;gap:8px}
+  .pl-ly-r{grid-template-columns:1fr;gap:10px;padding:16px}.pl-ly-r p{font-size:15px}
+}
+
+.pl-lg.is-wide{width:96px}.pl-lg.is-wide img{max-width:88%}
+.pl-ly-co.is-p .pl-lg{background:#0078bb!important;border-color:#4aa3d6}
+/* 日本企業：1画面に収める */
+.pl-jd-cols{gap:14px;margin-top:18px;padding-top:18px}
+.pl-jd-col:before{top:-18px;height:18px}.pl-jd-hub:after{height:18px}
+.pl-jd-rel{font-size:14px;padding:3px 14px;margin-bottom:8px}
+.pl-jd-col article{padding:14px 18px;gap:8px}
+.pl-jd-head .pl-lg{width:46px;height:46px}.pl-jd-head h3{font-size:20px}
+.pl-jd dl{gap:5px}.pl-jd dt{font-size:22px}.pl-jd dd{font-size:14px}
+.pl-jd-col p{font-size:15px;line-height:1.6}
+#s-japan .pl-foot{font-size:13px}
+#s-rivals .pl-cmp{gap:5px}#s-rivals .pl-cmp-r{padding:7px 20px}#s-rivals .pl-foot{font-size:13px}
+@media (max-width:1023px){.pl-md{max-height:none;flex:none}}
