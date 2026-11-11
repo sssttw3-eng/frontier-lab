@@ -1,0 +1,97 @@
+{
+ "updated": "2026-11-11",
+ "threshold": 1.2,
+ "note": "各チャンネルの直近動画の再生数の中央値を1倍として、何倍見られているかを示す。",
+ "items": [
+  {
+   "id": "Abj4v9nfHnU",
+   "title": "【2026/10/15】PLTRに突破口？｜SOFI急落・CRWV暴落・DELL格下げ",
+   "channel": "ニュースアーカイブ",
+   "views": 6602,
+   "ratio": 2.74,
+   "median": 2409,
+   "date": "2026-10-15",
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "gmryYmrdyH8",
+   "title": "BBAI-PLTR STOCKS] WHAT JUST HAPPENED?!⚠️",
+   "channel": "Dillon With Money",
+   "views": 3399,
+   "ratio": 1.64,
+   "median": 2077,
+   "date": "2026-10-16",
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "iBwQn0nCw9s",
+   "title": "MICRON STOCK (MU), NVIDIA STOCK (NVDA), INTC, AMD STOCK, PALANTIR STOCK (PLTR): BUY HEAVY NOW?!",
+   "channel": "will knowledge trades",
+   "views": 3557,
+   "ratio": 1.57,
+   "median": 2270,
+   "date": "2026-10-16",
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "1tdM96e21bo",
+   "title": "Missed Nvidia Or Palantir? THIS LOOKS BIGGER!",
+   "channel": "ZipTrader",
+   "views": 118366,
+   "ratio": 1.06,
+   "median": null,
+   "date": "2026-11-09",
+   "checked": "2026-11-11"
+  },
+  {
+   "id": "6mlZZZ528P0",
+   "title": "PALANTIR STOCK] THIS IS CHEAP AS YOI MIGHT GET",
+   "channel": "Dillon With Money",
+   "views": 2032,
+   "ratio": 0.98,
+   "median": 2077,
+   "date": "2026-10-15",
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "K6xI1iJD33M",
+   "title": "Billionaires Say: If You Missed Palantir & Nvidia, Buy THESE 3 AI Stocks Now - I'm Going All-In",
+   "channel": "Millionaires Investment Secrets",
+   "views": 2047,
+   "ratio": 0.85,
+   "median": null,
+   "date": "2026-09-01",
+   "checked": "2026-09-03"
+  },
+  {
+   "id": "kTAcUGjGK6M",
+   "title": "PLTRパランティア「祝・最高値更新」流れ変わった。SPCX,TSLAテスラ合併するの？【宇宙AI革命】で世界を変える！株価は長期で急騰上昇する保有し続けろ【全力】株価テンバガー１００倍狙え",
+   "channel": "マシャ。パランティア全力チャンネルの米国株エンターテイメント",
+   "views": 8941,
+   "ratio": 0.76,
+   "median": 11834,
+   "date": "2026-10-15",
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "a8SOn_rj5wE",
+   "title": "NVIDIA STOCK (NVDA), AMD STOCK, BROADCOM STOCK (AVGO), PALANTIR (PLTR), and MSFT STOCK! BUY HEAVY?",
+   "channel": "will knowledge trades",
+   "views": 1687,
+   "ratio": 0.75,
+   "median": 2257,
+   "date": "2026-10-15",
+   "checked": "2026-10-17"
+  },
+  {
+   "id": "FgkFU0FrcV0",
+   "title": "Palantir CEO Investing in NEW Military Tech [Buy THIS Stock?]",
+   "channel": "Meet Kevin",
+   "views": 39448,
+   "ratio": 0.72,
+   "median": null,
+   "date": "2026-09-02",
+   "checked": "2026-09-03"
+  }
+ ]
+}
