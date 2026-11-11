@@ -41,8 +41,34 @@ def radar():
     out={'updated':datetime.date.today().isoformat(),'threshold':1.2,
          'note':'各チャンネルの直近動画の再生数の中央値を1倍として、何倍見られているかを示す。',
          'items':rows[:12]}
+    out['week']=week()
     json.dump(out,open(os.path.join(ROOT,'pltr-radar.json'),'w'),ensure_ascii=False,indent=1)
-    print('radar',len(rows))
+    print('radar',len(rows),'week',out['week'])
+def jd(s):
+    y,m,d=map(int,s.split('-'));return f'{m}月{d}日'
+def week():
+    """今週の変化3行：外れ値リサーチの最新ファイル（competitor_radar_latest.json）だけから作る"""
+    p=os.path.join(BIZ,'competitor_radar_latest.json')
+    if not os.path.exists(p): return None
+    d=json.load(open(p));asof=d.get('date');days=int(d.get('days') or 3)
+    start=(datetime.date.fromisoformat(asof)-datetime.timedelta(days=days)).isoformat()
+    chans=d.get('per_channel',[]);vids={}
+    for c in chans:
+        for v in c.get('recent',[]):
+            if str(v.get('published',''))[:10]>=start and PAT.search(v.get('title','')): vids[v['id']]=v
+    vs=sorted(vids.values(),key=lambda v:-(v.get('ratio') or 0))
+    tags=[t for t in d.get('topic_ranking',[]) if not t['tag'].startswith('(')][:2]
+    period=f"{jd(start)}〜{jd(asof)}"
+    l1=f"{period}に新しく出た動画のうち、Palantirを題名に入れた動画は{len(vs)}本でした（調べたのは{len(chans)}チャンネル）。"
+    if vs:
+        v=vs[0];r=v.get('ratio') or 0
+        lvl='ほぼ同じ水準' if r<1.2 else ('上回る水準' if r<2 else '2倍を超える水準')
+        head='その1本は' if len(vs)==1 else 'いちばん見られたのは'
+        l2=f"{head}{v.get('channel','')}の動画で、再生は{int(v.get('views') or 0):,}回。同チャンネルの普段の再生数の{r:.2f}倍で、{lvl}でした。"
+    else:
+        l2='Palantirを題名に入れた動画はありませんでした。'
+    l3='同じ期間は'+'、'.join(f"{t['tag'].replace('/','・')}を{t['distinct_channels']}チャンネル" for t in tags)+'が取り上げました。'
+    return {'asof':asof,'period':period,'lines':[l1,l2,l3],'count':len(vs)}
 EMOJI=re.compile('[\U0001F300-\U0001FAFF☀-➿️‍]')
 def xposts():
     seen={}
