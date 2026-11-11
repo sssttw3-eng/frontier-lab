@@ -37,7 +37,7 @@
     el.className='angles-band';
     el.innerHTML=`<div class="angles-head"><h2 id="angles-title">柏原の見立て</h2><div class="angles-meta"><small>${esc(m.asOf)}</small></div></div>
 <p class="angles-view"><span>${esc(d.view)}</span></p>
-<div class="angles-story"><p>${d.story.map(esc).join('')}</p></div>
+<div class="angles-story">${d.story.map(x=>`<p>${esc(x)}</p>`).join('')}</div>
 <div class="angles-cards">${d.cards.map(card).join('')}</div>
 <p class="angles-note">${esc(m.note)}</p>`;
   }

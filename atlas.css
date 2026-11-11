@@ -34,9 +34,9 @@ body.comparing .angles-band{display:none}
 .angles-head h2{font-size:20px;line-height:1.5;color:var(--dark);margin:0}
 .angles-meta{display:flex;align-items:center;gap:8px}.angles-meta small{font-size:12px;color:var(--muted)}
 .angles-tag{display:inline-block;font-size:12px;font-weight:700;color:#8a5a12;background:#fff4e3;border:1px solid #f3dcb4;border-radius:100px;padding:2px 10px;margin-right:6px}
-.angles-view{display:block;font-weight:600;align-items:baseline;margin:14px 0 0;padding:10px 14px;background:var(--pale);border-radius:12px;color:var(--dark);font-size:15px;line-height:1.65}
+.angles-view{display:block;font-weight:700;margin:16px 0 0;padding:14px 18px;background:var(--pale);border-left:4px solid var(--blue);border-radius:4px 12px 12px 4px;color:var(--dark);font-size:18px;line-height:1.7}
 .angles-view b,.angles-story b{flex:none;font-size:12px;color:var(--blue);letter-spacing:.04em}
-.angles-story{margin-top:14px}.angles-story p{margin:4px 0 0;font-size:14px;line-height:1.75}
+.angles-story{margin-top:16px}.angles-story p{margin:0 0 12px;font-size:14px;line-height:1.75}
 .angles-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
 .angles-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fbfdff}
 .angles-card h3{font-size:15px;line-height:1.5;color:var(--dark);margin:0 0 8px}.angles-card h3 span{display:block;font-size:12px;color:var(--blue);letter-spacing:.08em}
