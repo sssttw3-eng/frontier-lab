@@ -71,26 +71,26 @@
       "timeline": [
         {
           "year": 2003,
-          "title": "政府の課題から創業",
-          "text": "米国の情報機関の対テロ調査・業務を支えるソフトウェア開発から出発。",
+          "title": "9.11後の国防の仕事から創業",
+          "text": "米国の情報機関の対テロ調査と業務を支えるソフトウェアの開発から始まりました。",
           "source": "https://www.palantir.com/about"
         },
         {
           "year": 2020,
-          "title": "株式市場へ",
-          "text": "9月30日からNYSEで株式取引。公開企業として事業を拡大。",
+          "title": "NYSEに上場",
+          "text": "9月30日にNYSEで株式の取引が始まりました。",
           "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf"
         },
         {
           "year": 2023,
-          "title": "AIPの提供開始",
-          "text": "既存のデータ・業務基盤とLLMを組み合わせ、生成AIの業務利用へ展開。",
+          "title": "AIPの提供を開始",
+          "text": "既存のデータと業務の基盤に大規模言語モデルを組み合わせ、生成AIを業務で使う製品を出しました。",
           "source": "https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm"
         },
         {
           "year": 2024,
-          "title": "Nasdaqへ市場変更",
-          "text": "11月26日からNasdaqで取引。事業成長と株式市場の出来事は分けて読む。",
+          "title": "Nasdaqへ市場を変更",
+          "text": "11月26日から取引の場をNasdaqに移しました。",
           "source": "https://investors.palantir.com/files/2024%20FY%20PLTR%2010-K.pdf"
         }
       ],
@@ -166,26 +166,26 @@
       "timeline": [
         {
           "year": 2011,
-          "title": "学生向け融資から創業",
-          "text": "同窓生による資金提供と卒業生をつなぐ融資モデルから出発。",
+          "title": "学生ローンから創業",
+          "text": "卒業生の資金を在校生の学費ローンにつなぐ仕組みから始まりました。",
           "source": "https://www.sofi.com/our-story/"
         },
         {
           "year": 2020,
           "title": "Galileoを買収",
-          "text": "5月14日に全株式を取得。決済・金融APIという企業向けの技術基盤へ領域を広げる。",
+          "text": "5月14日に全株式を取得し、決済と金融APIを他社に提供する技術基盤の事業を持ちました。",
           "source": "https://s27.q4cdn.com/749715820/files/doc_financials/2021/q4/2533ab52-232a-47de-869b-8d771622cdee.pdf"
         },
         {
           "year": 2022,
-          "title": "銀行としての運営開始",
-          "text": "2月の銀行合併により銀行持株会社となり、SoFi Bankとしての運営を開始。",
+          "title": "銀行として営業を開始",
+          "text": "2月の銀行の合併で銀行持株会社になり、SoFi Bankとして営業を始めました。",
           "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887424000026/sofi-20231231.htm"
         },
         {
           "year": 2022,
           "title": "Technisysを買収",
-          "text": "3月3日に買収完了。クラウド型コアバンキングとGalileoの技術を組み合わせる戦略。",
+          "text": "3月3日に買収を終え、クラウド型の勘定系システムをGalileoの技術と組み合わせました。",
           "source": "https://investors.sofi.com/news/news-details/2022/SoFi-Completes-Acquisition-of-Technisys/default.aspx"
         }
       ],
@@ -270,25 +270,25 @@
         {
           "year": 1993,
           "title": "3Dグラフィックスから創業",
-          "text": "ゲームとマルチメディア市場に3Dグラフィックスを提供する構想で設立。",
+          "text": "ゲームとマルチメディアの市場に3Dグラフィックスを届ける構想で設立されました。",
           "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
         },
         {
           "year": 1999,
-          "title": "GPUの時代へ",
-          "text": "グラフィックス処理を担うGPUを投入し、並列計算の基盤を形成。",
+          "title": "GPUを投入",
+          "text": "グラフィックスの処理を担うGPUを出し、並列計算の土台ができました。",
           "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
         },
         {
           "year": 2006,
           "title": "CUDAを発表",
-          "text": "GPUの並列処理能力を科学・研究へ広げる開発基盤を発表。",
+          "text": "GPUの並列処理を科学と研究の計算に広げる開発基盤を発表しました。",
           "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
         },
         {
           "year": 2012,
           "title": "深層学習の転機",
-          "text": "AlexNetのニューラルネットワークの計算を支え、AI分野での利用が拡大。",
+          "text": "AlexNetのニューラルネットワークの計算をGPUが支え、AIでの利用が広がりました。",
           "source": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
         }
       ],
@@ -358,26 +358,26 @@
       "timeline": [
         {
           "year": 2015,
-          "title": "研究から企業へ",
-          "text": "Chris MonroeとJungsang Kimが設立。イオントラップ技術の研究成果を事業化へつなぐ。",
+          "title": "研究から会社へ",
+          "text": "Chris MonroeとJungsang Kimが設立し、イオントラップの研究成果を事業にしました。",
           "source": "https://ionq.com/company"
         },
         {
           "year": 2021,
           "title": "NYSEに上場",
-          "text": "10月1日からIONQとして取引。SPACとの企業結合を通じて成長資金を調達。",
+          "text": "10月1日にIONQとして取引が始まりました。SPACとの合併で成長の資金を得ています。",
           "source": "https://www.ionq.com/news/october-01-2021-ionq-listed-on-nyse"
         },
         {
           "year": 2023,
           "title": "Forteの商用提供を拡大",
-          "text": "6月22日、限定提供から世界の顧客向けへ商用アクセスを拡大。",
+          "text": "6月22日に限定提供から世界の顧客向けの商用アクセスへ広げました。",
           "source": "https://www.ionq.com/news/ionq-forte-launched-for-commercial-use-making-aq-29-available-for-customers"
         },
         {
           "year": 2025,
-          "title": "ハイブリッド計算の共同研究",
-          "text": "AstraZeneca・AWS・NVIDIAと量子を用いた計算化学ワークフローを共同実証。",
+          "title": "量子を使う計算化学を共同実証",
+          "text": "AstraZeneca・AWS・NVIDIAと、量子を組み込んだ計算化学の手順を共同で実証しました。",
           "source": "https://www.ionq.com/news/ionq-speeds-quantum-accelerated-drug-development-application-with"
         }
       ],
@@ -454,26 +454,26 @@
       "timeline": [
         {
           "year": 1969,
-          "title": "半導体企業として創業",
-          "text": "シリコンバレーで設立。計算を支える半導体の開発へ。",
+          "title": "シリコンバレーで創業",
+          "text": "計算を支える半導体の会社として設立されました。",
           "source": "https://www.amd.com/en/corporate.html"
         },
         {
           "year": 2017,
           "title": "Zen世代のRyzenを発売",
-          "text": "新しいCPU設計Zenを採用したRyzenデスクトップ製品を3月2日に発売。",
+          "text": "新しいCPU設計Zenを使ったRyzenのデスクトップ製品を3月2日に発売しました。",
           "source": "https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today"
         },
         {
           "year": 2022,
-          "title": "Xilinxの買収完了",
-          "text": "2月14日に買収完了。FPGAなど、用途に合わせた計算の製品群を拡大。",
+          "title": "Xilinxの買収を完了",
+          "text": "2月14日に買収を終え、FPGAなど用途に合わせて設計できる半導体を製品に加えました。",
           "source": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm"
         },
         {
           "year": 2023,
           "title": "MI300とROCm 6を発表",
-          "text": "AI向けGPUとソフトの提供を進め、クラウドやサーバー企業の採用・計画を発表。",
+          "text": "AI向けGPUと開発ソフトを発表し、クラウドとサーバーの会社の採用計画も示しました。",
           "source": "https://ir.amd.com/news-events/press-releases/detail/1171/amd-showcases-growing-momentum-for-amd-powered-ai-solutions-from-the-data-center-to-pcs"
         }
       ],
@@ -551,26 +551,26 @@
       "timeline": [
         {
           "year": 2012,
-          "title": "Model Sの納車開始",
-          "text": "6月22日、Model Sを最初の顧客へ納車。",
+          "title": "Model Sの納車を開始",
+          "text": "6月22日にModel Sを最初の顧客へ納車しました。",
           "source": "https://ir.tesla.com/press-release/tesla-motors-delivers-worlds-first-premium-electric-sedan"
         },
         {
           "year": 2015,
-          "title": "家庭用蓄電池へ",
-          "text": "5月に最初のPowerwallを設置。家庭で電気をためて使う製品を展開。",
+          "title": "家庭用蓄電池Powerwall",
+          "text": "5月に最初のPowerwallを設置し、家庭で電気をためて使う製品を始めました。",
           "source": "https://www.tesla.com/powerwall"
         },
         {
           "year": 2019,
           "title": "Megapackを発表",
-          "text": "大型蓄電製品Megapackを導入すると、2019年第3四半期資料で説明。",
+          "text": "大型の蓄電製品Megapackの導入は2019年第3四半期の資料で発表されました。",
           "source": "https://www.sec.gov/Archives/edgar/data/1318605/000156459019037581/tsla-ex991_154.htm"
         },
         {
           "year": 2024,
           "title": "蓄電の導入が拡大",
-          "text": "年間の蓄電導入量31.4GWh、エネルギー事業の売上100億8,600万ドル（約1兆5,532億円）。過去の年間実績。",
+          "text": "この年の蓄電の導入量は31.4ギガワット時、エネルギー事業の売上は100億8,600万ドル（約1兆5,532億円）でした。",
           "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"
         }
       ],
@@ -580,7 +580,7 @@
   },
   "unit": "USD million",
   "checkedAt": "2026-11-09",
-  "comparisonNote": "企業ごとの会計年度と売上指標の定義が異なる。特にNVIDIAは1月末決算、SoFiはGAAP total net revenue。株価や投資魅力のランキングではない。",
-  "animationNote": "2018〜2024の確定年次値（IonQは2019年から）。途中フレームの補間は表示アニメーションであり月次実績ではない。未掲載年度は欠損でありゼロではない。",
+  "comparisonNote": "会計年度と売上の定義は会社ごとに違います。NVIDIAは1月末決算、SoFiはGAAPの純収益（total net revenue）です。株価や投資の魅力の順位を示すものではありません。",
+  "animationNote": "確定した年次の値を使っています（IonQは2019年から）。年と年のあいだの動きは表示上の補間で、月次の実績を示すものではありません。載っていない年度は欠損で、ゼロとは扱っていません。",
   "coverageNote": "各社の最新の年次報告書（10-K）まで。NVIDIAはFY2026（2026年1月期）、他5社は2025年度（2025年12月期）。数字はSECのXBRL（10-Kの通期値）で照合。"
 }
