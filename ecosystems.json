@@ -4,7 +4,7 @@
       {
         "name": "NVIDIA",
         "type": "技術提携",
-        "description": "AIP・OntologyとNVIDIAのGPU／AI技術を組み合わせる提携を発表。資本関係を意味しません。",
+        "description": "AIP・OntologyとNVIDIAのGPU／AI技術を組み合わせる、出資を伴わない技術提携（2025年10月28日発表）。",
         "source": "https://nvidianews.nvidia.com/news/nvidia-palantir-ai-enterprise-data-intelligence/",
         "date": "2025-10-28",
         "logo": "assets/logo-n.svg",
@@ -96,7 +96,7 @@
       {
         "name": "Mastercard",
         "type": "決済ネットワーク提携",
-        "description": "SoFiUSDをMastercardの決済ネットワークで決済手段にするための提携発表。対応の検討・予定を含み、全面稼働済みという意味ではありません。",
+        "description": "SoFiUSDをMastercardの決済ネットワークで決済手段にするための提携を発表。発表時点では対応の検討と予定の段階を含みます。",
         "source": "https://investors.sofi.com/news/news-details/2026/SoFi-and-Mastercard-Partner-to-Enable-SoFiUSD-Settlement-Across-Mastercards-Global-Payments-Network/default.aspx",
         "date": "2026-03-03",
         "logo": "assets/eco-mastercard.svg",
@@ -171,7 +171,7 @@
       {
         "name": "NVIDIA",
         "type": "技術エコシステム",
-        "description": "量子プロセッサーとGPUをつなぐNVQLinkの協業企業にIonQが参加。協業への参加であり、売上契約額を示す発表ではありません。",
+        "description": "量子プロセッサーとGPUをつなぐNVQLinkの協業企業にIonQが参加。量子計算機とGPUの計算を一つの流れで使うための技術協業です。",
         "source": "https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing",
         "date": "2025-10-28",
         "logo": "assets/logo-n.svg",
@@ -198,7 +198,7 @@
       {
         "name": "Airbus",
         "type": "顧客・共同開発",
-        "description": "Forteを使い、航空機の積載最適化アルゴリズムを共同開発すると発表。研究対象と実運用の普及は区別して読みます。",
+        "description": "Forteを使い、航空機の積載を最適化するアルゴリズムを共同開発すると発表。発表時点では研究段階の共同開発です。",
         "source": "https://www.ionq.com/news/ionq-forte-launched-for-commercial-use-making-aq-29-available-for-customers",
         "date": "2023-06-22",
         "logo": "assets/eco-airbus.svg",
@@ -267,7 +267,7 @@
       {
         "name": "General Motors",
         "type": "充電規格・充電網の連携",
-        "description": "NACS採用とSuperchargerへのアクセス拡大を発表。全地域・全車種で同条件という意味ではありません。",
+        "description": "NACS採用とSuperchargerへのアクセス拡大を発表。使える条件は地域と車種ごとに決まっています。",
         "date": "2023-06-08",
         "source": "https://investor.gm.com/news-releases/news-release-details/general-motors-doubles-down-commitment-unified-charging-standard"
       },
@@ -281,7 +281,7 @@
       {
         "name": "Intersect Power",
         "type": "大型蓄電設備の顧客",
-        "description": "2030年までの太陽光・蓄電事業向けに15.3GWhのMegapack契約を発表。契約容量と当期売上は別です。",
+        "description": "2030年までの太陽光・蓄電事業向けに15.3GWhのMegapack契約を発表。契約容量は数年にわたる納入の合計です。",
         "date": "2024-07-18",
         "source": "https://www.intersect.com/news/tesla-provides-intersect-with-15-3-gwh-of-megapacks-for-solar-storage-projects"
       }
