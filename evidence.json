@@ -2,8 +2,8 @@
   "p": [
     {
       "image": "assets/evidence-p-products.png",
-      "title": "4つの製品を、原典で確認",
-      "caption": "Gotham・Foundry・Apollo・AIPが並ぶ箇所。単独のチャット製品ではなく、業務を支える複数の基盤として説明されています。",
+      "title": "Palantirの年次報告書に並ぶ4つの製品",
+      "caption": "Gotham・Foundry・Apollo・AIPが並ぶ頁です。会社は4つをひとつのチャット製品にまとめず、業務を支える別々の基盤として説明しています。",
       "source": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000021/fy2025palantirars.pdf#page=6",
       "page": 6,
       "pageLabel": "PDF 6ページ（ファイル先頭から）",
@@ -17,8 +17,8 @@
     },
     {
       "image": "assets/evidence-p-income.png",
-      "title": "売上から利益までを追う",
-      "caption": "2025・2024・2023年の比較表です。RevenueからCost of revenue、Operating expenses、Income from operationsへ順に読むと、売上が利益になるまでの構造が見えます。金額の単位は千米ドル。",
+      "title": "Palantirの損益計算書（2023〜2025年）",
+      "caption": "Revenue、Cost of revenue、Operating expenses、Income from operationsが上から順に並び、売上から利益が残るまでがひとつの表に収まっています。金額の単位は千米ドルです。",
       "source": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000021/fy2025palantirars.pdf#page=75",
       "page": 75,
       "pageLabel": "PDF 75ページ（ファイル先頭から）",
@@ -34,8 +34,8 @@
   "s": [
     {
       "image": "assets/evidence-s-segments.png",
-      "title": "SoFiの3事業を確認",
-      "caption": "Lending・Technology Platform・Financial Servicesの3区分を示す原文です。アプリの利用者向け事業と企業向け基盤を分けて捉える入口になります。",
+      "title": "SoFiの3つの報告セグメント",
+      "caption": "Lending・Technology Platform・Financial Servicesの3区分を示す原文です。会員向けのアプリの事業と、他社向けの技術基盤が別の区分になっています。",
       "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000062/sofitechnologies2024ars.pdf#page=14",
       "page": 14,
       "pageLabel": "PDF 14ページ（ファイル先頭から）",
@@ -49,8 +49,8 @@
     },
     {
       "image": "assets/evidence-s-income.png",
-      "title": "利息収入と、非金利収入を分けて読む",
-      "caption": "2024年の年次報告書。Interest incomeからInterest expenseを引いたNet interest incomeと、Noninterest incomeを区別して確認します。金額の単位は千米ドル。",
+      "title": "SoFiの利息収入と非金利収入",
+      "caption": "2024年度の年次報告書です。Interest incomeからInterest expenseを引いたNet interest incomeの下に、Noninterest incomeが別の行で並びます。金額の単位は千米ドルです。",
       "source": "https://www.sec.gov/Archives/edgar/data/1818874/000181887425000062/sofitechnologies2024ars.pdf#page=149",
       "page": 149,
       "pageLabel": "PDF 149ページ（ファイル先頭から）",
@@ -66,8 +66,8 @@
   "n": [
     {
       "image": "assets/evidence-n-segments.png",
-      "title": "2つの報告セグメントを確認",
-      "caption": "Compute & NetworkingとGraphicsの区分を確認できます。Data Centerなどの市場区分とは異なる整理です。ここを分けると決算の数字を読み違えにくくなります。",
+      "title": "NVIDIAの2つの報告セグメント",
+      "caption": "会計上の区分はCompute & NetworkingとGraphicsの2つで、決算発表で目にするData Centerなどの市場別の区分とは別の整理です。",
       "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/annual/NVIDIA-2025-Annual-Report.pdf#page=97",
       "page": 97,
       "pageLabel": "PDF 97ページ（ファイル先頭から）",
@@ -82,8 +82,8 @@
     },
     {
       "image": "assets/evidence-n-income.png",
-      "title": "粗利益と営業利益の違いを見る",
-      "caption": "FY2025は2025年1月26日終了年度。Revenue→Cost of revenue→Gross profit→Operating expenses→Operating incomeの順で確認します。金額の単位は百万米ドル。",
+      "title": "NVIDIAの損益計算書（FY2025）",
+      "caption": "FY2025は2025年1月26日に終わった年度です。Revenue、Cost of revenue、Gross profit、Operating expenses、Operating incomeの順に並びます。金額の単位は百万米ドルです。",
       "source": "https://s201.q4cdn.com/141608511/files/doc_financials/2025/annual/NVIDIA-2025-Annual-Report.pdf#page=144",
       "page": 144,
       "pageLabel": "PDF 144ページ（ファイル先頭から）",
@@ -99,8 +99,8 @@
   "i": [
     {
       "image": "assets/evidence-i-business.png",
-      "title": "何を提供し、どこから利用できるか",
-      "caption": "量子ハードウェアと関連サービス、クラウド経由の利用について説明する箇所です。AWS Braket・Azure Quantum・Google Cloud Marketplaceの記載も確認できます。技術の優位性に関する文は会社側の見解です。",
+      "title": "IonQの製品と利用の窓口",
+      "caption": "量子ハードウェアと関連サービス、クラウド経由の利用を説明する箇所で、AWS Braket・Azure Quantum・Google Cloud Marketplaceの名前が並びます。技術の優位性についての文は会社の見解です。",
       "source": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526197584/d938156dars.pdf#page=14",
       "page": 14,
       "pageLabel": "PDF 14ページ（ファイル先頭から）",
@@ -115,8 +115,8 @@
     },
     {
       "image": "assets/evidence-i-income.png",
-      "title": "研究開発と損失の規模を確認",
-      "caption": "2025・2024・2023年を並べた損益計算書。RevenueだけでなくResearch and development、Loss from operations、Net lossも見ます。売上成長と黒字化を別の問いとして扱います。金額の単位は千米ドル。",
+      "title": "IonQの研究開発費と損失（2023〜2025年）",
+      "caption": "Revenueの下にResearch and development、Loss from operations、Net lossが並び、売上の伸びと損失の大きさを同じ表で比べられます。金額の単位は千米ドルです。",
       "source": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526197584/d938156dars.pdf#page=89",
       "page": 89,
       "pageLabel": "PDF 89ページ（ファイル先頭から）",
@@ -133,8 +133,8 @@
   "a": [
     {
       "image": "assets/evidence-a-income.png",
-      "title": "売上・製造費・研究開発費を順に読む",
-      "caption": "2024・2023・2022年度の損益計算書。Net revenueからTotal cost of sales、Gross profit、Research and development、Operating incomeへたどります。2024年度は12月28日終了、金額は百万米ドル（1株あたり指標を除く）。",
+      "title": "AMDの損益計算書（2022〜2024年度）",
+      "caption": "Net revenueからTotal cost of sales、Gross profit、Research and development、Operating incomeへと並びます。2024年度は12月28日に終わった年度で、金額は百万米ドル（1株あたりの指標を除く）です。",
       "source": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-25-067185/0001193125-25-067185.pdf#page=75",
       "page": 75,
       "pageLabel": "PDF 75ページ（冊子表記59ページ）",
@@ -150,8 +150,8 @@
   "t": [
     {
       "image": "assets/evidence-t-income.png",
-      "title": "自動車・エネルギー・サービスの売上を分ける",
-      "caption": "2024・2023・2022年の損益計算書。自動車販売、規制クレジット、エネルギー、サービスの収益を区別し、原価と費用を引いた利益まで確認できます。金額は百万米ドル（1株あたり指標を除く）。",
+      "title": "Teslaの事業別の売上（2022〜2024年）",
+      "caption": "自動車販売・規制クレジット・エネルギー・サービスの収益が別々の行に並び、原価と費用を引いた利益までがひとつの表に収まっています。金額は百万米ドル（1株あたりの指標を除く）です。",
       "source": "https://ir.tesla.com/_flysystem/s3/sec/000162828025003063/tsla-20241231-gen.pdf#page=52",
       "page": 52,
       "pageLabel": "PDF 52ページ（冊子表記49ページ）",
