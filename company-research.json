@@ -30,7 +30,7 @@
   },
   "n": {
     "ceo": "Jensen Huang（ジェンスン・フアン）",
-    "ceoTitle": "創業者・CEO",
+    "ceoTitle": "共同創業者・CEO",
     "ceoImage": "assets/ceo-n.jpg",
     "ceoSource": "https://investor.nvidia.com/governance/management-team/default.aspx",
     "ceoImageSource": "https://s201.q4cdn.com/141608511/files/images/founders/nvidia-jensenhuang-headshots-js0400-c-w-lightened2x2.png",
@@ -130,9 +130,9 @@
   "t": {
     "ceo": "Elon Musk（イーロン・マスク）",
     "ceoTitle": "CEO（2008年10月から）",
-    "ceoImage": null,
+    "ceoImage": "assets/ceo-t.jpg",
     "ceoSource": "https://ir.tesla.com/corporate/elon-musk",
-    "ceoImageSource": null,
+    "ceoImageSource": "https://commons.wikimedia.org/wiki/File:Elon_Musk_Colorado_2022_(cropped2).jpg",
     "products": [
       "電気自動車：Model 3、Model Yなど",
       "蓄電：Powerwall、Megapack",
@@ -140,6 +140,7 @@
       "Optimus：人型ロボット開発"
     ],
     "revenue": "自動車、蓄電・発電、充電・修理などの関連サービス。将来のロボット構想とは分ける。",
-    "risk": "価格競争、生産コスト、安全・品質、規制、開発の進捗と株価に含まれる期待。"
+    "risk": "価格競争、生産コスト、安全・品質、規制、開発の進捗と株価に含まれる期待。",
+    "ceoImageCredit": "写真：Trevor Cokley / U.S. Air Force（パブリックドメイン）・Wikimedia Commons"
   }
 }
