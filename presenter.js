@@ -112,7 +112,7 @@
     if(document.fullscreenElement)document.exitFullscreen?.();
     syncURL();
     const el=s&&(s.anchor?document.querySelector(s.anchor):document.querySelector('.view-tabs'));
-    if(el)el.scrollIntoView({block:'start'});
+    if(el){const d=el.closest('details');if(d&&d!==el)d.open=true;el.scrollIntoView({block:'start'})}
   }
   function syncURL(){
     try{const p=new URLSearchParams(location.search);p.set('company',company);p.set('view',view);if(presenting)p.set('step',presentIndex+1);else p.delete('step');history.replaceState(null,'','?'+p.toString())}catch{}
