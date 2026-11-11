@@ -40,7 +40,7 @@
 
   /* 04 競合比較 */
   function sRivals(){const r=P.rivals;
-    return screen('rivals','rivals',{h:esc(r.title),lead:esc(r.lead)},`<div class="pl-table-wrap"><table class="pl-table"><thead><tr><th>会社</th><th>領域</th><th>直近の売上</th><th>前年比</th><th>通期の売上</th><th>補足</th></tr></thead><tbody>${r.rows.map(x=>`<tr class="${x.self?'is-self':''}"><th scope="row">${esc(x.name)}${x.private?'<small>非上場</small>':''}</th><td>${esc(x.field)}</td><td><b>${esc(x.revenue)}</b><small>${esc(x.yen)}　${esc(x.period)}</small></td><td class="pl-g ${/^−/.test(x.growth)?'is-neg':''}">${esc(x.growth)}</td><td>${esc(x.annual)}</td><td>${esc(x.extra)}</td></tr>`).join('')}</tbody></table></div><p class="pl-foot">${esc(r.foot)}</p>`)}
+    return screen('rivals','rivals',{h:esc(r.title),lead:esc(r.lead)},`<div class="pl-table-wrap"><table class="pl-table"><thead><tr><th>会社</th><th>領域</th><th>直近の売上</th><th>前年比</th><th>通期の売上</th><th>補足</th></tr></thead><tbody>${r.rows.map(x=>`<tr class="${x.self?'is-self':''}"><th scope="row">${esc(x.name)}${x.private?'<small>非上場</small>':''}</th><td>${esc(x.field)}</td><td><b>${esc(x.revenue)}</b><small>${esc(x.yen)}　${esc(x.period)}</small></td><td class="pl-g ${/^−/.test(x.growth)?'is-neg':''}">${esc(x.growth)}</td><td>${esc(x.annual).replace(/（(.*)）$/,'<small>$1</small>')}</td><td>${esc(x.extra).replace(/（(.*)）$/,'<small>$1</small>')}</td></tr>`).join('')}</tbody></table></div><p class="pl-foot">${esc(r.foot)}</p>`)}
   function sRivals2(){const r=P.rivals;return screen('rivals2','rivals',{h:'Palantirと比べてどう見えるか',lead:'重なる領域と、売っているものの違いです。'},`<div class="pl-eval">${r.notes.map(n=>`<article><h3>${esc(n.name)}</h3><p>${esc(n.text)}</p></article>`).join('')}</div>`)}
 
   /* 05 CEOと製品 */
