@@ -1178,7 +1178,7 @@
             {
               "src": "assets/new-amd-logo.svg",
               "name": "AMD",
-              "bg": "#fff"
+              "bg": "#000"
             },
             {
               "src": "assets/logo-n.svg",

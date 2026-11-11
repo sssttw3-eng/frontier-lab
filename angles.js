@@ -1,4 +1,4 @@
-/* angles.js : 会社ページ最上部の帯（大きな物語＋いまの論点3つ）。データは angles.json。
+/* angles.js : 会社ページ最上部の帯（見立て＋いまの論点3つ）。データは angles.json。
    論点1つ＝1枚：上にビジュアル（sheetVisual：atlas.js）、下に見出し・言い切り・根拠の数字・発言・決算資料の場所・出典と時点。
    講師モード（body.presenting）ではビジュアルと見出しだけを残す（atlas.css）。既存の setCompany を包むだけで、既存処理は変えない。 */
 (function(){
@@ -35,9 +35,9 @@
     const k=typeof company!=='undefined'?company:'p',d=angles.companies[k],m=angles.meta;
     if(!d){el.className='angles-band is-pending';el.innerHTML=`<p class="angles-pending">${esc(m.pending)}</p>`;return}
     el.className='angles-band';
-    el.innerHTML=`<div class="angles-head"><h2 id="angles-title">いま市場が見ているところ</h2><div class="angles-meta"><span class="angles-tag">${esc(m.label)}</span><small>${esc(m.asOf)}</small></div></div>
-<p class="angles-view"><b>市場の見られ方</b><span>${esc(d.view)}</span></p>
-<div class="angles-story"><b>大きな物語</b><p>${d.story.map(esc).join('')}</p></div>
+    el.innerHTML=`<div class="angles-head"><h2 id="angles-title">柏原の見立て</h2><div class="angles-meta"><small>${esc(m.asOf)}</small></div></div>
+<p class="angles-view"><span>${esc(d.view)}</span></p>
+<div class="angles-story"><p>${d.story.map(esc).join('')}</p></div>
 <div class="angles-cards">${d.cards.map(card).join('')}</div>
 <p class="angles-note">${esc(m.note)}</p>`;
   }

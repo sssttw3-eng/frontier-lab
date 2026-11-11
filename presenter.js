@@ -1,5 +1,5 @@
 /* presenter.js : 講師モード。画面いっぱいの1枚（#stage）に、見出しと図だけを出して送る。
-   送る順：いま市場が見ているところ → 論点1〜3 → お金の流れ → エコシステム → 成長 → CEO → 基礎の辞書8テーマ。
+   送る順：柏原の見立て → 論点1〜3 → お金の流れ → エコシステム → 成長 → CEO → 基礎の辞書8テーマ。
    キー：→ ← Space Enter PageDown PageUp（市販リモコン）、数字でジャンプ、Home/End、Escで終了。
    URL：?company=p&view=…&step=… に今の枚目を書き、そのURLを開くと同じ枚目から始まる。会社を切り替えたら01枚目へ戻る。 */
 (function(){
@@ -34,7 +34,7 @@
   function buildSlides(){
     const out=[],d=catalog.companies[company],A=window.anglesData?.companies?.[company];
     if(A){
-      out.push({view:'money',anchor:'#angles-band',label:'いま市場が見ているところ',kicker:`${d.name}　市場の見られ方と大きな物語`,title:'いま市場が見ているところ',html:()=>`<div class="stage-html stage-story"><p class="stage-view">${esc(A.view)}</p>${A.story.map(s=>`<p>${esc(s)}</p>`).join('')}</div>`});
+      out.push({view:'money',anchor:'#angles-band',label:'柏原の見立て',kicker:`${d.name}`,title:'柏原の見立て',html:()=>`<div class="stage-html stage-story"><p class="stage-view">${esc(A.view)}</p>${A.story.map(s=>`<p>${esc(s)}</p>`).join('')}</div>`});
       A.cards.forEach((c,i)=>out.push({view:'money',anchor:`#angles-band [data-sheet="angle-${i+1}"]`,label:`論点${i+1}`,kicker:`論点${i+1}`,title:c.title,html:()=>visualOnly(c.visual)}));
     }
     out.push({view:'money',label:'お金の流れ',kicker:'お金の流れ',title:`${d.name}のお金の流れ`,svgText:1.15,html:()=>cloneSvg('#view-money .money-canvas svg')});

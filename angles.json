@@ -1,751 +1,751 @@
 {
-  "meta": {
-    "asOf": "2026年11月9日時点",
-    "label": "柏原の見立て",
-    "note": "数字は各社の決算発表・決算資料・SEC提出書類から取り、各カードに出典と時点を記しています。画像は各社の決算資料の実物で、赤枠は本文で触れている数字です。円換算は1ドル=154円。",
-    "pending": "この会社の論点は準備中です。"
-  },
-  "companies": {
-    "p": {
-      "view": "Palantirはモデルの性能を競う会社ではなく、モデルを現場の仕事につなぐ基盤の会社。いまはそのソフトの会社が米陸軍のTITANで製造にまで入ってきている。",
-      "story": [
-        "Palantir（パランティア）は9.11後の国家安全保障の仕事から生まれ、20年以上にわたって米国政府と組んで実績を積んできた会社です。",
-        "バラバラのデータを業務の意味でつなぐオントロジーと、顧客の現場に入って仕組みを作るエンジニアのFDEの2つが強さの土台になっています。",
-        "いまの入口はAIPブートキャンプで、顧客の経営層と一緒に数日で動く試作を作り、そこから全社展開へ広げます。",
-        "2026年7〜9月期には米国の民間売上が初めて米国政府を上回り、稼ぎの中心が国防から企業へ広がりました。",
-        "モデルがコモディティ化するほど、データを外に出さずにAIを使う主権AIの基盤に価値が残る、というのがPalantirを見る軸です。",
-        "そして2026年9月にはPalantirが米陸軍の地上局TITANの製造を元請けで受けるところまで来ています。"
-      ],
-      "cards": [
-        {
-          "title": "Palantirは売れば売るほど利益が残る構造",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-pltr-q3-rule40.png",
-            "alt": "Palantir Business UpdateのRule of 40の頁",
-            "caption": "Palantir 2026年第3四半期 Business Update 15頁（Rule of 40）。赤枠が本文の数字"
-          },
-          "lead": "Palantirの強さは製品の性能より売り方の設計にあり、その結果がRule of 40の158%という数字に出ています。",
-          "text": "2026年7〜9月期の売上は前年比96%増の23億1,300万ドル（約3,562億円）でした。一方で営業費用の合計は8億4,528万ドル（約1,302億円）で、46%増にとどまっています。売上の伸び率96%と調整後の営業利益率62%を足したRule of 40は158%で、4〜6月期の155%からさらに上がりました。オントロジーとFDEで最初の基盤を作り、AIPブートキャンプで顧客と一緒に試作し、コンサル会社と組んで売る人の不足を補う分業が売上と費用の伸びの差を生んでいます。ただ、1,000万ドル（約15億4,000万円）以上の大型案件は4〜6月期の73件から64件に減りました。",
-          "quote": {
-            "text": "Palantirはトークンを実際の経済的な価値に変えられると示した唯一の会社だ",
-            "original": "Palantir is the only company that has demonstrated it can transform tokens into actual economic value.",
-            "who": "Alex Karp（CEO）",
-            "where": "決算発表",
-            "date": "2026年8月3日"
-          },
-          "check": "Business UpdateのRule of 40の頁と、決算発表の1,000万ドル（約15億4,000万円）以上の案件数（4〜6月期の73件から戻るか）",
-          "source": [
-            {
-              "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
-            },
-            {
-              "label": "Palantir 2026年第2四半期 決算発表（SEC 8-K、2026年8月3日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm"
-            },
-            {
-              "label": "Palantir 2026年第3四半期 Business Update 15頁",
-              "url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf#page=15"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "ask": "大型案件が減ったのは一時的だと思いますか",
-          "links": [
-            "map",
-            "money"
-          ]
-        },
-        {
-          "title": "モデルは横並びになり、価値はPalantirのような基盤へ",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-pltr-q3-us-commercial.png",
-            "alt": "Palantir Business Updateの米国民間売上の頁",
-            "caption": "Palantir 2026年第3四半期 Business Update 17頁（米国民間売上の伸び）。赤枠が本文の数字"
-          },
-          "lead": "モデルがコモディティ化するほど、モデルを現場につなぐPalantirのAIPとオントロジーの側に価値が残ります。",
-          "text": "Palantirの米国民間売上は2026年7〜9月期に前年比148%増の9億8,400万ドル（約1,515億円）となり、初めて米国政府を上回りました。米国民間でまだ売上になっていない契約の残高（RDV）も65億1,700万ドル（約1兆36億円）で、前年比79%増です。追い風は自社のデータを外に出さずにAIを使いたいという主権AIの需要です。単なるツールとして見られてきたPalantirが企業の基盤そのものに入るので、1社あたりの取引が大きくなっています。",
-          "quote": {
-            "text": "顧客の競争力の源を将来のモデルの学習データにしてはならない",
-            "original": "Their competitive advantage should never become the training data for future models.",
-            "who": "Alex Karp（CEO）",
-            "where": "決算発表",
-            "date": "2026年8月3日"
-          },
-          "check": "Business Updateの米国民間売上の頁の前年比と、決算発表の米国民間のRDV（残りの契約額）の伸び",
-          "source": [
-            {
-              "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
-            },
-            {
-              "label": "Palantir 2026年第2四半期 決算発表（SEC 8-K、2026年8月3日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm"
-            },
-            {
-              "label": "Palantir 2026年第3四半期 Business Update 17頁",
-              "url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf#page=17"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "ask": "Palantirの米国民間の伸び、来期も100%を超えると思いますか",
-          "links": [
-            "growth",
-            "relations"
-          ]
-        },
-        {
-          "title": "ソフトの会社Palantirが工場へ",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-pltr-q3-titan.png",
-            "alt": "Palantir Business UpdateのTITANの頁",
-            "caption": "Palantir 2026年第3四半期 Business Update 7頁（TITANの量産）。赤枠が本文の内容"
-          },
-          "lead": "ソフトウェアの会社と思われがちなPalantirがTITANでハードの製造まで元請けで受けるところに来ています。",
-          "text": "2026年9月、Palantirは米陸軍の次世代の地上局TITANを元請けとして8基製造する契約を結びました。AndurilやL3Harrisなどのハードの会社を束ねて作る形です。これまでのPalantirは国防向けにソフトを納める会社でした。米国政府向けの売上も2026年7〜9月期に9億5,300万ドル（約1,468億円）、前年比96%増と伸びています。お金がソフトから工場へ流れる中で、Palantirはその両方に関わる位置を取りにいっているのかなと思います。",
-          "quote": {
-            "text": "いまは生産のやり方そのものを作り直さなければならない時期にある",
-            "original": "And we are in a period where we need to reinvent how we do production.",
-            "who": "Shyam Sankar（CTO）",
-            "where": "決算説明会",
-            "date": "2026年11月2日"
-          },
-          "check": "Business Update 7頁のTITANの量産の記述と、決算発表の米国政府売上の前年比（96%増が続くか）",
-          "source": [
-            {
-              "label": "Palantir 2026年第3四半期 Business Update 7頁",
-              "url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf#page=7"
-            },
-            {
-              "label": "Breaking Defense（2026年9月、TITANの契約）",
-              "url": "https://breakingdefense.com/2026/09/army-awards-192m-to-palantir-and-anduril-to-produce-titan-system/"
-            },
-            {
-              "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
-            },
-            {
-              "label": "Palantir 決算説明会の書き起こし（2026年11月2日）",
-              "url": "https://www.tradingkey.com/news/transcripts/262266257-"
-            }
-          ],
-          "asOf": "2026年9月、数字は2026年7〜9月期",
-          "ask": "ソフトの会社が製造に入るのは強気の材料だと思いますか",
-          "links": [
-            "relations",
-            "videos"
-          ]
-        }
-      ]
+ "meta": {
+  "asOf": "2026年11月9日時点",
+  "label": "柏原の見立て",
+  "note": "数字は各社の決算発表・決算資料・SEC提出書類から取り、各カードに出典と時点を記しています。画像は各社の決算資料の実物で、赤枠は本文で触れている数字です。円換算は1ドル=154円。",
+  "pending": "この会社の論点は準備中です。"
+ },
+ "companies": {
+  "p": {
+   "view": "Palantirが売っているのはAIを現場の仕事につなぐ仕組みです。そのソフトの会社がいまは米陸軍のTITANで製造まで請けています。",
+   "story": [
+    "Palantir（パランティア）は9.11のあと国家安全保障の仕事から始まり、20年以上米国政府と組んできた会社です。",
+    "強さの元は2つあって、バラバラのデータを業務の意味でつなぐオントロジーと、顧客の現場に入って仕組みを作るエンジニアのFDEです。",
+    "いまの入口はAIPブートキャンプで、顧客の経営層と数日で動く試作を作り、そこから全社に広げていきます。",
+    "2026年7〜9月期には米国の民間売上が初めて米国政府を上回り、稼ぎの中心が国防から企業に広がりました。",
+    "AIのモデルはどこも似てきていて、そうなるほどデータを外に出さずにAIを使うための基盤のほうに価値が残る、と私は見ています。",
+    "そして2026年9月には米陸軍の地上局TITANの製造を元請けで受けるところまで来ました。"
+   ],
+   "cards": [
+    {
+     "title": "Palantirは売れば売るほど利益が残る構造",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-pltr-q3-rule40.png",
+      "alt": "Palantir Business UpdateのRule of 40の頁",
+      "caption": "Palantir 2026年第3四半期 Business Update 15頁（Rule of 40）。赤枠が本文の数字"
+     },
+     "lead": "Palantirが強いのは製品の性能より売り方の設計で、Rule of 40は158%まで来ています。",
+     "text": "2026年7〜9月期の売上は前年比96%増の23億1,300万ドル（約3,562億円）でした。一方で営業費用の合計は8億4,528万ドル（約1,302億円）で、46%増にとどまっています。売上の伸び率96%と調整後の営業利益率62%を足したRule of 40は158%で、4〜6月期の155%からさらに上がりました。オントロジーとFDEで最初の基盤を作り、AIPブートキャンプで顧客と一緒に試作し、コンサル会社と組んで売る人の不足を補う分業が売上と費用の伸びの差を生んでいます。ただ、1,000万ドル（約15億4,000万円）以上の大型案件は4〜6月期の73件から64件に減りました。",
+     "quote": {
+      "text": "Palantirはトークンを実際の経済的な価値に変えられると示した唯一の会社だ",
+      "original": "Palantir is the only company that has demonstrated it can transform tokens into actual economic value.",
+      "who": "Alex Karp（CEO）",
+      "where": "決算発表",
+      "date": "2026年8月3日"
+     },
+     "check": "Business UpdateのRule of 40の頁と、決算発表の1,000万ドル（約15億4,000万円）以上の案件数（4〜6月期の73件から戻るか）",
+     "source": [
+      {
+       "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
+      },
+      {
+       "label": "Palantir 2026年第2四半期 決算発表（SEC 8-K、2026年8月3日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm"
+      },
+      {
+       "label": "Palantir 2026年第3四半期 Business Update 15頁",
+       "url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf#page=15"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "ask": "大型案件が減ったのは一時的だと思いますか",
+     "links": [
+      "map",
+      "money"
+     ]
     },
-    "n": {
-      "view": "GPUを売る会社から、AIデータセンター1ギガワットあたりの取り分を広げる会社へ移っている。",
-      "story": [
-        "NVIDIAを見る軸は計算の主役がGPUという部品からデータセンター全体へ移っていることです。",
-        "学習の時代はNVIDIAのGPUをどれだけ買えるかの競争でした。",
-        "答えを出すたびに費用がかかる推論の時代に入り、OpenAIやAMDはNVIDIAに頼らない道を探し始めています。",
-        "それでもNVIDIAはGPUの外側に手を伸ばし、光の接続、電力と土地、量子とのつなぎ込みまで囲い込みにいっています。",
-        "決算で確かめるのはその囲い込みが75%前後の粗利率を保ったまま進むかどうかです。"
-      ],
-      "cards": [
-        {
-          "title": "主語がチップからAIデータセンターへ",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-nvda-q2fy27-datacenter.png",
-            "alt": "NVIDIA Investor Presentationのデータセンター売上の頁",
-            "caption": "NVIDIA Investor Presentation 2027年度第2四半期 4頁（データセンター売上の内訳）。赤枠が本文の数字"
-          },
-          "lead": "NVIDIAが売っているのはGPU1枚ではなく、1ギガワット分のデータセンターの中身です。",
-          "text": "2026年5〜7月期のデータセンター売上は890億ドル（約13兆7,060億円、前年比117%増）でした。うち大手クラウド向けのHyperscaleが487億ドル（約7兆4,998億円）、AI専業クラウドや企業・各国政府向けのACIEが403億ドル（約6兆2,062億円、前年比138%増）です。CFOのKressは1ギガワットあたりのNVIDIAの取り分がHopperの約180億ドル（約2兆7,720億円）からVera Rubinでは400億ドル（約6兆1,600億円）に広がったと説明しています。同じ電力の枠でも取り分が2倍以上になることが売上の伸びが続く理由です。",
-          "quote": {
-            "text": "Hopper以来、1ギガワットあたりの売上機会はおよそ180億ドル（約2兆7,720億円）から、Blackwellで250億ドル（約3兆8,500億円）、Vera Rubinで400億ドル（約6兆1,600億円）に広がった",
-            "original": "Since Hopper, our revenue opportunity has grown from roughly $18 billion per gigawatt to $25 billion with Blackwell, to $40 billion with Vera Rubin",
-            "who": "Colette Kress（CFO）",
-            "where": "決算説明会",
-            "date": "2026年8月26日"
-          },
-          "check": "CFOコメンタリーの「Revenue by Market Platform」の表で、HyperscaleとACIEの前四半期比の伸び",
-          "source": [
-            {
-              "label": "NVIDIA 2027年度第2四半期 CFOコメンタリー（SEC 8-K、2026年8月26日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm"
-            },
-            {
-              "label": "NVIDIA 決算説明会の書き起こし（2026年8月26日、NVIDIA IR掲載）",
-              "url": "https://s201.q4cdn.com/141608511/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf"
-            },
-            {
-              "label": "NVIDIA Investor Presentation 2027年度第2四半期",
-              "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/NVDA-F2Q27-Quarterly-Presentation-final-1.pdf"
-            }
-          ],
-          "asOf": "2026年5〜7月期",
-          "links": [
-            "map",
-            "money"
-          ]
-        },
-        {
-          "title": "推論で広がるNVIDIA離れの動き",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-nvda-q2fy27-gross-margin.png",
-            "alt": "NVIDIA Investor Presentationの粗利率の頁",
-            "caption": "NVIDIA Investor Presentation 2027年度第2四半期 5頁（粗利率）。赤枠が本文の数字"
-          },
-          "lead": "推論ではOpenAIもAMDもNVIDIAの外へ動いていて、その圧力が最初に表れるのは粗利率です。",
-          "text": "OpenAIは2026年6月24日、Broadcomと作った推論チップ「Jalapeño」を発表し、電力あたりの処理量がGB200・GB300の1.5〜1.9倍だと示しました（OpenAI自身の数字）。AMDも8月6日に推論チップ会社Taalasの買収で合意しています。それでもNVIDIAの5〜7月期の粗利率は75.0%で、前年の72.4%から上がり、次の四半期の見通しも74.0%です。値下げに追い込まれた跡はいまのところ粗利率に出ていません。",
-          "quote": {
-            "text": "AIのトークンは生産的で、利益を生んでいる。いまや計算能力がそのまま売上になる",
-            "original": "Its tokens are productive and profitable. Now, compute is revenue",
-            "who": "Jensen Huang（CEO）",
-            "where": "決算発表",
-            "date": "2026年8月26日"
-          },
-          "check": "Investor Presentationの粗利率の頁（GAAPと非GAAP）と、見通しの頁の粗利率74.0%からの上下",
-          "source": [
-            {
-              "label": "OpenAI 発表（2026年6月24日）",
-              "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
-            },
-            {
-              "label": "AMD 発表（2026年8月6日）",
-              "url": "https://ir.amd.com/news-events/press-releases/detail/1296"
-            },
-            {
-              "label": "NVIDIA 2027年度第2四半期 決算発表（SEC 8-K、2026年8月26日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm"
-            },
-            {
-              "label": "NVIDIA Investor Presentation 2027年度第2四半期",
-              "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/NVDA-F2Q27-Quarterly-Presentation-final-1.pdf"
-            }
-          ],
-          "asOf": "2026年6〜8月、数字は2026年5〜7月期",
-          "links": [
-            "relations",
-            "videos"
-          ]
-        },
-        {
-          "title": "光・電力・土地という外側を囲う",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-nvda-q3fy27-outlook.png",
-            "alt": "NVIDIA Investor Presentationの見通しの頁",
-            "caption": "NVIDIA Investor Presentation 2027年度第2四半期 11頁（次四半期の見通しと中国の注記）。赤枠が本文の数字"
-          },
-          "lead": "NVIDIAはGPUの外側にある光部品と電力・土地まで自分で押さえにいき、そのぶん財務の負担も背負い始めています。",
-          "text": "NVIDIAは2026年3月2日、光部品のLumentumとCoherentに各20億ドル（約3,080億円）を投じると発表しました。CFOコメンタリーではAIクラウドとの契約で360億ドル（約5兆5,440億円）の支払いを約束し、OpenAI向けにオハイオ州で4.25ギガワットのデータセンター用地を確保する債務保証は上限1,050億ドル（約16兆1,700億円）です。次の四半期の売上見通しは1,080億ドル（約16兆6,320億円）で、中国のデータセンター向け計算売上はゼロとして置いています。",
-          "quote": {
-            "text": "今後の見通しには中国のデータセンター向け計算売上を入れていない",
-            "original": "there is no China data center compute revenue in our forward outlook.",
-            "who": "Colette Kress（CFO）",
-            "where": "決算説明会",
-            "date": "2026年8月26日"
-          },
-          "check": "CFOコメンタリーの「Additional Commitments」と「Guarantees」の金額、見通しの頁の中国に関する注記",
-          "source": [
-            {
-              "label": "NVIDIA×Lumentum 発表（2026年3月2日）",
-              "url": "https://nvidianews.nvidia.com/news/nvidia-announces-strategic-partnership-with-lumentum-to-develop-state-of-the-art-optics-technology"
-            },
-            {
-              "label": "NVIDIA×Coherent 発表（2026年3月2日）",
-              "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture"
-            },
-            {
-              "label": "NVIDIA 2027年度第2四半期 CFOコメンタリー（SEC 8-K、2026年8月26日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm"
-            },
-            {
-              "label": "NVIDIA Investor Presentation 2027年度第2四半期",
-              "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/NVDA-F2Q27-Quarterly-Presentation-final-1.pdf"
-            }
-          ],
-          "asOf": "2026年3〜8月、数字は2026年7月26日時点",
-          "links": [
-            "relations",
-            "growth"
-          ]
-        }
-      ]
+    {
+     "title": "モデルは横並びになり、価値はPalantirのような基盤へ",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-pltr-q3-us-commercial.png",
+      "alt": "Palantir Business Updateの米国民間売上の頁",
+      "caption": "Palantir 2026年第3四半期 Business Update 17頁（米国民間売上の伸び）。赤枠が本文の数字"
+     },
+     "lead": "モデルがコモディティ化するほど、モデルを現場につなぐPalantirのAIPとオントロジーの側に価値が残ります。",
+     "text": "Palantirの米国民間売上は2026年7〜9月期に前年比148%増の9億8,400万ドル（約1,515億円）となり、初めて米国政府を上回りました。米国民間でまだ売上になっていない契約の残高（RDV）も65億1,700万ドル（約1兆36億円）で、前年比79%増です。追い風は自社のデータを外に出さずにAIを使いたいという主権AIの需要です。単なるツールとして見られてきたPalantirが企業の基盤そのものに入るので、1社あたりの取引が大きくなっています。",
+     "quote": {
+      "text": "顧客の競争力の源を将来のモデルの学習データにしてはならない",
+      "original": "Their competitive advantage should never become the training data for future models.",
+      "who": "Alex Karp（CEO）",
+      "where": "決算発表",
+      "date": "2026年8月3日"
+     },
+     "check": "Business Updateの米国民間売上の頁の前年比と、決算発表の米国民間のRDV（残りの契約額）の伸び",
+     "source": [
+      {
+       "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
+      },
+      {
+       "label": "Palantir 2026年第2四半期 決算発表（SEC 8-K、2026年8月3日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000039/a2026q2ex991pressrelease.htm"
+      },
+      {
+       "label": "Palantir 2026年第3四半期 Business Update 17頁",
+       "url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf#page=17"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "ask": "Palantirの米国民間の伸び、来期も100%を超えると思いますか",
+     "links": [
+      "growth",
+      "relations"
+     ]
     },
-    "i": {
-      "view": "IonQは量子コンピュータを1台ずつ売る会社から、半導体の工場まで持つ量子のサプライチェーンの会社へ移っている。",
-      "story": [
-        "IonQ（アイオンキュー）が目指しているのは量子コンピュータを1台ずつ売る会社ではなく、量子のサプライチェーン全体を握る会社です。",
-        "買収の順に並べると、Oxford Ionicsでチップの技術、Lightsynqで量子メモリと接続、Skyloomで宇宙の光通信、Nexus Photonicsで光の部品を取り込んできました。",
-        "仕上げが約18億ドル（約2,772億円）のSkyWater買収で、2026年7月末に半導体の工場まで手に入れています。",
-        "チップの設計から製造までを1社で持つ形はAIでNVIDIAが握った位置を量子で取りにいく動きと重なります。",
-        "決算で確かめるのは買収が売上にどれだけ乗り、統合の負担がどれだけ重いかです。"
-      ],
-      "cards": [
-        {
-          "title": "SkyWater買収で工場を持つ量子会社に",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-ionq-q3-highlights.png",
-            "alt": "IonQの決算発表の冒頭",
-            "caption": "IonQ 2026年第3四半期 決算発表（SEC 8-K）の冒頭。赤枠が本文の数字"
-          },
-          "lead": "売上336%増の半分近くは買収した工場の売上で、量子の本業は127%増と分けて読むのがポイントです。",
-          "text": "2026年7〜9月期の売上は1億7,380万ドル（約268億円、前年比336%増）でした。うち量子事業のIonQ Platformが9,030万ドル（約139億円、前年比127%増）、SkyWaterの受託製造が8,350万ドル（約129億円）です。本業の量子事業だけでも倍以上に伸びていて、工場は伸び率を飾る上乗せというより、量子チップを自前で作るための土台として入っています。",
-          "quote": {
-            "text": "第3四半期の売上1億7,380万ドル（約268億円）は量子技術への需要の高まりと、SkyWaterを通じた量子の製造の垂直統合の効果を表している",
-            "original": "Third quarter revenue of $173.8 million reflects increasing demand for our quantum technologies and the benefits of our vertically integrated quantum manufacturing capabilities through SkyWater.",
-            "who": "Niccolo de Masi（会長兼CEO）",
-            "where": "決算発表",
-            "date": "2026年11月5日"
-          },
-          "check": "決算発表の冒頭にあるセグメント別売上（IonQ PlatformとSkyWater Foundry Services）の伸び率",
-          "source": [
-            {
-              "label": "IonQ 2026年第3四半期 決算発表（SEC 8-K、2026年11月5日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "growth",
-            "money"
-          ]
-        },
-        {
-          "title": "受注残の倍増と、広がる赤字",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-ionq-q3-ebitda.png",
-            "alt": "IonQの調整後EBITDAの調整表",
-            "caption": "IonQ 2026年第3四半期 決算発表（SEC 8-K）の非GAAP調整表。赤枠が本文の数字"
-          },
-          "lead": "受注残は倍以上に積み上がった一方、調整後EBITDAの赤字は前年の約2.7倍に広がっていて、ここが量産前の会社の姿です。",
-          "text": "受注残（RPO）は12億ドル（約1,848億円）で前年の倍を超え、IonQ Platformの新規契約額の約3分の2を量子コンピュータが占めました。通期の売上見通しは5億500万〜5億1,500万ドル（約778億〜793億円）に引き上げられています。ただ、調整後EBITDAは1億3,360万ドル（約206億円、損失）で、前年同期の4,891万ドル（約75億3,200万円、損失）から広がりました。この損失にはSkyWaterとの研究開発費2,370万ドル（約36億5,000万円）が含まれます。",
-          "quote": {
-            "text": "受注残を過去最高の第3四半期売上に変えながらも、残存履行義務は倍以上の12億ドル（約1,848億円）になった",
-            "original": "Our Remaining Performance Obligations more than doubled to $1.2 billion, even as we converted our backlog into record third quarter revenues.",
-            "who": "Inder Singh（COO兼CFO）",
-            "where": "決算発表",
-            "date": "2026年11月5日"
-          },
-          "check": "決算発表の非GAAP調整表にある調整後EBITDAの行と、本文のRPOの記述",
-          "source": [
-            {
-              "label": "IonQ 2026年第3四半期 決算発表（SEC 8-K、2026年11月5日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "money",
-            "growth"
-          ]
-        },
-        {
-          "title": "厚い手元資金で続ける垂直統合",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-ionq-q3-balance.png",
-            "alt": "IonQの貸借対照表",
-            "caption": "IonQ 2026年第3四半期 決算発表（SEC 8-K）の貸借対照表。赤枠が本文の数字"
-          },
-          "lead": "買収の跡は貸借対照表ののれんと無形資産に合わせて43億6,700万ドル（約6,725億円）として残っていて、これが統合の重さそのものです。",
-          "text": "9月末ののれんは32億2,200万ドル（約4,962億円）で、2025年末の19億6,400万ドル（約3,025億円）から増え、無形資産も11億4,500万ドル（約1,763億円）あります。手元資金は9月末に17億ドル（約2,618億円）、10月16日に締めた20億ドル（約3,080億円）の増資を足すと37億ドル（約5,698億円）です。11月4日にはゼロトラストのセキュリティ会社Elisityの買収も株式交換で完了しました。買収を続けられる資金はある一方、のれんが大きいほど統合がつまずいたときの減損の振れも大きくなります。",
-          "quote": {
-            "text": "増資後で37億ドル（約5,698億円）の現金同等物を含む強い財務が大きな資金力になっている",
-            "original": "IonQ’s strong balance sheet, including $3.7 billion in cash and equivalents pro forma with our recent equity offering, gives us incredible financial firepower",
-            "who": "Inder Singh（COO兼CFO）",
-            "where": "決算発表",
-            "date": "2026年11月5日"
-          },
-          "check": "決算発表の貸借対照表の「Goodwill」と「Intangible assets」の行、現金・短期投資・長期投資の合計",
-          "source": [
-            {
-              "label": "IonQ 2026年第3四半期 決算発表（SEC 8-K、2026年11月5日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
-            },
-            {
-              "label": "IonQ SkyWater買収完了の発表（2026年7月31日）",
-              "url": "https://ionq.com/news/ionq-completes-acquisition-of-skywater-technology"
-            }
-          ],
-          "asOf": "2026年9月30日時点（手元資金は10月の増資後）",
-          "links": [
-            "relations",
-            "videos"
-          ]
-        }
-      ]
-    },
-    "t": {
-      "view": "Teslaは車の会社から、AI・ロボット・エネルギーの会社として評価され直している途中にある。",
-      "story": [
-        "Teslaの事業を一本の線にするのはイーロン・マスクが掲げてきた火星移住という目標です。",
-        "火星は人が住めない環境なので、人の代わりに働く人型ロボットのOptimusが要ります。",
-        "送電網のない場所では自前で電気をためて使う必要があり、蓄電池Megapackのエネルギー事業がその役を担います。",
-        "地上の電力が足りなくなれば、データセンターを宇宙に置くという発想にもつながります。",
-        "そう並べると、EV・Optimus・蓄電池・ロボタクシー・自前のチップ工場は同じ物語の部品になります。",
-        "決算で確かめるのは車の台数より、Optimusとロボタクシーと蓄電池の進み具合です。"
-      ],
-      "cards": [
-        {
-          "title": "Optimus（人型ロボット）の量産",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-tsla-q3-optimus.png",
-            "alt": "Tesla Updateの製造能力の頁",
-            "caption": "Tesla 2026年第3四半期 Update 6頁（Optimusの生産状況と製造能力の表）。赤枠が本文の内容"
-          },
-          "lead": "TeslaはOptimusで初めて量産品質のロボットを作ったと書いていて、フリーモントは立ち上げ初期、テキサスは工場の建設中という段階です。",
-          "text": "7〜9月期のUpdateではフリーモントの量産ラインでOptimusの生産が始まり、製造能力の表もカリフォルニアが「Early Ramp」、テキサスが「Construction」です。マスクは決算説明会で、週2万台の生産ペースを目標に挙げています。その準備として、7〜9月期の設備投資は47億3,200万ドル（約7,287億円）に増え、CFOは2026年通期を約200億ドル（約3兆800億円）と説明しました。社外に売れる量になる前に、設備のお金が先に出ていく局面です。",
-          "quote": {
-            "text": "今年の設備投資の見通しを約200億ドル（約3兆800億円）に見直す",
-            "original": "We're revising our capex guidance to be approximately $20 billion for the current year",
-            "who": "Vaibhav Taneja（CFO）",
-            "where": "決算説明会",
-            "date": "2026年10月21日"
-          },
-          "check": "Updateの製造能力の表（Installed Annual Manufacturing Capacity）のOptimusの段階と、財務サマリーの設備投資の行",
-          "source": [
-            {
-              "label": "Tesla 2026年第3四半期 Update（SEC 8-K、2026年10月21日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
-            },
-            {
-              "label": "Tesla 決算説明会の書き起こし（2026年10月21日、evwire掲載）",
-              "url": "https://evwire.com/p/tesla-tsla-q3-2026-earnings-call-full-transcript"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "map",
-            "videos"
-          ]
-        },
-        {
-          "title": "蓄電池（Megapack）と電力の自前化",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-tsla-q3-storage.png",
-            "alt": "Tesla Updateの運用サマリーの頁",
-            "caption": "Tesla 2026年第3四半期 Update 5頁（運用サマリー）。赤枠が本文の数字"
-          },
-          "lead": "Teslaのエネルギー事業は売上が前年割れでも受注は過去最高で、売上と受注のズレはデータセンター需要の先取りから来ています。",
-          "text": "7〜9月期の蓄電池の出荷は13.7ギガワット時で、前年同期の12.5ギガワット時を上回りました。一方でエネルギー部門の売上は28億8,100万ドル（約4,437億円）で、前年同期の34億1,500万ドル（約5,259億円）から16%減っています。Updateは受注と受注残が過去最高だと書き、年50ギガワット時を計画するテキサスのMegafactoryも生産を始めました。出荷が売上に変わるまでの時間差があるので、この事業は受注の積み上がりで見る方が実態に近くなります。",
-          "quote": {
-            "text": "2027年分のMegapackはほぼ売り切れている",
-            "original": "We're actually almost sold out of all Megapacks for 2027",
-            "who": "Elon Musk（CEO）",
-            "where": "決算説明会",
-            "date": "2026年10月21日"
-          },
-          "check": "Updateの運用サマリーの「Storage deployed（GWh）」と、損益の「Energy generation and storage」の売上と原価",
-          "source": [
-            {
-              "label": "Tesla 2026年第3四半期 Update（SEC 8-K、2026年10月21日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
-            },
-            {
-              "label": "Tesla 決算説明会の書き起こし（2026年10月21日、evwire掲載）",
-              "url": "https://evwire.com/p/tesla-tsla-q3-2026-earnings-call-full-transcript"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "money",
-            "growth"
-          ]
-        },
-        {
-          "title": "ロボタクシーと自前のチップ工場",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-tsla-q3-robotaxi.png",
-            "alt": "Tesla UpdateのSI & Other Servicesの頁",
-            "caption": "Tesla 2026年第3四半期 Update 8頁（ロボタクシーの記述と累計の無人走行距離）。赤枠が本文の数字"
-          },
-          "lead": "ロボタクシーは走行距離が四半期で8倍になる段階に入り、Teslaは車を売るより利益の質が高い稼ぎ方に手をかけています。",
-          "text": "9月3日からオースティンでCybercabを使ったロボタクシーの運行が始まり、累計の無人走行は9月末で200万マイル近くまで伸びました。累計の無人走行距離は前の四半期から8倍です。チップの自前工場はオースティンで2027年に設備の立ち上げを始める計画で建設が進んでいます。時期を左右するのは技術より、各地の規制と安全性の確認です。",
-          "quote": {
-            "text": "オースティンのCybercabの車両は約1か月前の運行開始から10倍に増えた",
-            "original": "The Cybercab fleet in Austin, for example, has grown by a factor of 10 since launch about a month ago.",
-            "who": "Elon Musk（CEO）",
-            "where": "決算説明会",
-            "date": "2026年10月21日"
-          },
-          "check": "UpdateのSI & Other Servicesの頁にある累計無人走行距離のグラフと、Austin Fabの設備立ち上げ時期の記述",
-          "source": [
-            {
-              "label": "Tesla 2026年第3四半期 Update（SEC 8-K、2026年10月21日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
-            },
-            {
-              "label": "Tesla 決算説明会の書き起こし（2026年10月21日、evwire掲載）",
-              "url": "https://evwire.com/p/tesla-tsla-q3-2026-earnings-call-full-transcript"
-            }
-          ],
-          "asOf": "2026年9月末",
-          "links": [
-            "growth",
-            "videos"
-          ]
-        }
-      ]
-    },
-    "a": {
-      "view": "AMDはNVIDIAの次の選択肢として、GPU単体からサーバーの棚ごと売るラック製品へ移ろうとしている。",
-      "story": [
-        "いまAMDが問われているのはNVIDIAの次の選択肢になれるかで、その答えがラック製品のHeliosです。",
-        "語る単位がチップからラックへ、さらに発電所の規模を表すギガワットへと大きくなっています。",
-        "もうひとつはAIの使い方が学習から推論へ移るにつれて、GPUのまわりで動くCPUの仕事が増えてきたことです。",
-        "AMDはGPUのInstinctとサーバー向けCPUのEPYCを両方持つため、推論の時代を二つの柱で受けられる位置にいます。",
-        "決算で確かめるのはHeliosの出荷がデータセンター部門の売上と利益にどこまで乗るかです。"
-      ],
-      "cards": [
-        {
-          "title": "ラック製品Heliosへの移行",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-amd-q3-segments.png",
-            "alt": "AMD決算スライドのセグメント別の頁",
-            "caption": "AMD 2026年第3四半期 Financial Results 12頁（セグメント別の売上と営業利益）。赤枠が本文の数字"
-          },
-          "lead": "AMDのデータセンター部門は売上が倍近くになり、営業利益は2.7倍に増えていて、ラックで売る形が利益の段階で効き始めています。",
-          "text": "2026年7〜9月期のデータセンター部門の売上は85億4,600万ドル（約1兆3,161億円、前年比97%増）、営業利益は28億8,200万ドル（約4,438億円、前年比168%増）でした。Anthropic、Meta、Microsoft、OpenAI、Oracleが最初のHeliosのラックでモデルを動かしています。10〜12月期の会社全体の売上見通しは約170億ドル（約2兆6,180億円）で、7〜9月期の133億7,700万ドル（約2兆601億円）から27%増える計算です。",
-          "quote": {
-            "text": "第4四半期はHeliosと次のEPYC「Venice」の生産を増やし、成長はさらに加速すると見込む",
-            "original": "we expect growth to accelerate further in the fourth quarter as we scale Helios and ‘Venice’ production.",
-            "who": "Lisa Su（会長兼CEO）",
-            "where": "決算発表",
-            "date": "2026年11月3日"
-          },
-          "check": "決算スライドのSegment Resultsの頁で、データセンター部門の売上と営業利益の前四半期比",
-          "source": [
-            {
-              "label": "AMD 2026年第3四半期 決算発表（SEC 8-K、2026年11月3日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
-            },
-            {
-              "label": "AMD 2026年第3四半期 Financial Results スライド",
-              "url": "https://d1io3yog0oux5.cloudfront.net/_76e60a688092d06ccab8a780191eae46/amd/db/841/9247/presentation/AMD_Q3_2026_Earnings_Slides_FINAL.pdf"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "map",
-            "money"
-          ]
-        },
-        {
-          "title": "学習から推論へ、GPUからCPUへ",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-amd-q3-datacenter.png",
-            "alt": "AMD決算スライドのデータセンター部門の頁",
-            "caption": "AMD 2026年第3四半期 Financial Results 14頁（データセンター部門）。赤枠が本文の内容"
-          },
-          "lead": "推論が増えるほどGPUのまわりで動くCPUの仕事も増え、AMDはその需要をEPYCとInstinctの両方で受けています。",
-          "text": "AMD自身、データセンター部門の伸びを「EPYCへの強い需要とInstinct MI450の立ち上げ」で説明しています。部門の営業利益率は前年の25%から34%に上がりました。Oracle Cloud Infrastructureは第6世代EPYCで動く新しいサーバーをモデルのまわりで動くCPUの処理にも使うと発表しています。AMDは8月6日、モデル専用の推論チップを作るTaalasの買収でも合意しました（金額は非公表）。それでもNVIDIAのCUDAに慣れた開発者を動かす壁は高いままです。",
-          "quote": {
-            "text": "AIはあらゆる市場で計算への需要を大きく広げている",
-            "original": "AI is driving a significant expansion in demand for compute across all of our markets",
-            "who": "Lisa Su（会長兼CEO）",
-            "where": "決算発表",
-            "date": "2026年8月4日"
-          },
-          "check": "決算スライドのData Center Segmentの頁の営業利益率と、決算説明会でのEPYCとInstinctそれぞれの伸びの説明",
-          "source": [
-            {
-              "label": "AMD 2026年第3四半期 決算発表（SEC 8-K、2026年11月3日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
-            },
-            {
-              "label": "AMD 2026年第3四半期 Financial Results スライド",
-              "url": "https://d1io3yog0oux5.cloudfront.net/_76e60a688092d06ccab8a780191eae46/amd/db/841/9247/presentation/AMD_Q3_2026_Earnings_Slides_FINAL.pdf"
-            },
-            {
-              "label": "AMD 2026年第2四半期 決算発表（SEC 8-K、2026年8月4日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000121/q22026991.htm"
-            },
-            {
-              "label": "AMD 発表（2026年8月6日）",
-              "url": "https://ir.amd.com/news-events/press-releases/detail/1296"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "map",
-            "videos"
-          ]
-        },
-        {
-          "title": "Anthropicとのギガワット単位の契約",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-amd-q4-outlook.png",
-            "alt": "AMD決算スライドの見通しの頁",
-            "caption": "AMD 2026年第3四半期 Financial Results 17頁（10〜12月期の見通し）。赤枠が本文の数字"
-          },
-          "lead": "出資とGPU供給がセットになったAnthropicとの契約は数年先の需要の裏付けになる一方、お金が回っているだけという見方も招きます。",
-          "text": "AMDは2026年7月22日、Anthropicへ最大50億ドル（約7,700億円）を出資し、MI450シリーズのGPUを最大2ギガワット供給すると発表しました。最初の1ギガワットは2027年上半期の予定です。10〜12月期の売上見通しは170億ドル（約2兆6,180億円、上下3%）で、ギガワット単位の契約が売上に変わり始めるのはこの先です。",
-          "quote": {
-            "text": "第4四半期の見通しはデータセンター製品全体の強い需要による売上と利益の成長の加速を映している",
-            "original": "Our fourth-quarter outlook reflects accelerating revenue and earnings growth, driven by strong demand across our Data Center portfolio.",
-            "who": "Jean Hu（CFO）",
-            "where": "決算発表",
-            "date": "2026年11月3日"
-          },
-          "check": "決算スライドのFinancial Outlookの頁の売上見通しと、10-Qの主要顧客への売上集中の注記",
-          "source": [
-            {
-              "label": "AMD 発表（2026年7月22日）",
-              "url": "https://ir.amd.com/news-events/press-releases/detail/1292"
-            },
-            {
-              "label": "AMD 2026年第3四半期 決算発表（SEC 8-K、2026年11月3日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
-            },
-            {
-              "label": "AMD 2026年第3四半期 Financial Results スライド",
-              "url": "https://d1io3yog0oux5.cloudfront.net/_76e60a688092d06ccab8a780191eae46/amd/db/841/9247/presentation/AMD_Q3_2026_Earnings_Slides_FINAL.pdf"
-            }
-          ],
-          "asOf": "2026年7月、見通しは2026年11月3日時点",
-          "links": [
-            "relations",
-            "money"
-          ]
-        }
-      ]
-    },
-    "s": {
-      "view": "SoFiはフィンテックを名乗る銀行で、稼ぎの柱はいまも利息、手数料の比率を上げている途中にある。",
-      "story": [
-        "SoFiの核はローン・預金・投資・カードをひとつのアプリでまとめて使ってもらうワンストップの戦略です。",
-        "会員が増えるたびに商品を重ねて使ってもらう循環を銀行の免許で集めた預金を元手に回してきました。",
-        "稼ぎの柱はいまも利息で、手数料で稼ぐ会社へ移る途中にあります。",
-        "その中で銀行の免許を使ったステーブルコインSoFiUSDが立ち上がり、お金の受け渡しまで自社で持つ一手になっています。",
-        "決算で確かめるのは手数料の比率が5割の目標に近づくかと、利ざやが保てるかの2点です。"
-      ],
-      "cards": [
-        {
-          "title": "利息から手数料へ、移れているか",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-sofi-q3-fee-revenue.png",
-            "alt": "SoFi Investor Presentationの手数料収益の頁",
-            "caption": "SoFi Investor Presentation 2026年第3四半期 18頁（手数料収益とその比率）。赤枠が本文の数字"
-          },
-          "lead": "SoFiの手数料収益は売上の4割を超えたものの、比率は2025年通期の43%から42%で足踏みしていて、利息に寄った構造はまだ残っています。",
-          "text": "2026年7〜9月期の手数料収益は5億7,060万ドル（約879億円）で売上の42%、前四半期の39%からは上がりました。一方で純金利収益は9億2,950万ドル（約1,431億円、前年比59%増）と、手数料より速く伸びています。手数料が伸びても利息の伸びがそれを上回るので、比率が5割に近づくには時間がかかります。",
-          "quote": {
-            "text": "収益の構成は手数料型の事業で売上の50%を稼ぐという長期目標に向けて分散が進んでいる",
-            "original": "Our revenue mix continues to diversify toward our long-term goal of generating 50% of revenue from fee-oriented businesses.",
-            "who": "Anthony Noto（CEO）",
-            "where": "決算説明会",
-            "date": "2026年10月27日"
-          },
-          "check": "Investor Presentation 18頁の手数料収益の比率（Fee-Based Revenue Mix）と、決算発表の純金利収益の伸び",
-          "source": [
-            {
-              "label": "SoFi 2026年第3四半期 決算発表（SEC 8-K、2026年10月27日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000065/a2026q3earningsrelease.htm"
-            },
-            {
-              "label": "SoFi Investor Presentation 2026年第3四半期",
-              "url": "https://s27.q4cdn.com/749715820/files/doc_financials/2026/q3/2026-Q3-Investor-Presentation.pdf"
-            },
-            {
-              "label": "SoFi 決算説明会の書き起こし（2026年10月27日、SoFi IR掲載）",
-              "url": "https://s27.q4cdn.com/749715820/files/content_files/SoFi-Third-Quarter-2026-Earnings-Transcript_FINAL-docx.pdf"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "money",
-            "growth"
-          ]
-        },
-        {
-          "title": "金利が上がっても利ざやが広がった",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-sofi-q3-nim.png",
-            "alt": "SoFi Investor Presentationの調達と利ざやの頁",
-            "caption": "SoFi Investor Presentation 2026年第3四半期 29頁（調達の内訳と純利ざや）。赤枠が本文の数字"
-          },
-          "lead": "SoFiの利ざやを支えているのは預金で、調達の9割以上を預金でまかなう形が金利の上昇に耐える力になっています。",
-          "text": "7〜9月期の純利ざやは6.14%で、前四半期から0.16ポイント広がりました。預金は四半期で58億ドル（約8,932億円）増えて513億ドル（約7兆9,002億円）になり、調達の93%を占めます。預金の金利は借入枠より1.45ポイント低く、会社はこれで年7億4,500万ドル（約1,147億円）の費用を抑えていると説明しています。個人ローンの貸し倒れ率は年率2.26%ですが延滞ローンの売却を除くと約3.4%です。",
-          "quote": {
-            "text": "当面、5%を上回る健全な純利ざやが続くと見込んでいる",
-            "original": "We continue to expect a healthy net interest margin above 5% for the foreseeable future.",
-            "who": "Chris Lapointe（CFO）",
-            "where": "決算説明会",
-            "date": "2026年10月27日"
-          },
-          "check": "Investor Presentation 29頁の純利ざやと預金の比率、決算発表の売却を除いた貸し倒れ率",
-          "source": [
-            {
-              "label": "SoFi 2026年第3四半期 決算発表（SEC 8-K、2026年10月27日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000065/a2026q3earningsrelease.htm"
-            },
-            {
-              "label": "SoFi Investor Presentation 2026年第3四半期",
-              "url": "https://s27.q4cdn.com/749715820/files/doc_financials/2026/q3/2026-Q3-Investor-Presentation.pdf"
-            },
-            {
-              "label": "SoFi 決算説明会の書き起こし（2026年10月27日、SoFi IR掲載）",
-              "url": "https://s27.q4cdn.com/749715820/files/content_files/SoFi-Third-Quarter-2026-Earnings-Transcript_FINAL-docx.pdf"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "money",
-            "map"
-          ]
-        },
-        {
-          "title": "ワンストップの進み具合とSoFiUSD",
-          "visual": {
-            "type": "image",
-            "src": "assets/slide-sofi-q3-members.png",
-            "alt": "SoFi Investor Presentationの会員と商品の頁",
-            "caption": "SoFi Investor Presentation 2026年第3四半期 15頁（会員数・商品数・1人あたり商品数）。赤枠が本文の数字"
-          },
-          "lead": "新しい商品の半分以上を既存の会員が開いていて、会員を集める費用をかけずに売上を積む循環が数字に出ています。",
-          "text": "7〜9月期は会員1,707万人（前年比35%増）、商品2,667万個（44%増）で、1人あたり1.56商品になりました（前年は1.47）。新しく開かれた商品の51%は既存の会員によるものです。決算説明会でNotoはSoFiUSDをまだ規模の小さい新事業の一つに挙げています。",
-          "quote": {
-            "text": "会員を増やし、その会員により多くの商品を使ってもらい、商品あたりの売上を上げていく",
-            "original": "We are adding more members, who are using more products, and generating more revenue per product to create the most value for our shareholders over the long run.",
-            "who": "Anthony Noto（CEO）",
-            "where": "決算発表",
-            "date": "2026年10月27日"
-          },
-          "check": "Investor Presentation 15頁の会員数・商品数・1人あたり商品数と、決算発表の既存会員による新規商品の割合",
-          "source": [
-            {
-              "label": "SoFi 2026年第3四半期 決算発表（SEC 8-K、2026年10月27日）",
-              "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000065/a2026q3earningsrelease.htm"
-            },
-            {
-              "label": "SoFi Investor Presentation 2026年第3四半期",
-              "url": "https://s27.q4cdn.com/749715820/files/doc_financials/2026/q3/2026-Q3-Investor-Presentation.pdf"
-            },
-            {
-              "label": "SoFi 決算説明会の書き起こし（2026年10月27日、SoFi IR掲載）",
-              "url": "https://s27.q4cdn.com/749715820/files/content_files/SoFi-Third-Quarter-2026-Earnings-Transcript_FINAL-docx.pdf"
-            }
-          ],
-          "asOf": "2026年7〜9月期",
-          "links": [
-            "relations",
-            "videos"
-          ]
-        }
-      ]
+    {
+     "title": "ソフトの会社Palantirが工場へ",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-pltr-q3-titan.png",
+      "alt": "Palantir Business UpdateのTITANの頁",
+      "caption": "Palantir 2026年第3四半期 Business Update 7頁（TITANの量産）。赤枠が本文の内容"
+     },
+     "lead": "ソフトの会社のPalantirがTITANではハードの製造まで元請けで受けています。",
+     "text": "2026年9月、Palantirは米陸軍の次世代の地上局TITANを元請けとして8基製造する契約を結びました。AndurilやL3Harrisなどのハードの会社を束ねて作る形です。これまでのPalantirは国防向けにソフトを納める会社でした。米国政府向けの売上も2026年7〜9月期に9億5,300万ドル（約1,468億円）、前年比96%増と伸びています。お金がソフトから工場へ流れる中で、Palantirはその両方に関わる位置を取りにいっているのかなと思います。",
+     "quote": {
+      "text": "いまは生産のやり方そのものを作り直さなければならない時期にある",
+      "original": "And we are in a period where we need to reinvent how we do production.",
+      "who": "Shyam Sankar（CTO）",
+      "where": "決算説明会",
+      "date": "2026年11月2日"
+     },
+     "check": "Business Update 7頁のTITANの量産の記述と、決算発表の米国政府売上の前年比（96%増が続くか）",
+     "source": [
+      {
+       "label": "Palantir 2026年第3四半期 Business Update 7頁",
+       "url": "https://investors.palantir.com/files/Palantir%20-%20Q3%202026%20Business%20Update.pdf#page=7"
+      },
+      {
+       "label": "Breaking Defense（2026年9月、TITANの契約）",
+       "url": "https://breakingdefense.com/2026/09/army-awards-192m-to-palantir-and-anduril-to-produce-titan-system/"
+      },
+      {
+       "label": "Palantir 2026年第3四半期 決算発表（SEC 8-K、2026年11月2日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
+      },
+      {
+       "label": "Palantir 決算説明会の書き起こし（2026年11月2日）",
+       "url": "https://www.tradingkey.com/news/transcripts/262266257-"
+      }
+     ],
+     "asOf": "2026年9月、数字は2026年7〜9月期",
+     "ask": "ソフトの会社が製造に入るのは強気の材料だと思いますか",
+     "links": [
+      "relations",
+      "videos"
+     ]
     }
+   ]
+  },
+  "n": {
+   "view": "NVIDIAはGPUを1枚ずつ売る会社から、AIデータセンター1ギガワットあたりの取り分を広げる会社に変わってきています。",
+   "story": [
+    "いまのNVIDIAで一番大きい変化は計算の主役がGPUという部品からデータセンター全体に移っていることです。",
+    "学習の時代はNVIDIAのGPUをどれだけ買えるかの競争でした。",
+    "推論の時代に入ると答えを出すたびに費用がかかるので、OpenAIやAMDはNVIDIAに頼らない道を探し始めています。",
+    "それでもNVIDIAはGPUの外側に手を伸ばしていて、光の接続、電力と土地、量子とのつなぎ込みまで押さえにいっています。",
+    "決算で見ているのは75%前後の粗利率を保ったままこれを進められるかどうかです。"
+   ],
+   "cards": [
+    {
+     "title": "主語がチップからAIデータセンターへ",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-nvda-q2fy27-datacenter.png",
+      "alt": "NVIDIA Investor Presentationのデータセンター売上の頁",
+      "caption": "NVIDIA Investor Presentation 2027年度第2四半期 4頁（データセンター売上の内訳）。赤枠が本文の数字"
+     },
+     "lead": "NVIDIAが売っているものはもうGPU1枚に収まらず、1ギガワット分のデータセンターの中身になっています。",
+     "text": "2026年5〜7月期のデータセンター売上は890億ドル（約13兆7,060億円、前年比117%増）でした。うち大手クラウド向けのHyperscaleが487億ドル（約7兆4,998億円）、AI専業クラウドや企業・各国政府向けのACIEが403億ドル（約6兆2,062億円、前年比138%増）です。CFOのKressは1ギガワットあたりのNVIDIAの取り分がHopperの約180億ドル（約2兆7,720億円）からVera Rubinでは400億ドル（約6兆1,600億円）に広がったと説明しています。同じ電力の枠でも取り分が2倍以上になることが売上の伸びが続く理由です。",
+     "quote": {
+      "text": "Hopper以来、1ギガワットあたりの売上機会はおよそ180億ドル（約2兆7,720億円）から、Blackwellで250億ドル（約3兆8,500億円）、Vera Rubinで400億ドル（約6兆1,600億円）に広がった",
+      "original": "Since Hopper, our revenue opportunity has grown from roughly $18 billion per gigawatt to $25 billion with Blackwell, to $40 billion with Vera Rubin",
+      "who": "Colette Kress（CFO）",
+      "where": "決算説明会",
+      "date": "2026年8月26日"
+     },
+     "check": "CFOコメンタリーの「Revenue by Market Platform」の表で、HyperscaleとACIEの前四半期比の伸び",
+     "source": [
+      {
+       "label": "NVIDIA 2027年度第2四半期 CFOコメンタリー（SEC 8-K、2026年8月26日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm"
+      },
+      {
+       "label": "NVIDIA 決算説明会の書き起こし（2026年8月26日、NVIDIA IR掲載）",
+       "url": "https://s201.q4cdn.com/141608511/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf"
+      },
+      {
+       "label": "NVIDIA Investor Presentation 2027年度第2四半期",
+       "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/NVDA-F2Q27-Quarterly-Presentation-final-1.pdf"
+      }
+     ],
+     "asOf": "2026年5〜7月期",
+     "links": [
+      "map",
+      "money"
+     ]
+    },
+    {
+     "title": "推論で広がるNVIDIA離れの動き",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-nvda-q2fy27-gross-margin.png",
+      "alt": "NVIDIA Investor Presentationの粗利率の頁",
+      "caption": "NVIDIA Investor Presentation 2027年度第2四半期 5頁（粗利率）。赤枠が本文の数字"
+     },
+     "lead": "推論ではOpenAIもAMDもNVIDIAの外へ動いていて、その圧力が最初に表れるのは粗利率です。",
+     "text": "OpenAIは2026年6月24日、Broadcomと作った推論チップ「Jalapeño」を発表し、電力あたりの処理量がGB200・GB300の1.5〜1.9倍だと示しました（OpenAI自身の数字）。AMDも8月6日に推論チップ会社Taalasの買収で合意しています。それでもNVIDIAの5〜7月期の粗利率は75.0%で、前年の72.4%から上がり、次の四半期の見通しも74.0%です。値下げに追い込まれた跡はいまのところ粗利率に出ていません。",
+     "quote": {
+      "text": "AIのトークンは生産的で、利益を生んでいる。いまや計算能力がそのまま売上になる",
+      "original": "Its tokens are productive and profitable. Now, compute is revenue",
+      "who": "Jensen Huang（CEO）",
+      "where": "決算発表",
+      "date": "2026年8月26日"
+     },
+     "check": "Investor Presentationの粗利率の頁（GAAPと非GAAP）と、見通しの頁の粗利率74.0%からの上下",
+     "source": [
+      {
+       "label": "OpenAI 発表（2026年6月24日）",
+       "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+      },
+      {
+       "label": "AMD 発表（2026年8月6日）",
+       "url": "https://ir.amd.com/news-events/press-releases/detail/1296"
+      },
+      {
+       "label": "NVIDIA 2027年度第2四半期 決算発表（SEC 8-K、2026年8月26日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm"
+      },
+      {
+       "label": "NVIDIA Investor Presentation 2027年度第2四半期",
+       "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/NVDA-F2Q27-Quarterly-Presentation-final-1.pdf"
+      }
+     ],
+     "asOf": "2026年6〜8月、数字は2026年5〜7月期",
+     "links": [
+      "relations",
+      "videos"
+     ]
+    },
+    {
+     "title": "光・電力・土地という外側を囲う",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-nvda-q3fy27-outlook.png",
+      "alt": "NVIDIA Investor Presentationの見通しの頁",
+      "caption": "NVIDIA Investor Presentation 2027年度第2四半期 11頁（次四半期の見通しと中国の注記）。赤枠が本文の数字"
+     },
+     "lead": "NVIDIAはGPUの外側にある光部品と電力・土地まで自分で押さえにいき、そのぶん財務の負担も背負い始めています。",
+     "text": "NVIDIAは2026年3月2日、光部品のLumentumとCoherentに各20億ドル（約3,080億円）を投じると発表しました。CFOコメンタリーではAIクラウドとの契約で360億ドル（約5兆5,440億円）の支払いを約束し、OpenAI向けにオハイオ州で4.25ギガワットのデータセンター用地を確保する債務保証は上限1,050億ドル（約16兆1,700億円）です。次の四半期の売上見通しは1,080億ドル（約16兆6,320億円）で、中国のデータセンター向け計算売上はゼロとして置いています。",
+     "quote": {
+      "text": "今後の見通しには中国のデータセンター向け計算売上を入れていない",
+      "original": "there is no China data center compute revenue in our forward outlook.",
+      "who": "Colette Kress（CFO）",
+      "where": "決算説明会",
+      "date": "2026年8月26日"
+     },
+     "check": "CFOコメンタリーの「Additional Commitments」と「Guarantees」の金額、見通しの頁の中国に関する注記",
+     "source": [
+      {
+       "label": "NVIDIA×Lumentum 発表（2026年3月2日）",
+       "url": "https://nvidianews.nvidia.com/news/nvidia-announces-strategic-partnership-with-lumentum-to-develop-state-of-the-art-optics-technology"
+      },
+      {
+       "label": "NVIDIA×Coherent 発表（2026年3月2日）",
+       "url": "https://nvidianews.nvidia.com/news/nvidia-and-coherent-announce-strategic-partnership-to-develop-optics-technology-to-scale-next-generation-data-center-architecture"
+      },
+      {
+       "label": "NVIDIA 2027年度第2四半期 CFOコメンタリー（SEC 8-K、2026年8月26日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm"
+      },
+      {
+       "label": "NVIDIA Investor Presentation 2027年度第2四半期",
+       "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/NVDA-F2Q27-Quarterly-Presentation-final-1.pdf"
+      }
+     ],
+     "asOf": "2026年3〜8月、数字は2026年7月26日時点",
+     "links": [
+      "relations",
+      "growth"
+     ]
+    }
+   ]
+  },
+  "i": {
+   "view": "IonQは量子コンピュータを1台ずつ売る会社から、半導体の工場まで持って部品を自前でそろえる会社に変わってきています。",
+   "story": [
+    "IonQ（アイオンキュー）がやろうとしているのは量子コンピュータの部品から製造までを全部自分で持つことです。",
+    "買収の順に並べると、Oxford Ionicsでチップの技術、Lightsynqで量子メモリと接続、Skyloomで宇宙の光通信、Nexus Photonicsで光の部品を取り込んできました。",
+    "最後が約18億ドル（約2,772億円）のSkyWater買収で、2026年7月末に半導体の工場まで手に入れています。",
+    "設計から製造までを1社で持つやり方はAIでNVIDIAが取った位置を量子で取りにいく動きに近いです。",
+    "決算で見るのは買収した分が売上にどれだけ乗るかと、統合の負担がどれだけ重いかです。"
+   ],
+   "cards": [
+    {
+     "title": "SkyWater買収で工場を持つ量子会社に",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-ionq-q3-highlights.png",
+      "alt": "IonQの決算発表の冒頭",
+      "caption": "IonQ 2026年第3四半期 決算発表（SEC 8-K）の冒頭。赤枠が本文の数字"
+     },
+     "lead": "売上は336%増ですが半分近くは買収した工場の分で、量子の本業だけだと127%増です。",
+     "text": "2026年7〜9月期の売上は1億7,380万ドル（約268億円、前年比336%増）でした。うち量子事業のIonQ Platformが9,030万ドル（約139億円、前年比127%増）、SkyWaterの受託製造が8,350万ドル（約129億円）です。本業の量子事業だけでも倍以上に伸びていて、工場は伸び率を飾る上乗せというより、量子チップを自前で作るための土台として入っています。",
+     "quote": {
+      "text": "第3四半期の売上1億7,380万ドル（約268億円）は量子技術への需要の高まりと、SkyWaterを通じた量子の製造の垂直統合の効果を表している",
+      "original": "Third quarter revenue of $173.8 million reflects increasing demand for our quantum technologies and the benefits of our vertically integrated quantum manufacturing capabilities through SkyWater.",
+      "who": "Niccolo de Masi（会長兼CEO）",
+      "where": "決算発表",
+      "date": "2026年11月5日"
+     },
+     "check": "決算発表の冒頭にあるセグメント別売上（IonQ PlatformとSkyWater Foundry Services）の伸び率",
+     "source": [
+      {
+       "label": "IonQ 2026年第3四半期 決算発表（SEC 8-K、2026年11月5日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "growth",
+      "money"
+     ]
+    },
+    {
+     "title": "受注残の倍増と、広がる赤字",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-ionq-q3-ebitda.png",
+      "alt": "IonQの調整後EBITDAの調整表",
+      "caption": "IonQ 2026年第3四半期 決算発表（SEC 8-K）の非GAAP調整表。赤枠が本文の数字"
+     },
+     "lead": "受注残は倍以上に積み上がった一方で、調整後EBITDAの赤字も前年の約2.7倍に広がっています。",
+     "text": "受注残（RPO）は12億ドル（約1,848億円）で前年の倍を超え、IonQ Platformの新規契約額の約3分の2を量子コンピュータが占めました。通期の売上見通しは5億500万〜5億1,500万ドル（約778億〜793億円）に引き上げられています。ただ、調整後EBITDAは1億3,360万ドル（約206億円、損失）で、前年同期の4,891万ドル（約75億3,200万円、損失）から広がりました。この損失にはSkyWaterとの研究開発費2,370万ドル（約36億5,000万円）が含まれます。",
+     "quote": {
+      "text": "受注残を過去最高の第3四半期売上に変えながらも、残存履行義務は倍以上の12億ドル（約1,848億円）になった",
+      "original": "Our Remaining Performance Obligations more than doubled to $1.2 billion, even as we converted our backlog into record third quarter revenues.",
+      "who": "Inder Singh（COO兼CFO）",
+      "where": "決算発表",
+      "date": "2026年11月5日"
+     },
+     "check": "決算発表の非GAAP調整表にある調整後EBITDAの行と、本文のRPOの記述",
+     "source": [
+      {
+       "label": "IonQ 2026年第3四半期 決算発表（SEC 8-K、2026年11月5日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "money",
+      "growth"
+     ]
+    },
+    {
+     "title": "厚い手元資金で続ける垂直統合",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-ionq-q3-balance.png",
+      "alt": "IonQの貸借対照表",
+      "caption": "IonQ 2026年第3四半期 決算発表（SEC 8-K）の貸借対照表。赤枠が本文の数字"
+     },
+     "lead": "買収の跡はのれんと無形資産として貸借対照表に43億6,700万ドル（約6,725億円）残っています。",
+     "text": "9月末ののれんは32億2,200万ドル（約4,962億円）で、2025年末の19億6,400万ドル（約3,025億円）から増え、無形資産も11億4,500万ドル（約1,763億円）あります。手元資金は9月末に17億ドル（約2,618億円）、10月16日に締めた20億ドル（約3,080億円）の増資を足すと37億ドル（約5,698億円）です。11月4日にはゼロトラストのセキュリティ会社Elisityの買収も株式交換で完了しました。買収を続けられる資金はある一方、のれんが大きいほど統合がつまずいたときの減損の振れも大きくなります。",
+     "quote": {
+      "text": "増資後で37億ドル（約5,698億円）の現金同等物を含む強い財務が大きな資金力になっている",
+      "original": "IonQ’s strong balance sheet, including $3.7 billion in cash and equivalents pro forma with our recent equity offering, gives us incredible financial firepower",
+      "who": "Inder Singh（COO兼CFO）",
+      "where": "決算発表",
+      "date": "2026年11月5日"
+     },
+     "check": "決算発表の貸借対照表の「Goodwill」と「Intangible assets」の行、現金・短期投資・長期投資の合計",
+     "source": [
+      {
+       "label": "IonQ 2026年第3四半期 決算発表（SEC 8-K、2026年11月5日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1824920/000119312526449779/ionq-ex99_1.htm"
+      },
+      {
+       "label": "IonQ SkyWater買収完了の発表（2026年7月31日）",
+       "url": "https://ionq.com/news/ionq-completes-acquisition-of-skywater-technology"
+      }
+     ],
+     "asOf": "2026年9月30日時点（手元資金は10月の増資後）",
+     "links": [
+      "relations",
+      "videos"
+     ]
+    }
+   ]
+  },
+  "t": {
+   "view": "Teslaは車の会社として見られてきましたが、いまはAIとロボットとエネルギーの会社として値付けされ直している途中です。",
+   "story": [
+    "Teslaの事業をつなげて見るとき、私はイーロン・マスクが言い続けている火星移住から考えています。",
+    "火星は人が住めない環境なので、人の代わりに働く人型ロボットのOptimusが必要になります。",
+    "送電網がない場所では自分で電気をためて使うしかなく、その役を蓄電池Megapackのエネルギー事業が担います。",
+    "地上の電力が足りなくなれば、データセンターを宇宙に置くという話にもつながります。",
+    "こう並べるとEV、Optimus、蓄電池、ロボタクシー、自前のチップ工場が全部同じ方向を向いています。",
+    "決算で見るのは車の台数より、Optimusとロボタクシーと蓄電池がどこまで進んだかです。"
+   ],
+   "cards": [
+    {
+     "title": "Optimus（人型ロボット）の量産",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-tsla-q3-optimus.png",
+      "alt": "Tesla Updateの製造能力の頁",
+      "caption": "Tesla 2026年第3四半期 Update 6頁（Optimusの生産状況と製造能力の表）。赤枠が本文の内容"
+     },
+     "lead": "TeslaはOptimusで初めて量産品質のロボットを作ったと書いていて、フリーモントは立ち上げ初期、テキサスは工場の建設中という段階です。",
+     "text": "7〜9月期のUpdateではフリーモントの量産ラインでOptimusの生産が始まり、製造能力の表もカリフォルニアが「Early Ramp」、テキサスが「Construction」です。マスクは決算説明会で、週2万台の生産ペースを目標に挙げています。その準備として、7〜9月期の設備投資は47億3,200万ドル（約7,287億円）に増え、CFOは2026年通期を約200億ドル（約3兆800億円）と説明しました。社外に売れる量になる前に、設備のお金が先に出ていく局面です。",
+     "quote": {
+      "text": "今年の設備投資の見通しを約200億ドル（約3兆800億円）に見直す",
+      "original": "We're revising our capex guidance to be approximately $20 billion for the current year",
+      "who": "Vaibhav Taneja（CFO）",
+      "where": "決算説明会",
+      "date": "2026年10月21日"
+     },
+     "check": "Updateの製造能力の表（Installed Annual Manufacturing Capacity）のOptimusの段階と、財務サマリーの設備投資の行",
+     "source": [
+      {
+       "label": "Tesla 2026年第3四半期 Update（SEC 8-K、2026年10月21日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      },
+      {
+       "label": "Tesla 決算説明会の書き起こし（2026年10月21日、evwire掲載）",
+       "url": "https://evwire.com/p/tesla-tsla-q3-2026-earnings-call-full-transcript"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "map",
+      "videos"
+     ]
+    },
+    {
+     "title": "蓄電池（Megapack）と電力の自前化",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-tsla-q3-storage.png",
+      "alt": "Tesla Updateの運用サマリーの頁",
+      "caption": "Tesla 2026年第3四半期 Update 5頁（運用サマリー）。赤枠が本文の数字"
+     },
+     "lead": "Teslaのエネルギー事業は売上が前年割れでも受注は過去最高で、データセンター向けの注文が先に入ってきています。",
+     "text": "7〜9月期の蓄電池の出荷は13.7ギガワット時で、前年同期の12.5ギガワット時を上回りました。一方でエネルギー部門の売上は28億8,100万ドル（約4,437億円）で、前年同期の34億1,500万ドル（約5,259億円）から16%減っています。Updateは受注と受注残が過去最高だと書き、年50ギガワット時を計画するテキサスのMegafactoryも生産を始めました。出荷が売上に変わるまでの時間差があるので、この事業は受注の積み上がりで見る方が実態に近くなります。",
+     "quote": {
+      "text": "2027年分のMegapackはほぼ売り切れている",
+      "original": "We're actually almost sold out of all Megapacks for 2027",
+      "who": "Elon Musk（CEO）",
+      "where": "決算説明会",
+      "date": "2026年10月21日"
+     },
+     "check": "Updateの運用サマリーの「Storage deployed（GWh）」と、損益の「Energy generation and storage」の売上と原価",
+     "source": [
+      {
+       "label": "Tesla 2026年第3四半期 Update（SEC 8-K、2026年10月21日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      },
+      {
+       "label": "Tesla 決算説明会の書き起こし（2026年10月21日、evwire掲載）",
+       "url": "https://evwire.com/p/tesla-tsla-q3-2026-earnings-call-full-transcript"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "money",
+      "growth"
+     ]
+    },
+    {
+     "title": "ロボタクシーと自前のチップ工場",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-tsla-q3-robotaxi.png",
+      "alt": "Tesla UpdateのSI & Other Servicesの頁",
+      "caption": "Tesla 2026年第3四半期 Update 8頁（ロボタクシーの記述と累計の無人走行距離）。赤枠が本文の数字"
+     },
+     "lead": "ロボタクシーの走行距離は四半期で8倍に伸びていて、車を売るより利益の厚い稼ぎ方が見え始めています。",
+     "text": "9月3日からオースティンでCybercabを使ったロボタクシーの運行が始まり、累計の無人走行は9月末で200万マイル近くまで伸びました。累計の無人走行距離は前の四半期から8倍です。チップの自前工場はオースティンで2027年に設備の立ち上げを始める計画で建設が進んでいます。時期を左右するのは技術より、各地の規制と安全性の確認です。",
+     "quote": {
+      "text": "オースティンのCybercabの車両は約1か月前の運行開始から10倍に増えた",
+      "original": "The Cybercab fleet in Austin, for example, has grown by a factor of 10 since launch about a month ago.",
+      "who": "Elon Musk（CEO）",
+      "where": "決算説明会",
+      "date": "2026年10月21日"
+     },
+     "check": "UpdateのSI & Other Servicesの頁にある累計無人走行距離のグラフと、Austin Fabの設備立ち上げ時期の記述",
+     "source": [
+      {
+       "label": "Tesla 2026年第3四半期 Update（SEC 8-K、2026年10月21日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+      },
+      {
+       "label": "Tesla 決算説明会の書き起こし（2026年10月21日、evwire掲載）",
+       "url": "https://evwire.com/p/tesla-tsla-q3-2026-earnings-call-full-transcript"
+      }
+     ],
+     "asOf": "2026年9月末",
+     "links": [
+      "growth",
+      "videos"
+     ]
+    }
+   ]
+  },
+  "a": {
+   "view": "AMDはNVIDIA以外の選択肢として、GPU単体からサーバーの棚ごと売るラック製品に移ろうとしています。",
+   "story": [
+    "いまAMDに問われているのはNVIDIA以外の選択肢になれるかどうかで、AMDの答えがラック製品のHeliosです。",
+    "話す単位もチップからラックへ、さらに発電所の規模を表すギガワットへと大きくなっています。",
+    "もうひとつ、AIの使い方が学習から推論に移るにつれて、GPUのまわりで動くCPUの仕事が増えてきました。",
+    "AMDはGPUのInstinctとサーバー向けCPUのEPYCを両方持っているので、推論の需要を両方で受けられます。",
+    "決算で見るのはHeliosの出荷がデータセンター部門の売上と利益にどこまで乗ってくるかです。"
+   ],
+   "cards": [
+    {
+     "title": "ラック製品Heliosへの移行",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-amd-q3-segments.png",
+      "alt": "AMD決算スライドのセグメント別の頁",
+      "caption": "AMD 2026年第3四半期 Financial Results 12頁（セグメント別の売上と営業利益）。赤枠が本文の数字"
+     },
+     "lead": "AMDのデータセンター部門は売上が倍近く、営業利益は2.7倍に増えていて、ラックで売る効果が利益に出始めています。",
+     "text": "2026年7〜9月期のデータセンター部門の売上は85億4,600万ドル（約1兆3,161億円、前年比97%増）、営業利益は28億8,200万ドル（約4,438億円、前年比168%増）でした。Anthropic、Meta、Microsoft、OpenAI、Oracleが最初のHeliosのラックでモデルを動かしています。10〜12月期の会社全体の売上見通しは約170億ドル（約2兆6,180億円）で、7〜9月期の133億7,700万ドル（約2兆601億円）から27%増える計算です。",
+     "quote": {
+      "text": "第4四半期はHeliosと次のEPYC「Venice」の生産を増やし、成長はさらに加速すると見込む",
+      "original": "we expect growth to accelerate further in the fourth quarter as we scale Helios and ‘Venice’ production.",
+      "who": "Lisa Su（会長兼CEO）",
+      "where": "決算発表",
+      "date": "2026年11月3日"
+     },
+     "check": "決算スライドのSegment Resultsの頁で、データセンター部門の売上と営業利益の前四半期比",
+     "source": [
+      {
+       "label": "AMD 2026年第3四半期 決算発表（SEC 8-K、2026年11月3日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
+      },
+      {
+       "label": "AMD 2026年第3四半期 Financial Results スライド",
+       "url": "https://d1io3yog0oux5.cloudfront.net/_76e60a688092d06ccab8a780191eae46/amd/db/841/9247/presentation/AMD_Q3_2026_Earnings_Slides_FINAL.pdf"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "map",
+      "money"
+     ]
+    },
+    {
+     "title": "学習から推論へ、GPUからCPUへ",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-amd-q3-datacenter.png",
+      "alt": "AMD決算スライドのデータセンター部門の頁",
+      "caption": "AMD 2026年第3四半期 Financial Results 14頁（データセンター部門）。赤枠が本文の内容"
+     },
+     "lead": "推論が増えるほどGPUのまわりで動くCPUの仕事も増え、AMDはその需要をEPYCとInstinctの両方で受けています。",
+     "text": "AMD自身、データセンター部門の伸びを「EPYCへの強い需要とInstinct MI450の立ち上げ」で説明しています。部門の営業利益率は前年の25%から34%に上がりました。Oracle Cloud Infrastructureは第6世代EPYCで動く新しいサーバーをモデルのまわりで動くCPUの処理にも使うと発表しています。AMDは8月6日、モデル専用の推論チップを作るTaalasの買収でも合意しました（金額は非公表）。それでもNVIDIAのCUDAに慣れた開発者を動かす壁は高いままです。",
+     "quote": {
+      "text": "AIはあらゆる市場で計算への需要を大きく広げている",
+      "original": "AI is driving a significant expansion in demand for compute across all of our markets",
+      "who": "Lisa Su（会長兼CEO）",
+      "where": "決算発表",
+      "date": "2026年8月4日"
+     },
+     "check": "決算スライドのData Center Segmentの頁の営業利益率と、決算説明会でのEPYCとInstinctそれぞれの伸びの説明",
+     "source": [
+      {
+       "label": "AMD 2026年第3四半期 決算発表（SEC 8-K、2026年11月3日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
+      },
+      {
+       "label": "AMD 2026年第3四半期 Financial Results スライド",
+       "url": "https://d1io3yog0oux5.cloudfront.net/_76e60a688092d06ccab8a780191eae46/amd/db/841/9247/presentation/AMD_Q3_2026_Earnings_Slides_FINAL.pdf"
+      },
+      {
+       "label": "AMD 2026年第2四半期 決算発表（SEC 8-K、2026年8月4日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000121/q22026991.htm"
+      },
+      {
+       "label": "AMD 発表（2026年8月6日）",
+       "url": "https://ir.amd.com/news-events/press-releases/detail/1296"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "map",
+      "videos"
+     ]
+    },
+    {
+     "title": "Anthropicとのギガワット単位の契約",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-amd-q4-outlook.png",
+      "alt": "AMD決算スライドの見通しの頁",
+      "caption": "AMD 2026年第3四半期 Financial Results 17頁（10〜12月期の見通し）。赤枠が本文の数字"
+     },
+     "lead": "出資とGPU供給がセットになったAnthropicとの契約は数年先の需要の裏付けになる一方、お金が回っているだけという見方も招きます。",
+     "text": "AMDは2026年7月22日、Anthropicへ最大50億ドル（約7,700億円）を出資し、MI450シリーズのGPUを最大2ギガワット供給すると発表しました。最初の1ギガワットは2027年上半期の予定です。10〜12月期の売上見通しは170億ドル（約2兆6,180億円、上下3%）で、ギガワット単位の契約が売上に変わり始めるのはこの先です。",
+     "quote": {
+      "text": "第4四半期の見通しはデータセンター製品全体の強い需要による売上と利益の成長の加速を映している",
+      "original": "Our fourth-quarter outlook reflects accelerating revenue and earnings growth, driven by strong demand across our Data Center portfolio.",
+      "who": "Jean Hu（CFO）",
+      "where": "決算発表",
+      "date": "2026年11月3日"
+     },
+     "check": "決算スライドのFinancial Outlookの頁の売上見通しと、10-Qの主要顧客への売上集中の注記",
+     "source": [
+      {
+       "label": "AMD 発表（2026年7月22日）",
+       "url": "https://ir.amd.com/news-events/press-releases/detail/1292"
+      },
+      {
+       "label": "AMD 2026年第3四半期 決算発表（SEC 8-K、2026年11月3日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
+      },
+      {
+       "label": "AMD 2026年第3四半期 Financial Results スライド",
+       "url": "https://d1io3yog0oux5.cloudfront.net/_76e60a688092d06ccab8a780191eae46/amd/db/841/9247/presentation/AMD_Q3_2026_Earnings_Slides_FINAL.pdf"
+      }
+     ],
+     "asOf": "2026年7月、見通しは2026年11月3日時点",
+     "links": [
+      "relations",
+      "money"
+     ]
+    }
+   ]
+  },
+  "s": {
+   "view": "SoFiはフィンテックを名乗っていますが中身は銀行で、稼ぎの柱はいまも利息です。手数料の比率を上げている途中です。",
+   "story": [
+    "SoFiがやっているのはローン、預金、投資、カードをひとつのアプリでまとめて使ってもらうことです。",
+    "会員が増えるたびに別の商品も使ってもらい、その元手を銀行の免許で集めた預金でまかなってきました。",
+    "稼ぎの柱はいまも利息で、手数料で稼ぐ会社にはまだ移りきれていません。",
+    "そこに銀行の免許を使ったステーブルコインSoFiUSDが立ち上がり、お金の受け渡しまで自社で持つことになりました。",
+    "決算で見るのは手数料の比率が目標の5割に近づくかと、利ざやを保てるかの2点です。"
+   ],
+   "cards": [
+    {
+     "title": "利息から手数料へ、移れているか",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-sofi-q3-fee-revenue.png",
+      "alt": "SoFi Investor Presentationの手数料収益の頁",
+      "caption": "SoFi Investor Presentation 2026年第3四半期 18頁（手数料収益とその比率）。赤枠が本文の数字"
+     },
+     "lead": "SoFiの手数料収益は売上の4割を超えたものの、比率は2025年通期の43%から42%で足踏みしていて、利息に寄った構造はまだ残っています。",
+     "text": "2026年7〜9月期の手数料収益は5億7,060万ドル（約879億円）で売上の42%、前四半期の39%からは上がりました。一方で純金利収益は9億2,950万ドル（約1,431億円、前年比59%増）と、手数料より速く伸びています。手数料が伸びても利息の伸びがそれを上回るので、比率が5割に近づくには時間がかかります。",
+     "quote": {
+      "text": "収益の構成は手数料型の事業で売上の50%を稼ぐという長期目標に向けて分散が進んでいる",
+      "original": "Our revenue mix continues to diversify toward our long-term goal of generating 50% of revenue from fee-oriented businesses.",
+      "who": "Anthony Noto（CEO）",
+      "where": "決算説明会",
+      "date": "2026年10月27日"
+     },
+     "check": "Investor Presentation 18頁の手数料収益の比率（Fee-Based Revenue Mix）と、決算発表の純金利収益の伸び",
+     "source": [
+      {
+       "label": "SoFi 2026年第3四半期 決算発表（SEC 8-K、2026年10月27日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000065/a2026q3earningsrelease.htm"
+      },
+      {
+       "label": "SoFi Investor Presentation 2026年第3四半期",
+       "url": "https://s27.q4cdn.com/749715820/files/doc_financials/2026/q3/2026-Q3-Investor-Presentation.pdf"
+      },
+      {
+       "label": "SoFi 決算説明会の書き起こし（2026年10月27日、SoFi IR掲載）",
+       "url": "https://s27.q4cdn.com/749715820/files/content_files/SoFi-Third-Quarter-2026-Earnings-Transcript_FINAL-docx.pdf"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "money",
+      "growth"
+     ]
+    },
+    {
+     "title": "金利が上がっても利ざやが広がった",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-sofi-q3-nim.png",
+      "alt": "SoFi Investor Presentationの調達と利ざやの頁",
+      "caption": "SoFi Investor Presentation 2026年第3四半期 29頁（調達の内訳と純利ざや）。赤枠が本文の数字"
+     },
+     "lead": "SoFiの利ざやを支えているのは預金で、調達の9割以上を預金でまかなう形が金利の上昇に耐える力になっています。",
+     "text": "7〜9月期の純利ざやは6.14%で、前四半期から0.16ポイント広がりました。預金は四半期で58億ドル（約8,932億円）増えて513億ドル（約7兆9,002億円）になり、調達の93%を占めます。預金の金利は借入枠より1.45ポイント低く、会社はこれで年7億4,500万ドル（約1,147億円）の費用を抑えていると説明しています。個人ローンの貸し倒れ率は年率2.26%ですが延滞ローンの売却を除くと約3.4%です。",
+     "quote": {
+      "text": "当面、5%を上回る健全な純利ざやが続くと見込んでいる",
+      "original": "We continue to expect a healthy net interest margin above 5% for the foreseeable future.",
+      "who": "Chris Lapointe（CFO）",
+      "where": "決算説明会",
+      "date": "2026年10月27日"
+     },
+     "check": "Investor Presentation 29頁の純利ざやと預金の比率、決算発表の売却を除いた貸し倒れ率",
+     "source": [
+      {
+       "label": "SoFi 2026年第3四半期 決算発表（SEC 8-K、2026年10月27日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000065/a2026q3earningsrelease.htm"
+      },
+      {
+       "label": "SoFi Investor Presentation 2026年第3四半期",
+       "url": "https://s27.q4cdn.com/749715820/files/doc_financials/2026/q3/2026-Q3-Investor-Presentation.pdf"
+      },
+      {
+       "label": "SoFi 決算説明会の書き起こし（2026年10月27日、SoFi IR掲載）",
+       "url": "https://s27.q4cdn.com/749715820/files/content_files/SoFi-Third-Quarter-2026-Earnings-Transcript_FINAL-docx.pdf"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "money",
+      "map"
+     ]
+    },
+    {
+     "title": "ワンストップの進み具合とSoFiUSD",
+     "visual": {
+      "type": "image",
+      "src": "assets/slide-sofi-q3-members.png",
+      "alt": "SoFi Investor Presentationの会員と商品の頁",
+      "caption": "SoFi Investor Presentation 2026年第3四半期 15頁（会員数・商品数・1人あたり商品数）。赤枠が本文の数字"
+     },
+     "lead": "新しく開かれた商品の半分以上は既存の会員によるもので、集客の費用をかけずに売上を積めています。",
+     "text": "7〜9月期は会員1,707万人（前年比35%増）、商品2,667万個（44%増）で、1人あたり1.56商品になりました（前年は1.47）。新しく開かれた商品の51%は既存の会員によるものです。決算説明会でNotoはSoFiUSDをまだ規模の小さい新事業の一つに挙げています。",
+     "quote": {
+      "text": "会員を増やし、その会員により多くの商品を使ってもらい、商品あたりの売上を上げていく",
+      "original": "We are adding more members, who are using more products, and generating more revenue per product to create the most value for our shareholders over the long run.",
+      "who": "Anthony Noto（CEO）",
+      "where": "決算発表",
+      "date": "2026年10月27日"
+     },
+     "check": "Investor Presentation 15頁の会員数・商品数・1人あたり商品数と、決算発表の既存会員による新規商品の割合",
+     "source": [
+      {
+       "label": "SoFi 2026年第3四半期 決算発表（SEC 8-K、2026年10月27日）",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001818874/000181887426000065/a2026q3earningsrelease.htm"
+      },
+      {
+       "label": "SoFi Investor Presentation 2026年第3四半期",
+       "url": "https://s27.q4cdn.com/749715820/files/doc_financials/2026/q3/2026-Q3-Investor-Presentation.pdf"
+      },
+      {
+       "label": "SoFi 決算説明会の書き起こし（2026年10月27日、SoFi IR掲載）",
+       "url": "https://s27.q4cdn.com/749715820/files/content_files/SoFi-Third-Quarter-2026-Earnings-Transcript_FINAL-docx.pdf"
+      }
+     ],
+     "asOf": "2026年7〜9月期",
+     "links": [
+      "relations",
+      "videos"
+     ]
+    }
+   ]
   }
+ }
 }
