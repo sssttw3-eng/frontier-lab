@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>会員募集 ─ FRONTIER LAB</title><meta name="description" content="FRONTIER LABは、米国株の個別企業を数字と出典で読み解く会員制の資料サイトです。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 L96 50 L50 96 L4 50 Z' fill='none' stroke='%230a4d8c' stroke-width='8'/%3E%3Cpath d='M50 30 L68 50 L50 70 L32 50 Z' fill='%23d4a24a'/%3E%3C/svg%3E">
+<meta property="og:title" content="会員募集 ─ FRONTIER LAB"><meta property="og:description" content="米国株の個別企業を、数字と出典で読み解く会員制の資料サイト。"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17242f;--sub:#5a7185;--line:#dfe8ef;--blue:#0a4d8c;--sky:#e8f3fb;--gold:#d4a24a;--navy:#0d2236;--paper:#f7fafc}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .in{display:flex;align-items:center;gap:12px;padding:14px 28px;max-width:1240px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.14em;font-size:16px}
+.brand .mk{width:24px;height:24px;color:var(--blue)} .brand .mk svg{width:100%;height:100%;display:block}
+header.top nav{margin-left:auto;display:flex;gap:26px;font-size:13px;color:var(--sub);font-weight:700;align-items:center}
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:800;font-size:13.5px;padding:11px 22px;border-radius:999px}
+.btn.big{font-size:15.5px;padding:16px 38px}
+.btn.ghost{background:#fff;color:var(--blue);border:1.5px solid var(--blue)}
+.jhero{padding:84px 0 70px;text-align:center;background:linear-gradient(180deg,#eef6fc,#fff)}
+.jhero .kick{font-size:12px;letter-spacing:.3em;color:var(--blue);font-weight:800}
+.jhero h1{font-family:'Shippori Mincho',serif;font-size:clamp(30px,4.6vw,46px);line-height:1.55;margin:20px 0 8px;font-weight:700}
+.jhero h1 .gold{background:linear-gradient(92deg,#0a4d8c 20%,#c99a35 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.jhero p{max-width:640px;margin:16px auto 0;color:#33506b;font-size:15.5px;line-height:2.05}
+.jhero .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+section.blk{padding:66px 0}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:30px}
+.sec-head h2{font-family:'Shippori Mincho',serif;font-size:25px;font-weight:700}
+.sec-head .no{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;color:var(--blue);font-weight:800}
+.gets{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.get{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px 24px 20px}
+.get .n{font-family:'Inter',sans-serif;font-weight:800;color:var(--gold);font-size:13px;letter-spacing:.14em}
+.get h3{font-size:16.5px;margin:8px 0 6px}
+.get p{font-size:13px;color:var(--sub);line-height:1.85}
+.sample{display:grid;grid-template-columns:1.2fr .8fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.sample .lft{padding:34px 36px}
+.sample .lft h3{font-family:'Shippori Mincho',serif;font-size:22px;line-height:1.6}
+.sample .lft p{font-size:13.5px;color:var(--sub);margin-top:10px;line-height:1.9}
+.sample .lft .btn{margin-top:20px}
+.sample .rgt{background:linear-gradient(140deg,#12395e,#0a4d8c);color:#fff;padding:34px 30px}
+.sample .rgt .row{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.18);padding:9px 0;font-size:13px}
+.sample .rgt .row b{font-family:'Inter',sans-serif}
+.philo{background:var(--navy);color:#e9f1f8;border-radius:18px;padding:52px 56px}
+.philo .v-ja{font-family:'Shippori Mincho',serif;font-size:clamp(19px,2.6vw,26px);line-height:1.9}
+.philo .v-en{font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.06em;color:#9db8cf;margin-top:10px}
+.philo .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px;border-top:1px solid rgba(255,255,255,.16);padding-top:28px}
+.philo .lab{font-size:11px;letter-spacing:.28em;color:var(--gold);font-weight:800;margin-bottom:8px}
+.philo .tx{font-family:'Shippori Mincho',serif;font-size:16.5px;line-height:1.95}
+.price{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plan{border:1.5px solid var(--line);border-radius:16px;padding:30px 32px}
+.plan.hot{border-color:var(--blue);background:#f4f9fd}
+.plan h3{font-size:17px}
+.plan .amt{font-family:'Inter',sans-serif;font-size:30px;font-weight:800;margin:10px 0 4px;color:var(--navy)}
+.plan .amt small{font-size:13px;color:var(--sub);font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700}
+.plan p{font-size:13px;color:var(--sub);line-height:1.9}
+.plan ul{list-style:none;margin-top:12px;font-size:13.5px;line-height:2.1}
+.plan ul li::before{content:'─ ';color:var(--gold);font-weight:800}
+.faq{border-top:1px solid var(--line)}
+.faq .q{padding:20px 4px;border-bottom:1px solid var(--line)}
+.faq .q b{display:block;font-size:15px;margin-bottom:4px}
+.faq .q p{font-size:13.5px;color:var(--sub);line-height:1.9;max-width:760px}
+.final{text-align:center;padding:76px 0 84px}
+.final h2{font-family:'Shippori Mincho',serif;font-size:clamp(24px,3.6vw,34px);line-height:1.7}
+.final p{color:var(--sub);font-size:14px;margin:14px 0 28px}
+footer.site{border-top:1px solid var(--line);padding:26px 0 40px}
+footer.site .in{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.14em;font-size:13px;color:var(--sub)}
+footer.site .mk{width:18px;height:18px;color:var(--blue)} footer.site .mk svg{width:100%;height:100%;display:block}
+@media(max-width:820px){.gets{grid-template-columns:1fr}.sample{grid-template-columns:1fr}.price{grid-template-columns:1fr}.philo{padding:36px 26px}.philo .grid{grid-template-columns:1fr}header.top nav a.nl{display:none}}
+</style></head><body>
+<header class="top"><div class="in"><a class="brand" href="top.html"><span class="mk"><svg viewBox="0 0 100 100" fill="none"><path d="M50 4 L96 50 L50 96 L4 50 Z" stroke="currentColor" stroke-width="7"/><path d="M50 30 L68 50 L50 70 L32 50 Z" fill="currentColor"/></svg></span>FRONTIER LAB</a>
+<nav><a class="nl" href="top.html">トップ</a><a class="nl" href="#gets">会員で得られるもの</a><a class="nl" href="#price">料金</a><a class="nl" href="#faq">よくある質問</a><a class="btn" href="#">Discordで参加する</a></nav></div></header>
+
+<div class="jhero"><div class="wrap">
+<div class="kick">MEMBERSHIP ─ 会員募集</div>
+<h1>未来に好奇心を。<br><span class="gold">知性で楽観を。</span></h1>
+<p>FRONTIER LABは、米国株の個別企業を数字と出典で読み解く会員制の資料サイトです。深く追う6社を中心に、決算のたびに「見る数字」を宣言し、結果で答え合わせを続けます。</p>
+<div class="cta"><a class="btn big" href="#">Discordで参加する</a><a class="btn big ghost" href="j7.html">資料のサンプルを見る</a></div>
+</div></div>
+
+<section class="blk" id="gets"><div class="wrap">
+<div class="sec-head"><span class="no">CONTENTS</span><h2>会員で得られるもの</h2></div>
+<div class="gets"><div class="get"><div class="n">01</div><h3>6社の完全資料</h3><p>Palantir、NVIDIA、SoFi、IonQ、AMD、Tesla。1社ごとに論点、数字、生態系、CEOの発言、弱点までをスライド形式で読み解く。</p></div><div class="get"><div class="n">02</div><h3>決算の答え合わせ</h3><p>決算前に「見る数字」を宣言し、発表後に結果と並べる。外れた場合も消さない。検証の記録が積み上がる。</p></div><div class="get"><div class="n">03</div><h3>決算から48時間以内の更新</h3><p>対象6社の決算は、発表から48時間以内に資料へ反映する。数字の差し替えではなく、論点の判定まで行う。</p></div><div class="get"><div class="n">04</div><h3>今週の市場の論点</h3><p>毎週、市場の議論の中心にあるテーマを4本に絞って提示する。関連する会社と、見る数字が付く。</p></div><div class="get"><div class="n">05</div><h3>注目企業マップ50社</h3><p>6社の外側も追う。海外の解説チャンネルで繰り返し扱われる企業を50社に整理し、決算予定とあわせて並べる。</p></div><div class="get"><div class="n">06</div><h3>Discordコミュニティ</h3><p>資料の読み合わせと、決算直後の議論の場。質問は資料への反映候補になる。</p></div></div>
+</div></section>
+
+<section class="blk" style="padding-top:0"><div class="wrap">
+<div class="sample"><div class="lft">
+<h3>まず、Palantirの資料を<br>そのまま公開しています</h3>
+<p>会員資料の形式と密度は、公開中のPalantir版（32スライド）で確認できます。論点の宣言、決算の答え合わせ、反対論点まで、会員版と同じ作りです。</p>
+<a class="btn" href="j7.html">Palantirの資料を開く</a>
+</div><div class="rgt">
+<div class="row"><span>スライド数</span><b>32</b></div>
+<div class="row"><span>CEO発言の引用（出典つき）</span><b>5本</b></div>
+<div class="row"><span>ページ内の数字（出典つき）</span><b>379件</b></div>
+<div class="row"><span>次回決算の判定</span><b>2027年2月1日</b></div>
+<div class="row"><span>更新方針</span><b>決算から48時間以内</b></div>
+</div></div>
+</div></section>
+
+<section class="blk" style="padding-top:0"><div class="wrap">
+<div class="philo">
+<div class="v-ja">誰もが、未来を、本当にそうであるくらい<br>ワクワクするものとして捉えている世界</div>
+<div class="v-en">A world where everyone sees the future as exciting as it really is.</div>
+<div class="grid">
+<div><div class="lab">MISSION</div><div class="tx">未来への好奇心と、知性ある楽観で、<br>世界の知の最前線を読み解く</div></div>
+<div><div class="lab">VALUE</div><div class="tx">好奇心と知性は、<br>あらゆるものを良くする</div></div>
+</div></div>
+</div></section>
+
+<section class="blk" id="price" style="padding-top:0"><div class="wrap">
+<div class="sec-head"><span class="no">PRICE</span><h2>料金</h2></div>
+<div class="price">
+<div class="plan hot"><h3>個人プラン</h3><div class="amt">近日公開</div>
+<p>料金と申込開始日は、準備が整い次第このページで案内します。先行案内はDiscordで受け取れます。</p>
+<ul><li>対象6社の完全資料</li><li>決算から48時間以内の更新</li><li>今週の市場の論点（毎週）</li><li>Discordコミュニティへの参加</li></ul>
+</div>
+<div class="plan"><h3>法人プラン</h3><div class="amt">個別相談</div>
+<p>社内研修・投資教育向け。請求書払いと社内配布の条件に対応します。</p>
+<ul><li>資料の社内配布ライセンス</li><li>請求書払い</li><li>研修向けの解説セッション（応相談）</li></ul>
+</div>
+</div></div></section>
+
+<section class="blk" id="faq" style="padding-top:0"><div class="wrap">
+<div class="sec-head"><span class="no">FAQ</span><h2>よくある質問</h2></div>
+<div class="faq"><div class="q"><b>Q．更新の頻度はどれくらいですか</b><p>決算期は対象6社を48時間以内に更新します。通常期は市場の論点を毎週更新し、大きな契約や買収などの材料が出た会社は随時反映します。</p></div><div class="q"><b>Q．資料はどんな形式ですか</b><p>ブラウザで読むスライド形式です。1画面に1テーマで、動画での解説にもそのまま使えます。印刷すればPDFとしても保存できます。</p></div><div class="q"><b>Q．投資の助言は含まれますか</b><p>含まれません。FRONTIER LABは企業理解のための資料であり、売買の推奨はしません。数字には出典と確認日を付け、判断は読み手に残します。</p></div><div class="q"><b>Q．法人の利用はできますか</b><p>社内研修や投資教育向けの法人プランを用意しています。請求書払いと社内配布の条件は個別にご相談ください。</p></div></div>
+</div></section>
+
+<div class="final"><div class="wrap">
+<h2>未来に好奇心を。知性で楽観を。</h2>
+<p>申込開始の案内はDiscordで先行してお届けします。</p>
+<a class="btn big" href="#">Discordで先行案内を受け取る</a>
+</div></div>
+
+<footer class="site"><div class="wrap"><div class="in"><span class="mk"><svg viewBox="0 0 100 100" fill="none"><path d="M50 4 L96 50 L50 96 L4 50 Z" stroke="currentColor" stroke-width="7"/><path d="M50 30 L68 50 L50 70 L32 50 Z" fill="currentColor"/></svg></span>FRONTIER LAB</div></div></footer>
+</body></html>
