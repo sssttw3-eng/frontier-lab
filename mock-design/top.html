@@ -5,44 +5,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Shippori+Mincho:wght@600;700&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--blue:#00579f;--cy:#0a6fc4;--navy:#0b2a44;--ink:#1a2f42;--sub:#64798c;--faint:#93a7b8;--line:#e2ebf3;--bg:#f7fafc;--gold:#a87b1e}
+:root{--blue:#00579f;--cy:#0a6fc4;--navy:#0b2a44;--ink:#1a2f42;--sub:#64798c;--faint:#93a7b8;--line:#e2ebf3}
 html{scroll-behavior:smooth}
 body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);background:#fff;font-feature-settings:'palt';line-height:1.8;-webkit-font-smoothing:antialiased}
 .num{font-family:'Inter',sans-serif}
 a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.hwrap{max-width:1120px;margin:0 auto;padding:15px 32px;display:flex;align-items:center;gap:12px}
-.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.16em;font-size:14.5px;color:var(--navy)}
-.brand svg{width:25px;height:25px}
-.brand i{font-style:normal;color:var(--cy)}
-nav{margin-left:auto;display:flex;gap:30px;font-size:13px;font-weight:700;color:var(--sub);letter-spacing:.04em}
-nav a{text-decoration:none}
-nav a:hover{color:var(--navy)}
-.hero{padding:96px 0 20px;text-align:left}
-.kick{font-size:11px;letter-spacing:.34em;color:var(--cy);font-weight:900;margin-bottom:22px}
-.hero h1{font-family:'Shippori Mincho',serif;font-size:clamp(36px,5.4vw,60px);font-weight:700;line-height:1.35;color:var(--navy);letter-spacing:.02em}
-.hero h1 .u{color:var(--cy)}
-.hero .lead{font-size:15.5px;color:var(--ink);max-width:680px;margin-top:24px;font-weight:500;line-height:2}
-.stats{display:flex;gap:0;border-top:1px solid var(--navy);margin-top:52px;flex-wrap:wrap}
-.stat{padding:15px 34px 4px 0;margin-right:34px}
-.stat .l{font-size:11px;color:var(--faint);font-weight:700;letter-spacing:.12em}
-.stat .v{font-size:24px;font-weight:800;font-family:'Inter',sans-serif;color:var(--navy)}
-.stat .v small{font-size:13px;font-weight:700}
-section.blk{padding:76px 0 0}
+.kick{font-size:11px;letter-spacing:.34em;font-weight:900}
+.hero{position:relative;color:#fff;overflow:hidden;background:#04101f}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,16,31,.45),rgba(4,16,31,.05) 40%,rgba(4,16,31,.72))}
+.hero header{position:relative;display:flex;align-items:center;gap:11px;padding:17px 34px;font-weight:900;letter-spacing:.16em;font-size:14px}
+.hero header svg{width:24px;height:24px}
+.hero header nav{margin-left:auto;display:flex;gap:28px;font-size:12.5px;letter-spacing:.06em}
+.hero header nav a{text-decoration:none;color:#dcebf7}
+.hero .hin{position:relative;max-width:1120px;margin:0 auto;padding:56px 32px 40px}
+.hero h1{font-family:'Shippori Mincho',serif;font-size:clamp(34px,5vw,54px);line-height:1.45;letter-spacing:.05em;text-shadow:0 2px 26px rgba(0,0,0,.45);margin-top:16px}
+.hero .lead{font-size:14.5px;line-height:2;max-width:600px;margin-top:18px;color:#e6eff7;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero .stats{display:flex;gap:38px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.35);margin-top:30px;padding-top:16px}
+.hero .stat .l{font-size:10.5px;letter-spacing:.14em;color:#a9cbe8;font-weight:700}
+.hero .stat .v{font-family:'Inter',sans-serif;font-size:20px;font-weight:800}
+.hero .stat .v small{font-size:12px;font-weight:700}
+.hero .credit{position:absolute;right:18px;bottom:12px;font-size:10.5px;color:rgba(220,235,247,.75)}
+section.blk{padding:70px 0 0}
 .blkhead{border-bottom:1px solid var(--navy);padding-bottom:13px;display:flex;align-items:baseline;gap:18px}
-.blkhead h2{font-family:'Shippori Mincho',serif;font-size:25px;font-weight:700;color:var(--navy);letter-spacing:.03em}
+.blkhead h2{font-family:'Shippori Mincho',serif;font-size:24px;font-weight:700;color:var(--navy);letter-spacing:.03em}
 .blkhead p{font-size:13px;color:var(--sub)}
-.calbox{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-top:none}
-.calcell{padding:24px 28px;display:flex;gap:20px;align-items:flex-start}
-.calcell+.calcell{border-left:1px solid var(--line)}
-.calcell .when{font-family:'Inter',sans-serif;font-weight:800;font-size:23px;color:var(--navy);white-space:nowrap;line-height:1.3}
-.calcell .when small{display:block;font-size:10.5px;color:var(--cy);letter-spacing:.2em;font-weight:800;margin-bottom:5px}
-.calcell .what{font-size:14px;font-weight:700;line-height:1.65}
-.calcell .what span{display:block;font-weight:500;color:var(--sub);font-size:12.5px;margin-top:3px}
-.calnote{font-size:12.5px;color:var(--sub);padding:12px 2px 0}
+.upd{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-top:none}
+.upd a{background:#fff;padding:17px 20px;text-decoration:none;display:block}
+.upd .dt{font-family:'Inter',sans-serif;font-size:11px;font-weight:800;color:var(--cy);letter-spacing:.1em}
+.upd .co{font-weight:900;font-size:15.5px;color:var(--navy);margin-top:4px}
+.upd .tx{font-size:12.5px;color:var(--sub);line-height:1.7;margin-top:3px}
+.themes{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-top:none}
+.theme{background:#fff;padding:0 0 24px}
+.theme img{width:100%;aspect-ratio:16/8.2;object-fit:cover;display:block}
+.theme .tin{padding:20px 28px 0}
+.theme .tn{font-family:'Inter',sans-serif;font-size:11px;font-weight:800;color:var(--cy);letter-spacing:.2em}
+.theme h3{font-size:18.5px;font-weight:900;color:var(--navy);margin-top:7px;line-height:1.5}
+.theme p{font-size:13.5px;margin-top:8px;line-height:1.85}
+.theme .see{font-size:12.5px;margin-top:11px;color:var(--sub)}
+.theme .see b{color:var(--navy)}
+.theme .vsrc{font-size:11px;color:var(--faint);margin-top:10px}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.chip{font-size:11.5px;font-weight:800;border:1px solid var(--line);border-radius:999px;padding:3px 12px;color:var(--blue);background:#fbfdff}
+.calgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-top:none}
+.calcell{background:#fff;padding:20px 24px}
+.calcell .when{font-family:'Inter',sans-serif;font-weight:800;font-size:19px;color:var(--navy)}
+.calcell .when small{display:block;font-size:10.5px;color:var(--cy);letter-spacing:.16em;margin-bottom:4px}
+.calcell .what{font-size:13.5px;font-weight:700;margin-top:2px}
+.calcell .see{font-size:12px;color:var(--sub);margin-top:5px;line-height:1.7}
+.calcell .see b{color:var(--navy);font-weight:700}
 .cogrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-top:none}
-.cocard{padding:26px 26px 20px;text-decoration:none;display:flex;flex-direction:column;background:#fff;transition:background .25s}
+.cocard{padding:26px 26px 20px;text-decoration:none;display:flex;flex-direction:column;background:#fff}
 .cocard:hover{background:#fbfdff}
 .cocard .top{display:flex;align-items:center;gap:12px}
 .clogo{width:48px;height:48px;border-radius:11px;display:flex;align-items:center;justify-content:center;padding:7px;border:1px solid var(--line);overflow:hidden;flex:none}
@@ -51,133 +65,137 @@ section.blk{padding:76px 0 0}
 .cocard .tk{font-family:'Inter',sans-serif;font-size:11px;color:var(--cy);font-weight:800;letter-spacing:.14em}
 .cocard .ds{font-size:12.5px;color:var(--sub);margin-top:11px;font-weight:700}
 .cocard .hd{font-size:15px;font-weight:900;margin-top:10px;line-height:1.6}
-.cocard .mt{font-size:12.5px;color:var(--ink);margin-top:7px}
+.cocard .mt{font-size:12.5px;margin-top:7px}
 .spark{display:flex;align-items:flex-end;gap:3px;height:40px;margin-top:15px}
 .spark i{flex:1;background:#c8dff2;border-radius:2px 2px 0 0;display:block}
 .spark i:last-child{background:var(--cy)}
-.cocard .ax{font-size:12px;color:var(--sub);margin-top:11px;border-top:1px dashed var(--line);padding-top:10px;line-height:1.7}
 .focusline{font-size:12.5px;margin-top:11px;background:#f2f7fb;border-radius:9px;padding:8px 12px;line-height:1.65}
 .focusline b{color:var(--blue)}
-.cocard .go{margin-top:auto;padding-top:15px;font-size:12.5px;font-weight:900;color:var(--blue);letter-spacing:.05em}
-.mapnote{font-size:12.5px;color:var(--sub);padding:14px 2px 0}
-.tier{font-size:11px;letter-spacing:.26em;color:var(--cy);font-weight:900;margin:34px 0 0}
-.mapgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:14px}
-.mapcell{background:#fff;padding:15px 18px;display:flex;align-items:baseline;gap:11px}
-.mapcell .rk{font-family:'Inter',sans-serif;font-size:11.5px;color:var(--faint);font-weight:800;min-width:20px}
-.mapcell .mn{font-weight:900;font-size:14.5px;color:var(--navy)}
-.mapcell .mf{font-size:11px;color:var(--sub);margin-left:auto;text-align:right;white-space:nowrap}
-.mapcell .have{font-size:10px;color:#fff;background:var(--cy);border-radius:5px;padding:1.5px 7px;font-weight:800;margin-left:8px;white-space:nowrap}
-.themes{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-top:none}
-.theme{background:#fff;padding:28px 30px}
-.theme .tn{font-family:'Inter',sans-serif;font-size:11px;font-weight:800;color:var(--cy);letter-spacing:.2em}
-.theme h3{font-size:19px;font-weight:900;color:var(--navy);margin-top:8px;line-height:1.5}
-.theme p{font-size:13.5px;color:var(--ink);margin-top:9px;line-height:1.85}
-.theme .see{font-size:12.5px;margin-top:12px;color:var(--sub)}
-.theme .see b{color:var(--navy)}
-.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
-.chip{font-size:11.5px;font-weight:800;border:1px solid var(--line);border-radius:999px;padding:3px 12px;color:var(--blue);text-decoration:none;background:#fbfdff}
+.cocard .ax{font-size:12px;color:var(--sub);margin-top:11px;border-top:1px dashed var(--line);padding-top:10px;line-height:1.7}
+.cocard .go{margin-top:auto;padding-top:15px;font-size:12.5px;font-weight:900;color:var(--blue)}
+.tier{font-size:11px;letter-spacing:.26em;color:var(--cy);font-weight:900;margin:32px 0 0}
+.mapgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:13px}
+.mapcell{background:#fff;padding:13px 16px;display:flex;align-items:center;gap:10px}
+.mapcell .rk{font-family:'Inter',sans-serif;font-size:11px;color:var(--faint);font-weight:800;min-width:19px}
+.mlogo{position:relative;width:30px;height:30px;border-radius:8px;background:#eef3f8;display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden}
+.mlogo .mono{font-family:'Inter',sans-serif;font-weight:800;font-size:13px;color:#5b7a94}
+.mlogo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:5px;background:#fff}
+.mapcell .mn{font-weight:900;font-size:14px;color:var(--navy);line-height:1.3}
+.mapcell .mf{font-size:10.5px;color:var(--sub);margin-left:auto;text-align:right;white-space:nowrap}
+.mapnote{font-size:12.5px;color:var(--sub);padding:13px 2px 0}
 .bandgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:1px;background:var(--line);border:1px solid var(--line)}
-.ipobox{background:linear-gradient(125deg,#0b2a44,#0a5b96);color:#fff;padding:32px 34px}
-.ipobox h3{font-family:'Shippori Mincho',serif;font-size:21px;font-weight:700}
-.ipobox p{font-size:13.5px;opacity:.88;margin-top:9px;line-height:1.9}
-.dbox{background:#fff;padding:32px 34px}
-.dbox h3{font-family:'Shippori Mincho',serif;font-size:21px;font-weight:700;color:var(--navy)}
-.dbox p{font-size:13.5px;margin-top:9px;line-height:1.9}
-.cta{display:inline-block;background:var(--blue);color:#fff;font-weight:900;font-size:14px;border-radius:11px;padding:12px 26px;text-decoration:none;margin-top:18px}
+.ipobox{background:linear-gradient(125deg,#0b2a44,#0a5b96);color:#fff;padding:30px 32px}
+.ipobox h3{font-family:'Shippori Mincho',serif;font-size:20px;font-weight:700}
+.ipobox p{font-size:13.5px;opacity:.88;margin-top:8px;line-height:1.9}
+.dbox{background:#fff;padding:30px 32px}
+.dbox h3{font-family:'Shippori Mincho',serif;font-size:20px;font-weight:700;color:var(--navy)}
+.dbox p{font-size:13.5px;margin-top:8px;line-height:1.9}
+.cta{display:inline-block;background:var(--blue);color:#fff;font-weight:900;font-size:14px;border-radius:11px;padding:12px 26px;text-decoration:none;margin-top:16px}
 .cta.light{background:#fff;color:var(--navy)}
-
-.philo{background:linear-gradient(140deg,#0b2a44 55%,#0d4a78);color:#fff;margin-top:84px}
-.philo .in{max-width:1120px;margin:0 auto;padding:76px 32px 70px}
+.philo{background:linear-gradient(140deg,#0b2a44 55%,#0d4a78);color:#fff;margin-top:80px}
+.philo .in{max-width:1120px;margin:0 auto;padding:72px 32px 66px}
 .philo .kick{color:#8fc6ef}
-.philo .vision{font-family:'Shippori Mincho',serif;font-size:clamp(23px,3.4vw,34px);line-height:1.75;font-weight:600;max-width:860px}
-.philo .ven{font-size:12.5px;color:#a9cbe8;margin-top:16px;letter-spacing:.05em;line-height:1.9}
-.philo .cols{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:48px;border-top:1px solid rgba(255,255,255,.22);padding-top:38px}
+.philo .vision{font-family:'Shippori Mincho',serif;font-size:clamp(22px,3.2vw,32px);line-height:1.75;font-weight:600;max-width:840px;margin-top:18px}
+.philo .ven{font-size:12.5px;color:#a9cbe8;margin-top:14px;line-height:1.9}
+.philo .cols{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:44px;border-top:1px solid rgba(255,255,255,.22);padding-top:34px}
 .philo .col .en{font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:.3em;color:#8fc6ef;font-weight:800}
-.philo .col .jp{font-family:'Shippori Mincho',serif;font-size:19px;margin-top:10px;line-height:1.8;font-weight:600}
-@media(max-width:700px){.philo .cols{grid-template-columns:1fr}}
-.hero h1{letter-spacing:.05em;line-height:1.42}
-.grad{background:linear-gradient(92deg,#0a6fc4 20%,#3d9be9 55%,#e8a33d 110%);-webkit-background-clip:text;background-clip:text;color:transparent}
-footer{margin-top:0;border-top:1px solid var(--line)}
-.fin{max-width:1120px;margin:0 auto;padding:26px 32px 46px;font-size:12px;color:var(--faint);line-height:2}
-@media(max-width:900px){.cogrid{grid-template-columns:1fr 1fr}.mapgrid{grid-template-columns:1fr 1fr}.themes{grid-template-columns:1fr}.bandgrid{grid-template-columns:1fr}.calbox{grid-template-columns:1fr}.calcell+.calcell{border-left:none;border-top:1px solid var(--line)}}
-@media(max-width:620px){.cogrid,.mapgrid{grid-template-columns:1fr}nav{display:none}.hero{padding-top:60px}}
+.philo .col .jp{font-family:'Shippori Mincho',serif;font-size:18.5px;margin-top:9px;line-height:1.8;font-weight:600}
+footer{border-top:1px solid var(--line)}
+.fin{max-width:1120px;margin:0 auto;padding:24px 32px 42px;font-size:12px;color:var(--faint);line-height:2}
+@media(max-width:900px){.cogrid{grid-template-columns:1fr 1fr}.mapgrid{grid-template-columns:1fr 1fr}.themes,.calgrid{grid-template-columns:1fr}.upd{grid-template-columns:1fr 1fr}.bandgrid{grid-template-columns:1fr}.philo .cols{grid-template-columns:1fr}}
+@media(max-width:620px){.cogrid,.mapgrid,.upd{grid-template-columns:1fr}.hero header nav{display:none}}
 </style></head>
 <body>
-<header><div class="hwrap"><span class="brand"><svg viewBox="0 0 40 40"><path d="M20 2 L38 20 L20 38 L2 20 Z" fill="none" stroke="#0067b9" stroke-width="3"/><path d="M20 11.5 L28.5 20 L20 28.5 L11.5 20 Z" fill="#0067b9"/></svg>FRONTIER <i>LAB</i></span>
-<nav><a href="#companies">6社の資料</a><a href="#map">企業マップ</a><a href="#themes">市場の論点</a><a href="../ipo.html">上場予定</a></nav></div></header>
-
-<div class="wrap"><div class="hero">
-<div class="kick">MEMBER SITE ─ 企業理解</div>
-<h1>未来に好奇心を。<br><span class="grad">知性で楽観を。</span></h1>
-<p class="lead">未来への好奇心と、知性ある楽観で、世界の知の最前線を読み解く。対象は、まず深く追う6社と、広く追う注目企業50社。各社について「今の論点」を先に置き、決算が出たら数字で答え合わせする。ワクワクは、裏付けのある数字から作る。</p>
+<div class="hero">
+<img class="bg" src="https://i.natgeofe.com/n/32fe988d-eda6-47a0-a4ba-29aa8f2e56b6/nationalgeographic_2679523.jpg?w=1600&h=1053" alt="">
+<div class="shade"></div>
+<header><svg viewBox="0 0 40 40"><path d="M20 2 L38 20 L20 38 L2 20 Z" fill="none" stroke="#fff" stroke-width="3"/><path d="M20 11.5 L28.5 20 L20 28.5 L11.5 20 Z" fill="#fff"/></svg>FRONTIER <span style="color:#a9cbe8">LAB</span>
+<nav><a href="#themes">今週の論点</a><a href="#calendar">決算カレンダー</a><a href="#companies">6社の資料</a><a href="#map">企業マップ</a><a href="../ipo.html">上場予定</a></nav></header>
+<div class="hin">
+<div class="kick" style="color:#a9cbe8">MEMBER COMMUNITY ─ 企業理解</div>
+<h1>未来に好奇心を。<br>知性で楽観を。</h1>
+<p class="lead">未来への好奇心と、知性ある楽観で、世界の知の最前線を読み解く。ワクワクは、裏付けのある数字から作る。</p>
 <div class="stats num">
 <div class="stat"><div class="l">深く追う企業</div><div class="v">6<small>社</small></div></div>
 <div class="stat"><div class="l">注目企業マップ</div><div class="v">50<small>社</small></div></div>
 <div class="stat"><div class="l">次の決算</div><div class="v">11/17<small> NVIDIA</small></div></div>
-<div class="stat"><div class="l">最終更新</div><div class="v" style="font-size:20px;padding-top:4px">2026年11月12日</div></div>
+<div class="stat"><div class="l">最終更新</div><div class="v" style="font-size:17px;padding-top:3px">2026年11月12日</div></div>
 </div></div>
-
-<section class="blk" style="padding-top:56px">
-<div class="blkhead"><h2>決算カレンダー</h2><p>直近の2件</p></div>
-<div class="calbox">
-<div class="calcell"><div class="when"><small>NEXT ─ あと5日</small>11月17日</div><div class="what">NVIDIA 決算（FY2027 第3四半期）<span>会社見通しは売上1,080億ドル、中国のデータセンター向けはゼロ前提。発表後に資料を更新する</span></div></div>
-<div class="calcell"><div class="when"><small>NEXT ─ あと81日</small>2027年2月1日</div><div class="what">Palantir 決算（2026年10〜12月期・見込み）<span>論点の判定タグに書いた3つの数字で答え合わせする</span></div></div>
+<div class="credit">写真：国際宇宙ステーションから見た日の出（National Geographic）</div>
 </div>
-<p class="calnote">1月下旬〜2月には Tesla、SoFi、IonQ、AMD の決算が続く（例年の時期）。日付が確定したものからここに並べる。</p>
+
+<div class="wrap">
+<section class="blk" style="padding-top:54px">
+<div class="blkhead"><h2>最新の更新</h2><p>2026年11月12日</p></div>
+<div class="upd"><a href="j7.html"><div class="dt num">2026.11.12 ─ UPDATE</div><div class="co">Palantir</div><div class="tx">資料を全面刷新。目次と株価の定点観測を追加した</div></a><a href="deck-n.html"><div class="dt num">2026.11.12 ─ UPDATE</div><div class="co">NVIDIA</div><div class="tx">11月17日の決算に向け、論点と見る数字を公開</div></a><a href="top.html#companies"><div class="dt num">2026.11.12 ─ UPDATE</div><div class="co">Tesla／IonQ／SoFi／AMD</div><div class="tx">4社の資料を新規公開。各社の切り口で13画面ずつ</div></a><a href="top.html#map"><div class="dt num">2026.11.12 ─ UPDATE</div><div class="co">注目企業マップ</div><div class="tx">ランキングv3に基づく50社版を公開</div></a></div>
+</section>
+
+<section class="blk" id="themes">
+<div class="blkhead"><h2>今週の市場の論点</h2><p>2026年11月第2週</p></div>
+<div class="themes"><div class="theme"><img src="https://i.ytimg.com/vi/CPKpGY0K5yo/hqdefault.jpg" alt="">
+<div class="tin"><div class="tn">THEME 01</div><h3>AIバブルは、本物か</h3><p>市場の議論の中心にあるテーマ。論点は「投資が先か、売上が先か」に集まる。設備投資の伸びと、その投資から生まれる売上の伸びの差が開くほど、バブル側の材料になる。</p>
+<div class="see">見る数字 ─ <b>大手クラウドの設備投資と、AI関連の売上</b></div>
+<div class="chips"><span class="chip">NVIDIA</span><span class="chip">Microsoft</span><span class="chip">Alphabet</span><span class="chip">CoreWeave</span></div>
+<div class="vsrc">関連する柏原の動画 ─ 【Palantir徹底解剖】FDEとオントロジー、NVIDIAとの提携、なぜ製造にまで参（2026-11-08）</div></div></div><div class="theme"><img src="https://i.ytimg.com/vi/CPKpGY0K5yo/hqdefault.jpg" alt="">
+<div class="tin"><div class="tn">THEME 02</div><h3>11月17日、NVIDIAが市場を決める</h3><p>売上見通し1,080億ドル、中国のデータセンター向けはゼロ前提、粗利率74%前後。この3つがそろえばAI投資の前提がもう1四半期延びる。外せば全体の倍率が下がる。</p>
+<div class="see">見る数字 ─ <b>見通しと実績の差、粗利率、中国の扱い</b></div>
+<div class="chips"><span class="chip">NVIDIA</span><span class="chip">TSMC</span><span class="chip">Micron</span><span class="chip">Broadcom</span></div>
+<div class="vsrc">関連する柏原の動画 ─ 【Palantir徹底解剖】FDEとオントロジー、NVIDIAとの提携、なぜ製造にまで参（2026-11-08）</div></div></div><div class="theme"><img src="https://i.ytimg.com/vi/rRP_4kl6aEI/hqdefault.jpg" alt="">
+<div class="tin"><div class="tn">THEME 03</div><h3>メモリと光部品の逼迫</h3><p>GPUの次に足りなくなる部品へ、資金と注目が移っている。NVIDIAがLumentumとCoherentへ各20億ドルを投資したのもこの文脈。価格が上がる部品を持つ会社の決算が強い。</p>
+<div class="see">見る数字 ─ <b>メモリ価格、光部品の受注、各社の値上げの有無</b></div>
+<div class="chips"><span class="chip">Micron</span><span class="chip">SK hynix</span><span class="chip">Lumentum</span><span class="chip">Coherent</span></div>
+<div class="vsrc">関連する柏原の動画 ─ 【NVIDIA2Q決算速報】売上962億ドル(約15.4兆円)へ。AIサーバー15%値上（2026-08-27）</div></div></div><div class="theme"><img src="https://i.ytimg.com/vi/CPKpGY0K5yo/hqdefault.jpg" alt="">
+<div class="tin"><div class="tn">THEME 04</div><h3>主権AIと防衛テック</h3><p>各国政府が自国のAI基盤を持とうとする動きと、防衛予算の拡大が重なっている。ネットから切り離した環境でAIを動かせる会社と、ドローン・宇宙の会社に追い風。</p>
+<div class="see">見る数字 ─ <b>政府向けの受注と、各国のAI予算</b></div>
+<div class="chips"><span class="chip">Palantir</span><span class="chip">AeroVironment</span><span class="chip">Kratos</span><span class="chip">L3Harris</span></div>
+<div class="vsrc">関連する柏原の動画 ─ 【Palantir徹底解剖】FDEとオントロジー、NVIDIAとの提携、なぜ製造にまで参（2026-11-08）</div></div></div></div>
+</section>
+
+<section class="blk" id="calendar">
+<div class="blkhead"><h2>決算カレンダー</h2><p>深く追う6社の予定と、見る数字</p></div>
+<div class="calgrid"><div class="calcell"><div class="when"><small>NEXT ─ あと5日</small>11月17日</div><div class="what">NVIDIA（確定）</div><div class="see">見る数字 ─ 会社見通し<b>1,080億ドル</b>との差、<b>粗利率</b>、中国の扱い</div></div><div class="calcell"><div class="when"><small>NEXT ─ あと81日</small>2027年2月1日</div><div class="what">Palantir（見込み）</div><div class="see">見る数字 ─ <b>政府向けの伸び</b>、米国外の伸び、米民間1社あたりの売上</div></div><div class="calcell"><div class="when"><small>例年 ─ 1月下旬</small>1月下旬</div><div class="what">Tesla（日付未確定）</div><div class="see">見る数字 ─ 自動車の売上と<b>営業利益率</b>、蓄電池の出荷量</div></div><div class="calcell"><div class="when"><small>例年 ─ 1月下旬</small>1月下旬</div><div class="what">SoFi（日付未確定）</div><div class="see">見る数字 ─ <b>手数料型の収益の比率</b>、技術基盤の口座数、貸し倒れ率</div></div><div class="calcell"><div class="when"><small>例年 ─ 2月上旬</small>2月上旬</div><div class="what">AMD（日付未確定）</div><div class="see">見る数字 ─ <b>データセンター部門の伸び</b>、在庫、次の見通し</div></div><div class="calcell"><div class="when"><small>例年 ─ 2月中旬</small>2月中旬</div><div class="what">IonQ（日付未確定）</div><div class="see">見る数字 ─ <b>通期見通しへの進捗</b>、受注残、赤字の幅</div></div></div>
 </section>
 
 <section class="blk" id="companies">
 <div class="blkhead"><h2>深く追う6社</h2><p>会社ごとに切り口は違う。見出しは各社のいまの形そのもの</p></div>
 <div class="cogrid"><a class="cocard" href="deck-n.html">
 <div class="top"><span class="clogo" style="background:#fff"><img src="../assets/logo-n.svg" alt=""></span><span><span class="nm">NVIDIA</span><br><span class="tk">NVDA</span></span></div>
-<div class="ds">AIの計算を支えるハードとソフトを売る会社</div>
-<div class="hd">GPUを核に、データセンターの中身一式を売る</div>
-<div class="mt">FY2026の売上→2,159億3,800万ドル（約33兆2,545億円）</div>
+<div class="ds">AIの計算を支えるハードとソフトを売る会社</div><div class="hd">GPUを核に、データセンターの中身一式を売る</div><div class="mt">FY2026の売上→2,159億3,800万ドル（約33兆2,545億円）</div>
 <div class="spark"><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:12%"></i><i style="height:12%"></i><i style="height:28%"></i><i style="height:60%"></i><i style="height:100%"></i></div><div style="font-size:11px;color:var(--faint)">年次売上 2018〜2026 ─ 直近 2,159億ドル</div>
 <div class="focusline"><b>今の論点 ─ </b>データセンターの伸びは、顧客の投資にどこまでついていくか</div>
 <div style="margin-top:11px"><span style="background:#eef5fb;border:1px solid var(--line);color:var(--blue);font-weight:800;font-size:11.5px;border-radius:8px;padding:4px 11px">次回決算 ─ 2026年11月17日</span></div>
 <div class="ax">NVIDIAの売上はほぼデータセンター向けの1本足で、ここが伸びる限り会社全体が伸びる構造です。</div>
 <div class="go">資料を開く →</div></a><a class="cocard" href="j7.html">
 <div class="top"><span class="clogo" style="background:#172b3a"><img src="../assets/logo-p.svg" alt=""></span><span><span class="nm">Palantir</span><br><span class="tk">PLTR</span></span></div>
-<div class="ds">モデルを現場の仕事につなぐ基盤の会社</div>
-<div class="hd">9.11後の国防から、企業と政府のAIの基盤へ</div>
-<div class="mt">売上→23億1,300万ドル（約3,562億円、前年比96%増）</div>
+<div class="ds">モデルを現場の仕事につなぐ基盤の会社</div><div class="hd">9.11後の国防から、企業と政府のAIの基盤へ</div><div class="mt">売上→23億1,300万ドル（約3,562億円、前年比96%増）</div>
 <div class="spark"><i style="height:13%"></i><i style="height:17%"></i><i style="height:24%"></i><i style="height:34%"></i><i style="height:43%"></i><i style="height:50%"></i><i style="height:64%"></i><i style="height:100%"></i></div><div style="font-size:11px;color:var(--faint)">年次売上 2018〜2025 ─ 直近 44.8億ドル</div>
 <div class="focusline"><b>今の論点 ─ </b>主権AIが、政府向けを押し上げるか</div>
 <div style="margin-top:11px"><span style="background:#eef5fb;border:1px solid var(--line);color:var(--blue);font-weight:800;font-size:11.5px;border-radius:8px;padding:4px 11px">次回決算 ─ 2027年2月1日（見込み）</span></div>
 <div class="ax">Palantirを見るときの軸は顧客の現場にどこまで入り込んでいるかです。</div>
 <div class="go">資料を開く →</div></a><a class="cocard" href="deck-t.html">
 <div class="top"><span class="clogo" style="background:#ffffff"><img src="../assets/new-tesla-logo.svg" alt=""></span><span><span class="nm">Tesla</span><br><span class="tk">TSLA</span></span></div>
-<div class="ds">EV・蓄電池・運転支援・ロボットを手がける会社</div>
-<div class="hd">車・エネルギー・ロボットの会社</div>
-<div class="mt">2025年度の売上→948億2,700万ドル（約14兆6,034億円、前年比3%減）</div>
+<div class="ds">EV・蓄電池・運転支援・ロボットを手がける会社</div><div class="hd">車・エネルギー・ロボットの会社</div><div class="mt">2025年度の売上→948億2,700万ドル（約14兆6,034億円、前年比3%減）</div>
 <div class="spark"><i style="height:22%"></i><i style="height:25%"></i><i style="height:32%"></i><i style="height:55%"></i><i style="height:83%"></i><i style="height:99%"></i><i style="height:100%"></i><i style="height:97%"></i></div><div style="font-size:11px;color:var(--faint)">年次売上 2018〜2025 ─ 直近 948億ドル</div>
 <div class="focusline"><b>今の論点 ─ </b>車の利益率の低下は、止まるか</div>
 
 <div class="ax">売上は横ばいでも、市場がTeslaを見るものさしは車の台数からロボットとエネルギーへ移っています。</div>
 <div class="go">資料を開く →</div></a><a class="cocard" href="deck-i.html">
 <div class="top"><span class="clogo" style="background:#fff"><img src="../assets/logo-i.svg" alt=""></span><span><span class="nm">IonQ</span><br><span class="tk">IONQ</span></span></div>
-<div class="ds">量子計算と関連技術を商用化する会社</div>
-<div class="hd">イオン方式の量子コンピュータから、通信・センサーまで</div>
-<div class="mt">2025年度の売上→1億3,002万ドル（約200億円）</div>
+<div class="ds">量子計算と関連技術を商用化する会社</div><div class="hd">イオン方式の量子コンピュータから、通信・センサーまで</div><div class="mt">2025年度の売上→1億3,002万ドル（約200億円）</div>
 <div class="spark"><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:17%"></i><i style="height:33%"></i><i style="height:100%"></i></div><div style="font-size:11px;color:var(--faint)">年次売上 2019〜2025 ─ 直近 1.3億ドル</div>
 <div class="focusline"><b>今の論点 ─ </b>336%増の伸びは、買収か本業か</div>
 
 <div class="ax">IonQの売上はこの2年で桁が変わっていて、量子が研究テーマから売上の立つ事業になった最初の例の一つです。</div>
 <div class="go">資料を開く →</div></a><a class="cocard" href="deck-s.html">
 <div class="top"><span class="clogo" style="background:#fff"><img src="../assets/logo-s.svg" alt=""></span><span><span class="nm">SoFi</span><br><span class="tk">SOFI</span></span></div>
-<div class="ds">個人向けの金融アプリと企業向けの技術基盤を持つ会社</div>
-<div class="hd">学生ローンから「金融のなんでもアプリ」へ</div>
-<div class="mt">2025年度の売上→36億1,335万ドル（約5,565億円、前年比35%増）</div>
+<div class="ds">個人向けの金融アプリと企業向けの技術基盤を持つ会社</div><div class="hd">学生ローンから「金融のなんでもアプリ」へ</div><div class="mt">2025年度の売上→36億1,335万ドル（約5,565億円、前年比35%増）</div>
 <div class="spark"><i style="height:9%"></i><i style="height:12%"></i><i style="height:16%"></i><i style="height:27%"></i><i style="height:44%"></i><i style="height:59%"></i><i style="height:74%"></i><i style="height:100%"></i></div><div style="font-size:11px;color:var(--faint)">年次売上 2018〜2025 ─ 直近 36.1億ドル</div>
 <div class="focusline"><b>今の論点 ─ </b>会員1,707万人が、1人あたりの商品数に変わるか</div>
 
 <div class="ax">学生ローンの借り換え1本から始まった会社が10年足らずで8本の柱を持つ金融の会社に変わっています。</div>
 <div class="go">資料を開く →</div></a><a class="cocard" href="deck-a.html">
 <div class="top"><span class="clogo" style="background:#172b3a"><img src="../assets/new-amd-logo.svg" alt=""></span><span><span class="nm">AMD</span><br><span class="tk">AMD</span></span></div>
-<div class="ds">CPUとGPUで幅広い計算を支える会社</div>
-<div class="hd">GPUとCPUの両方を持つ半導体会社</div>
-<div class="mt">2025年度の売上→346億3,900万ドル（約5兆3,344億円、前年比34%増）</div>
+<div class="ds">CPUとGPUで幅広い計算を支える会社</div><div class="hd">GPUとCPUの両方を持つ半導体会社</div><div class="mt">2025年度の売上→346億3,900万ドル（約5兆3,344億円、前年比34%増）</div>
 <div class="spark"><i style="height:19%"></i><i style="height:19%"></i><i style="height:28%"></i><i style="height:47%"></i><i style="height:68%"></i><i style="height:65%"></i><i style="height:74%"></i><i style="height:100%"></i></div><div style="font-size:11px;color:var(--faint)">年次売上 2018〜2025 ─ 直近 346億ドル</div>
 <div class="focusline"><b>今の論点 ─ </b>データセンターが、利益の柱として定着するか</div>
 
@@ -187,13 +205,8 @@ footer{margin-top:0;border-top:1px solid var(--line)}
 
 <section class="blk" id="map">
 <div class="blkhead"><h2>注目企業マップ</h2><p>柏原の動画357本の登場頻度から作った50社（2026年11月8日時点）</p></div>
-<div class="tier">S ─ 看板</div><div class="mapgrid"><div class="mapcell"><span class="rk num">7</span><span class="mn">Alphabet</span><span class="mf">ビッグテック ─ 登場81本</span></div><div class="mapcell"><span class="rk num">8</span><span class="mn">SpaceX</span><span class="mf">宇宙・AIクラウド ─ 登場31本</span></div><div class="mapcell"><span class="rk num">9</span><span class="mn">Microsoft</span><span class="mf">ビッグテック ─ 登場38本</span></div><div class="mapcell"><span class="rk num">10</span><span class="mn">Robinhood</span><span class="mf">フィンテック ─ 登場23本</span></div></div><div class="tier">A ─ 主力</div><div class="mapgrid"><div class="mapcell"><span class="rk num">11</span><span class="mn">Meta</span><span class="mf">登場30本</span></div><div class="mapcell"><span class="rk num">12</span><span class="mn">Amazon</span><span class="mf">登場38本</span></div><div class="mapcell"><span class="rk num">13</span><span class="mn">D-Wave</span><span class="mf">量子 ─ 登場19本</span></div><div class="mapcell"><span class="rk num">14</span><span class="mn">Rigetti</span><span class="mf">量子 ─ 登場17本</span></div><div class="mapcell"><span class="rk num">15</span><span class="mn">Micron</span><span class="mf">メモリ ─ 登場21本</span></div><div class="mapcell"><span class="rk num">16</span><span class="mn">Broadcom</span><span class="mf">半導体 ─ 登場13本</span></div><div class="mapcell"><span class="rk num">17</span><span class="mn">TSMC</span><span class="mf">半導体製造 ─ 登場19本</span></div><div class="mapcell"><span class="rk num">18</span><span class="mn">CoreWeave</span><span class="mf">AIクラウド ─ 登場15本</span></div><div class="mapcell"><span class="rk num">19</span><span class="mn">Nebius</span><span class="mf">AIクラウド ─ 登場17本</span></div><div class="mapcell"><span class="rk num">20</span><span class="mn">Oracle</span><span class="mf">登場11本</span></div><div class="mapcell"><span class="rk num">21</span><span class="mn">Lumentum</span><span class="mf">光部品 ─ 登場14本</span></div><div class="mapcell"><span class="rk num">22</span><span class="mn">Coherent</span><span class="mf">光部品 ─ 登場12本</span></div><div class="mapcell"><span class="rk num">23</span><span class="mn">Quantinuum</span><span class="mf">量子 ─ 登場8本</span></div><div class="mapcell"><span class="rk num">24</span><span class="mn">IBM</span><span class="mf">登場12本</span></div><div class="mapcell"><span class="rk num">25</span><span class="mn">Symbotic</span><span class="mf">倉庫ロボット ─ 登場14本</span></div><div class="mapcell"><span class="rk num">26</span><span class="mn">Serve Robotics</span><span class="mf">配送ロボット ─ 登場15本</span></div><div class="mapcell"><span class="rk num">27</span><span class="mn">Intuitive Surgical</span><span class="mf">医療ロボット ─ 登場13本</span></div><div class="mapcell"><span class="rk num">28</span><span class="mn">Apple</span><span class="mf">登場13本</span></div><div class="mapcell"><span class="rk num">29</span><span class="mn">Hyundai</span><span class="mf">Boston Dynamics ─ 登場19本</span></div><div class="mapcell"><span class="rk num">30</span><span class="mn">Uber</span><span class="mf">登場14本</span></div></div><div class="tier">B ─ 準主力</div><div class="mapgrid"><div class="mapcell"><span class="rk num">31</span><span class="mn">AeroVironment</span><span class="mf">防衛ドローン</span></div><div class="mapcell"><span class="rk num">32</span><span class="mn">Vertiv</span><span class="mf">データセンター電源</span></div><div class="mapcell"><span class="rk num">33</span><span class="mn">Oklo</span><span class="mf">原子力</span></div><div class="mapcell"><span class="rk num">34</span><span class="mn">Corning</span><span class="mf">光ファイバー</span></div><div class="mapcell"><span class="rk num">35</span><span class="mn">IREN</span><span class="mf">AIクラウド</span></div><div class="mapcell"><span class="rk num">36</span><span class="mn">BigBear.ai</span><span class="mf">防衛AI</span></div><div class="mapcell"><span class="rk num">37</span><span class="mn">Intel</span><span class="mf">半導体</span></div><div class="mapcell"><span class="rk num">38</span><span class="mn">Marvell</span><span class="mf">半導体</span></div><div class="mapcell"><span class="rk num">39</span><span class="mn">UBTECH</span><span class="mf">ロボット</span></div><div class="mapcell"><span class="rk num">40</span><span class="mn">John Deere</span><span class="mf">農業機械</span></div><div class="mapcell"><span class="rk num">41</span><span class="mn">Rocket Lab</span><span class="mf">宇宙</span></div><div class="mapcell"><span class="rk num">42</span><span class="mn">Cameco</span><span class="mf">ウラン</span></div><div class="mapcell"><span class="rk num">43</span><span class="mn">CrowdStrike</span><span class="mf">セキュリティ</span></div><div class="mapcell"><span class="rk num">44</span><span class="mn">Honeywell</span><span class="mf"></span></div><div class="mapcell"><span class="rk num">45</span><span class="mn">ASML</span><span class="mf">半導体装置</span></div><div class="mapcell"><span class="rk num">46</span><span class="mn">Arm</span><span class="mf">半導体設計</span></div><div class="mapcell"><span class="rk num">47</span><span class="mn">SK hynix</span><span class="mf">メモリ</span></div><div class="mapcell"><span class="rk num">48</span><span class="mn">Infleqtion</span><span class="mf">量子</span></div><div class="mapcell"><span class="rk num">49</span><span class="mn">Kratos</span><span class="mf">防衛</span></div><div class="mapcell"><span class="rk num">50</span><span class="mn">MP Materials</span><span class="mf">レアアース</span></div></div>
-<p class="mapnote">順位の根拠は、登場した動画の再生数合計と直近の登場頻度。資料化は上位から順に進める。6社の資料がそろった次は、Alphabet、SpaceX、Microsoft、Robinhoodの順が候補。</p>
-</section>
-
-<section class="blk" id="themes">
-<div class="blkhead"><h2>今の市場の論点</h2><p>海外の解説チャンネルで伸びているテーマから</p></div>
-<div class="themes"><div class="theme"><div class="tn">THEME 01</div><h3>AIバブルは、本物か</h3><p>海外の解説チャンネルで再生が集中するテーマの筆頭。論点は「投資が先か、売上が先か」に集まる。設備投資の伸びと、その投資から生まれる売上の伸びの差が開くほど、バブル側の材料になる。</p><div class="see">見る数字 ─ <b>大手クラウドの設備投資と、AI関連の売上</b></div><div class="chips"><span class="chip">NVIDIA</span><span class="chip">Microsoft</span><span class="chip">Alphabet</span><span class="chip">CoreWeave</span></div></div><div class="theme"><div class="tn">THEME 02</div><h3>11月17日、NVIDIAが市場を決める</h3><p>売上見通し1,080億ドル、中国のデータセンター向けはゼロ前提、粗利率74%前後。この3つがそろえばAI投資の前提がもう1四半期延びる。外せば全体の倍率が下がる。</p><div class="see">見る数字 ─ <b>見通しと実績の差、粗利率、中国の扱い</b></div><div class="chips"><span class="chip">NVIDIA</span><span class="chip">TSMC</span><span class="chip">Micron</span><span class="chip">Broadcom</span></div></div><div class="theme"><div class="tn">THEME 03</div><h3>メモリと光部品の逼迫</h3><p>GPUの次に足りなくなる部品へ、資金と注目が移っている。NVIDIAがLumentumとCoherentへ各20億ドルを投資したのもこの文脈。価格が上がる部品を持つ会社の決算が強い。</p><div class="see">見る数字 ─ <b>メモリ価格、光部品の受注、各社の値上げの有無</b></div><div class="chips"><span class="chip">Micron</span><span class="chip">SK hynix</span><span class="chip">Lumentum</span><span class="chip">Coherent</span></div></div><div class="theme"><div class="tn">THEME 04</div><h3>主権AIと防衛テック</h3><p>各国政府が自国のAI基盤を持とうとする動きと、防衛予算の拡大が重なっている。ネットから切り離した環境でAIを動かせる会社と、ドローン・宇宙の会社に追い風。</p><div class="see">見る数字 ─ <b>政府向けの受注と、各国のAI予算</b></div><div class="chips"><span class="chip">Palantir</span><span class="chip">AeroVironment</span><span class="chip">Kratos</span><span class="chip">L3Harris</span></div></div></div>
+<div class="tier">S ─ 看板</div><div class="mapgrid"><div class="mapcell"><span class="rk num">7</span><span class="mlogo"><span class="mono">A</span><img src="https://cdn.simpleicons.org/google/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Alphabet</span><span class="mf">ビッグテック ─ 登場81本</span></div><div class="mapcell"><span class="rk num">8</span><span class="mlogo"><span class="mono">S</span><img src="https://cdn.simpleicons.org/spacex/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">SpaceX</span><span class="mf">宇宙・AIクラウド ─ 登場31本</span></div><div class="mapcell"><span class="rk num">9</span><span class="mlogo"><span class="mono">M</span><img src="https://cdn.simpleicons.org/microsoft/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Microsoft</span><span class="mf">ビッグテック ─ 登場38本</span></div><div class="mapcell"><span class="rk num">10</span><span class="mlogo"><span class="mono">R</span><img src="https://cdn.simpleicons.org/robinhood/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Robinhood</span><span class="mf">フィンテック ─ 登場23本</span></div></div><div class="tier">A ─ 主力</div><div class="mapgrid"><div class="mapcell"><span class="rk num">11</span><span class="mlogo"><span class="mono">M</span><img src="https://cdn.simpleicons.org/meta/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Meta</span><span class="mf">登場30本</span></div><div class="mapcell"><span class="rk num">12</span><span class="mlogo"><span class="mono">A</span><img src="https://cdn.simpleicons.org/amazon/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Amazon</span><span class="mf">登場38本</span></div><div class="mapcell"><span class="rk num">13</span><span class="mlogo"><span class="mono">D</span><img src="https://cdn.simpleicons.org/dwave/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">D-Wave</span><span class="mf">量子 ─ 登場19本</span></div><div class="mapcell"><span class="rk num">14</span><span class="mlogo"><span class="mono">R</span></span><span class="mn">Rigetti</span><span class="mf">量子 ─ 登場17本</span></div><div class="mapcell"><span class="rk num">15</span><span class="mlogo"><span class="mono">M</span><img src="https://cdn.simpleicons.org/micron/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Micron</span><span class="mf">メモリ ─ 登場21本</span></div><div class="mapcell"><span class="rk num">16</span><span class="mlogo"><span class="mono">B</span><img src="https://cdn.simpleicons.org/broadcom/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Broadcom</span><span class="mf">半導体 ─ 登場13本</span></div><div class="mapcell"><span class="rk num">17</span><span class="mlogo"><span class="mono">T</span><img src="https://cdn.simpleicons.org/tsmc/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">TSMC</span><span class="mf">半導体製造 ─ 登場19本</span></div><div class="mapcell"><span class="rk num">18</span><span class="mlogo"><span class="mono">C</span></span><span class="mn">CoreWeave</span><span class="mf">AIクラウド ─ 登場15本</span></div><div class="mapcell"><span class="rk num">19</span><span class="mlogo"><span class="mono">N</span></span><span class="mn">Nebius</span><span class="mf">AIクラウド ─ 登場17本</span></div><div class="mapcell"><span class="rk num">20</span><span class="mlogo"><span class="mono">O</span><img src="https://cdn.simpleicons.org/oracle/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Oracle</span><span class="mf">登場11本</span></div><div class="mapcell"><span class="rk num">21</span><span class="mlogo"><span class="mono">L</span></span><span class="mn">Lumentum</span><span class="mf">光部品 ─ 登場14本</span></div><div class="mapcell"><span class="rk num">22</span><span class="mlogo"><span class="mono">C</span></span><span class="mn">Coherent</span><span class="mf">光部品 ─ 登場12本</span></div><div class="mapcell"><span class="rk num">23</span><span class="mlogo"><span class="mono">Q</span></span><span class="mn">Quantinuum</span><span class="mf">量子 ─ 登場8本</span></div><div class="mapcell"><span class="rk num">24</span><span class="mlogo"><span class="mono">I</span><img src="https://cdn.simpleicons.org/ibm/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">IBM</span><span class="mf">登場12本</span></div><div class="mapcell"><span class="rk num">25</span><span class="mlogo"><span class="mono">S</span></span><span class="mn">Symbotic</span><span class="mf">倉庫ロボット ─ 登場14本</span></div><div class="mapcell"><span class="rk num">26</span><span class="mlogo"><span class="mono">S</span></span><span class="mn">Serve Robotics</span><span class="mf">配送ロボット ─ 登場15本</span></div><div class="mapcell"><span class="rk num">27</span><span class="mlogo"><span class="mono">I</span></span><span class="mn">Intuitive Surgical</span><span class="mf">医療ロボット ─ 登場13本</span></div><div class="mapcell"><span class="rk num">28</span><span class="mlogo"><span class="mono">A</span><img src="https://cdn.simpleicons.org/apple/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Apple</span><span class="mf">登場13本</span></div><div class="mapcell"><span class="rk num">29</span><span class="mlogo"><span class="mono">H</span><img src="https://cdn.simpleicons.org/hyundai/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Hyundai</span><span class="mf">Boston Dynamics ─ 登場19本</span></div><div class="mapcell"><span class="rk num">30</span><span class="mlogo"><span class="mono">U</span><img src="https://cdn.simpleicons.org/uber/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Uber</span><span class="mf">登場14本</span></div></div><div class="tier">B ─ 準主力</div><div class="mapgrid"><div class="mapcell"><span class="rk num">31</span><span class="mlogo"><span class="mono">A</span></span><span class="mn">AeroVironment</span><span class="mf">防衛ドローン</span></div><div class="mapcell"><span class="rk num">32</span><span class="mlogo"><span class="mono">V</span></span><span class="mn">Vertiv</span><span class="mf">データセンター電源</span></div><div class="mapcell"><span class="rk num">33</span><span class="mlogo"><span class="mono">O</span></span><span class="mn">Oklo</span><span class="mf">原子力</span></div><div class="mapcell"><span class="rk num">34</span><span class="mlogo"><span class="mono">C</span></span><span class="mn">Corning</span><span class="mf">光ファイバー</span></div><div class="mapcell"><span class="rk num">35</span><span class="mlogo"><span class="mono">I</span></span><span class="mn">IREN</span><span class="mf">AIクラウド</span></div><div class="mapcell"><span class="rk num">36</span><span class="mlogo"><span class="mono">B</span></span><span class="mn">BigBear.ai</span><span class="mf">防衛AI</span></div><div class="mapcell"><span class="rk num">37</span><span class="mlogo"><span class="mono">I</span><img src="https://cdn.simpleicons.org/intel/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Intel</span><span class="mf">半導体</span></div><div class="mapcell"><span class="rk num">38</span><span class="mlogo"><span class="mono">M</span></span><span class="mn">Marvell</span><span class="mf">半導体</span></div><div class="mapcell"><span class="rk num">39</span><span class="mlogo"><span class="mono">U</span></span><span class="mn">UBTECH</span><span class="mf">ロボット</span></div><div class="mapcell"><span class="rk num">40</span><span class="mlogo"><span class="mono">J</span></span><span class="mn">John Deere</span><span class="mf">農業機械</span></div><div class="mapcell"><span class="rk num">41</span><span class="mlogo"><span class="mono">R</span></span><span class="mn">Rocket Lab</span><span class="mf">宇宙</span></div><div class="mapcell"><span class="rk num">42</span><span class="mlogo"><span class="mono">C</span></span><span class="mn">Cameco</span><span class="mf">ウラン</span></div><div class="mapcell"><span class="rk num">43</span><span class="mlogo"><span class="mono">C</span><img src="https://cdn.simpleicons.org/crowdstrike/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">CrowdStrike</span><span class="mf">セキュリティ</span></div><div class="mapcell"><span class="rk num">44</span><span class="mlogo"><span class="mono">H</span><img src="https://cdn.simpleicons.org/honeywell/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Honeywell</span><span class="mf"></span></div><div class="mapcell"><span class="rk num">45</span><span class="mlogo"><span class="mono">A</span><img src="https://cdn.simpleicons.org/asml/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">ASML</span><span class="mf">半導体装置</span></div><div class="mapcell"><span class="rk num">46</span><span class="mlogo"><span class="mono">A</span><img src="https://cdn.simpleicons.org/arm/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">Arm</span><span class="mf">半導体設計</span></div><div class="mapcell"><span class="rk num">47</span><span class="mlogo"><span class="mono">S</span><img src="https://cdn.simpleicons.org/skhynix/33566e" alt="" loading="lazy" onerror="this.remove()"></span><span class="mn">SK hynix</span><span class="mf">メモリ</span></div><div class="mapcell"><span class="rk num">48</span><span class="mlogo"><span class="mono">I</span></span><span class="mn">Infleqtion</span><span class="mf">量子</span></div><div class="mapcell"><span class="rk num">49</span><span class="mlogo"><span class="mono">K</span></span><span class="mn">Kratos</span><span class="mf">防衛</span></div><div class="mapcell"><span class="rk num">50</span><span class="mlogo"><span class="mono">M</span></span><span class="mn">MP Materials</span><span class="mf">レアアース</span></div></div>
+<p class="mapnote">順位の根拠は、登場した動画の再生数合計と直近の登場頻度。資料化は上位から順に進める。次は Alphabet、SpaceX、Microsoft、Robinhood の順が候補。</p>
 </section>
 
 <section class="blk">
@@ -211,7 +224,7 @@ footer{margin-top:0;border-top:1px solid var(--line)}
 <div class="cols">
 <div class="col"><div class="en">MISSION</div><div class="jp">未来への好奇心と、知性ある楽観で、<br>世界の知の最前線を読み解く</div></div>
 <div class="col"><div class="en">VALUE</div><div class="jp">好奇心と知性は、<br>あらゆるものを良くする</div></div>
-</div>
-</div></div>
-<footer><div class="fin">FRONTIER LAB ─ 会員向け企業理解サイト<br>数字は各社の決算資料・公式発表による。株価・市況データの出典は各資料に記載。企業マップの順位は柏原迅の動画データ（2024年12月〜2026年11月、357本）に基づく。版：2026年11月12日</div></footer>
+</div></div></div>
+
+<footer><div class="fin">FRONTIER LAB ─ 会員向け企業理解サイト<br>数字は各社の決算資料・公式発表による。企業ロゴは各社の商標。企業マップの順位は柏原迅の動画データ（2024年12月〜2026年11月、357本）に基づく。版：2026年11月12日</div></footer>
 </body></html>
