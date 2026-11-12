@@ -85,7 +85,19 @@ section.blk{padding:76px 0 0}
 .dbox p{font-size:13.5px;margin-top:9px;line-height:1.9}
 .cta{display:inline-block;background:var(--blue);color:#fff;font-weight:900;font-size:14px;border-radius:11px;padding:12px 26px;text-decoration:none;margin-top:18px}
 .cta.light{background:#fff;color:var(--navy)}
-footer{margin-top:84px;border-top:1px solid var(--line)}
+
+.philo{background:linear-gradient(140deg,#0b2a44 55%,#0d4a78);color:#fff;margin-top:84px}
+.philo .in{max-width:1120px;margin:0 auto;padding:76px 32px 70px}
+.philo .kick{color:#8fc6ef}
+.philo .vision{font-family:'Shippori Mincho',serif;font-size:clamp(23px,3.4vw,34px);line-height:1.75;font-weight:600;max-width:860px}
+.philo .ven{font-size:12.5px;color:#a9cbe8;margin-top:16px;letter-spacing:.05em;line-height:1.9}
+.philo .cols{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:48px;border-top:1px solid rgba(255,255,255,.22);padding-top:38px}
+.philo .col .en{font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:.3em;color:#8fc6ef;font-weight:800}
+.philo .col .jp{font-family:'Shippori Mincho',serif;font-size:19px;margin-top:10px;line-height:1.8;font-weight:600}
+@media(max-width:700px){.philo .cols{grid-template-columns:1fr}}
+.hero h1{letter-spacing:.05em;line-height:1.42}
+.grad{background:linear-gradient(92deg,#0a6fc4 20%,#3d9be9 55%,#e8a33d 110%);-webkit-background-clip:text;background-clip:text;color:transparent}
+footer{margin-top:0;border-top:1px solid var(--line)}
 .fin{max-width:1120px;margin:0 auto;padding:26px 32px 46px;font-size:12px;color:var(--faint);line-height:2}
 @media(max-width:900px){.cogrid{grid-template-columns:1fr 1fr}.mapgrid{grid-template-columns:1fr 1fr}.themes{grid-template-columns:1fr}.bandgrid{grid-template-columns:1fr}.calbox{grid-template-columns:1fr}.calcell+.calcell{border-left:none;border-top:1px solid var(--line)}}
 @media(max-width:620px){.cogrid,.mapgrid{grid-template-columns:1fr}nav{display:none}.hero{padding-top:60px}}
@@ -96,8 +108,8 @@ footer{margin-top:84px;border-top:1px solid var(--line)}
 
 <div class="wrap"><div class="hero">
 <div class="kick">MEMBER SITE ─ 企業理解</div>
-<h1>決算のたびに、<span class="u">検証する</span>。</h1>
-<p class="lead">対象は、まず深く追う6社と、広く追う注目企業50社。各社について「今の論点」を先に置き、決算が出たら数字で答え合わせする。資料はスライド形式で、そのまま動画の解説に使える作りにしてある。</p>
+<h1>未来に好奇心を。<br><span class="grad">知性で楽観を。</span></h1>
+<p class="lead">未来への好奇心と、知性ある楽観で、世界の知の最前線を読み解く。対象は、まず深く追う6社と、広く追う注目企業50社。各社について「今の論点」を先に置き、決算が出たら数字で答え合わせする。ワクワクは、裏付けのある数字から作る。</p>
 <div class="stats num">
 <div class="stat"><div class="l">深く追う企業</div><div class="v">6<small>社</small></div></div>
 <div class="stat"><div class="l">注目企業マップ</div><div class="v">50<small>社</small></div></div>
@@ -192,5 +204,14 @@ footer{margin-top:84px;border-top:1px solid var(--line)}
 </section>
 </div>
 
+<div class="philo"><div class="in">
+<div class="kick">VISION ─ 私たちの見ている未来</div>
+<div class="vision">誰もが、未来を、本当にそうであるくらい<br>ワクワクするものとして捉えている世界</div>
+<div class="ven">A world where everyone sees the future as exciting as it really is.</div>
+<div class="cols">
+<div class="col"><div class="en">MISSION</div><div class="jp">未来への好奇心と、知性ある楽観で、<br>世界の知の最前線を読み解く</div></div>
+<div class="col"><div class="en">VALUE</div><div class="jp">好奇心と知性は、<br>あらゆるものを良くする</div></div>
+</div>
+</div></div>
 <footer><div class="fin">FRONTIER LAB ─ 会員向け企業理解サイト<br>数字は各社の決算資料・公式発表による。株価・市況データの出典は各資料に記載。企業マップの順位は柏原迅の動画データ（2024年12月〜2026年11月、357本）に基づく。版：2026年11月12日</div></footer>
 </body></html>
