@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>B案 ターミナル型｜FRONTIER LAB</title>
+<style>
+:root{--bg:#0a0e14;--panel:#101722;--panel2:#0d131d;--line:#1f2c3f;--line2:#2a3c55;--tx:#dce7f3;--sub:#8298b0;--faint:#54687e;--cy:#3ec6e0;--am:#e8b34a;--gn:#3fce97}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--tx);font-family:'Hiragino Kaku Gothic ProN','Hiragino Sans','Yu Gothic',sans-serif;font-size:14.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.mono{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px 48px}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.logo{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:16px;letter-spacing:.3em;color:#fff}
+.logo i{font-style:normal;color:var(--cy)}
+.hd-nav{font-size:12px;color:var(--sub);letter-spacing:.14em}
+.hd-nav b{color:var(--cy);font-weight:600}
+.hd-nav span{margin-left:24px}
+.tick{display:flex;gap:0;border:1px solid var(--line);margin-top:22px;background:var(--panel2)}
+.tick div{flex:1;padding:7px 14px;font-size:11.5px;color:var(--sub);border-right:1px solid var(--line);white-space:nowrap;overflow:hidden}
+.tick div:last-child{border-right:none}
+.tick b{color:var(--tx);font-weight:600}
+.tick .up{color:var(--gn)}
+.co{margin-top:30px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+h1{font-size:34px;font-weight:700;letter-spacing:.02em;color:#fff;line-height:1.25}
+.co-en{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.5px;color:var(--cy);letter-spacing:.2em;margin-top:6px}
+.badge{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:11px;color:var(--am);border:1px solid #4d3d17;background:#1c1607;padding:5px 12px;letter-spacing:.14em}
+.lead{margin-top:16px;color:#b9c9da;max-width:50em;font-size:15px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}
+.kpi{background:var(--panel);border:1px solid var(--line);padding:16px 18px 14px;position:relative}
+.kpi:before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--cy)}
+.kpi .kl{font-size:11px;color:var(--sub);letter-spacing:.1em;line-height:1.55;min-height:3.1em}
+.kpi .kv{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:27px;color:#fff;margin-top:2px}
+.kpi .kv small{font-size:14px;color:var(--sub)}
+.kpi .kd{font-size:12px;color:var(--sub);margin-top:2px}
+.kpi .kd b{color:var(--gn);font-weight:600}
+.kpi .ks{font-size:10.5px;color:var(--faint);margin-top:8px;letter-spacing:.06em}
+h2{font-size:19px;color:#fff;font-weight:700;letter-spacing:.06em;margin-top:44px;display:flex;align-items:center;gap:12px}
+h2 .tag{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:10.5px;color:var(--cy);border:1px solid var(--line2);padding:3px 9px;letter-spacing:.2em;font-weight:400}
+.focus{margin-top:14px;border:1px solid var(--line);background:var(--panel)}
+.frow{display:grid;grid-template-columns:56px 1fr;gap:6px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.frow:last-child{border-bottom:none}
+.frow .fn{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:21px;color:var(--cy)}
+.frow .ft{font-size:16px;font-weight:700;color:#fff}
+.frow .fb{color:#a9bdd1;font-size:13.5px;margin-top:3px;max-width:56em}
+table{width:100%;border-collapse:collapse;margin-top:14px;background:var(--panel);border:1px solid var(--line)}
+th{font-size:10.5px;letter-spacing:.18em;color:var(--faint);text-align:left;font-weight:600;padding:11px 16px;border-bottom:1px solid var(--line2);background:var(--panel2)}
+td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.dt{font-family:ui-monospace,'SF Mono',Menlo,monospace;white-space:nowrap;color:var(--sub);font-size:12.5px;width:104px}
+td.nm{font-weight:600;color:#eef4fb}
+td.nm .en{display:block;font-weight:400;font-size:12px;color:var(--faint);margin-top:1px}
+td.am{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:15.5px;color:var(--am);white-space:nowrap;text-align:right}
+td.tm{color:var(--sub);font-size:12.5px;white-space:nowrap;text-align:right}
+footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;color:var(--faint);display:flex;justify-content:space-between}
+@media(max-width:760px){.kpis{grid-template-columns:1fr 1fr}.tick div:nth-child(n+3){display:none}td.tm{display:none}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">FRONTIER<i>LAB</i></div><div class="hd-nav"><b>企業理解</b><span>6社比較</span><span>上場予定</span></div></header>
+
+<div class="tick mono"><div>PLTR <b>$──</b> <span class="up">Q3 売上 +96% YoY</span></div><div>次回決算 <b>2027-02-01 見込み</b></div><div>米民間 <b>+148%</b> ／ 米国外 <b>+26%</b></div><div>更新 <b>2026-11-12</b></div></div>
+
+<div class="co"><div><h1>Palantir Technologies</h1><div class="co-en">NASDAQ: PLTR ─ DATA / AI PLATFORM</div></div><div class="badge">会員向け企業理解</div></div>
+<p class="lead">政府と大企業が、散らかったデータを1つの画面で見て、その場で意思決定するためのソフトウェアを作る会社。国防総省から病院まで、現場の判断を速くする道具を売っている。</p>
+
+<div class="kpis">
+  <div class="kpi"><div class="kl">売上高（2026年7〜9月期）</div><div class="kv">23.1<small>億ドル</small></div><div class="kd">約3,563億円／前年同期比 <b>96%増</b></div><div class="ks">出典：2026年7〜9月期の決算資料</div></div>
+  <div class="kpi"><div class="kl">米国の民間企業向け売上</div><div class="kv">9.8<small>億ドル</small></div><div class="kd">約1,515億円／前年同期比 <b>148%増</b></div><div class="ks">出典：2026年7〜9月期の決算資料</div></div>
+  <div class="kpi"><div class="kl">営業利益率（GAAP）</div><div class="kv">47<small>%</small></div><div class="kd">営業利益 約1,671億円（1年前は33%）</div><div class="ks">出典：2026年7〜9月期の決算資料</div></div>
+  <div class="kpi"><div class="kl">2026年通期の売上見通し</div><div class="kv">85.3<small>億ドル</small></div><div class="kd">約1兆3,139億円／前年比 <b>91%増</b>の見通し</div><div class="ks">出典：2026年7〜9月期の決算資料</div></div>
+</div>
+
+<h2>今の論点 <span class="tag">FOCUS</span></h2>
+<div class="focus">
+  <div class="frow"><div class="fn">01</div><div><div class="ft">民間の伸びに全社が追いつくか</div><p class="fb">全社の売上は前年同期比96%増、米国の民間向けは148%増で、差は52ポイントある。カープCEOは「今後18か月で全社の伸びを民間以上に引き上げる」と決算説明会で述べている。</p></div></div>
+  <div class="frow"><div class="fn">02</div><div><div class="ft">大型契約が売上に変わる速さ</div><p class="fb">米陸軍との包括契約は最大100億ドルだが、枠の大きさと実際に計上される売上は別物である。見る数字はRPO（受注残に近い指標）の伸びと政府向け売上の伸びで、この2つが契約発表に追いつくかが焦点になる。</p></div></div>
+  <div class="frow"><div class="fn">03</div><div><div class="ft">米国以外の鈍さ</div><p class="fb">米国外の売上は前年同期比26%増で、全社の伸びを大きく下回る。前四半期と比べても4%しか増えていない。成長の主役が米国の内側に寄っている。</p></div></div>
+</div>
+
+<h2>主な契約 <span class="tag">CONTRACTS</span></h2>
+<table>
+<tr><th>時期</th><th>相手と内容</th><th style="text-align:right">金額</th><th style="text-align:right">期間・数量</th></tr>
+<tr><td class="dt">2025-08</td><td class="nm">米陸軍 包括契約<span class="en">Enterprise Agreement／既存の契約75件を1本に統合</span></td><td class="am">最大100億ドル</td><td class="tm">10年</td></tr>
+<tr><td class="dt">2025-05</td><td class="nm">米国防総省 Maven Smart System<span class="en">上限引き上げ（当初4億8,000万ドル）／利用者2万人超</span></td><td class="am">上限 約13億ドル</td><td class="tm">2029年まで</td></tr>
+<tr><td class="dt">2024-12</td><td class="nm">米陸軍 Army Vantage<span class="en">データ基盤の継続契約</span></td><td class="am">最大6億1,890万ドル</td><td class="tm">4年</td></tr>
+<tr><td class="dt">2024-03</td><td class="nm">米陸軍 TITAN<span class="en">地上ステーション／RTXとの競合の末に獲得</span></td><td class="am">1億7,840万ドル</td><td class="tm">試作10台</td></tr>
+<tr><td class="dt">2023-11</td><td class="nm">NHS England<span class="en">Federated Data Platform</span></td><td class="am">3億3,000万ポンド</td><td class="tm">7年</td></tr>
+</table>
+
+<footer><div>数字は各社の決算資料・SEC提出書類による（2026年11月時点）</div><div class="mono">FRONTIER LAB ─ 2026-11-12</div></footer>
+</div>
+</body>
+</html>
