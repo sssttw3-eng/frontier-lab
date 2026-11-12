@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRONTIER LAB ─ 会員向け企業理解</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#0067b9;--cy:#0a84d6;--navy:#0a2e4f;--ink:#12293e;--sub:#55708a;--line:#d7e5f2;--bg:#f4f8fc;--gold:#a87b1e}
+html{scroll-behavior:smooth}
+body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);background:#fff;font-feature-settings:'palt';line-height:1.7}
+.num{font-family:'Inter',sans-serif}
+a{color:inherit}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hwrap{max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.14em;font-size:15px}
+.brand svg{width:26px;height:26px}
+.brand i{font-style:normal;color:var(--cy)}
+nav{margin-left:auto;display:flex;gap:26px;font-size:13.5px;font-weight:700;color:var(--sub)}
+nav a{text-decoration:none}
+nav a:hover{color:var(--navy)}
+.hero{max-width:1180px;margin:0 auto;padding:74px 28px 10px;background-image:linear-gradient(rgba(10,132,214,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(10,132,214,.05) 1px,transparent 1px);background-size:44px 44px}
+.kick{font-size:11.5px;letter-spacing:.3em;color:var(--blue);font-weight:900;margin-bottom:16px}
+.hero h1{font-size:clamp(34px,5.2vw,58px);font-weight:900;line-height:1.28;letter-spacing:.01em;color:var(--navy);max-width:800px}
+.hero h1 .u{color:var(--cy)}
+.hero .lead{font-size:16.5px;color:var(--ink);max-width:720px;margin-top:20px;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--navy);margin-top:44px}
+.stat{padding:16px 18px 6px 0}
+.stat .l{font-size:12px;color:var(--sub);font-weight:700}
+.stat .v{font-size:27px;font-weight:900;font-family:'Inter',sans-serif}
+.stat .v small{font-size:14px;font-weight:700}
+.cal{max-width:1180px;margin:34px auto 0;padding:0 28px}
+.calbox{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1.5px solid var(--line);border-radius:16px;overflow:hidden}
+.calcell{padding:20px 24px;display:flex;gap:18px;align-items:center}
+.calcell+.calcell{border-left:1.5px solid var(--line)}
+.calcell .when{font-family:'Inter',sans-serif;font-weight:800;font-size:24px;color:var(--navy);white-space:nowrap}
+.calcell .when small{display:block;font-size:11.5px;color:var(--blue);letter-spacing:.18em}
+.calcell .what{font-size:14px;font-weight:700;line-height:1.55}
+.calcell .what span{display:block;font-weight:500;color:var(--sub);font-size:12.5px}
+section.blk{max-width:1180px;margin:0 auto;padding:64px 28px 0}
+.blkhead{display:flex;align-items:baseline;gap:16px;border-bottom:2px solid var(--navy);padding-bottom:12px}
+.blkhead h2{font-size:24px;font-weight:900;color:var(--navy)}
+.blkhead p{font-size:13.5px;color:var(--sub)}
+.cogrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:26px}
+.cocard{border:1.5px solid var(--line);border-radius:18px;padding:22px 22px 18px;text-decoration:none;display:flex;flex-direction:column;background:#fff;transition:transform .25s,box-shadow .25s}
+.cocard:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(11,48,84,.13)}
+.cocard .top{display:flex;align-items:center;gap:12px}
+.clogo{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:8px;border:1px solid var(--line);overflow:hidden;flex:none}
+.clogo img{max-width:100%;max-height:100%}
+.cocard .nm{font-weight:900;font-size:19px;line-height:1.25}
+.cocard .tk{font-family:'Inter',sans-serif;font-size:11.5px;color:var(--blue);font-weight:800;letter-spacing:.14em}
+.cocard .ds{font-size:13px;color:var(--sub);margin-top:10px;font-weight:700}
+.cocard .hd{font-size:15.5px;font-weight:900;margin-top:12px;line-height:1.55}
+.cocard .mt{font-size:13px;color:var(--ink);margin-top:8px}
+.spark{display:flex;align-items:flex-end;gap:3px;height:44px;margin-top:16px}
+.spark i{flex:1;background:linear-gradient(180deg,#57a8e8,#0a84d6);border-radius:2px 2px 0 0;display:block}
+.spark i:last-child{background:var(--navy)}
+.cocard .ax{font-size:12.5px;color:var(--sub);margin-top:12px;border-top:1px dashed var(--line);padding-top:10px;line-height:1.65}
+.cocard .go{margin-top:auto;padding-top:14px;font-size:13px;font-weight:900;color:var(--blue)}
+.verify{margin-top:26px;border:1.5px solid var(--line);border-radius:16px;padding:8px 24px}
+.vrow{display:grid;grid-template-columns:130px 76px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.vrow:last-child{border-bottom:none}
+.vrow .co{font-weight:900}
+.mk{font-weight:900;font-size:14px}
+.mk.o{color:#0a7a43}.mk.d{color:var(--gold)}.mk.x{color:#c23b3b}
+.vrow .tx{font-size:14px}
+.vrow .tx span{color:var(--sub);font-size:12.5px}
+.rgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:26px}
+.rcard{border:1.5px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;display:block;background:#fff}
+.rcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.rcard .rb{padding:14px 18px}
+.rcard .rt{font-weight:900;font-size:15px;line-height:1.55}
+.rcard .rm{font-size:12.5px;color:var(--blue);font-weight:800;margin-top:6px;font-family:'Inter',sans-serif}
+.band{max-width:1180px;margin:64px auto 0;padding:0 28px}
+.bandgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+.ipobox{border-radius:18px;background:linear-gradient(120deg,#0a2e4f,#0a5b96);color:#fff;padding:30px 32px}
+.ipobox h3{font-size:21px;font-weight:900}
+.ipobox p{font-size:14px;opacity:.88;margin-top:8px}
+.dbox{border:1.5px solid var(--line);border-radius:18px;padding:30px 32px}
+.dbox h3{font-size:21px;font-weight:900;color:var(--navy)}
+.dbox p{font-size:14px;color:var(--ink);margin-top:8px}
+.cta{display:inline-block;background:var(--blue);color:#fff;font-weight:900;font-size:15px;border-radius:12px;padding:13px 28px;text-decoration:none;margin-top:18px}
+footer{max-width:1180px;margin:70px auto 0;padding:26px 28px 44px;border-top:1px solid var(--line);font-size:12.5px;color:var(--sub);line-height:2}
+@media(max-width:900px){.cogrid,.rgrid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.bandgrid{grid-template-columns:1fr}.calbox{grid-template-columns:1fr}.calcell+.calcell{border-left:none;border-top:1.5px solid var(--line)}}
+@media(max-width:620px){.cogrid,.rgrid{grid-template-columns:1fr}nav{display:none}.vrow{grid-template-columns:96px 60px 1fr}}
+</style></head>
+<body>
+<header><div class="hwrap"><span class="brand"><svg viewBox="0 0 40 40"><path d="M20 2 L38 20 L20 38 L2 20 Z" fill="none" stroke="#0067b9" stroke-width="3"/><path d="M20 11.5 L28.5 20 L20 28.5 L11.5 20 Z" fill="#0067b9"/></svg>FRONTIER <i>LAB</i></span>
+<nav><a href="#companies">6社の資料</a><a href="#verify">検証の記録</a><a href="#radar">伸びている動画</a><a href="../ipo.html">上場予定</a></nav></div></header>
+
+<div class="hero">
+<div class="kick">MEMBER SITE ─ 企業理解</div>
+<h1>6社を、決算のたびに<span class="u">検証する</span>。</h1>
+<p class="lead">Palantir、NVIDIA、Tesla、IonQ、SoFi、AMD。各社について「今の論点」を先に置き、決算が出たら数字で答え合わせする。外れた記録も消さずに残す。資料は全編スライド形式で、そのまま動画の解説に使える作りにしてある。</p>
+<div class="stats num">
+<div class="stat"><div class="l">対象企業</div><div class="v">6<small>社</small></div></div>
+<div class="stat"><div class="l">資料スライド（Palantir＋5社）</div><div class="v">97<small>画面</small></div></div>
+<div class="stat"><div class="l">次の決算</div><div class="v">11/17<small> NVIDIA</small></div></div>
+<div class="stat"><div class="l">最終更新</div><div class="v" style="font-size:21px;padding-top:5px">2026年11月12日</div></div>
+</div></div>
+
+<div class="cal"><div class="calbox">
+<div class="calcell"><div class="when"><small>NEXT ─ あと5日</small>11月17日</div><div class="what">NVIDIA 決算（FY2027 第3四半期）<span>会社見通しは売上1,080億ドル、中国のデータセンター向けはゼロ前提。発表後に資料を更新する</span></div></div>
+<div class="calcell"><div class="when"><small>NEXT ─ あと81日</small>2027年2月1日</div><div class="what">Palantir 決算（2026年10〜12月期・見込み）<span>論点の判定タグに書いた3つの数字で答え合わせする</span></div></div>
+</div></div>
+
+<section class="blk" id="companies">
+<div class="blkhead"><h2>6社の資料</h2><p>会社ごとに切り口は違う。見出しは各社のいまの形そのもの</p></div>
+<div class="cogrid"><a class="cocard" href="deck-n.html">
+<div class="top"><span class="clogo" style="background:#fff"><img src="../assets/logo-n.svg" alt=""></span><span><span class="nm">NVIDIA</span><br><span class="tk">NVDA</span></span></div>
+<div class="ds">AIの計算を支えるハードとソフトを売る会社</div>
+<div class="hd">GPUを核に、データセンターの中身一式を売る</div>
+<div class="mt">FY2026の売上→2,159億3,800万ドル（約33兆2,545億円）</div>
+<div class="spark"><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:12%"></i><i style="height:12%"></i><i style="height:28%"></i><i style="height:60%"></i><i style="height:100%"></i></div><div style="font-size:11.5px;color:var(--sub)">年次売上 2018〜2026</div>
+<div class="ax">NVIDIAの売上はほぼデータセンター向けの1本足で、ここが伸びる限り会社全体が伸びる構造です。</div>
+<div class="go">資料を開く →</div></a><a class="cocard" href="j7.html">
+<div class="top"><span class="clogo" style="background:#172b3a"><img src="../assets/logo-p.svg" alt=""></span><span><span class="nm">Palantir</span><br><span class="tk">PLTR</span></span></div>
+<div class="ds">モデルを現場の仕事につなぐ基盤の会社</div>
+<div class="hd">9.11後の国防から、企業と政府のAIの基盤へ</div>
+<div class="mt">売上→23億1,300万ドル（約3,562億円、前年比96%増）</div>
+<div class="spark"><i style="height:13%"></i><i style="height:17%"></i><i style="height:24%"></i><i style="height:34%"></i><i style="height:43%"></i><i style="height:50%"></i><i style="height:64%"></i><i style="height:100%"></i></div><div style="font-size:11.5px;color:var(--sub)">年次売上 2018〜2025</div>
+<div class="ax">Palantirを見るときの軸は顧客の現場にどこまで入り込んでいるかです。</div>
+<div class="go">資料を開く →</div></a><a class="cocard" href="deck-t.html">
+<div class="top"><span class="clogo" style="background:#ffffff"><img src="../assets/new-tesla-logo.svg" alt=""></span><span><span class="nm">Tesla</span><br><span class="tk">TSLA</span></span></div>
+<div class="ds">EV・蓄電池・運転支援・ロボットを手がける会社</div>
+<div class="hd">車・エネルギー・ロボットの会社</div>
+<div class="mt">2025年度の売上→948億2,700万ドル（約14兆6,034億円、前年比3%減）</div>
+<div class="spark"><i style="height:22%"></i><i style="height:25%"></i><i style="height:32%"></i><i style="height:55%"></i><i style="height:83%"></i><i style="height:99%"></i><i style="height:100%"></i><i style="height:97%"></i></div><div style="font-size:11.5px;color:var(--sub)">年次売上 2018〜2025</div>
+<div class="ax">売上は横ばいでも、市場がTeslaを見るものさしは車の台数からロボットとエネルギーへ移っています。</div>
+<div class="go">資料を開く →</div></a><a class="cocard" href="deck-i.html">
+<div class="top"><span class="clogo" style="background:#fff"><img src="../assets/logo-i.svg" alt=""></span><span><span class="nm">IonQ</span><br><span class="tk">IONQ</span></span></div>
+<div class="ds">量子計算と関連技術を商用化する会社</div>
+<div class="hd">イオン方式の量子コンピュータから、通信・センサーまで</div>
+<div class="mt">2025年度の売上→1億3,002万ドル（約200億円）</div>
+<div class="spark"><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:9%"></i><i style="height:17%"></i><i style="height:33%"></i><i style="height:100%"></i></div><div style="font-size:11.5px;color:var(--sub)">年次売上 2019〜2025</div>
+<div class="ax">IonQの売上はこの2年で桁が変わっていて、量子が研究テーマから売上の立つ事業になった最初の例の一つです。</div>
+<div class="go">資料を開く →</div></a><a class="cocard" href="deck-s.html">
+<div class="top"><span class="clogo" style="background:#fff"><img src="../assets/logo-s.svg" alt=""></span><span><span class="nm">SoFi</span><br><span class="tk">SOFI</span></span></div>
+<div class="ds">個人向けの金融アプリと企業向けの技術基盤を持つ会社</div>
+<div class="hd">学生ローンから「金融のなんでもアプリ」へ</div>
+<div class="mt">2025年度の売上→36億1,335万ドル（約5,565億円、前年比35%増）</div>
+<div class="spark"><i style="height:9%"></i><i style="height:12%"></i><i style="height:16%"></i><i style="height:27%"></i><i style="height:44%"></i><i style="height:59%"></i><i style="height:74%"></i><i style="height:100%"></i></div><div style="font-size:11.5px;color:var(--sub)">年次売上 2018〜2025</div>
+<div class="ax">学生ローンの借り換え1本から始まった会社が10年足らずで8本の柱を持つ金融の会社に変わっています。</div>
+<div class="go">資料を開く →</div></a><a class="cocard" href="deck-a.html">
+<div class="top"><span class="clogo" style="background:#172b3a"><img src="../assets/new-amd-logo.svg" alt=""></span><span><span class="nm">AMD</span><br><span class="tk">AMD</span></span></div>
+<div class="ds">CPUとGPUで幅広い計算を支える会社</div>
+<div class="hd">GPUとCPUの両方を持つ半導体会社</div>
+<div class="mt">2025年度の売上→346億3,900万ドル（約5兆3,344億円、前年比34%増）</div>
+<div class="spark"><i style="height:19%"></i><i style="height:19%"></i><i style="height:28%"></i><i style="height:47%"></i><i style="height:68%"></i><i style="height:65%"></i><i style="height:74%"></i><i style="height:100%"></i></div><div style="font-size:11.5px;color:var(--sub)">年次売上 2018〜2025</div>
+<div class="ax">AMDの稼ぎの中心はこの2年でパソコンからデータセンターへ入れ替わり、いまはNVIDIAと同じ土俵で見られる会社です。</div>
+<div class="go">資料を開く →</div></a></div>
+</section>
+
+<section class="blk" id="verify">
+<div class="blkhead"><h2>検証の記録 ─ 直近の答え合わせ</h2><p>Palantir 2026年7〜9月期（11月2日発表）</p></div>
+<div class="verify">
+<div class="vrow"><span class="co">Palantir</span><span class="mk o">当たり</span><span class="tx">米国の民間の売上が、政府を上回る <span>─ 9.84億ドル（148%増）が政府9.53億ドルを逆転</span></span></div>
+<div class="vrow"><span class="co">Palantir</span><span class="mk d">途中</span><span class="tx">営業利益率の改善 <span>─ 47%まで進んだ。通期での定着は次回に持ち越し</span></span></div>
+<div class="vrow"><span class="co">Palantir</span><span class="mk x">外れ</span><span class="tx">通期見通しは据え置きと見た <span>─ 会社は85.3億ドルへ上方修正した</span></span></div>
+</div>
+<p style="font-size:13px;color:var(--sub);margin-top:12px">判定の全文と過去分は<a href="j7.html" style="color:var(--blue);font-weight:700">Palantirの資料</a>に残してある。</p>
+</section>
+
+<section class="blk" id="radar">
+<div class="blkhead"><h2>いま伸びている動画</h2><p>登録者規模で割り直した較正倍率の上位（Palantir関連）</p></div>
+<div class="rgrid"><a class="rcard" href="https://www.youtube.com/watch?v=1tdM96e21bo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/1tdM96e21bo/hqdefault.jpg" alt=""><div class="rb"><div class="rt">Missed Nvidia Or Palantir? THIS LOOKS BIGGER!</div><div class="rm num">較正 1.1× ─ 再生 118,366回</div></div></a><a class="rcard" href="https://www.youtube.com/watch?v=FgkFU0FrcV0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/FgkFU0FrcV0/hqdefault.jpg" alt=""><div class="rb"><div class="rt">Palantir CEO Investing in NEW Military Tech [Buy THI</div><div class="rm num">較正 0.7× ─ 再生 39,448回</div></div></a><a class="rcard" href="https://www.youtube.com/watch?v=kTAcUGjGK6M" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/kTAcUGjGK6M/hqdefault.jpg" alt=""><div class="rb"><div class="rt">PLTRパランティア「祝・最高値更新」流れ変わった。SPCX,TSLAテスラ合併するの？【宇宙AI革命】</div><div class="rm num">較正 0.8× ─ 再生 8,941回</div></div></a></div>
+</section>
+
+<div class="band"><div class="bandgrid">
+<div class="ipobox"><h3>上場予定の会社も追う</h3><p>SpaceXなど、上場前の注目企業は別ページで整理してある。上場が決まったら、6社と同じ型で資料を作る。</p><a class="cta" href="../ipo.html" style="background:#fff;color:var(--navy)">上場予定のページへ</a></div>
+<div class="dbox"><h3>会員コミュニティ</h3><p>更新の通知と、決算直後の議論はDiscordで行う。資料の更新は決算発表から48時間以内が目安。</p><a class="cta" href="#">Discordへ参加する</a></div>
+</div></div>
+
+<footer>FRONTIER LAB ─ 会員向け企業理解サイト<br>数字は各社の決算資料・公式発表による。株価・市況データの出典は各資料に記載。版：2026年11月12日</footer>
+</body></html>
