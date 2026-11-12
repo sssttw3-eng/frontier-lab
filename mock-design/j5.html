@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>J5案 資料改善版デッキ｜FRONTIER LAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Shippori+Mincho:wght@600;700&family=Inter:wght@500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fbfcfe;--ink:#101e2e;--navy:#0b3054;--blue:#0067b9;--cy:#0a84d6;--sky:#dcebf8;--sub:#4d6a86;--faint:#8aa2b8;--line:#d9e6f2;--am:#b97e0e;--gn:#0a8a58;--rd:#c23b2a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-snap-type:y mandatory}
+body{background:var(--paper);color:var(--ink);font-family:'Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:'palt' 1}
+.num{font-family:'Inter','Zen Kaku Gothic New',sans-serif;font-variant-numeric:tabular-nums}
+.serif{font-family:'Shippori Mincho',serif}
+.slide{min-height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;padding:0 6.5vw;position:relative}
+.furniture{display:flex;justify-content:space-between;align-items:center;padding:20px 0 12px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.24em;color:var(--faint);font-weight:700}
+.furniture .fl{color:var(--navy)}.furniture .fl i{font-style:normal;color:var(--cy)}
+.src{margin-top:auto;padding:12px 0 18px;font-size:11px;color:var(--faint);display:flex;justify-content:space-between;gap:20px}
+.main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:22px 0 6px;min-height:0}
+.kick{display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.32em;color:var(--cy);font-weight:900}
+.kick:before{content:'';width:36px;height:3px;background:var(--cy)}
+h2{font-size:clamp(26px,3.8vw,44px);font-weight:900;line-height:1.3;margin-top:12px}
+.lead{font-size:clamp(14px,1.4vw,17.5px);color:var(--sub);line-height:1.95;margin-top:10px;max-width:44em;font-weight:500}
+.rise{opacity:0;transform:translateY(26px);transition:opacity .85s cubic-bezier(.22,.8,.3,1),transform .85s cubic-bezier(.22,.8,.3,1)}
+.slide.in .rise{opacity:1;transform:none}
+.d1{transition-delay:.07s}.d2{transition-delay:.18s}.d3{transition-delay:.3s}.d4{transition-delay:.42s}.d5{transition-delay:.54s}
+.draw{stroke-dasharray:2400;stroke-dashoffset:2400}
+.slide.in .draw{transition:stroke-dashoffset 2s cubic-bezier(.4,0,.2,1) .3s;stroke-dashoffset:0}
+.progress{position:fixed;top:0;left:0;height:3.5px;background:linear-gradient(90deg,var(--blue),var(--cy));width:0;z-index:50}
+/* cover */
+.cover-lock{display:flex;align-items:center;gap:18px}
+.cover-lock img{height:52px}
+.cover-lock .wm{font-family:'Inter',sans-serif;font-weight:800;font-size:26px;letter-spacing:.4em;color:var(--navy)}
+.cover-lock .wm small{display:block;font-size:10px;letter-spacing:.3em;color:var(--faint);font-weight:600;margin-top:3px}
+.cover h1{font-size:clamp(40px,6.4vw,84px);font-weight:900;line-height:1.16;margin-top:26px}
+.cover h1 .en{display:block;font-family:'Inter',sans-serif;font-size:clamp(13px,1.5vw,19px);letter-spacing:.42em;color:var(--cy);font-weight:800;margin-bottom:14px}
+.cover-kpis{display:grid;grid-template-columns:repeat(4,1fr);margin-top:32px;border-top:2px solid var(--navy)}
+.ck{padding:16px 20px 2px;border-right:1px solid var(--line)}.ck:first-child{padding-left:0}.ck:last-child{border-right:none}
+.ck .l{font-size:11.5px;color:var(--sub);font-weight:700}
+.ck .v{font-family:'Inter',sans-serif;font-size:clamp(27px,3.3vw,42px);font-weight:800;color:var(--navy);line-height:1.2}
+.ck .v small{font-size:.5em}.ck .d{font-size:12px;color:var(--cy);font-weight:700}.ck .s{font-size:10.5px;color:var(--faint);margin-top:3px}
+/* generic rows */
+.frow{display:grid;grid-template-columns:100px 1fr;gap:8px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+.frow:last-child{border-bottom:none}
+.frow .n{font-family:'Inter',sans-serif;font-size:clamp(36px,4.2vw,58px);font-weight:800;color:var(--sky);line-height:1;-webkit-text-stroke:1.5px var(--cy)}
+.frow .t{font-size:clamp(19px,2.3vw,29px);font-weight:900}
+.frow .b{font-size:clamp(13.5px,1.35vw,16.5px);color:var(--sub);line-height:1.9;margin-top:5px;max-width:48em;font-weight:500}
+.frow .b b{color:var(--navy);font-weight:900;border-bottom:3px solid var(--sky)}
+.crow{display:grid;grid-template-columns:130px 1fr auto;gap:22px;align-items:center;padding:19px 0;border-bottom:1px solid var(--line)}
+.crow .dt{font-family:'Inter',sans-serif;color:var(--faint);font-size:14px;font-weight:600}
+.crow .nm{font-size:clamp(16px,1.9vw,23px);font-weight:900}
+.crow .nm span{display:block;font-size:12.5px;color:var(--sub);font-weight:500;margin-top:2px}
+.crow .am{font-family:'Inter',sans-serif;font-size:clamp(20px,2.4vw,33px);font-weight:800;color:var(--navy);white-space:nowrap;text-align:right}
+.crow .am em{font-style:normal;color:var(--am);font-size:.6em;margin-right:5px}
+.chartbox{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 30px 16px;box-shadow:0 14px 34px rgba(11,48,84,.07)}
+.legend{display:flex;gap:28px;font-size:14px;font-weight:700;margin-bottom:4px}
+.legend i{display:inline-block;width:27px;height:5px;border-radius:3px;margin-right:9px;vertical-align:middle}
+.legend .u{margin-left:auto;color:var(--faint);font-size:12px;font-weight:500}
+.callout{display:flex;gap:16px;align-items:baseline;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.callout .big{font-family:'Inter',sans-serif;font-size:clamp(20px,2.4vw,31px);font-weight:800;color:var(--navy);white-space:nowrap}
+.callout .txt{font-size:clamp(13px,1.3vw,16px);color:var(--sub);font-weight:500}
+/* model */
+.lanes{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}
+.lane{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 26px}
+.lane .hd{display:flex;justify-content:space-between;align-items:baseline}
+.lane .nm{font-size:22px;font-weight:900}
+.lane .sh{font-family:'Inter',sans-serif;font-size:30px;font-weight:800;color:var(--blue)}
+.lane .who{font-size:13px;color:var(--sub);margin-top:6px;line-height:1.8}
+.lane .pr{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.lane .pr b{font-size:17px;color:var(--navy)}
+.lane .pr span{display:block;font-size:12.5px;color:var(--sub);margin-top:2px;line-height:1.7}
+.band2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px}
+.band2 .cell{background:var(--navy);color:#fff;border-radius:14px;padding:16px 24px}
+.band2 .cell.alt{background:var(--sky);color:var(--navy)}
+.band2 .cell b{font-size:19px;font-weight:900}
+.band2 .cell span{display:block;font-size:12.5px;opacity:.85;margin-top:2px}
+.bigmoney{display:flex;gap:22px;align-items:baseline;margin-top:20px}
+.bigmoney .v{font-family:'Inter',sans-serif;font-size:clamp(34px,4.4vw,58px);font-weight:800;color:var(--navy)}
+.bigmoney .t{font-size:14px;color:var(--sub);font-weight:500;line-height:1.8}
+/* timeline */
+.tl{margin-top:8px}
+.ev{display:grid;grid-template-columns:120px 26px 1fr;gap:0;padding:15px 0;position:relative}
+.ev .yr{font-family:'Inter',sans-serif;font-size:clamp(19px,2.1vw,27px);font-weight:800;color:var(--blue);text-align:right;padding-right:18px}
+.ev .dot{position:relative}
+.ev .dot:before{content:'';position:absolute;left:50%;top:8px;width:13px;height:13px;border-radius:50%;background:#fff;border:3.5px solid var(--cy);transform:translateX(-50%);z-index:1}
+.ev .dot:after{content:'';position:absolute;left:50%;top:0;bottom:-16px;width:2px;background:var(--line);transform:translateX(-50%)}
+.ev:last-child .dot:after{display:none}
+.ev .tt{font-size:clamp(16px,1.8vw,21px);font-weight:900;padding-left:16px}
+.ev .tx{font-size:clamp(12.5px,1.25vw,15px);color:var(--sub);line-height:1.85;padding-left:16px;margin-top:3px;font-weight:500;max-width:52em}
+.ev .ch{font-size:clamp(12.5px,1.25vw,15px);color:var(--navy);padding-left:16px;margin-top:4px;line-height:1.85}
+.ev .ch:before{content:'今に残るもの ─ ';color:var(--cy);font-weight:900;font-size:.86em;letter-spacing:.06em}
+/* kessan */
+.kq-head{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+.kq-head .q{font-size:clamp(21px,2.4vw,30px);font-weight:900}
+.kq-head .r{font-size:13px;color:var(--sub)}
+.krow{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.mark{font-weight:900;font-size:14px;text-align:center;border-radius:9px;padding:5px 0}
+.mark.hit{background:#e3f4ec;color:var(--gn)}.mark.mid{background:#fdf3dd;color:var(--am)}.mark.miss{background:#fbe9e5;color:var(--rd)}
+.krow .p{font-size:clamp(15px,1.6vw,19px);font-weight:900}
+.krow .w{font-size:12.5px;color:var(--faint);margin-top:2px;line-height:1.7}
+.krow .res{font-size:clamp(13.5px,1.35vw,16px);color:var(--sub);margin-top:5px;line-height:1.85;font-weight:500}
+.krow .res b{color:var(--navy)}
+/* eco */
+.partners{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:6px}
+.prow{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);align-items:start}
+.prow .lg{height:40px;display:flex;align-items:center}
+.prow .lg img{max-height:34px;max-width:108px;object-fit:contain}
+.prow .lg .tx{font-weight:900;font-size:16px;color:var(--navy)}
+.prow .nm{font-weight:900;font-size:15.5px}
+.prow .nm .stars{color:var(--am);font-size:13px;margin-left:8px;letter-spacing:2px}
+.prow .tx2{font-size:12px;color:var(--sub);line-height:1.75;margin-top:2px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.newscards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.ncard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+.ncard .dt{font-size:11.5px;color:var(--faint);font-weight:700;letter-spacing:.08em}
+.ncard .tt{font-size:16.5px;font-weight:900;margin-top:5px;line-height:1.55}
+.ncard .tx{font-size:12.5px;color:var(--sub);line-height:1.85;margin-top:5px}
+.ncard .fg{font-family:'Inter',sans-serif;font-size:24px;font-weight:800;color:var(--blue);margin-top:10px}
+.ncard .fg small{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-size:11px;color:var(--faint);font-weight:500}
+/* cases/japan cards */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:24px 24px 20px;box-shadow:0 10px 26px rgba(11,48,84,.05)}
+.card .lg{height:36px;display:flex;align-items:center}
+.card .lg img{max-height:30px;max-width:160px;object-fit:contain}
+.card .lg .tm{font-family:'Inter',sans-serif;font-weight:800;font-size:21px;letter-spacing:.1em;color:#005eb8}
+.card h3{font-size:18px;font-weight:900;margin-top:12px;line-height:1.5}
+.card .use{font-size:12px;color:var(--cy);font-weight:700;margin-top:2px}
+.card p{font-size:13px;color:var(--sub);line-height:1.9;margin-top:8px;font-weight:500}
+.card .facts{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.card .facts .f{font-size:12px;color:var(--sub);margin-top:4px}
+.card .facts .f b{font-family:'Inter',sans-serif;color:var(--navy);font-size:14.5px;margin-right:7px}
+/* compare bars */
+.barrow{display:grid;grid-template-columns:170px 1fr 190px;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.barrow .nm{font-weight:900;font-size:16.5px;display:flex;align-items:center;gap:10px}
+.barrow .nm img{height:22px;max-width:30px;object-fit:contain}
+.barrow .nm small{display:block;font-weight:500;font-size:11.5px;color:var(--faint)}
+.btrack{height:20px;background:#edf3f9;border-radius:5px;overflow:hidden}
+.bfill{height:100%;background:var(--blue);border-radius:5px}
+.bfill.self{background:var(--navy)}
+.barrow .vl{font-family:'Inter',sans-serif;font-weight:800;color:var(--navy);font-size:17px;text-align:right}
+.barrow .vl small{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:500;color:var(--sub);font-size:11.5px}
+.notes{margin-top:16px;font-size:13px;color:var(--sub);line-height:1.9}
+.notes li{margin-left:1.2em}
+/* layers */
+.layer{border:1px solid var(--line);border-radius:15px;padding:18px 24px;margin-top:14px;background:#fff}
+.layer.self{border:2px solid var(--blue);background:#f4fafe}
+.layer .ln{font-size:12px;color:var(--cy);font-weight:900;letter-spacing:.14em}
+.layer .who{font-size:19px;font-weight:900;margin-top:3px}
+.layer .tx{font-size:13px;color:var(--sub);line-height:1.85;margin-top:4px;font-weight:500}
+/* ceo */
+.ceo{display:grid;grid-template-columns:330px 1fr;gap:50px;align-items:center}
+.ceo img.ph{width:100%;border-radius:17px;aspect-ratio:4/5;object-fit:cover}
+.ceo .q{font-family:'Shippori Mincho',serif;font-size:clamp(23px,2.9vw,38px);line-height:1.85;font-weight:700;color:var(--navy)}
+.ceo .en{font-size:clamp(12.5px,1.25vw,15px);color:var(--sub);line-height:1.9;margin-top:18px;font-style:italic;font-family:'Inter',sans-serif}
+.ceo .who{margin-top:20px;font-size:14px;font-weight:700}
+.ceo .who span{color:var(--faint);font-weight:500}
+.qrow{padding:15px 0;border-bottom:1px solid var(--line)}
+.qrow .q{font-family:'Shippori Mincho',serif;font-size:clamp(16px,1.8vw,21px);font-weight:700;color:var(--navy);line-height:1.8}
+.qrow .m{font-size:11.5px;color:var(--faint);margin-top:4px}
+.qrow .p{font-size:13px;color:var(--sub);margin-top:3px;line-height:1.8}
+/* product */
+.prodimg{border-radius:17px;overflow:hidden;border:1px solid var(--line);margin-top:18px}
+.prodimg img{width:100%;display:block}
+.boxrow{display:grid;grid-template-columns:44px 1fr;gap:8px;padding:13px 0;border-bottom:1px solid var(--line)}
+.boxrow .bn{width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:15px}
+.boxrow .bt{font-weight:900;font-size:15.5px}
+.boxrow .bx{font-size:12.5px;color:var(--sub);line-height:1.8;margin-top:1px}
+/* videos/x/radar */
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:22px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.vcard .th{aspect-ratio:16/9;background:linear-gradient(130deg,var(--navy),var(--blue));position:relative}
+.vcard .th img{width:100%;height:100%;object-fit:cover;display:block}
+.vcard .th .pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.vcard .th .pl span{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:19px;padding-left:4px}
+.vcard .bd{padding:14px 17px}
+.vcard .tt{font-weight:900;font-size:14.5px;line-height:1.6}
+.vcard .mt{font-size:11.5px;color:var(--faint);margin-top:4px}
+.vcard .rt{font-family:'Inter',sans-serif;font-weight:800;color:var(--blue);font-size:19px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:700;color:var(--navy)}
+.chip span{color:var(--faint);font-weight:500;margin-left:6px;font-family:'Inter',sans-serif}
+.xgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.xcard{background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px 20px}
+.xcard .dt{font-size:11px;color:var(--faint);font-weight:700;display:flex;justify-content:space-between}
+.xcard .dt b{color:var(--blue);font-family:'Inter',sans-serif}
+.xcard .tx{font-size:13px;line-height:1.9;color:#24344a;margin-top:6px;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.rrow{display:grid;grid-template-columns:150px 1fr 130px;gap:18px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.rrow img{width:150px;aspect-ratio:16/9;object-fit:cover;border-radius:9px;display:block}
+.rrow .tt{font-weight:800;font-size:14.5px;line-height:1.6}
+.rrow .mt{font-size:11.5px;color:var(--faint);margin-top:3px}
+.rrow .rt{text-align:right}
+.rrow .rt .x{font-family:'Inter',sans-serif;font-size:23px;font-weight:800;color:var(--blue)}
+.rrow .rt .vw{font-size:11.5px;color:var(--sub)}
+/* terms */
+.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 42px;margin-top:4px}
+.trow{padding:12px 0;border-bottom:1px solid var(--line)}
+.trow .tm{font-weight:900;font-size:16.5px;color:var(--navy)}
+.trow .tm span{font-size:11.5px;color:var(--faint);font-weight:500;margin-left:8px}
+.trow .tx{font-size:12.5px;color:var(--sub);line-height:1.85;margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+/* next */
+.nextwrap{display:flex;gap:44px;align-items:center;margin-top:10px;flex-wrap:wrap}
+.nextdate{font-family:'Inter',sans-serif;font-size:clamp(52px,7vw,96px);font-weight:800;color:var(--navy);line-height:1.05}
+.nextdate small{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-size:15px;color:var(--sub);font-weight:700;letter-spacing:.1em;margin-top:8px}
+.count{text-align:center;background:var(--navy);color:#fff;border-radius:18px;padding:22px 34px}
+.count .n{font-family:'Inter',sans-serif;font-size:52px;font-weight:800;line-height:1}
+.count .l{font-size:12px;letter-spacing:.2em;margin-top:5px;color:#a9c6e4}
+@media(max-width:860px){.cover-kpis,.lanes,.band2,.partners,.newscards,.xgrid,.tgrid{grid-template-columns:1fr}.cards3,.vgrid{grid-template-columns:1fr}.ceo{grid-template-columns:1fr}.crow,.barrow,.rrow{grid-template-columns:1fr}.frow{grid-template-columns:58px 1fr}}
+</style></head>
+<body><div class="progress" id="pbar"></div>
+
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>概要 ─ 01 / 30</span></div>
+<div class="main">
+<div class="cover-lock rise"><img src="https://cdn.simpleicons.org/palantir/0b3054" alt="Palantir logo"><div class="wm">PALANTIR<small>TECHNOLOGIES INC.</small></div></div>
+<h1 class="rise d1"><span class="en">NASDAQ: PLTR</span>政府の会社から、<br>民間の会社へ。</h1>
+<p class="lead rise d2" style="font-size:clamp(15px,1.6vw,20px);color:#33506e">政府と大企業にデータ分析ソフトを売る米国の会社。工場の稼働データ、在庫、受発注、衛星画像のように散らばったデータを1つの画面にまとめ、生成AIに業務の一部をやらせる。2026年7〜9月期の売上は23.1億ドル（約3,563億円）で、前年の約2倍になった。</p>
+<div class="cover-kpis num rise d3"><div class="ck"><div class="l">売上高（2026年7〜9月期）</div><div class="v">23.1億ドル</div><div class="d">約3,563億円／前年同期比 96%増</div><div class="s">2026年7〜9月期の決算資料（2026年11月2日発表）</div></div><div class="ck"><div class="l">米国の民間企業向け売上</div><div class="v">9.8億ドル</div><div class="d">約1,515億円／前年同期比 148%増</div><div class="s">2026年7〜9月期の決算資料</div></div><div class="ck"><div class="l">営業利益率（GAAP）</div><div class="v">47%</div><div class="d">営業利益 約1,671億円／1年前は33%</div><div class="s">2026年7〜9月期の決算資料</div></div><div class="ck"><div class="l">2026年通期の売上見通し</div><div class="v">85.3億ドル</div><div class="d">約1兆3,139億円／前年比 91%増の見通し</div><div class="s">2026年7〜9月期の決算資料に載った通期見通し</div></div></div>
+<div class="rise d4" style="margin-top:22px">
+<div style="display:flex;justify-content:space-between;font-size:12px;color:var(--sub);font-weight:700"><span>売上の推移（億ドル）</span><span>2024年 28.7 → 2026年見通し 85.3（2年で約3倍）</span></div>
+<svg viewBox="0 0 720 196" width="100%"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a84d6" stop-opacity=".3"/><stop offset="1" stop-color="#0a84d6" stop-opacity=".02"/></linearGradient></defs>
+<path d="M40,161 L122,158 L205,152 L288,143 L370,137 L452,131 L535,119 L618,89 L700,14 L700,172 L40,172 Z" fill="url(#ag)"/><polyline class="draw" points="40,161 122,158 205,152 288,143 370,137 452,131 535,119 618,89 700,14" fill="none" stroke="#0067b9" stroke-width="3.5" stroke-linejoin="round"/>
+<circle cx="700" cy="14" r="5.5" fill="#0067b9"/><g fill="#8aa2b8" font-size="11.5" font-family="Inter"><text x="40" y="190" text-anchor="middle">2018</text><text x="205" y="190" text-anchor="middle">2020</text><text x="370" y="190" text-anchor="middle">2022</text><text x="535" y="190" text-anchor="middle">2024</text><text x="700" y="190" text-anchor="middle">2026</text></g></svg></div>
+</div>
+<div class="src"><span>数字は各社の決算資料・SEC提出書類による（2026年11月時点）。円換算は1ドル=154円。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>概要 ─ 02 / 30</span></div>
+<div class="main"><div class="kick rise">FOCUS</div><h2 class="rise d1">今の論点</h2><p class="lead rise d2">2026年7〜9月期の決算を受けた時点で、次に動くのはこの3つです。</p><div class="frow rise d2"><div class="n">1</div><div><div class="t">民間の伸びに全社が追いつくか</div><p class="b">米国の民間向けは148%増で、初めて米国政府向けを上回った。全社は96%増で、差は52ポイントある。カープCEOはこの先18か月で全社を民間の伸び以上にすると話している。</p></div></div><div class="frow rise d3"><div class="n">2</div><div><div class="t">大型契約が売上に変わる速さ</div><p class="b">米陸軍の包括契約は最大100億ドルで10年、Maven Smart Systemの上限は約13億ドルまで上がった。契約の大きさと、その四半期の売上は別で、RPOと政府向け売上の伸びで進み具合を見る。</p></div></div><div class="frow rise d4"><div class="n">3</div><div><div class="t">米国以外の鈍さ</div><p class="b">米国外の売上は26%増まで鈍り、前の四半期と比べても4%増にとどまった。伸びの主役が米国の民間に寄るほど、米国外の遅れが目立つ。</p></div></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>概要 ─ 03 / 30</span></div>
+<div class="main"><div class="kick rise">BUSINESS MODEL</div><h2 class="rise d1">政府と企業で半々。稼ぎは利用料が中心</h2><p class="lead rise d2">売上は政府と企業でほぼ半分ずつ。政府にはGotham、企業にはFoundryを入れ、その上にAIPを載せて使う部署を増やしていく。</p>
+<div class="lanes"><div class="lane rise d2"><div class="hd"><span class="nm">政府</span><span class="sh num">49.5%</span></div><div class="who">米国41%・米国外8%／国防総省、陸軍、情報機関、農務省、英国、NATO</div><div class="pr"><b>Gotham</b><span>人・場所・通信・衛星画像をつないで判断に使う</span></div></div><div class="lane rise d3"><div class="hd"><span class="nm">企業</span><span class="sh num">50.5%</span></div><div class="who">米国43%・米国外8%／製造、エネルギー、保険、医療、小売、Airbus、SOMPO</div><div class="pr"><b>Foundry</b><span>社内のデータを1つにまとめ、業務アプリを作る</span></div></div></div>
+<div class="band2">
+<div class="cell rise d3"><b>AIP</b><span>生成AIを両方のデータと業務につなぐ</span></div>
+<div class="cell alt rise d4"><b>Apollo</b><span>クラウドでも基地の中でも同じソフトを動かす</span></div>
+</div>
+<div class="bigmoney rise d4"><span class="v num">1.46億ドル</span><span class="t">上位20社が直近12か月で払った1社平均（約225億円）。前年から76%増。<br>稼ぎ方：利用料（年額・複数年の契約が中心）・導入の支援（FDE（常駐技術者）が立ち上げる）</span></div>
+</div>
+<div class="src"><span>ニュースに出る大型契約の金額は複数年の上限。その四半期の売上に入るのは一部だけ。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>概要 ─ 04 / 30</span></div>
+<div class="main"><div class="kick rise">REVENUE MIX</div><h2 class="rise d1">売上の内訳　米国の民間が政府を初めて上回った</h2><p class="lead rise d2">2026年7〜9月期の売上を、政府か企業か、米国か米国外かで4つに分けた。米国の民間向けが米国政府向けを初めて上回り、米国外はまだ全体の16%。</p>
+<div style="display:grid;grid-template-columns:360px 1fr;gap:54px;align-items:center;margin-top:16px">
+<svg viewBox="0 0 200 200" width="100%"><circle cx="100" cy="100" r="80" fill="none" stroke="#e8f0f8" stroke-width="30"/><circle cx="100" cy="100" r="80" fill="none" stroke="#0a84d6" stroke-width="30" stroke-dasharray="213.8 502.65" stroke-dashoffset="0.0" transform="rotate(-90 100 100)"/><circle cx="100" cy="100" r="80" fill="none" stroke="#7d99b5" stroke-width="30" stroke-dasharray="207.1 502.65" stroke-dashoffset="-213.8" transform="rotate(-90 100 100)"/><circle cx="100" cy="100" r="80" fill="none" stroke="#2f7fd0" stroke-width="30" stroke-dasharray="41.8 502.65" stroke-dashoffset="-420.9" transform="rotate(-90 100 100)"/><circle cx="100" cy="100" r="80" fill="none" stroke="#f0b84e" stroke-width="30" stroke-dasharray="40.0 502.65" stroke-dashoffset="-462.7" transform="rotate(-90 100 100)"/>
+<text x="100" y="93" fill="#0b3054" font-size="19" font-weight="800" text-anchor="middle" font-family="Inter">23.1億ドル</text>
+<text x="100" y="115" fill="#8aa2b8" font-size="10.5" text-anchor="middle">2026年7〜9月期</text></svg>
+<div><div class="crow" style="grid-template-columns:20px 1fr auto;padding:15px 0"><span style="width:15px;height:15px;border-radius:4px;background:#0a84d6"></span><span class="nm" style="font-size:17px">米国の民間企業<span>全体の43%</span></span><span class="am">9.84億ドル</span></div><div class="crow" style="grid-template-columns:20px 1fr auto;padding:15px 0"><span style="width:15px;height:15px;border-radius:4px;background:#7d99b5"></span><span class="nm" style="font-size:17px">米国政府<span>全体の41%</span></span><span class="am">9.53億ドル</span></div><div class="crow" style="grid-template-columns:20px 1fr auto;padding:15px 0"><span style="width:15px;height:15px;border-radius:4px;background:#2f7fd0"></span><span class="nm" style="font-size:17px">米国外の政府<span>全体の8%</span></span><span class="am">1.925億ドル</span></div><div class="crow" style="grid-template-columns:20px 1fr auto;padding:15px 0"><span style="width:15px;height:15px;border-radius:4px;background:#f0b84e"></span><span class="nm" style="font-size:17px">米国外の民間企業<span>全体の8%</span></span><span class="am">1.839億ドル</span></div></div></div>
+</div>
+<div class="src"><span>政府部門11.5億ドル（約1,771億円）、民間部門11.7億ドル（約1,802億円）、米国19.4億ドル（約2,988億円）から計算。米国外の内訳は差し引きで、前年比は開示がない。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>概要 ─ 05 / 30</span></div>
+<div class="main"><div class="kick rise">NEXT EARNINGS</div><h2 class="rise d1">次の決算まで</h2>
+<div class="nextwrap rise d2"><div class="nextdate num">2027.2.1<small>2026年10〜12月期の決算 ─ 発表見込み（未確定）</small></div>
+<div class="count"><div class="n num">81</div><div class="l">DAYS ─ あと約81日</div></div>
+<p style="font-size:13.5px;color:var(--sub);line-height:1.9;max-width:26em">会社はまだ日付を出していません。前年の10〜12月期は2026年2月2日（米国時間）に発表しました。2月1日は市場の見込みです。</p></div>
+<div style="margin-top:8px"><div class="kick" style="margin-top:18px">BEFORE THE EARNINGS</div><h2 style="font-size:clamp(21px,2.6vw,32px)">決算の前に見る3点</h2><div class="frow rise d2" style="padding:17px 0"><div class="n">1</div><div><div class="t" style="font-size:clamp(17px,2vw,24px)">全社と米国の民間の差</div><p class="b">前回は52ポイント（全社96%増、民間の148%増）。差が縮むかを見る。</p></div></div><div class="frow rise d3" style="padding:17px 0"><div class="n">2</div><div><div class="t" style="font-size:clamp(17px,2vw,24px)">米国外の伸び</div><p class="b">前回は26%増、前四半期比では4%増。30%台に戻るかを見る。</p></div></div><div class="frow rise d4" style="padding:17px 0"><div class="n">3</div><div><div class="t" style="font-size:clamp(17px,2vw,24px)">通期の実績と次の見通し</div><p class="b">2026年通期の見通しは85億3,000万ドル（約1兆3,139億円）。実績が上回るかと、2027年の見通しの置き方を見る。</p></div></div></div>
+</div>
+<div class="src"><span>決算の後に「決算の答え合わせ」で判定する</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 06 / 30</span></div>
+<div class="main"><div class="kick rise">REVENUE</div><h2 class="rise d1">売上は2年で約3倍の見通し</h2><p class="lead rise d2">2023年に17%増まで落ちた伸びが、生成AI製品のAIPを出してから戻った。2025年は56%増の44.8億ドル（約6,892億円）、2026年は85.3億ドル（約1兆3,139億円）の見通し。</p><div class="rise d3"><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2018年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:7%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">6.0億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px"></span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2019年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:9%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">7.4億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +25%</span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2020年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:13%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">10.9億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +47%</span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2021年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:18%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">15.4億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +41%</span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2022年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:22%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">19.1億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +24%</span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2023年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:26%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">22.2億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +17%</span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2024年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:34%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">28.7億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +29%</span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2025年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:52%;background:var(--blue);border:none;border-radius:4px"></span></span><span class="am" style="font-size:19px">44.8億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +56%</span></span></div><div class="crow" style="grid-template-columns:90px 1fr auto;padding:9px 0"><span class="dt num">2026年</span><span style="height:16px;background:#edf3f9;border-radius:4px;position:relative;display:block"><span style="position:absolute;inset:0;width:100%;background:#fff;border:2px solid var(--blue);border-radius:4px"></span></span><span class="am" style="font-size:19px">85.3億ドル<span style="font-size:12.5px;color:var(--cy);font-weight:700;margin-left:9px">前年比 +91%</span>（見通し）</span></div></div></div>
+<div class="src"><span>12月決算。2026年は会社見通し（85.30億〜85.34億ドル）の中央値。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 07 / 30</span></div>
+<div class="main"><div class="kick rise">CHART</div><h2 class="rise d1">米国の民間向けが政府向けを追い抜くまで</h2><p class="lead rise d2">2年前、米国の民間向けは政府向けの6割ほどだった。四半期ごとに差を詰め、2026年7〜9月期に9.84億ドル（約1,515億円）対9.53億ドル（約1,468億円）で抜いた。</p>
+<div class="chartbox rise d3">
+<div class="legend num"><span><i style="background:var(--cy)"></i>米国の民間企業</span><span><i style="background:#7d99b5"></i>米国政府</span><span class="u">単位：百万ドル／四半期売上</span></div>
+<svg viewBox="0 0 720 350" width="100%">
+<g stroke="#e3edf6"><line x1="56" y1="20" x2="706" y2="20"/><line x1="56" y1="90" x2="706" y2="90"/><line x1="56" y1="160" x2="706" y2="160"/><line x1="56" y1="230" x2="706" y2="230"/><line x1="56" y1="300" x2="706" y2="300"/></g>
+<g fill="#8aa2b8" font-size="11.5" font-family="Inter" text-anchor="end"><text x="46" y="305">0</text><text x="46" y="235">250</text><text x="46" y="165">500</text><text x="46" y="95">750</text><text x="46" y="25">1,000</text></g>
+<polyline class="draw" points="56,232 121,226 186,215 251,209 316,201 381,186 446,170 511,148 576,117 641,84 706,46" fill="none" stroke="#7d99b5" stroke-width="3" stroke-linejoin="round"/>
+<polyline class="draw" points="56,260 121,258 186,252 251,243 316,232 381,218 446,194 511,165 576,141 641,96 706,38" fill="none" stroke="#0a84d6" stroke-width="4.5" stroke-linejoin="round"/>
+<circle cx="706" cy="38" r="6.5" fill="#0a84d6"/><circle cx="706" cy="46" r="5.5" fill="#7d99b5"/>
+<g font-family="Inter" font-weight="800"><text x="694" y="16" fill="#0067b9" font-size="20" text-anchor="end">984</text><text x="694" y="62" fill="#52708e" font-size="16" text-anchor="end">953</text></g>
+<g fill="#8aa2b8" font-size="12" font-family="Inter"><text x="56" y="330" text-anchor="middle">24/1-3</text><text x="251" y="330" text-anchor="middle">10-12</text><text x="446" y="330" text-anchor="middle">7-9</text><text x="641" y="330" text-anchor="middle">4-6</text><text x="706" y="330" text-anchor="middle">7-9</text></g>
+</svg>
+<div class="callout num"><span class="big">9.84億ドル 対 9.53億ドル</span><span class="txt">2026年7〜9月期、創業以来初めて民間の売上が政府を上回った。</span></div>
+</div></div>
+<div class="src"><span>単位は百万ドル。四半期報告書（10-Q）と決算発表から。10〜12月期は決算発表の値。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 08 / 30</span></div>
+<div class="main">
+<div class="kick rise">EARNINGS CHECK</div>
+<div class="kq-head rise d1" style="margin-top:12px"><span class="q">決算の答え合わせ ─ 2026年7〜9月期</span><span class="r">発表：2026-11-02／翌日の株価 1.6%安</span></div>
+<p class="lead rise d2">決算の前に挙げた3つの見どころと、その結果。外れたものも消さずに残している。</p>
+<div class="krow rise d2"><div class="mark mid">途中</div><div><div class="p">全社の伸びは米国の民間に追いつくか</div><div class="w">見た理由：8月の説明会でカープCEOはこの先18か月は全社を米国の民間と同じ速さ以上で伸ばすと話した。前回の差は56ポイント（全社93%増、米国の民間149%増）。</div><div class="res">結果：全社96%増、米国の民間148%増で差は52ポイント。縮んだが、まだ届いていない。</div></div></div><div class="krow rise d3"><div class="mark hit">当たり</div><div><div class="p">米国の民間は149%増を保てるか</div><div class="w">見た理由：前回は7.64億ドル（約1,177億円）で149%増。</div><div class="res">結果：9.84億ドル（約1,515億円）で148%増。米国政府の9.53億ドル（約1,468億円）を初めて抜いた。</div></div></div><div class="krow rise d4"><div class="mark miss">外れ</div><div><div class="p">米国の外は伸び始めるか</div><div class="w">見た理由：前回は3.62億ドル（約557億円）で34%増。米国の115%増と比べて鈍い。</div><div class="res">結果：3.76億ドル（約579億円）で26%増と、さらに鈍った。前の四半期と比べると4%増。</div></div></div></div>
+<div class="src"><span>見どころが3つとも当たっても株価が下がる回はある。1〜3月期がそうで、翌日は6.9%安だった。株価は決算日と翌日のNasdaq終値（Yahoo Financeの日足）で比べた。発表日は米国時間。円換算は1ドル=154円。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 09 / 30</span></div>
+<div class="main">
+<div class="kick rise">EARNINGS CHECK</div>
+<div class="kq-head rise d1" style="margin-top:12px"><span class="q">決算の答え合わせ ─ 2026年4〜6月期</span><span class="r">発表：2026-08-03／翌日の株価 29.5%高</span></div>
+<p class="lead rise d2">外れたものも消さずに残している。</p>
+<div class="krow rise d2"><div class="mark hit">当たり</div><div><div class="p">売上は市場予想の18.1億ドル（約2,787億円）をどこまで超えるか</div><div class="w">見た理由：会社見通しの上限は18.01億ドル（約2,774億円）。市場予想（Benzinga集計）は最初からそれより上にあった。</div><div class="res">結果：19.35億ドル（約2,980億円）で93%増。予想を約7%上回った。</div></div></div><div class="krow rise d3"><div class="mark hit">当たり</div><div><div class="p">米国の民間は100%超の伸びを保てるか</div><div class="w">見た理由：前回は5.95億ドル（約916億円）で133%増。</div><div class="res">結果：7.64億ドル（約1,177億円）で149%増。さらに加速した。</div></div></div><div class="krow rise d4"><div class="mark hit">当たり</div><div><div class="p">通期の見通しをどこまで上げるか</div><div class="w">見た理由：5月時点は76.50億〜76.62億ドル（約1兆1,781億〜1兆1,799億円）。</div><div class="res">結果：81.50億〜81.58億ドル（約1兆2,551億〜1兆2,563億円）へ引き上げた。</div></div></div></div>
+<div class="src"><span>見どころが3つとも当たっても株価が下がる回はある。1〜3月期がそうで、翌日は6.9%安だった。株価は決算日と翌日のNasdaq終値（Yahoo Financeの日足）で比べた。発表日は米国時間。円換算は1ドル=154円。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 10 / 30</span></div>
+<div class="main">
+<div class="kick rise">EARNINGS CHECK</div>
+<div class="kq-head rise d1" style="margin-top:12px"><span class="q">決算の答え合わせ ─ 2026年1〜3月期</span><span class="r">発表：2026-05-04／翌日の株価 6.9%安</span></div>
+<p class="lead rise d2">外れたものも消さずに残している。</p>
+<div class="krow rise d2"><div class="mark hit">当たり</div><div><div class="p">米国の事業は加速するか</div><div class="w">見た理由：前回（2025年10〜12月期）は米国全体93%増、民間137%増、政府66%増。</div><div class="res">結果：米国全体104%増、民間133%増、政府84%増。</div></div></div><div class="krow rise d3"><div class="mark hit">当たり</div><div><div class="p">AIPの需要は利益を伴うか</div><div class="w">見た理由：前回の売上は70%増。伸びと利益率が一緒に上がるかを見た。</div><div class="res">結果：調整後の営業利益9.84億ドル（約1,515億円）、利益率60%。成長率と足して145%。</div></div></div><div class="krow rise d4"><div class="mark hit">当たり</div><div><div class="p">通期の見通しは上がるか</div><div class="w">見た理由：2月に出した通期見通しを上げるかどうか。上げれば、会社が年内の需要に自信を持っているということになる。</div><div class="res">結果：76.50億〜76.62億ドルへ引き上げた。前年比71%増の計画。</div></div></div></div>
+<div class="src"><span>見どころが3つとも当たっても株価が下がる回はある。1〜3月期がそうで、翌日は6.9%安だった。株価は決算日と翌日のNasdaq終値（Yahoo Financeの日足）で比べた。発表日は米国時間。円換算は1ドル=154円。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 11 / 30</span></div>
+<div class="main"><div class="kick rise">HISTORY</div><h2 class="rise d1">創業のやり方が、今の製品に残っている</h2><p class="lead rise d2">点を押すと、その年に何があり、何が変わったかが出る。</p><div class="tl"><div class="ev rise d2"><div class="yr num">2003</div><div class="dot"></div><div><div class="tt">情報機関向けのソフト会社として創業</div><p class="tx">9.11から2年後、ピーター・ティール、アレックス・カープ、スティーブン・コーエンらが立ち上げた。最初の顧客は米国の情報機関。通話記録や移動記録をつないで対テロ捜査に使うソフトだった。</p><p class="ch">機密データの権限管理と、技術者が顧客の現場に入るやり方はこの頃にできた。これがのちのGothamになる。</p></div></div><div class="ev rise d3"><div class="yr num">2016</div><div class="dot"></div><div><div class="tt">米陸軍を訴えて勝つ</div><p class="tx">陸軍は戦場の情報分析システム（DCGS-A）を自前で作ろうとしていた。Palantirは2016年6月、市販ソフトも検討すべきだと訴え、10月31日に連邦請求裁判所が主張を認めた。</p><p class="ch">2019年3月、後継システムの契約（10年・上限8.76億ドル、約1,349億円）を取った。国防総省が既製のソフトを買う道がここで開いた。</p></div></div><div class="ev rise d4"><div class="yr num">2020</div><div class="dot"></div><div><div class="tt">NYSEに直接上場</div><p class="tx">2020年9月30日、新株を出さない直接上場で取引が始まった。参考価格は7.25ドル（約1,117円）、初値は10ドル（約1,540円）。</p><p class="ch">17年間非公開で政府の仕事をしてきた会社が、四半期ごとに顧客の内訳と契約額を出すようになった。</p></div></div><div class="ev rise d5"><div class="yr num">2023</div><div class="dot"></div><div><div class="tt">生成AI製品AIPを発表</div><p class="tx">2023年4月7日、カープCEOが株主への手紙で発表した。言語モデルを顧客のデータと業務につなぎ、権限の範囲でAIに作業をさせる。実データで数日のうちに試作を作るブートキャンプも始め、2024年2月までに500回を超えた。</p><p class="ch">米国の民間向けの伸びは2024年7〜9月期の54%から2025年10〜12月期の137%まで上がった。</p></div></div></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 12 / 30</span></div>
+<div class="main"><div class="kick rise">HISTORY</div><h2 class="rise d1">創業のやり方が、今の製品に残っている（2/2）</h2><div class="tl"><div class="ev rise d2"><div class="yr num">2024</div><div class="dot"></div><div><div class="tt">S&amp;P500入り、Nasdaqへ移る</div><p class="tx">9月23日にS&amp;P500に採用され、11月26日にNYSEからNasdaqへ移った。5月には国防総省のMaven Smart Systemで4.8億ドル（約739億円）の契約を取っている。</p><p class="ch">指数に連動する資金が買う銘柄になり、個人投資家にも名前が広まった。</p></div></div><div class="ev rise d3"><div class="yr num">2025</div><div class="dot"></div><div><div class="tt">米陸軍と10年・最大100億ドルの包括契約</div><p class="tx">7月31日、陸軍は75件に分かれていた契約を1本にまとめた。10年で上限100億ドル（約1.5兆円）。5月にはMaven Smart Systemの上限も約13億ドル（約2,002億円）に上がっている。</p><p class="ch">部隊ごとの契約が一本になり、追加の利用を入札なしで積み増せるようになった。</p></div></div><div class="ev rise d4"><div class="yr num">2026</div><div class="dot"></div><div><div class="tt">主権AIと、民間が政府を抜いた四半期</div><p class="tx">7月27日に主権AIブートキャンプを始め、8月19日までに約200組織が参加した。9月1日には米陸軍の地上局TITANの量産で、元請けとして1.27億ドル（約196億円）を受けた。</p><p class="ch">11月2日の決算で、米国の民間向けが初めて政府向けを上回った。データとモデルを自分の手元に置きたい企業の需要が、売上の形を変えた。</p></div></div></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>成長の変遷 ─ 13 / 30</span></div>
+<div class="main"><div class="kick rise">CONTRACT TRACKER</div><h2 class="rise d1">契約の発表は大きい。売上への変換はこれから</h2><p class="lead rise d2">金額は契約の上限を含むものがあります。売上への計上は利用に応じて少しずつ進みます。</p><div class="crow num rise d2"><div class="dt">2025年8月</div><div class="nm">米陸軍 包括契約（Enterprise Agreement）<span>散らばっていた75件の契約を1本にまとめた。陸軍がPalantirの製品を買う入口が1つになった。／10年</span></div><div class="am">最大100億ドル</div></div><div class="crow num rise d3"><div class="dt">2025年5月</div><div class="nm">米国防総省 Maven Smart System の上限引き上げ<span>当初の4億8,000万ドル（2024年5月）から引き上げた。利用者は2万人を超えた。／2029年まで</span></div><div class="am">上限 約13億ドル</div></div><div class="crow num rise d4"><div class="dt">2024年12月</div><div class="nm">米陸軍 Army Vantage<span>陸軍の人員、物流、装備のデータを1つにまとめる仕事。／4年</span></div><div class="am">最大6億1,890万ドル</div></div><div class="crow num rise d5"><div class="dt">2024年3月</div><div class="nm">米陸軍 TITAN 地上ステーション<span>衛星と航空機、高高度のセンサーをつなぐ移動型の地上局。RTXとの競合で勝ち取った。／試作10台</span></div><div class="am">1億7,840万ドル</div></div><div class="crow num rise d5"><div class="dt">2023年11月</div><div class="nm">NHS England Federated Data Platform<span>英国の公的医療で、病床と手術待ちと人員のデータを病院の横断でつなぐ。／7年</span></div><div class="am">3億3,000万ポンド</div></div><p class="notes">物差し：ドル建て4件の上限の合計は約121億ドルで、2026年通期の売上見通し85.3億ドルの約1.4倍。ただし金額は複数年の上限で、売上には年々に分けて入る。</p></div>
+<div class="src"><span>金額と期間は各機関と会社の発表による。包括契約の上限はその金額の支出が決まっているという意味ではない。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>エコシステム ─ 14 / 30</span></div>
+<div class="main"><div class="kick rise">ECOSYSTEM</div><h2 class="rise d1">提携の広さが、導入の速さを作る</h2><p class="lead rise d2">提携先を連携の深さで5段階に分けた。名前を押すと中身が出る。</p><div class="partners"><div class="prow rise"><div class="lg"><img src="../assets/logo-n.svg" alt="NVIDIA"></div><div><div class="nm">NVIDIA<span class="stars">★★★★★</span></div><div style="font-size:11px;color:var(--faint)">半導体・AIモデル／2025年10月</div><p class="tx2">2025年10月、NVIDIAのGPUとAIソフトをAIPとOntologyに組み込む提携を発表した。2026年7月にはNVIDIAの公開モデルNemotronがAIPに載り、ネットから切り離した政府の環境でも生成AIが使えるようになった。9月にはNVIDIA自身がサプライチェーン管理にPalantirを入れると発表。次世代GPUのラック1台で部品は約130万点、取引先は数千社にのぼる。</p></div></div><div class="prow rise"><div class="lg"><img src="../assets/eco-airbus.svg" alt="Airbus"></div><div><div class="nm">Airbus<span class="stars">★★★★★</span></div><div style="font-size:11px;color:var(--faint)">航空機メーカー／Skywise</div><p class="tx2">航空機の設計・生産・運航のデータをまとめるSkywiseを共同で作り、航空会社にも出してきた。2026年1〜3月期に複数年の契約更新を開示。民間向けの看板になっている長い付き合いの顧客。</p></div></div><div class="prow rise"><div class="lg"><img src="../assets/eco-sompo.svg" alt="SOMPO"></div><div><div class="nm">SOMPO<span class="stars">★★★★☆</span></div><div style="font-size:11px;color:var(--faint)">損害保険・介護／合弁会社</div><p class="tx2">日本では合弁会社Palantir Technologies Japanを一緒に運営している。2025年8月12日に複数年の提携拡大を発表した。介護と保険のデータをまとめるReal Data PlatformはFoundryの上で動く。</p></div></div><div class="prow rise"><div class="lg"><img src="../assets/eco-fujitsu.svg" alt="富士通"></div><div><div class="nm">富士通<span class="stars">★★★★☆</span></div><div style="font-size:11px;color:var(--faint)">ITサービス／2026年9月</div><p class="tx2">2026年9月10日にGlobal FDE Partnerになった。AIPとFoundryを売り、顧客の課題探しから使い道の設計、業務への実装まで受け持つ。日本の大企業に入っていく窓口になる。</p></div></div><div class="prow rise"><div class="lg"><span class="tx">Anduril</span></div><div><div class="nm">Anduril<span class="stars">★★★★☆</span></div><div style="font-size:11px;color:var(--faint)">防衛テック（非上場）／TITAN</div><p class="tx2">米陸軍の地上局TITANで組む。2026年9月1日の量産契約（8台、総額1.92億ドル、約296億円）はPalantirが1.27億ドル（約196億円）、Andurilが0.65億ドル（約100億円）。Palantirが元請けとしてハードの製造まで束ねる。防衛ソフトの予算では取り合う場面もある。</p></div></div><div class="prow rise"><div class="lg"><span class="tx">Nebius</span></div><div><div class="nm">Nebius<span class="stars">★★★☆☆</span></div><div style="font-size:11px;color:var(--faint)">AI向けクラウド／2026年9月</div><p class="tx2">2026年9月8日、主権AI向け計算資源の優先パートナーに選んだ。顧客はデータとモデルと計算資源を手元に置いたまま、Nebiusの推論を使える。米大手クラウドのほかにも計算資源の調達先を持つことになる。</p></div></div><div class="prow rise"><div class="lg"><img src="../assets/eco-databricks.png" alt="Databricks"></div><div><div class="nm">Databricks<span class="stars">★★★☆☆</span></div><div style="font-size:11px;color:var(--faint)">データ処理／2025年3月</div><p class="tx2">2025年3月13日に製品提携を発表した。Databricksのデータ処理製品とAIP・Ontologyをつなぎ、企業がAIアプリを作りやすくする。データ保管では競合もするが、顧客の重なりが大きく、つなぐ道を選んだ。</p></div></div><div class="prow rise"><div class="lg"><img src="../assets/logo-microsoft.svg" alt="Microsoft"></div><div><div class="nm">Microsoft<span class="stars">★★★☆☆</span></div><div style="font-size:11px;color:var(--faint)">クラウド／2024年8月</div><p class="tx2">2024年8月8日、AzureのOpenAIモデルとPalantirの製品を米政府の機密ネットワークで使える提携を発表した。機密度の高い環境で生成AIを動かす前例になった。</p></div></div><div class="prow rise"><div class="lg"><span class="tx">PwC</span></div><div><div class="nm">PwC<span class="stars">★★★☆☆</span></div><div style="font-size:11px;color:var(--faint)">コンサルティング／2026年9月拡大</div><p class="tx2">2026年9月に提携を広げ、PwCが顧客企業にPalantirの製品を持ち込む形になった。M&amp;Aの手続きを最大50%速める、といった使い方を掲げる。Palantirは自前の営業を増やさずに売り先を広げられる。</p></div></div><div class="prow rise"><div class="lg"><img src="../assets/logo-google.svg" alt="Google Cloud"></div><div><div class="nm">Google Cloud<span class="stars">★★☆☆☆</span></div><div style="font-size:11px;color:var(--faint)">クラウド／2026年6月</div><p class="tx2">2026年6月、FoundryとAIPをGoogle Cloud Marketplaceで買えるようにした。AWS、Azureと合わせて、主要3クラウドどれの購買の仕組みからでも契約できる。</p></div></div></div></div>
+<div class="src"><span>★5 製品に組み込む共同開発　★4 複数年の大型契約・販売の担い手　★3 製品・販売の提携　★2 提供経路の追加</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>エコシステム ─ 15 / 30</span></div>
+<div class="main"><div class="kick rise">NEWS</div><h2 class="rise d1">直近の動き ─ 民間の逆転と、NVIDIAの採用</h2><p class="lead rise d2">直近の提携・契約・決算から5本。</p><div class="newscards"><div class="ncard rise d2"><div class="dt">2026-11-02 ─ 決算</div><div class="tt">米国の民間向けが政府向けを初めて上回る</div><p class="tx">政府向けは9.53億ドル（約1,468億円）。通期の売上見通しは前年比91%増へ引き上げた。</p><div class="fg num">9.84億ドル<small>米国の民間向け（148%増）</small></div></div><div class="ncard rise d3"><div class="dt">2026-09-10 ─ 提携</div><div class="tt">NVIDIAが自社のサプライチェーンにPalantirを入れる</div><p class="tx">部品調達と製造の管理に使う。同じ型を製造、エネルギー、医療、自動車へ広げる計画。</p><div class="fg num">約130万点<small>次世代GPUラック1台の部品数</small></div></div><div class="ncard rise d4"><div class="dt">2026-09-10 ─ 提携</div><div class="tt">富士通がGlobal FDE Partnerに</div><p class="tx">日本の顧客向けに、AIPとFoundryの導入を設計から実装まで受け持つ。</p><div class="fg num">3,000社超<small>富士通の事例でつないだサプライヤー数</small></div></div><div class="ncard rise d5"><div class="dt">2026-09-01 ─ 受注</div><div class="tt">TITANの量産を元請けで受注</div><p class="tx">米陸軍の地上局8台の量産契約。ソフトの会社がハードの製造を束ねる。</p><div class="fg num">1.27億ドル<small>Palantirの受注分（約196億円）</small></div></div></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>エコシステム ─ 16 / 30</span></div>
+<div class="main"><div class="kick rise">CUSTOMER CASES</div><h2 class="rise d1">使われ方は、戦場・空・病院</h2><p class="lead rise d2">どの組織が、何に使っているか。</p><div class="cards3"><div class="card rise d2"><div class="lg"><span class="tm" style="color:var(--navy);font-size:17px;letter-spacing:.02em">米国防総省・米陸軍</span></div><h3>Maven Smart System</h3><p>衛星画像と位置情報をAIが読み、目標の検出と判断を助ける。5つの統合軍で使われ、利用者は2万人を超えた。2025年3月にはNATOも同じ仕組みを採用した。</p></div><div class="card rise d3"><div class="lg"><img src="../assets/eco-airbus.svg" alt="Airbus"></div><h3>Skywise</h3><p>航空機のセンサー、整備、運航のデータをFoundryが1つにつなぐ。140社を超える航空会社が参加し、つながる航空機は1万1,900機を超えた（2023年時点）。</p></div><div class="card rise d4"><div class="lg"><span class="tm">NHS</span></div><h3>Federated Data Platform</h3><p>病院ごとに分かれていた病床、手術の待ち時間、人員、物資のデータを横断で見る。手術待ちの管理と病床の使い方をそろえる狙いで、2023年に7年契約を結んだ。</p></div></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>エコシステム ─ 17 / 30</span></div>
+<div class="main"><div class="kick rise">JAPAN</div><h2 class="rise d1">日本では合弁・販売・顧客の3役がそろう</h2><p class="lead rise d2">SOMPOは合弁の相手、富士通は売り手、ヤマトHDは使い手。</p><div class="cards3"><div class="card rise d2"><div class="lg"><img src="../assets/eco-sompo.svg" alt="SOMPOホールディングス"></div><h3>SOMPOホールディングス</h3><div class="use">合弁・出資・顧客／2019年11月〜</div><p>2019年11月に折半で合弁会社Palantir Technologies Japanをつくった。2025年8月の契約拡大で、損保ジャパンの保険金支払いとAIによる引受審査にも広げた。</p><div class="facts"><div class="f"><b class="num">5億ドル</b>2020年6月にPalantirへ出資（約770億円）</div><div class="f"><b class="num">約300施設</b>SOMPOケアでFoundryを使う</div><div class="f"><b class="num">8,000人超</b>Palantirを使うSOMPOの社員</div></div></div><div class="card rise d3"><div class="lg"><img src="../assets/eco-fujitsu.svg" alt="富士通"></div><h3>富士通</h3><div class="use">販売・導入の提携／2020年6月〜</div><p>2025年8月にAIPのライセンス契約、2026年9月10日にGlobal FDE Partner。富士通の日本語AI「Takane」と組み合わせて売る。</p><div class="facts"><div class="f"><b class="num">2020年6月〜</b>日本で唯一のFlagship Technology Partner</div><div class="f"><b class="num">3,000社超・18工場</b>大手製造業の事例でつないだデータ</div><div class="f"><b class="num">1,000万ドル超</b>その事例で1年以内に減らした費用（約15億円）</div></div></div><div class="card rise d4"><div class="lg"><img src="../assets/co-yamato.png" alt="ヤマトホールディングス"></div><h3>ヤマトホールディングス</h3><div class="use">顧客／2020年7月〜</div><p>荷物の量の予測と配送のデータをつなぎ、人と車の配置を最適にする狙いと発表した。</p><div class="facts"><div class="f"><b class="num">2020年7月</b>Foundryの導入を発表</div></div></div></div></div>
+<div class="src"><span>SOMPO・富士通・ヤマトHDの内容は各社の発表（2019年11月、2020年6・7月、2025年8月、2026年9月）による。円換算は1ドル=154円。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>エコシステム ─ 18 / 30</span></div>
+<div class="main"><div class="kick rise">JAPAN PEERS</div><h2 class="rise d1">規模は日立、伸びはPalantir</h2><p class="lead rise d2">日立・富士通・NECも、データとAIを業務に載せる事業を別の看板で切り出している。2025年度の伸びは3〜5割。</p><div class="barrow rise"><div class="nm"><img src="../assets/logo-p.svg" alt=""><span>Palantir<small>自社製品（AIP・Foundry）</small></span></div><div class="btrack"><div class="bfill self" style="width:32%"></div></div><div class="vl">85.3億ドル<small>2026年通期の見通し／91%増</small></div></div><div class="barrow rise"><div class="nm"><img src="../assets/co-hitachi.svg" alt=""><span>日立 Lumada<small>データ・AIの事業の総称</small></span></div><div class="btrack"><div class="bfill " style="width:100%"></div></div><div class="vl">4兆1,460億円<small>2025年度／48%増</small></div></div><div class="barrow rise"><div class="nm"><img src="../assets/eco-fujitsu.svg" alt=""><span>富士通 Uvance<small>業種別のデータ・AIのサービス</small></span></div><div class="btrack"><div class="bfill " style="width:17%"></div></div><div class="vl">7,093億円<small>2025年度／46.9%増</small></div></div><div class="barrow rise"><div class="nm"><img src="../assets/co-nec.svg" alt=""><span>NEC BluStellar<small>DXの事業の総称</small></span></div><div class="btrack"><div class="bfill " style="width:17%"></div></div><div class="vl">7,050億円<small>2025年度／30.0%増</small></div></div><ul class="notes"><li>Palantirは自社ソフトの利用料で稼ぐ。3社はシステムの設計・構築・運用とソフトをまとめて請け負う。</li><li>規模は日立が上、伸びはPalantirが倍近い（Palantirは2026年通期の見通し）。</li><li>富士通は自社のUvanceで同じ領域を売りながら、日本でPalantirの製品も扱う。</li></ul></div>
+<div class="src"><span>日立・富士通・NECは2026年3月期の決算資料による。各社の事業の範囲は同じではないため、金額は規模の目安。円換算は1ドル=154円。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>競合比較 ─ 19 / 30</span></div>
+<div class="main"><div class="kick rise">CONNECTIONS</div><h2 class="rise d1">直接の取引は、NVIDIAだけ</h2><p class="lead rise d2">直接の取引があるのはNVIDIAだけ。ほかの4社とは2026年11月11日時点で取引の発表はない。</p><div class="crow rise" style="grid-template-columns:170px 150px 1fr"><div class="nm" style="font-size:19px">NVIDIA</div><div style="font-size:13px;color:var(--cy);font-weight:700">技術提携・顧客<span style="color:var(--am);margin-left:7px;letter-spacing:2px">★★★★★</span></div><div style="font-size:13.5px;color:var(--sub);line-height:1.85">2025年10月にAIPとNVIDIAのGPU・AIソフトを組み合わせる提携を発表。2026年9月にはNVIDIAが自社の部品調達と製造の管理にPalantirを使うと発表した。</div></div><div class="crow rise" style="grid-template-columns:170px 150px 1fr"><div class="nm" style="font-size:19px">AMD</div><div style="font-size:13px;color:var(--cy);font-weight:700">取引の発表なし<span style="color:var(--am);margin-left:7px;letter-spacing:2px"></span></div><div style="font-size:13.5px;color:var(--sub);line-height:1.85">AIの計算に使う半導体でNVIDIAと競う会社。Palantirとの提携の発表はない。</div></div><div class="crow rise" style="grid-template-columns:170px 150px 1fr"><div class="nm" style="font-size:19px">IonQ</div><div style="font-size:13px;color:var(--cy);font-weight:700">取引の発表なし<span style="color:var(--am);margin-left:7px;letter-spacing:2px"></span></div><div style="font-size:13.5px;color:var(--sub);line-height:1.85">量子コンピューターの会社。米国の政府・国防向けに売上を持つところがPalantirと重なる。</div></div><div class="crow rise" style="grid-template-columns:170px 150px 1fr"><div class="nm" style="font-size:19px">Tesla</div><div style="font-size:13px;color:var(--cy);font-weight:700">取引の発表なし<span style="color:var(--am);margin-left:7px;letter-spacing:2px"></span></div><div style="font-size:13.5px;color:var(--sub);line-height:1.85">電気自動車とロボットの会社。Palantirとの取引の発表はない。</div></div><div class="crow rise" style="grid-template-columns:170px 150px 1fr"><div class="nm" style="font-size:19px">SoFi</div><div style="font-size:13px;color:var(--cy);font-weight:700">取引の発表なし<span style="color:var(--am);margin-left:7px;letter-spacing:2px"></span></div><div style="font-size:13.5px;color:var(--sub);line-height:1.85">米国のネット銀行。Palantirとの取引の発表はない。</div></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>競合比較 ─ 20 / 30</span></div>
+<div class="main"><div class="kick rise">RIVALS</div><h2 class="rise d1">規模と伸びの両方で上回る相手はいない</h2><p class="lead rise d2">顧客や予算を取り合う上場3社・非上場2社と並べた。直近の四半期で、売上の規模と伸びの両方でPalantirを上回る会社はない。</p><div class="barrow rise"><div class="nm"><img src="../assets/logo-p.svg" alt=""><span>Palantir<small>政府・企業の業務AI</small></span></div><div class="btrack"><div class="bfill self" style="width:64%"></div></div><div class="vl">23.1億ドル<small>2026年7〜9月期／成長 +96%／年間 44.8億ドル（約6,892億円、2025年）</small></div></div><div class="barrow rise"><div class="nm"><img src="../assets/co-snowflake.svg" alt=""><span>Snowflake<small>企業のデータ保管・分析</small></span></div><div class="btrack"><div class="bfill " style="width:67%"></div></div><div class="vl">15.5億ドル<small>2026年5〜7月期／成長 +35%／年間 46.8億ドル（約7,213億円、2026年1月期）</small></div></div><div class="barrow rise"><div class="nm"><img src="../assets/eco-databricks.png" alt=""><span>Databricks（非上場）<small>企業のデータ・AI製品</small></span></div><div class="btrack"><div class="bfill " style="width:100%"></div></div><div class="vl">年換算70億ドル超<small>2026年8月発表／成長 +80%超／年間 非上場</small></div></div><div class="barrow rise"><div class="nm"><img src="../assets/co-anduril.svg" alt=""><span>Anduril（非上場）<small>防衛機器とLattice</small></span></div><div class="btrack"><div class="bfill " style="width:32%"></div></div><div class="vl">22.5億ドル<small>2025年通期（報道）／成長 約2倍／年間 非上場</small></div></div><div class="barrow rise"><div class="nm"><img src="../assets/co-c3ai.svg" alt=""><span>C3.ai<small>企業向けAIアプリ</small></span></div><div class="btrack"><div class="bfill " style="width:4%"></div></div><div class="vl">0.52億ドル<small>2026年5〜7月期／成長 −25%／年間 2.5億ドル（約385億円、2026年4月期）</small></div></div><div class="barrow rise"><div class="nm"><span>BigBear.ai<small>国防・情報機関の分析</small></span></div><div class="btrack"><div class="bfill " style="width:2%"></div></div><div class="vl">0.44億ドル<small>2026年7〜9月期／成長 +31%／年間 1.3億ドル（約197億円、2025年）</small></div></div><ul class="notes"><li>{&#x27;name&#x27;: &#x27;Snowflake・Databricks&#x27;, &#x27;text&#x27;: &#x27;企業のデータを貯めて分析する層で重なります。両社とも年3〜8割伸びています。売るのはデータ保管と計算の利用料です。業務の手順と承認までをソフトに載せるPalantirとは課金の対象が違い、Databricksとは製品を接続する提携も結んでいます。&#x27;}</li><li>{&#x27;name&#x27;: &#x27;Anduril&#x27;, &#x27;text&#x27;: &#x27;国防総省の予算で重なります。売上の中心はドローンや監視塔などの機器で、ソフトのLatticeで束ねます。TITANではPalantirの下で製造を担う協力関係にあります。&#x27;}</li><li>{&#x27;name&#x27;: &#x27;C3.ai&#x27;, &#x27;text&#x27;: &#x27;企業向けAIアプリという同じ看板を掲げます。売上は前年同期比25%減り、会社は立て直しの途中です。四半期の売上規模はPalantirの約45分の1です。&#x27;}</li><li>{&#x27;name&#x27;: &#x27;BigBear.ai&#x27;, &#x27;text&#x27;: &#x27;国防・情報機関向けの分析で重なります。7〜9月期の31%増は生成AI企業Ask Sageの買収によるところが大きく、のれんの減損で0.92億ドル（約142億円）の純損失を出しました。規模はPalantirの約50分の1です。&#x27;}</li></ul></div>
+<div class="src"><span>上場4社（Palantir含む）はSEC提出書類（10-Q・決算発表）。Databricksは同社発表（2026年8月13日）。Andurilは投資家向け資料の報道で、会社の正式な開示ではない。棒の長さは年間の売上（Palantir・BigBear.aiは2025年、Snowflake・C3.aiは直近の通期、Databricksは年換算、Andurilは2025年の報道値）。伸びは直近の期の前年比。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>競合比較 ─ 21 / 30</span></div>
+<div class="main"><div class="kick rise">MARKET LAYERS</div><h2 class="rise d1">戦う相手は、層ごとに違う</h2><p class="lead rise d2">データの置き場から現場の機器まで、層ごとに相手が違う。</p><div class="layer  rise"><div class="ln">LAYER 1 ─ 現場の機器</div><div class="who">Anduril</div><p class="tx">ドローンや監視塔を売り、ソフトのLatticeで束ねる。国防総省の予算で重なるが、TITANではPalantirの下で製造を受け持つ。</p></div><div class="layer self rise"><div class="ln">LAYER 2 ─ 業務と意思決定</div><div class="who">Palantir・C3.ai・BigBear.ai</div><p class="tx">データに業務の手順と承認を載せ、AIに仕事をさせる層。C3.aiは同じ看板で売上25%減、規模は約45分の1。BigBear.aiの31%増は買収の上乗せが大きく、規模は約50分の1。</p></div><div class="layer  rise"><div class="ln">LAYER 3 ─ データの保管と計算</div><div class="who">Snowflake・Databricks</div><p class="tx">データを貯めて計算する利用料で稼ぐ。どちらも年3〜8割伸びている。Palantirはこの上に乗る形で、Databricksとは接続の提携も結んでいる。</p></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>競合比較 ─ 22 / 30</span></div>
+<div class="main"><div class="kick rise">BEAR CASE</div><h2 class="rise d1">反対側の論点 ─ 高い、偏っている、売られている</h2><p class="lead rise d2">買う側の話だけでは資料にならない。批判側が使う数字を並べる。</p>
+<div class="krow rise d2"><div class="mark miss">価格</div><div><div class="p">時価総額は2026年見通し売上の約48倍</div><div class="res">時価総額は約4,090億ドル（約63兆円）。PERは約111倍。逆算すると、フリーキャッシュフローが年36%ほどで10年伸び続ける前提に近い水準と試算されている。</div></div></div>
+<div class="krow rise d3"><div class="mark miss">調整</div><div><div class="p">高値から約19%下げても、この倍率</div><div class="res">株価は10月の高値212.94ドルから172.40ドルへ下げ、年初来でもマイナス圏。それでも売上倍率はソフトウエア株の中で突出して高い。</div></div></div>
+<div class="krow rise d4"><div class="mark miss">偏り</div><div><div class="p">成長が米国の内側に寄っている</div><div class="res">米国外は売上の16%で26%増。政府向けが売上の約半分を占め、予算と政権の方針で数字が動きうる。96%増の翌年は、比較のハードル自体が上がる。</div></div></div>
+<div class="krow rise d5"><div class="mark miss">売却</div><div><div class="p">役員は売っている</div><div class="res">過去12か月で、役員10人が自社株を約8億7,300万ドル売却した（SECへの届出の集計）。経営陣の売却と株価の割高感は、批判側が必ず挙げる材料。</div></div></div>
+</div>
+<div class="src"><span>株価172.40ドル・時価総額は2026年11月11日終値（Finnhub等）。役員売却はSEC Form 4の集計報道による</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>CEOと製品 ─ 23 / 30</span></div>
+<div class="main">
+<div class="ceo"><div class="rise"><img class="ph" src="../assets/ceo-p.jpg" alt="Alex Karp（アレックス・カープ）"></div>
+<div><div class="kick rise">CEO STATEMENT</div>
+<p class="q rise d1" style="margin-top:16px">「米国の民間向け売上が創業以来初めて米国政府向け売上を上回った。」</p>
+<p class="en rise d2">"Our U.S. commercial revenue has surpassed our U.S. government revenue for the first time in our company&#x27;s history."</p>
+<div class="who rise d3">Alex Karp（アレックス・カープ） ─ 共同創業者・CEO<span>／2026年11月2日、2026年7〜9月期の決算発表</span></div>
+<p class="rise d4" style="font-size:14px;color:var(--sub);margin-top:16px;line-height:1.9">「政府の会社」と見られてきたPalantirで、売上の主役が入れ替わった。</p></div></div>
+</div>
+<div class="src"><span>発言は決算発表・株主への手紙の書き起こしによる</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>CEOと製品 ─ 24 / 30</span></div>
+<div class="main"><div class="kick rise">CEO QUOTES</div><h2 class="rise d1">カープの言葉で読む、転機</h2><div class="qrow rise"><p class="q">「主権AIの動きによって、持つ者と持たざる者の差は私が30年の経営で見たなかで最も大きく開いている。」</p><div class="m">2026年11月2日／2026年7〜9月期の決算発表 ─ 原文：The Sovereign AI movement is imposing the most dramatic dichotomy between haves and have nots that I have witnessed in 30 years of business.</div><p class="p">データとモデルを自分で持てる組織と持てない組織で、AIから得るものの差が開いていくという見方。</p></div><div class="qrow rise"><p class="q">「顧客は言語モデルの研究所の属国になることを拒んだ。」</p><div class="m">2026年8月3日／株主への手紙（4〜6月期） ─ 原文：Our customers have declined to become vassal states of the language labs.</div><p class="p">業務データをOpenAIやAnthropicのモデルに預け続けることへの警戒を、自社の需要の理由に挙げている。</p></div><div class="qrow rise"><p class="q">「顧客の競争力の源が将来のモデルの学習データになってはならない。」</p><div class="m">2026年8月3日／2026年4〜6月期の決算発表 ─ 原文：Their competitive advantage should never become the training data for future models.</div><p class="p">モデルは取り替えのきく部品で、価値は顧客のデータと業務の側に残す。製品の作り方そのものの話でもある。</p></div><div class="qrow rise"><p class="q">「AI主権はおそらく、現代で最も重要な問題だ。」</p><div class="m">2026年8月19日／主権AIブートキャンプの発表 ─ 原文：AI sovereignty is perhaps the paramount issue of our time.</div><p class="p">約200組織が集まった主権AIブートキャンプの発表に添えた一文。</p></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>CEOと製品 ─ 25 / 30</span></div>
+<div class="main"><div class="kick rise">PRODUCT</div><h2 class="rise d1">製品画面 ─ データが工程図になる</h2><p class="lead rise d2">ドイツ・ハンブルクの電池工場の電極ラインをFoundryで再現した画面。AIPのAIが読み、動かすのはここに並んだ設備とデータになる。番号を押すと説明が出る。</p><div class="prodimg rise d3"><img src="../assets/palantir.png" alt="Foundryの画面"></div></div>
+<div class="src"><span>画像はPalantirの公開素材。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>CEOと製品 ─ 26 / 30</span></div>
+<div class="main"><div class="kick rise">PRODUCT GUIDE</div><h2 class="rise d1">製品画面の読み方　Foundryの工程シミュレーション</h2><div class="boxrow rise"><div class="bn">1</div><div><div class="bt">データの階層</div><p class="bx">工場の工程を「ハンブルク工場の工程 &gt; 電極製造システム」という階層で持っている。Ontologyで定義した、業務上の物の並び。</p></div></div><div class="boxrow rise"><div class="bn">2</div><div><div class="bt">工程図（Unit 1・Unit 2）</div><p class="bx">反応器、冷却弁、混合機、乾燥機などの設備を、物が流れる順に線でつないでいる。設備の下の数字はセンサーから入る今の値。</p></div></div><div class="boxrow rise"><div class="bn">3</div><div><div class="bt">選んだ設備</div><p class="bx">冷却弁2を選んだところ。選んだ設備の温度の履歴が、画面下の時系列に出る。</p></div></div><div class="boxrow rise"><div class="bn">4</div><div><div class="bt">費用のシミュレーション</div><p class="bx">反応器や冷却弁ごとの費用を並べている。設定を変えたら工程全体の費用がどう動くかを、ラインを止めずに試算できる。</p></div></div><div class="boxrow rise"><div class="bn">5</div><div><div class="bt">センサーの時系列</div><p class="bx">冷却水の温度（Coolant_Temp）の2021年1〜5月の推移。おかしな値が出た時期を、工程図の設備と結びつけて調べる。</p></div></div><div class="boxrow rise"><div class="bn">6</div><div><div class="bt">モデル設定とシミュレーション</div><p class="bx">設備の動きを表す計算モデルの設定を開くタブ。ここで条件を変えて、工程の結果を予測する。</p></div></div></div>
+<div class="src"><span>画像はPalantirの公開素材。</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>動画・X ─ 27 / 30</span></div>
+<div class="main"><div class="kick rise">YOUTUBE</div><h2 class="rise d1">柏原迅の解説動画</h2><p class="lead rise d2">Palantirを扱った長尺の動画。サムネイルを押すとこのページの中で再生する。</p><div class="vgrid"><div class="vcard rise"><div class="th"><img src="../assets/video-brsgjYLZeT8.jpg" alt="" onerror="this.remove()"><div class="pl"><span>▶</span></div></div><div class="bd"><div class="tt">決算解説 ─ 2026年7〜9月期</div><div class="mt">売上23.1億ドル・96%増をどう読むか／柏原迅のYouTube</div></div></div><div class="vcard rise"><div class="th"><img src="../assets/video-AggmlQT94Eg.jpg" alt="" onerror="this.remove()"><div class="pl"><span>▶</span></div></div><div class="bd"><div class="tt">決算解説 ─ 2026年4〜6月期</div><div class="mt">米国の民間149%増の内訳／柏原迅のYouTube</div></div></div><div class="vcard rise"><div class="th"><img src="../assets/video-CPKpGY0K5yo.jpg" alt="" onerror="this.remove()"><div class="pl"><span>▶</span></div></div><div class="bd"><div class="tt">Palantir深掘り</div><div class="mt">創業の契機は9.11／オントロジーの説明／柏原迅のYouTube</div></div></div></div><div class="chips rise d3"><span class="chip">売上23.1億ドル（約3,563億円）・96%増<span>21:15〜</span></span><span class="chip">ブートキャンプの中身<span>3:53〜</span></span><span class="chip">民間が政府を逆転<span>20:05〜</span></span><span class="chip">通期の見通し85.3億ドル（約1兆3,139億円）<span>24:34〜</span></span><span class="chip">米国の民間が政府を超えた<span>2:09〜</span></span><span class="chip">創業の契機は9.11<span>8:36〜</span></span><span class="chip">NVIDIAと組む<span>10:22〜</span></span><span class="chip">米陸軍のTITAN<span>14:30〜</span></span><span class="chip">カープCEOの発言<span>4:39〜</span></span><span class="chip">オントロジーの説明<span>12:01〜</span></span><span class="chip">FDEが生まれた経緯<span>10:32〜</span></span></div><p style="font-size:12px;color:var(--faint);margin-top:12px">チップは各画面の解説箇所（本編では該当の画面に付く）</p></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>動画・X ─ 28 / 30</span></div>
+<div class="main"><div class="kick rise">X POSTS</div><h2 class="rise d1">柏原迅のX投稿</h2><p class="lead rise d2">Palantirについての投稿を新しい順に。（全38件から新しい8件）</p><div class="xgrid"><div class="xcard rise"><div class="dt"><span>2026-10-03</span><b>2,129 imp</b></div><p class="tx">PalantirはArmadaと組み、電源も通信も乏しい現場でAIPとFoundryを稼働させる体制を発表した。NVIDIA B300搭載の移動式データセンターで、データをクラウドに出さず現地処理する。防衛・政府顧客が重視する「データを自国の手元に置く」需要に応え、PalantirのAIは前線まで届くようになっている。</p></div><div class="xcard rise"><div class="dt"><span>2026-09-23</span><b>1,257 imp</b></div><p class="tx">PalantirのMaven Smart Systemを使う国防総省の人員が10万人を超えた。今年1月は約5万人で、作戦Epic Furyの開始から倍に増えた。同作戦では38日間で1万3,000の標的を攻撃している。昨年、契約の上限額は10億ドル(約1,600億円)超まで引き上げられ、Maven Smart Systemは国防総省の中枢にさらに入り込んでいる。</p></div><div class="xcard rise"><div class="dt"><span>2026-09-22</span><b>3,173 imp</b></div><p class="tx">Palantirの米商業事業は最新決算で前年同期比149%成長した。顧客は自社データを外部に出したくないため、AIをPalantirの環境内で動かし続ける。そのため、導入が増えるほど計算資源、とくにGPUが制約になりやすい。NebiusをソブリンAI基盤の優先パートナーに指名したことからも、Palantirにとって計算資源の重要性がわかる。</p></div><div class="xcard rise"><div class="dt"><span>2026-09-21</span><b>1,030 imp</b></div><p class="tx">イギリス警察5組織がPalantirと組んだ監視システムの試験運用を打ち切った。2年続いた計画で、人種・宗教・政治的意見まで1つの画面に集約する設計だった。ロンドンでも5,000万ポンド規模の契約が止まり、Palantirは訴訟に出ている。主権AIが重視されるなか、ヨーロッパでは政治判断、調達手続き、倫理論争で案件が止まる事例が増えている。</p></div><div class="xcard rise"><div class="dt"><span>2026-09-20</span><b>3,215 imp</b></div><p class="tx">Palantirが米陸軍の弾薬管理を一つに集約する案件を受注。金額は4,800万ドル（約77億円）。9つの古いシステムをPalantirの一つの基盤に置き換える。選定は3段階の競争を6週間で終えた。兵士が開発者を呼ばなくても、自分で画面を組み替えられる仕組みにする。弾薬の管理にまでPalantirが入り込んでいる。</p></div><div class="xcard rise"><div class="dt"><span>2026-09-18</span><b>4,067 imp</b></div><p class="tx">PalantirのCEOは「顧客が恐れるのはAIに経営ノウハウを吸い上げられることだ」と語る。クローズドモデルにデータを渡せば、競争優位まで提供者側へ移りかねない。NVIDIAとPalantirの主権AIはモデル、データ、追加学習を企業側で管理する。AI時代の競争力は性能だけでなく、知財を誰が握るかで決まり始めている。</p></div><div class="xcard rise"><div class="dt"><span>2026-09-17</span><b>3,163 imp</b></div><p class="tx">Palantirが大手メキシカンチェーンのChipotleと食品安全のリスク管理基盤を作っているとWiredが報道。Foundry上で保健所の検査結果、害虫の発生、従業員の体調不良などを組み合わせ、店舗ごとのリスクを点数にする。問題が広がる前に危ない店を見つける仕組み。一度の事故がブランドを傷つける外食業界で、データで先回りする動きが進んでいる。</p></div><div class="xcard rise"><div class="dt"><span>2026-09-10</span><b>6,024 imp</b></div><p class="tx">NVIDIAとPalantirがサプライチェーン向けのソブリンAIで新たに提携すると発表した。まずNVIDIA自身のサプライチェーンに導入し、その後他社にも展開する予定。Vera Rubinのラック1台に使う部品は130万点。ウエハーから製造、納品まで数千社が関わる。Palantirはここで作った型を製造、エネルギー、ヘルスケア、自動車、航空宇宙、農業、製薬、政府まで広げる戦略を描いている。</p></div></div></div>
+<div class="src"><span>X投稿データ：2026-11-11時点</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>動画・X ─ 29 / 30</span></div>
+<div class="main"><div class="kick rise">OUTLIER RADAR</div><h2 class="rise d1">いま伸びているPalantirの動画</h2><p class="lead rise d2">国内外の投資・テック系チャンネルで、普段の再生数（中央値）より多く見られているPalantirの動画。</p><div class="rrow rise"><img src="../assets/video-Abj4v9nfHnU.jpg" alt="" onerror="this.style.visibility='hidden'"><div><div class="tt">【2026/10/15】PLTRに突破口？｜SOFI急落・CRWV暴落・DELL格下げ</div><div class="mt">ニュースアーカイブ／2026-10-15</div></div><div class="rt"><div class="x num">×2.74</div><div class="vw">6,602回再生（中央値2,409回）</div></div></div><div class="rrow rise"><img src="../assets/video-gmryYmrdyH8.jpg" alt="" onerror="this.style.visibility='hidden'"><div><div class="tt">BBAI-PLTR STOCKS] WHAT JUST HAPPENED?!⚠️</div><div class="mt">Dillon With Money／2026-10-16</div></div><div class="rt"><div class="x num">×1.64</div><div class="vw">3,399回再生（中央値2,077回）</div></div></div><div class="rrow rise"><img src="../assets/video-iBwQn0nCw9s.jpg" alt="" onerror="this.style.visibility='hidden'"><div><div class="tt">MICRON STOCK (MU), NVIDIA STOCK (NVDA), INTC, AMD STOCK, PALANTIR STOCK (PLTR): BUY HEAVY NOW?!</div><div class="mt">will knowledge trades／2026-10-16</div></div><div class="rt"><div class="x num">×1.57</div><div class="vw">3,557回再生（中央値2,270回）</div></div></div><div class="rrow rise"><img src="../assets/video-1tdM96e21bo.jpg" alt="" onerror="this.style.visibility='hidden'"><div><div class="tt">Missed Nvidia Or Palantir? THIS LOOKS BIGGER!</div><div class="mt">ZipTrader／2026-11-09</div></div><div class="rt"><div class="x num">×1.06</div><div class="vw">118,366回再生（中央値0回）</div></div></div><div class="rrow rise"><img src="../assets/video-6mlZZZ528P0.jpg" alt="" onerror="this.style.visibility='hidden'"><div><div class="tt">PALANTIR STOCK] THIS IS CHEAP AS YOI MIGHT GET</div><div class="mt">Dillon With Money／2026-10-15</div></div><div class="rt"><div class="x num">×0.98</div><div class="vw">2,032回再生（中央値2,077回）</div></div></div><div class="rrow rise"><img src="../assets/video-K6xI1iJD33M.jpg" alt="" onerror="this.style.visibility='hidden'"><div><div class="tt">Billionaires Say: If You Missed Palantir &amp; Nvidia, Buy THESE 3 AI Stocks Now - I&#x27;m Going All-In</div><div class="mt">Millionaires Investment Secrets／2026-09-01</div></div><div class="rt"><div class="x num">×0.85</div><div class="vw">2,047回再生（中央値0回）</div></div></div></div>
+<div class="src"><span>各チャンネルの直近動画の再生数の中央値を1倍として、何倍見られているかを示す。（2026-11-11更新）</span><span>FRONTIER LAB</span></div>
+</section>
+<section class="slide">
+<div class="furniture"><span class="fl">FRONTIER <i>LAB</i> ─ PALANTIR</span><span>用語 ─ 30 / 30</span></div>
+<div class="main"><div class="kick rise">GLOSSARY</div><h2 class="rise d1">決算を読むための12語</h2><p class="lead rise d2">決算資料や報道によく出てくる言葉。</p><div class="tgrid"><div class="trow rise"><div class="tm">AIP<span>エーアイピー</span></div><p class="tx">Artificial Intelligence Platformの略で、2023年4月に出た生成AI製品。言語モデルをFoundryやGothamのデータと業務につなぎ、使う人の権限の範囲でAIに検索、集計、書類作り、発注案づくりをさせる。誰がAIに何をさせたかも記録に残る。</p></div><div class="trow rise"><div class="tm">Ontology<span>オントロジー</span></div><p class="tx">社内のデータを「工場」「部品」「受注」「機体」といった業務上の物と、そのつながり、許された操作（承認や発注など）として定義した層。AIはこの定義を通してデータを読み、許された操作しか実行できない。一度定義すれば、ほかの部署のアプリでも使い回せる。</p></div><div class="trow rise"><div class="tm">Foundry<span>ファウンドリー</span></div><p class="tx">企業向けのデータ統合ソフト。ERP、生産管理、センサー、表計算のデータを取り込んでOntologyにまとめ、現場が使う業務アプリを作る。Airbusの航空データプラットフォームSkywiseもこの上で動く。</p></div><div class="trow rise"><div class="tm">Gotham<span>ゴッサム</span></div><p class="tx">政府・防衛・情報機関向けで、Palantirが最初に作った製品。人、場所、通信、衛星画像などをつないで分析し、捜査や作戦の判断に使う。</p></div><div class="trow rise"><div class="tm">Apollo<span>アポロ</span></div><p class="tx">Palantirのソフトをクラウド、顧客のデータセンター、機密ネットワーク、前線の車両にまで配り、更新と監視を自動で回す仕組み。ネットにつながらない場所でも同じ製品が動くのはこれがあるから。</p></div><div class="trow rise"><div class="tm">FDE<span>前方展開エンジニア</span></div><p class="tx">Forward Deployed Engineerの略。顧客の現場に入り込み、データの接続とアプリ作りを受け持つ技術者。現場で見つけた共通の課題は製品の機能として本体に戻す。最近は初期設定をAIに任せるAI FDEも出している。</p></div><div class="trow rise"><div class="tm">ブートキャンプ<span>AIPブートキャンプ</span></div><p class="tx">顧客の実データで、1〜5日のうちに業務アプリの試作を作る導入プログラム。動く試作を経営層に見せて本契約につなげる。2024年2月までに500回を超えた。</p></div><div class="trow rise"><div class="tm">主権AI<span>ソブリンAI</span></div><p class="tx">データ、モデル、計算資源を自社や自国の管理下に置いてAIを使う考え方。Palantirは2026年7月に主権AIブートキャンプを始め、8月19日までに約200組織が参加した。公開モデルを社内で動かすため、NVIDIAやNebiusと組む。</p></div><div class="trow rise"><div class="tm">Maven Smart System<span>メイブン</span></div><p class="tx">米国防総省の作戦支援システム。衛星やドローンの映像、各軍のデータをまとめ、標的の識別や部隊の配置の判断を支える。2024年5月に4.8億ドル（約739億円）で契約し、2025年5月に上限が約13億ドル（約2,002億円）に上がった。</p></div><div class="trow rise"><div class="tm">TITAN<span>タイタン</span></div><p class="tx">米陸軍の次世代の地上局。宇宙・上空・地上のセンサーのデータを車両の中でまとめ、長距離射撃に標的の情報を渡す。2024年3月に試作10台、2026年9月に量産8台の契約を受けた。</p></div><div class="trow rise"><div class="tm">Rule of 40<span>ルール・オブ・40</span></div><p class="tx">売上の前年比成長率と調整後営業利益率を足した数字。40%を超えればソフト会社として優良とされる。Palantirは2026年7〜9月期に158%。</p></div><div class="trow rise"><div class="tm">RDV<span>残存契約額</span></div><p class="tx">Remaining Deal Valueの略。契約済みでまだ売上になっていない金額の合計で、解約できる契約も含む。米国の民間向けは2026年9月末で65.2億ドル（約1兆36億円）、前年比79%増。</p></div></div></div>
+<div class="src"><span></span><span>FRONTIER LAB</span></div>
+</section>
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting)en.target.classList.add('in')})},{threshold:.3});
+document.querySelectorAll('.slide').forEach(s=>io.observe(s));
+const bar=document.getElementById('pbar');
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+</script>
+</body></html>
