@@ -17,12 +17,15 @@ header.top .in{display:flex;align-items:center;gap:12px;padding:14px 28px;max-wi
 header.top nav{margin-left:auto;display:flex;gap:26px;font-size:13px;color:var(--sub);font-weight:700;align-items:center}
 .btn{display:inline-block;background:var(--blue);color:#fff;font-weight:800;font-size:13.5px;padding:11px 22px;border-radius:999px}
 .btn.big{font-size:15.5px;padding:16px 38px}
-.btn.ghost{background:#fff;color:var(--blue);border:1.5px solid var(--blue)}
-.jhero{padding:84px 0 70px;text-align:center;background:linear-gradient(180deg,#eef6fc,#fff)}
-.jhero .kick{font-size:12px;letter-spacing:.3em;color:var(--blue);font-weight:800}
-.jhero h1{font-family:'Shippori Mincho',serif;font-size:clamp(30px,4.6vw,46px);line-height:1.55;margin:20px 0 8px;font-weight:700}
+.btn.ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.65);backdrop-filter:blur(4px)}
+.jhero{position:relative;padding:120px 0 104px;text-align:center;color:#fff;overflow:hidden;background:#040d18}
+.jhero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.jhero .shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,13,24,.82),rgba(4,13,24,.38) 55%,rgba(4,13,24,.55))}
+.jhero .wrap{position:relative}
+.jhero .kick{font-size:12px;letter-spacing:.3em;color:#cfe3f2;font-weight:800}
+.jhero h1{font-family:'Shippori Mincho',serif;font-size:clamp(32px,5vw,52px);line-height:1.55;margin:20px 0 8px;font-weight:700;text-shadow:0 2px 26px rgba(0,0,0,.5)}
 .jhero h1 .gold{background:linear-gradient(92deg,#0a4d8c 20%,#c99a35 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.jhero p{max-width:640px;margin:16px auto 0;color:#33506b;font-size:15.5px;line-height:2.05}
+.jhero p{max-width:640px;margin:16px auto 0;color:#e6eff7;font-size:15.5px;line-height:2.05;text-shadow:0 1px 10px rgba(0,0,0,.5)}
 .jhero .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 section.blk{padding:66px 0}
 .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:30px}
@@ -71,7 +74,7 @@ footer.site .mk{width:18px;height:18px;color:var(--blue)} footer.site .mk svg{wi
 <header class="top"><div class="in"><a class="brand" href="top.html"><span class="mk"><svg viewBox="0 0 100 100" fill="none"><path d="M50 4 L96 50 L50 96 L4 50 Z" stroke="currentColor" stroke-width="7"/><path d="M50 30 L68 50 L50 70 L32 50 Z" fill="currentColor"/></svg></span>FRONTIER LAB</a>
 <nav><a class="nl" href="top.html">トップ</a><a class="nl" href="#gets">会員で得られるもの</a><a class="nl" href="#price">料金</a><a class="nl" href="#faq">よくある質問</a><a class="btn" href="#">Discordで参加する</a></nav></div></header>
 
-<div class="jhero"><div class="wrap">
+<div class="jhero"><img class="bg" src="https://i.natgeofe.com/n/32fe988d-eda6-47a0-a4ba-29aa8f2e56b6/nationalgeographic_2679523.jpg" alt=""><div class="shade"></div><div class="wrap">
 <div class="kick">MEMBERSHIP ─ 会員募集</div>
 <h1>未来に好奇心を。<br><span class="gold">知性で楽観を。</span></h1>
 <p>FRONTIER LABは、米国株の個別企業を数字と出典で読み解く会員制の資料サイトです。深く追う6社を中心に、決算のたびに「見る数字」を宣言し、結果で答え合わせを続けます。</p>
