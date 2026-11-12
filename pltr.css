@@ -606,3 +606,44 @@ html.pltr-on body{background:#fff}
 #s-japan .pl-foot{font-size:13px}
 #s-rivals .pl-cmp{gap:5px}#s-rivals .pl-cmp-r{padding:7px 20px}#s-rivals .pl-foot{font-size:13px}
 @media (max-width:1023px){.pl-md{max-height:none;flex:none}}
+
+/* --- 2026-11-12 追加：今の論点／決算前チェック／契約／事例／KPI出典 --- */
+.pl-kpi-src{display:block;margin-top:8px;font-size:12px;line-height:1.5;color:#7d93a3}
+.pl-fc{display:grid;gap:0}
+.pl-fc article{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:22px 4px;border-top:1px solid #e8f0f5;align-items:start}
+.pl-fc article:first-child{border-top:0}
+.pl-fc article>b{font-size:34px;line-height:1;color:#0078bb;font-weight:800}
+.pl-fc h3{margin:0 0 8px;font-size:24px;color:#14324a;line-height:1.4}
+.pl-fc p{margin:0;font-size:18px;line-height:1.75;color:#2c4659}
+.pl-pre{margin-top:26px;background:#fff;border:1px solid #e8f0f5;border-radius:12px;padding:20px 24px}
+.pl-pre h3{margin:0 0 10px;font-size:20px;color:#14324a}
+.pl-pre ol{margin:0;padding:0;list-style:none}
+.pl-pre li{display:grid;grid-template-columns:1fr 1.2fr;gap:18px;padding:10px 0;border-top:1px solid #edf3f7;align-items:baseline}
+.pl-pre li:first-child{border-top:0}
+.pl-pre li b{font-size:17px;color:#14324a;line-height:1.5}
+.pl-pre li span{font-size:16px;line-height:1.65;color:#2c4659}
+.pl-ct{display:grid}
+.pl-ct article{display:grid;grid-template-columns:130px 1fr 190px;gap:22px;padding:16px 4px;border-top:1px solid #e8f0f5;align-items:start}
+.pl-ct article:first-child{border-top:0}
+.pl-ct-d b{display:block;font-size:18px;color:#14324a}
+.pl-ct-d small{display:block;font-size:14px;color:#5d7383;margin-top:2px}
+.pl-ct-t h3{margin:0 0 4px;font-size:19px;color:#14324a;line-height:1.45}
+.pl-ct-t p{margin:0;font-size:15px;line-height:1.65;color:#2c4659}
+.pl-ct-f{text-align:right}
+.pl-ct-f b{display:block;font-size:19px;color:#0078bb;line-height:1.4}
+.pl-ct-f small{display:block;font-size:14px;color:#5d7383;margin-top:2px}
+.pl-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pl-cases article{background:#fff;border:1px solid #e8f0f5;border-radius:12px;padding:22px}
+.pl-cases small{display:block;font-size:13px;font-weight:700;color:#0078bb;margin-bottom:8px}
+.pl-cases h3{margin:0 0 10px;font-size:21px;color:#14324a;line-height:1.4}
+.pl-cases p{margin:0;font-size:16px;line-height:1.7;color:#2c4659}
+@media (max-width:700px){
+  .pl-fc article{grid-template-columns:38px 1fr;gap:12px;padding:16px 2px}
+  .pl-fc article>b{font-size:26px}
+  .pl-fc h3{font-size:19px}.pl-fc p{font-size:15px;line-height:1.7}
+  .pl-pre{padding:16px}
+  .pl-pre li{grid-template-columns:1fr;gap:4px}
+  .pl-ct article{grid-template-columns:1fr;gap:6px;padding:14px 2px}
+  .pl-ct-f{text-align:left}
+  .pl-cases{grid-template-columns:1fr}
+}

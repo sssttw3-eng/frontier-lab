@@ -23,12 +23,12 @@
   const coKey=n=>typeof catalog==='undefined'?null:(Object.keys(catalog.companies).find(k=>k!=='p'&&catalog.companies[k].name.toLowerCase()===String(n).toLowerCase())||null);
 
   /* 01 概要 */
-  function sOverview(){const o=P.overview;return screen('overview','overview',null,`<div class="pl-ov"><div class="pl-ov-text"><div class="pl-ov-brand">${typeof companyLogo==='function'?companyLogo('p','pl-logo'):''}<div><h1>${esc(o.title)}</h1><small>${esc(o.ticker)}</small></div></div><p class="pl-ov-lead">${esc(o.lead)}</p></div><div class="pl-kpis">${o.kpis.map(k=>`<article class="pl-kpi"><small>${esc(k.label)}</small><b>${esc(k.value)}</b><span class="pl-yen">${esc(k.yen)}</span><em>${esc(k.note)}</em></article>`).join('')}</div></div>`,'is-cover')}
+  function sOverview(){const o=P.overview;return screen('overview','overview',null,`<div class="pl-ov"><div class="pl-ov-text"><div class="pl-ov-brand">${typeof companyLogo==='function'?companyLogo('p','pl-logo'):''}<div><h1>${esc(o.title)}</h1><small>${esc(o.ticker)}</small></div></div><p class="pl-ov-lead">${esc(o.lead)}</p></div><div class="pl-kpis">${o.kpis.map(k=>`<article class="pl-kpi"><small>${esc(k.label)}</small><b>${esc(k.value)}</b><span class="pl-yen">${esc(k.yen)}</span><em>${esc(k.note)}</em>${k.src?`<small class="pl-kpi-src">出典：${esc(k.src)}</small>`:''}</article>`).join('')}</div></div>`,'is-cover')}
   function daysTo(d){const now=new Date(),j=new Date(now.getTime()+9*3600e3),t=Date.UTC(j.getUTCFullYear(),j.getUTCMonth(),j.getUTCDate()),[y,m,dd]=d.split('-').map(Number);return Math.round((Date.UTC(y,m-1,dd)-t)/864e5)}
   function sWeek(){const w=R.week;if(!w)return '';
     return screen('week','overview',{h:esc(P.weekTitle),lead:`国内外の投資・テック系チャンネルの再生数の集計から、${esc(w.period)}の動きをまとめました。`},`<div class="pl-week"><ol class="pl-week-lines">${w.lines.map(l=>`<li>${esc(l)}</li>`).join('')}</ol></div><p class="pl-foot">集計：${jdate(w.asof)}。</p>`)}
   function sNext(){const n=P.next;if(!n)return '';const d=daysTo(n.date);
-    return screen('next','overview',{h:'次の決算まで',lead:esc(n.label)+(n.confirmed?'の発表日です。':'の発表見込み日です。')},`<div class="pl-week pl-next"><article class="pl-count"><small>${esc(n.label)}まで</small><b>${d>0?`あと<em>${d}</em>日`:d===0?'<em>今日</em>':'発表済み'}</b><span>${jdate(n.date)}（米国時間）${n.confirmed?'':'・見込み'}</span></article><p class="pl-next-note">${esc(n.note)}</p></div><p class="pl-foot">日数は日本時間の今日から数えています。</p>`)}
+    return screen('next','overview',{h:'次の決算まで',lead:esc(n.label)+(n.confirmed?'の発表日です。':'の発表見込み日です。')},`<div class="pl-week pl-next"><article class="pl-count"><small>${esc(n.label)}まで</small><b>${d>0?`あと<em>${d}</em>日`:d===0?'<em>今日</em>':'発表済み'}</b><span>${jdate(n.date)}（米国時間）${n.confirmed?'':'・見込み'}</span></article><p class="pl-next-note">${esc(n.note)}</p></div>${P.precheck?`<div class="pl-pre"><h3>${esc(P.precheck.title)}（${esc(P.precheck.for)}）</h3><ol>${P.precheck.items.map((x,i)=>`<li><b>${i+1}　${esc(x.point)}</b><span>${esc(x.watch)}</span></li>`).join('')}</ol></div>`:''}<p class="pl-foot">日数は日本時間の今日から数えています。決算の後は「決算の答え合わせ」でこの3点を判定します。</p>`)}
 
 
 
@@ -103,11 +103,24 @@
   function sRadar(){const m=P.media,list=(R.items||[]).filter(x=>x.ratio>=1);if(!list.length)return '';const max=Math.max(...list.map(x=>x.ratio));
     return screen('radar','media',{h:esc(m.radarTitle),lead:esc(m.radarLead)+'倍率は各チャンネルの普段の再生数（中央値）を1倍としたものです。'},`<ol class="pl-radar">${list.map(x=>`<li><button class="pl-rthumb" onclick="plPlay('${esc(x.id)}')" aria-label="再生"><img loading="lazy" src="https://i.ytimg.com/vi/${esc(x.id)}/mqdefault.jpg" alt=""></button><div class="pl-rbody"><b>${esc(x.title.replace(/[\u{1F300}-\u{1FAFF}\u2600-\u27BF\uFE0F]/gu,''))}</b><small>${esc(x.channel)}　${jdate(x.date)}　${Number(x.views).toLocaleString('ja-JP')}回再生</small></div><div class="pl-rratio"><b>${x.ratio.toFixed(1)}倍</b><i style="width:${(x.ratio/max*100).toFixed(0)}%"></i></div></li>`).join('')}</ol><p class="pl-foot">${esc(R.note||'')}　再生数の確認日：${(()=>{const c=list.map(x=>x.checked).filter(Boolean).sort();return c.length?(c[0]===c[c.length-1]?jdate(c[0]):jdate(c[0])+'〜'+jdate(c[c.length-1])):jdate(R.updated)})()}</p>`)}
 
+
+  /* 今の論点（概要の最初） */
+  function sFocus(){const f=P.focus;if(!f)return '';
+    return screen('focus','overview',{h:esc(f.title),lead:esc(f.lead)},`<div class="pl-fc">${f.items.map((x,i)=>`<article><b>${i+1}</b><div><h3>${esc(x.h)}</h3><p>${esc(x.text)}</p></div></article>`).join('')}</div>`)}
+
+  /* 契約トラッカー（成長） */
+  function sContracts(){const c=P.contracts;if(!c)return '';
+    return screen('contracts','growth',{h:esc(c.title),lead:esc(c.lead)},`<div class="pl-ct">${c.rows.map(r=>`<article><div class="pl-ct-d"><b>${esc(r.date)}</b><small>${esc(r.who)}</small></div><div class="pl-ct-t"><h3>${esc(r.name)}</h3><p>${esc(r.note)}</p></div><div class="pl-ct-f"><b>${esc(r.amount)}</b><small>${esc(r.period)}</small></div></article>`).join('')}</div><p class="pl-foot">${esc(c.foot)}</p>`)}
+
+  /* 顧客の実名事例（エコシステム） */
+  function sCases(){const c=P.cases;if(!c)return '';
+    return screen('cases','eco',{h:esc(c.title),lead:esc(c.lead)},`<div class="pl-cases">${c.items.map(x=>`<article><small>${esc(x.use)}</small><h3>${esc(x.name)}</h3><p>${esc(x.text)}</p></article>`).join('')}</div>`)}
+
   /* 07 用語 */
   function sTerms(){const t=P.terms,x=t.items[st.term];
     return screen('terms','terms',{h:esc(t.title),lead:esc(t.lead)},`<div class="pl-terms"><div class="pl-tlist" role="tablist" aria-label="用語">${t.items.map((y,j)=>`<button role="tab" aria-selected="${j===st.term}" onclick="plPick('term',${j})">${esc(y.term)}</button>`).join('')}</div><article class="pl-tcard" role="tabpanel"><h3>${esc(x.term)}<small>${esc(x.read)}</small></h3><p>${esc(x.text)}</p></article></div><p class="pl-source">${esc(P.sourceNote)}</p>`)}
 
-  const parts=[sOverview,sModel,sMix,sAnnual,sQuarter,sKessan,sHistory,sEco,sNews,sJapan,sJpeers,sLinks,sRivals,sRivals2,sCeo,sProduct,sVideos,sX,sRadar,sTerms];
+  const parts=[sOverview,sFocus,sModel,sMix,sNext,sAnnual,sQuarter,sKessan,sHistory,sContracts,sEco,sNews,sJapan,sCases,sJpeers,sLinks,sRivals,sRivals2,sCeo,sProduct,sVideos,sX,sRadar,sTerms];
   function root(){let el=document.getElementById('pltr');if(!el){el=document.createElement('div');el.id='pltr';el.hidden=true;const f=document.querySelector('.site-footer');f.parentNode.insertBefore(el,f)}return el}
   function bar(){let el=document.getElementById('pltr-bar');if(!el){el=document.createElement('nav');el.id='pltr-bar';el.setAttribute('aria-label','Palantirの目次');el.hidden=true;document.querySelector('header').after(el)}return el}
   function dots(){let el=document.getElementById('pltr-dots');if(!el){el=document.createElement('nav');el.id='pltr-dots';el.setAttribute('aria-label','画面の位置');el.hidden=true;document.body.appendChild(el)}return el}
