@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>J2案 スライド・ライト高品質版｜FRONTIER LAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Shippori+Mincho:wght@600;700&family=Inter:wght@500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fbfcfe;--ink:#101e2e;--navy:#0b3054;--blue:#0067b9;--cy:#0a84d6;--sky:#dcebf8;--sub:#4d6a86;--faint:#8aa2b8;--line:#d9e6f2;--am:#b97e0e;--gn:#0a8a58}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-snap-type:y mandatory}
+body{background:var(--paper);color:var(--ink);font-family:'Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;-webkit-font-smoothing:antialiased}
+.num{font-family:'Inter','Zen Kaku Gothic New',sans-serif;font-variant-numeric:tabular-nums}
+.slide{min-height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;padding:0 6.5vw;position:relative;background:var(--paper)}
+.furniture{display:flex;justify-content:space-between;align-items:center;padding:22px 0 14px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.26em;color:var(--faint);font-weight:700}
+.furniture .fl{color:var(--navy)}
+.furniture .fl i{font-style:normal;color:var(--cy)}
+.src{margin-top:auto;padding:14px 0 20px;font-size:11px;color:var(--faint);letter-spacing:.04em;display:flex;justify-content:space-between}
+.main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:26px 0 8px}
+.kick{display:flex;align-items:center;gap:14px;font-size:12.5px;letter-spacing:.34em;color:var(--cy);font-weight:900}
+.kick:before{content:'';width:38px;height:3px;background:var(--cy)}
+h2{font-size:clamp(30px,4.4vw,50px);font-weight:900;line-height:1.28;letter-spacing:.01em;margin-top:14px}
+.lead{font-size:clamp(15px,1.5vw,19px);color:var(--sub);line-height:2;margin-top:14px;max-width:42em;font-weight:500}
+/* cover */
+.cover-lock{display:flex;align-items:center;gap:18px}
+.cover-lock img{height:54px}
+.cover-lock .wm{font-family:'Inter',sans-serif;font-weight:800;font-size:27px;letter-spacing:.42em;color:var(--navy)}
+.cover-lock .wm small{display:block;font-size:10.5px;letter-spacing:.3em;color:var(--faint);font-weight:600;margin-top:3px}
+.cover h1{font-size:clamp(46px,7.2vw,96px);font-weight:900;line-height:1.14;letter-spacing:.005em;margin-top:30px}
+.cover h1 .en{display:block;font-family:'Inter',sans-serif;font-size:clamp(14px,1.6vw,20px);letter-spacing:.44em;color:var(--cy);font-weight:800;margin-bottom:16px}
+.cover .lead{font-size:clamp(16px,1.7vw,21px);color:#33506e;max-width:38em}
+.cover-kpis{display:grid;grid-template-columns:repeat(4,1fr);margin-top:38px;border-top:2px solid var(--navy)}
+.ck{padding:18px 22px 4px;border-right:1px solid var(--line)}
+.ck:first-child{padding-left:0}.ck:last-child{border-right:none}
+.ck .l{font-size:12px;color:var(--sub);font-weight:700;letter-spacing:.05em}
+.ck .v{font-family:'Inter',sans-serif;font-size:clamp(30px,3.6vw,46px);font-weight:800;color:var(--navy);line-height:1.2}
+.ck .v small{font-size:.5em;font-weight:700}
+.ck .d{font-size:12.5px;color:var(--cy);font-weight:700}
+.cover-chart{margin-top:26px}
+.cover-chart .cap{display:flex;justify-content:space-between;font-size:12px;color:var(--sub);font-weight:700;letter-spacing:.06em;margin-bottom:2px}
+.cover-chart .cap b{color:var(--navy)}
+/* focus */
+.frow{display:grid;grid-template-columns:110px 1fr;gap:10px;padding:28px 0;border-bottom:1px solid var(--line);align-items:start}
+.frow:last-child{border-bottom:none}
+.frow .n{font-family:'Inter',sans-serif;font-size:clamp(40px,4.6vw,64px);font-weight:800;color:var(--sky);line-height:1;-webkit-text-stroke:1.5px var(--cy)}
+.frow .t{font-size:clamp(21px,2.5vw,32px);font-weight:900}
+.frow .b{font-size:clamp(14.5px,1.45vw,18px);color:var(--sub);line-height:1.95;margin-top:7px;max-width:46em;font-weight:500}
+.frow .b b{color:var(--navy);font-weight:900;border-bottom:3px solid var(--sky)}
+/* chart */
+.chartbox{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 32px 20px;box-shadow:0 14px 34px rgba(11,48,84,.07)}
+.legend{display:flex;gap:30px;font-size:14.5px;font-weight:700;margin-bottom:6px}
+.legend i{display:inline-block;width:28px;height:5px;border-radius:3px;margin-right:10px;vertical-align:middle}
+.legend .u{margin-left:auto;color:var(--faint);font-size:12px;font-weight:500}
+.callout{display:flex;gap:16px;align-items:baseline;margin-top:16px;border-top:1px solid var(--line);padding-top:16px}
+.callout .big{font-family:'Inter',sans-serif;font-size:clamp(22px,2.6vw,34px);font-weight:800;color:var(--navy);white-space:nowrap}
+.callout .txt{font-size:clamp(14px,1.4vw,17px);color:var(--sub);font-weight:500}
+/* mix */
+.donutwrap{display:grid;grid-template-columns:400px 1fr;gap:60px;align-items:center;margin-top:22px}
+.drow{display:grid;grid-template-columns:20px 1fr auto;gap:16px;align-items:center;padding:19px 0;border-bottom:1px solid var(--line)}
+.drow .dot{width:16px;height:16px;border-radius:5px}
+.drow .nm{font-size:clamp(16px,1.8vw,22px);font-weight:700}
+.drow .nm span{display:block;font-size:12.5px;color:var(--faint);font-weight:500;margin-top:1px}
+.drow .vl{font-family:'Inter',sans-serif;font-size:clamp(22px,2.4vw,32px);font-weight:800;color:var(--navy);text-align:right}
+.drow .vl span{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-size:12.5px;color:var(--gn);font-weight:700}
+/* ceo */
+.ceo{display:grid;grid-template-columns:360px 1fr;gap:56px;align-items:center}
+.ceo .photo{position:relative}
+.ceo .photo img{width:100%;border-radius:18px;aspect-ratio:4/5;object-fit:cover;display:block}
+.ceo .photo:after{content:'';position:absolute;inset:0;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(11,48,84,.12)}
+.ceo .q{font-family:'Shippori Mincho',serif;font-size:clamp(25px,3.1vw,42px);line-height:1.85;font-weight:700;color:var(--navy)}
+.ceo .en{font-size:clamp(13px,1.3vw,16px);color:var(--sub);line-height:1.9;margin-top:22px;font-style:italic;font-family:'Inter',sans-serif}
+.ceo .who{margin-top:24px;display:flex;align-items:center;gap:14px;font-size:14.5px;font-weight:700}
+.ceo .who img{height:26px}
+.ceo .who span{color:var(--faint);font-weight:500}
+/* contracts */
+.crow{display:grid;grid-template-columns:140px 1fr auto;gap:24px;align-items:center;padding:23px 0;border-bottom:1px solid var(--line)}
+.crow .dt{font-family:'Inter',sans-serif;color:var(--faint);font-size:14.5px;font-weight:600;letter-spacing:.06em}
+.crow .nm{font-size:clamp(17px,2vw,25px);font-weight:900}
+.crow .nm span{display:block;font-size:13px;color:var(--sub);font-weight:500;margin-top:2px}
+.crow .am{font-family:'Inter',sans-serif;font-size:clamp(23px,2.7vw,38px);font-weight:800;color:var(--navy);white-space:nowrap}
+.crow .am em{font-style:normal;color:var(--am);font-size:.62em;font-weight:800;margin-right:6px;letter-spacing:.08em}
+@media(max-width:840px){.cover-kpis{grid-template-columns:1fr 1fr}.donutwrap,.ceo{grid-template-columns:1fr}.crow{grid-template-columns:1fr}.frow{grid-template-columns:64px 1fr}}
+</style>
+</head>
+<body>
+
+<section class="slide cover">
+  <div class="furniture"><span class="fl">FRONTIER <i>LAB</i></span><span>企業理解 ─ 01 / 24</span></div>
+  <div class="main">
+    <div class="cover-lock"><img src="https://cdn.simpleicons.org/palantir/0b3054" alt="Palantir logo"><div class="wm">PALANTIR<small>TECHNOLOGIES INC.</small></div></div>
+    <h1><span class="en">NASDAQ: PLTR</span>政府の会社から、<br>民間の会社へ。</h1>
+    <p class="lead">政府と大企業が、散らかったデータを1つの画面で見て、その場で意思決定するためのソフトウェアを作る会社。国防総省から病院まで、現場の判断を速くする道具を売っている。</p>
+    <div class="cover-kpis num">
+      <div class="ck"><div class="l">売上高（2026年7〜9月期）</div><div class="v">23.1<small>億ドル</small></div><div class="d">前年同期比 +96%</div></div>
+      <div class="ck"><div class="l">米国の民間企業向け</div><div class="v">9.8<small>億ドル</small></div><div class="d">前年同期比 +148%</div></div>
+      <div class="ck"><div class="l">営業利益率（GAAP）</div><div class="v">47<small>%</small></div><div class="d">1年前は33%</div></div>
+      <div class="ck"><div class="l">2026年通期の売上見通し</div><div class="v">85.3<small>億ドル</small></div><div class="d">前年比 +91%の見通し</div></div>
+    </div>
+    <div class="cover-chart">
+      <div class="cap"><span>売上の推移（億ドル）</span><span>2024年 <b>28.7</b> → 2026年見通し <b>85.3</b>（2年で約3倍）</span></div>
+      <svg viewBox="0 0 720 190" width="100%" role="img" aria-label="年次売上の面グラフ">
+        <defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a84d6" stop-opacity=".32"/><stop offset="1" stop-color="#0a84d6" stop-opacity=".02"/></linearGradient></defs>
+        <path d="M40,160 L122,157 L205,150 L288,141 L370,134 L452,128 L535,116 L618,84 L700,10 L700,172 L40,172 Z" fill="url(#ag)" transform="scale(1,0.92)"/>
+        <polyline points="40,147 122,144 205,138 288,130 370,124 452,119 535,107 618,77 700,9" fill="none" stroke="#0067b9" stroke-width="3.5" stroke-linejoin="round"/>
+        <circle cx="700" cy="9" r="5.5" fill="#0067b9"/>
+        <g fill="#8aa2b8" font-size="11.5" font-family="Inter"><text x="40" y="188" text-anchor="middle">2018</text><text x="205" y="188" text-anchor="middle">2020</text><text x="370" y="188" text-anchor="middle">2022</text><text x="535" y="188" text-anchor="middle">2024</text><text x="700" y="188" text-anchor="middle">2026E</text></g>
+      </svg>
+    </div>
+  </div>
+  <div class="src"><span>数字は各社の決算資料・SEC提出書類による（2026年11月時点）</span><span>FRONTIER LAB</span></div>
+</section>
+
+<section class="slide">
+  <div class="furniture"><span class="fl">FRONTIER <i>LAB</i></span><span>概要 ─ 02 / 24</span></div>
+  <div class="main">
+    <div class="kick">FOCUS</div><h2>今の論点</h2>
+    <div class="frow"><div class="n">1</div><div><div class="t">民間の伸びに全社が追いつくか</div><p class="b">全社の売上は前年同期比<b>96%増</b>、米国の民間向けは<b>148%増</b>で、差は52ポイントある。カープCEOは「今後18か月で全社の伸びを民間以上に引き上げる」と決算説明会で述べている。</p></div></div>
+    <div class="frow"><div class="n">2</div><div><div class="t">大型契約が売上に変わる速さ</div><p class="b">米陸軍との包括契約は<b>最大100億ドル</b>。ただし枠の大きさと実際に計上される売上は別物で、RPOの伸びと政府向け売上の伸びが追いつくかを見る。</p></div></div>
+    <div class="frow"><div class="n">3</div><div><div class="t">米国以外の鈍さ</div><p class="b">米国外の売上は前年同期比<b>26%増</b>で、全社の伸びを大きく下回る。前四半期と比べても4%しか増えていない。成長の主役が米国の内側に寄っている。</p></div></div>
+  </div>
+  <div class="src"><span>決算の答え合わせは次回決算（2027年2月1日見込み）の後に更新する</span><span>FRONTIER LAB</span></div>
+</section>
+
+<section class="slide">
+  <div class="furniture"><span class="fl">FRONTIER <i>LAB</i></span><span>成長の変遷 ─ 03 / 24</span></div>
+  <div class="main">
+    <div class="kick">CHART</div><h2>民間が政府を抜くまで</h2>
+    <p class="lead">2年前、米国の民間向けは政府向けの6割ほどだった。四半期ごとに差を詰め、2026年7〜9月期に逆転した。</p>
+    <div class="chartbox">
+      <div class="legend num"><span><i style="background:var(--cy)"></i>米国の民間企業</span><span><i style="background:#7d99b5"></i>米国政府</span><span class="u">単位：百万ドル／四半期売上</span></div>
+      <svg viewBox="0 0 720 350" width="100%" role="img" aria-label="四半期売上の折れ線グラフ">
+        <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a84d6" stop-opacity=".20"/><stop offset="1" stop-color="#0a84d6" stop-opacity="0"/></linearGradient></defs>
+        <g stroke="#e3edf6" stroke-width="1"><line x1="56" y1="20" x2="706" y2="20"/><line x1="56" y1="90" x2="706" y2="90"/><line x1="56" y1="160" x2="706" y2="160"/><line x1="56" y1="230" x2="706" y2="230"/><line x1="56" y1="300" x2="706" y2="300"/></g>
+        <g fill="#8aa2b8" font-size="11.5" font-family="Inter" text-anchor="end"><text x="46" y="305">0</text><text x="46" y="235">250</text><text x="46" y="165">500</text><text x="46" y="95">750</text><text x="46" y="25">1,000</text></g>
+        <path d="M56,262 L121,259 L186,254 L251,244 L316,232 L381,218 L446,193 L511,162 L576,137 L641,90 L706,28 L706,300 L56,300 Z" fill="url(#cg)"/>
+        <polyline points="56,232 121,226 186,214 251,208 316,200 381,185 446,168 511,144 576,112 641,77 706,37" fill="none" stroke="#7d99b5" stroke-width="3" stroke-linejoin="round"/>
+        <polyline points="56,262 121,259 186,254 251,244 316,232 381,218 446,193 511,162 576,137 641,90 706,28" fill="none" stroke="#0a84d6" stroke-width="4.5" stroke-linejoin="round"/>
+        <circle cx="706" cy="28" r="6.5" fill="#0a84d6"/><circle cx="706" cy="37" r="5.5" fill="#7d99b5"/>
+        <circle cx="641" cy="90" r="5" fill="#fff" stroke="#0a84d6" stroke-width="3"/>
+        <g font-family="Inter" font-weight="800"><text x="694" y="16" fill="#0067b9" font-size="20" text-anchor="end">984</text><text x="694" y="62" fill="#52708e" font-size="16" text-anchor="end">953</text></g>
+        <g><rect x="520" y="96" width="150" height="30" rx="7" fill="#0b3054"/><text x="595" y="116" fill="#fff" font-size="13.5" font-weight="700" text-anchor="middle">2026年7〜9月期に逆転</text></g>
+        <g fill="#8aa2b8" font-size="12" font-family="Inter"><text x="56" y="330" text-anchor="middle">24/1-3</text><text x="251" y="330" text-anchor="middle">10-12</text><text x="446" y="330" text-anchor="middle">25/7-9</text><text x="641" y="330" text-anchor="middle">26/4-6</text><text x="706" y="330" text-anchor="middle">7-9</text></g>
+      </svg>
+      <div class="callout num"><span class="big">9.84億ドル 対 9.53億ドル</span><span class="txt">創業以来初めて、民間の売上が政府を上回った。四半期間の差は3,100万ドル。</span></div>
+    </div>
+  </div>
+  <div class="src"><span>四半期報告書（10-Q）と決算発表から作成</span><span>FRONTIER LAB</span></div>
+</section>
+
+<section class="slide">
+  <div class="furniture"><span class="fl">FRONTIER <i>LAB</i></span><span>概要 ─ 04 / 24</span></div>
+  <div class="main">
+    <div class="kick">REVENUE MIX</div><h2>売上の内訳</h2>
+    <div class="donutwrap">
+      <svg viewBox="0 0 200 200" width="100%" role="img" aria-label="売上構成のドーナツグラフ">
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#e8f0f8" stroke-width="30"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#0a84d6" stroke-width="30" stroke-dasharray="213.8 502.65" transform="rotate(-90 100 100)"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#7d99b5" stroke-width="30" stroke-dasharray="207.1 502.65" stroke-dashoffset="-213.8" transform="rotate(-90 100 100)"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#2f7fd0" stroke-width="30" stroke-dasharray="41.8 502.65" stroke-dashoffset="-420.9" transform="rotate(-90 100 100)"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#f0b84e" stroke-width="30" stroke-dasharray="40 502.65" stroke-dashoffset="-462.7" transform="rotate(-90 100 100)"/>
+        <text x="100" y="93" fill="#0b3054" font-size="20" font-weight="800" text-anchor="middle" font-family="Inter">23.1億ドル</text>
+        <text x="100" y="116" fill="#8aa2b8" font-size="11" text-anchor="middle">2026年7〜9月期</text>
+      </svg>
+      <div>
+        <div class="drow num"><span class="dot" style="background:#0a84d6"></span><span class="nm">米国の民間企業<span>全体の43%</span></span><span class="vl">9.84億ドル<span>前年同期比 +148%</span></span></div>
+        <div class="drow num"><span class="dot" style="background:#7d99b5"></span><span class="nm">米国政府<span>全体の41%</span></span><span class="vl">9.53億ドル<span>前年同期比 +96%</span></span></div>
+        <div class="drow num"><span class="dot" style="background:#2f7fd0"></span><span class="nm">米国外の政府<span>全体の8%</span></span><span class="vl">1.93億ドル<span>前年比は開示なし</span></span></div>
+        <div class="drow num"><span class="dot" style="background:#f0b84e"></span><span class="nm">米国外の民間企業<span>全体の8%</span></span><span class="vl">1.84億ドル<span>前年比は開示なし</span></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="src"><span>政府部門11.5億ドル、民間部門11.7億ドル、米国19.4億ドルから計算。米国外の内訳は差し引き</span><span>FRONTIER LAB</span></div>
+</section>
+
+<section class="slide">
+  <div class="furniture"><span class="fl">FRONTIER <i>LAB</i></span><span>CEOと製品 ─ 05 / 24</span></div>
+  <div class="main">
+    <div class="ceo">
+      <div class="photo"><img src="../assets/ceo-p.jpg" alt="アレックス・カープCEO"></div>
+      <div>
+        <div class="kick">CEO STATEMENT</div>
+        <p class="q" style="margin-top:18px">「米国の民間向け売上が創業以来初めて米国政府向け売上を上回った」</p>
+        <p class="en">"Our U.S. commercial revenue has surpassed our U.S. government revenue for the first time in our company's history."</p>
+        <div class="who"><img src="https://cdn.simpleicons.org/palantir/0b3054" alt="">アレックス・カープ CEO<span>2026年11月2日／2026年7〜9月期の決算発表</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="src"><span>発言は決算発表の書き起こしによる</span><span>FRONTIER LAB</span></div>
+</section>
+
+<section class="slide">
+  <div class="furniture"><span class="fl">FRONTIER <i>LAB</i></span><span>成長の変遷 ─ 06 / 24</span></div>
+  <div class="main">
+    <div class="kick">CONTRACT TRACKER</div><h2>主な契約</h2>
+    <div style="margin-top:8px">
+      <div class="crow num"><div class="dt">2025-08</div><div class="nm">米陸軍 包括契約<span>Enterprise Agreement／既存の契約75件を1本に統合・10年</span></div><div class="am"><em>最大</em>100億ドル</div></div>
+      <div class="crow num"><div class="dt">2025-05</div><div class="nm">米国防総省 Maven Smart System<span>上限引き上げ（当初4億8,000万ドル）／利用者2万人超・2029年まで</span></div><div class="am"><em>上限</em>約13億ドル</div></div>
+      <div class="crow num"><div class="dt">2024-12</div><div class="nm">米陸軍 Army Vantage<span>データ基盤の継続契約・4年</span></div><div class="am"><em>最大</em>6億1,890万ドル</div></div>
+      <div class="crow num"><div class="dt">2024-03</div><div class="nm">米陸軍 TITAN<span>地上ステーション／RTXとの競合の末に獲得・試作10台</span></div><div class="am">1億7,840万ドル</div></div>
+      <div class="crow num"><div class="dt">2023-11</div><div class="nm">NHS England<span>Federated Data Platform・7年</span></div><div class="am">3億3,000万ポンド</div></div>
+    </div>
+  </div>
+  <div class="src"><span>金額は各機関の発表と決算資料による（2026年11月時点）</span><span>FRONTIER LAB</span></div>
+</section>
+
+</body>
+</html>
