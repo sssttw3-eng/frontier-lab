@@ -5,6 +5,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
+:root{--ink:#17242f;--sub:#5a7185;--faint:#8ba3b8;--line:#dfe8ef;--blue:#0a4d8c;--blue2:#2f7fc4;--sky:#e8f3fb;--gold:#d4a24a;--navy:#0d2236;--paper:#f7fafc;--r:14px;--shadow:0 10px 30px rgba(13,34,54,.08)}
+.num,.stat .v,.calrow .cwhen,.kpi b{font-variant-numeric:tabular-nums}
+
 :root{--ink:#17242f;--sub:#5a7185;--line:#dfe8ef;--blue:#0a4d8c;--sky:#e8f3fb;--gold:#d4a24a;--navy:#0d2236;--paper:#f7fafc}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased}
@@ -27,16 +30,16 @@ header.top nav{margin-left:auto;display:flex;gap:26px;font-size:13px;color:var(-
 .jhero h1 .gold{background:linear-gradient(92deg,#0a4d8c 20%,#c99a35 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .jhero p{max-width:640px;margin:16px auto 0;color:#e6eff7;font-size:15.5px;line-height:2.05;text-shadow:0 1px 10px rgba(0,0,0,.5)}
 .jhero .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-section.blk{padding:66px 0}
+section.blk{padding:72px 0}
 .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:30px}
-.sec-head h2{font-family:'Shippori Mincho',serif;font-size:25px;font-weight:700}
+.sec-head h2{font-family:'Shippori Mincho',serif;font-size:26px;font-weight:700}
 .sec-head .no{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:.22em;color:var(--blue);font-weight:800}
 .gets{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .get{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px 24px 20px}
 .get .n{font-family:'Inter',sans-serif;font-weight:800;color:var(--gold);font-size:13px;letter-spacing:.14em}
 .get h3{font-size:16.5px;margin:8px 0 6px}
 .get p{font-size:13px;color:var(--sub);line-height:1.85}
-.sample{display:grid;grid-template-columns:1.2fr .8fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.sample{display:grid;grid-template-columns:1.2fr .8fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .sample .lft{padding:34px 36px}
 .sample .lft h3{font-family:'Shippori Mincho',serif;font-size:22px;line-height:1.6}
 .sample .lft p{font-size:13.5px;color:var(--sub);margin-top:10px;line-height:1.9}
@@ -44,15 +47,15 @@ section.blk{padding:66px 0}
 .sample .rgt{background:linear-gradient(140deg,#12395e,#0a4d8c);color:#fff;padding:34px 30px}
 .sample .rgt .row{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.18);padding:9px 0;font-size:13px}
 .sample .rgt .row b{font-family:'Inter',sans-serif}
-.philo{background:var(--navy);color:#e9f1f8;border-radius:18px;padding:52px 56px}
+.philo{background:var(--navy);color:#e9f1f8;border-radius:14px;padding:52px 56px}
 .philo .v-ja{font-family:'Shippori Mincho',serif;font-size:clamp(19px,2.6vw,26px);line-height:1.9}
 .philo .v-en{font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.06em;color:#9db8cf;margin-top:10px}
 .philo .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:34px;border-top:1px solid rgba(255,255,255,.16);padding-top:28px}
 .philo .lab{font-size:11px;letter-spacing:.28em;color:var(--gold);font-weight:800;margin-bottom:8px}
 .philo .tx{font-family:'Shippori Mincho',serif;font-size:16.5px;line-height:1.95}
 .price{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.plan{border:1.5px solid var(--line);border-radius:16px;padding:30px 32px}
-.plan.hot{border-color:var(--blue);background:#f4f9fd}
+.plan{border:1.5px solid var(--line);border-radius:14px;padding:30px 32px}
+.plan.hot{border-color:var(--blue);background:#f4f9fd;box-shadow:var(--shadow)}
 .plan h3{font-size:17px}
 .plan .amt{font-family:'Inter',sans-serif;font-size:30px;font-weight:800;margin:10px 0 4px;color:var(--navy)}
 .plan .amt small{font-size:13px;color:var(--sub);font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700}
