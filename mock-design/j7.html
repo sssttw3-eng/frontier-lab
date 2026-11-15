@@ -287,7 +287,7 @@ body.browse .flx{cursor:pointer}
 .flx .flxp.clamped{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .flx.open{box-shadow:0 0 0 2px #2f7fc4,0 14px 34px rgba(11,48,84,.13)}
 .flx .flxhint{display:none}
-body.browse .flx.ready .flxhint{display:inline-block;font-size:11px;font-weight:800;color:#2f7fc4;margin-top:8px;letter-spacing:.06em}
+body.browse .flx.ready .flxhint{display:block;font-size:11px;font-weight:800;color:#2f7fc4;margin-top:8px;letter-spacing:.06em;line-height:1.5}
 .flx.open .flxhint{display:none}
 body.shoot .slide{padding-bottom:13vh}
 @media(min-width:900px){body.shoot .slide{padding-right:23vw}}
@@ -576,7 +576,8 @@ function setup(){
     c.querySelectorAll('p').forEach(function(p){var L=(p.textContent||'').length;if(L>bl){bl=L;best=p}});
     if(best&&bl>110){
       c.dataset.flx='1';c.classList.add('flx');best.classList.add('flxp');
-      var h=document.createElement('span');h.className='flxhint';h.textContent='タップで開く \u25B8';c.appendChild(h);
+      var h=document.createElement('span');h.className='flxhint';h.textContent='タップで開く \u25B8';
+      if(best.parentNode)best.parentNode.insertBefore(h,best.nextSibling);else c.appendChild(h);
       c.addEventListener('click',function(ev){
         if(document.body.classList.contains('shoot'))return;
         if(ev.target.closest('a'))return;
