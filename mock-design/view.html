@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>柏原の見解 ─ FRONTIER LAB</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 L96 50 L50 96 L4 50 Z' fill='none' stroke='%230a4d8c' stroke-width='8'/%3E%3Cpath d='M50 30 L68 50 L50 70 L32 50 Z' fill='%23d4a24a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17242f;--sub:#5a7185;--faint:#8ba3b8;--line:#dfe8ef;--blue:#0a4d8c;--blue2:#2f7fc4;--sky:#e8f3fb;--gold:#d4a24a;--navy:#0d2236;--paper:#f7fafc;--r:14px;--shadow:0 10px 30px rgba(13,34,54,.08)}
+.num,.stat .v,.calrow .cwhen,.kpi b{font-variant-numeric:tabular-nums}
+
+:root{--ink:#17242f;--sub:#5a7185;--line:#dfe8ef;--blue:#0a4d8c;--gold:#d4a24a;--navy:#0d2236;--paper:#f7fafc}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Zen Kaku Gothic New',sans-serif;color:var(--ink);background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+.wrap{max-width:860px;margin:0 auto;padding:0 28px}
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .in{display:flex;align-items:center;gap:12px;padding:14px 28px;max-width:1240px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.14em;font-size:16px;color:var(--ink);text-decoration:none}
+.brand .mk{width:24px;height:24px;color:var(--blue)} .brand .mk svg{width:100%;height:100%;display:block}
+header.top nav{margin-left:auto;display:flex;gap:24px;font-size:13px;color:var(--sub);font-weight:700}
+header.top nav a{color:var(--sub);text-decoration:none}
+.cohead{display:flex;align-items:center;gap:18px;margin:42px 0 4px}
+.clogo{width:64px;height:64px;border-radius:14px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:9px;overflow:hidden;flex:none;background:#fff}
+.clogo img{max-width:100%;max-height:100%}
+.clogo .mono{font-family:'Inter',sans-serif;font-weight:800;font-size:26px;color:#5b7a94}
+h1{font-family:'Shippori Mincho',serif;font-size:31px;font-weight:700;color:var(--navy);line-height:1.4}
+.dchip{display:inline-block;font-size:12px;font-weight:800;border-radius:999px;padding:3px 13px;margin-top:6px}
+.dchip.ok{background:#e8f3fb;color:var(--blue);border:1px solid var(--line)}
+.dchip.est{background:#fdf6e3;color:#7a5b12;border:1px solid var(--gold)}
+h2.sec{font-family:'Shippori Mincho',serif;font-size:20px;font-weight:700;color:var(--navy);margin:40px 0 8px;padding-top:26px;border-top:1px solid var(--line)}
+p.body{font-size:14.5px;line-height:1.95;color:#33506b}
+.empty{background:var(--paper);border:1px dashed var(--line);border-radius:12px;padding:20px 22px;font-size:13.5px;color:var(--sub);line-height:1.9}
+.lockwrap{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.lockdummy{filter:blur(6px);padding:20px 22px;font-size:14px;line-height:2.1;color:#33506b;user-select:none}
+.lockchip{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.35)}
+.lockchip .lb{display:inline-flex;align-items:center;gap:7px;background:rgba(13,34,54,.9);color:#fff;font-weight:800;font-size:12.5px;border-radius:999px;padding:6px 15px}
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:800;font-size:13.5px;padding:11px 24px;border-radius:999px;text-decoration:none}
+footer.site{border-top:1px solid var(--line);padding:24px 0 38px;margin-top:60px}
+footer.site .in{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.14em;font-size:13px;color:var(--sub)}
+footer.site .mk{width:18px;height:18px;color:var(--blue)} footer.site .mk svg{width:100%;height:100%;display:block}
+@media(max-width:620px){header.top nav{display:none}}
+</style></head><body>
+<header class="top"><div class="in"><a class="brand" href="top.html"><span class="mk"><svg viewBox="0 0 100 100" fill="none"><path d="M50 4 L96 50 L50 96 L4 50 Z" stroke="currentColor" stroke-width="7"/><path d="M50 30 L68 50 L50 70 L32 50 Z" fill="currentColor"/></svg></span>FRONTIER LAB</a><nav><a href="top.html#calendar">決算カレンダー</a><a href="archive.html">資料保管庫</a><a href="join.html">会員募集</a></nav></div></header>
+<div class="wrap" id="app"></div>
+<footer class="site"><div class="wrap"><div class="in"><span class="mk"><svg viewBox="0 0 100 100" fill="none"><path d="M50 4 L96 50 L50 96 L4 50 Z" stroke="currentColor" stroke-width="7"/><path d="M50 30 L68 50 L50 70 L32 50 Z" fill="currentColor"/></svg></span>FRONTIER LAB</div></div></footer>
+<script>
+var DATA = {"amd": {"date": "2027年2月上旬", "deck": "deck-a.html", "focus": "会社見通しの売上約170億ドルへの到達とデータセンターの伸び、Heliosの売上開示", "logo": "../assets/new-amd-logo.svg", "name": "AMD", "status": "見込み"}, "broadcom": {"date": "2026年12月9日", "deck": null, "focus": "会社見通しの売上348億ドルとAI半導体217億ドル、次四半期の見通し", "logo": "https://cdn.simpleicons.org/broadcom/33566e", "name": "Broadcom", "status": "確定"}, "c3ai": {"date": "2026年12月2日", "deck": null, "focus": "第2四半期の売上ガイダンス5,100万〜5,500万ドルの達成と、売上の減少に歯止めがかかるか", "logo": "https://www.google.com/s2/favicons?domain=c3.ai&sz=128", "name": "C3.ai", "status": "確定"}, "coreweave": {"date": "2027年2月下旬", "deck": null, "focus": "通期見通しへの到達と受注残の伸び、設備投資と金利負担の重さ", "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/CoreWeave_logo.svg?width=200", "name": "CoreWeave", "status": "見込み"}, "crowdstrike": {"date": "2026年12月1日", "deck": null, "focus": "年間経常収益の伸びと、通期見通しの修正があるかを見る", "logo": "https://cdn.simpleicons.org/crowdstrike/33566e", "name": "CrowdStrike", "status": "見込み"}, "ionq": {"date": "2027年2月下旬", "deck": "deck-i.html", "focus": "通期売上見通し5億500万〜5億1,500万ドルへの到達と、受注残の伸び", "logo": "../assets/logo-i.svg", "name": "IonQ", "status": "見込み"}, "marvell": {"date": "2026年12月1日", "deck": null, "focus": "カスタムチップの見通しと、大口顧客の動向を見る", "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marvell_Logo.svg?width=200", "name": "Marvell", "status": "見込み"}, "micron": {"date": "2026年12月16日", "deck": null, "focus": "会社見通しの売上615億ドルと粗利率86%台、HBMの売上", "logo": "https://cdn.simpleicons.org/micron/33566e", "name": "Micron", "status": "見込み"}, "nebius": {"date": "2027年2月中旬", "deck": null, "focus": "2027年の売上見通し120億〜130億ドルの前提と、年換算売上70億ドルの目標", "logo": "https://www.google.com/s2/favicons?domain=nebius.com&sz=128", "name": "Nebius", "status": "見込み"}, "nvidia": {"date": "2026年11月17日", "deck": "deck-n.html", "focus": "会社見通しの売上1,080億ドルとの差と粗利率74%前後、代表交代後の体制", "logo": "../assets/logo-n.svg", "name": "NVIDIA", "status": "確定"}, "oracle": {"date": "2026年12月14日", "deck": null, "focus": "クラウドの受注残（RPO）の伸びと、データセンター投資の規模", "logo": "https://cdn.simpleicons.org/oracle/33566e", "name": "Oracle", "status": "確定"}, "palantir": {"date": "2027年2月1日", "deck": "j7.html", "focus": "政府向けの伸びと主権AIまわりの受注、米国外の伸び、米民間の1社あたり売上", "logo": "../assets/logo-p.svg", "name": "Palantir", "status": "見込み"}, "palo-alto": {"date": "2026年11月18日", "deck": null, "focus": "会社見通しの売上33億ドルの達成と、次世代セキュリティの年間経常収益95億ドル台への到達", "logo": "https://www.google.com/s2/favicons?domain=paloaltonetworks.com&sz=128", "name": "Palo Alto Networks", "status": "確定"}, "sofi": {"date": "2027年1月下旬", "deck": "deck-s.html", "focus": "手数料型収益の比率と技術基盤の口座数、貸し倒れ率と預金の伸び", "logo": "../assets/logo-s.svg", "name": "SoFi", "status": "見込み"}, "tesla": {"date": "2027年1月下旬", "deck": "deck-t.html", "focus": "自動車の売上と営業利益率の低下が止まるか、蓄電池の出荷とFSD有料利用", "logo": "../assets/new-tesla-logo.svg", "name": "Tesla", "status": "見込み"}};
+var slug = new URLSearchParams(location.search).get('c') || '';
+var d = DATA[slug];
+var app = document.getElementById('app');
+function esc(s){var x=document.createElement('div');x.textContent=s||'';return x.innerHTML;}
+if (!d) {
+  app.innerHTML = '<h1 style="margin-top:42px">この会社の見解ページはまだありません</h1><p class="body" style="margin-top:10px"><a href="top.html#calendar">決算カレンダーへ戻る</a></p>';
+} else {
+  document.title = '柏原の見解 ─ ' + d.name + '｜FRONTIER LAB';
+  var logo = d.logo ? '<span class="clogo"><img src="' + d.logo + '" alt="" onerror="this.parentNode.innerHTML=\'<span class=mono>' + esc(d.name[0]) + '</span>\'"></span>' : '<span class="clogo"><span class="mono">' + esc(d.name[0]) + '</span></span>';
+  var chipCls = d.status === '確定' ? 'ok' : 'est';
+  var deck = d.deck ? '<h2 class="sec">関連資料</h2><p class="body">この会社の企業資料は、決算のたびに更新しています。</p><p style="margin-top:12px"><a class="btn" href="' + d.deck + '">' + esc(d.name) + 'の資料を開く</a></p>' : '';
+  app.innerHTML =
+  '<div class="cohead">' + logo + '<div><h1>' + esc(d.name) + ' の決算</h1><span class="dchip ' + chipCls + '">発表：' + esc(d.date) + '（' + esc(d.status) + '）</span></div></div>' +
+  '<h2 class="sec">見る数字</h2><p class="body">' + esc(d.focus) + '</p>' +
+  '<h2 class="sec">決算の数字</h2><div class="empty">決算の発表後に、売上・利益・会社見通しなどの主要な数字をここへ出します。</div>' +
+  '<h2 class="sec">柏原の見解</h2><div class="lockwrap"><div class="lockdummy">決算の数字を受けて、事前に宣言した「見る数字」と照らして判定します。伸びの質、見通しの前提、弱点の変化までを、出典つきの数字で書きます。判定は次の決算にも引き継ぎます。</div><div class="lockchip"><span class="lb">会員限定 ─ 見解は決算後に公開します</span><a class="btn" href="join.html">会員について見る</a></div></div>' +
+  '<h2 class="sec">答え合わせ</h2><div class="empty">前回の決算で宣言した「見る数字」と結果を、ここに並べます。</div>' +
+  deck +
+  '<p style="margin-top:34px"><a href="top.html#calendar">← 決算カレンダーへ戻る</a></p>';
+}
+</script>
+</body></html>
