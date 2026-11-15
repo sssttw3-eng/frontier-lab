@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://sssttw3-eng.github.io/frontier-lab/sitemap.xml
