@@ -1,4 +1,5 @@
 <!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <title>参加の申込み ─ FRONTIER LAB</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 L96 50 L50 96 L4 50 Z' fill='none' stroke='%230a4d8c' stroke-width='8'/%3E%3Cpath d='M50 30 L68 50 L50 70 L32 50 Z' fill='%23d4a24a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
@@ -72,10 +73,52 @@ footer.site .mk{width:18px;height:18px;color:var(--blue)} footer.site .mk svg{wi
 <option value="other">その他</option>
 </select></div>
 <p data-fl-error></p>
-<button class="btn" type="submit">内容の確認へ進む</button>
+<button class="btn" type="submit" data-event="apply_submit">内容の確認へ進む</button>
 </form>
 <p class="note">入力した内容を、契約の管理・お知らせ・流入元の集計のためだけに使います。カード情報は次の決済画面（Stripe）で入力し、このサイトには残りません。</p>
 </div>
 <footer class="site"><div class="wrap"><div class="in"><span class="mk"><svg viewBox="0 0 100 100" fill="none"><path d="M50 4 L96 50 L50 96 L4 50 Z" stroke="currentColor" stroke-width="7"/><path d="M50 30 L68 50 L50 70 L32 50 Z" fill="currentColor"/></svg></span>FRONTIER LAB</div></div></footer>
 <script src="../join/config.js"></script><script src="../join/flow.js" defer></script>
+<!-- fl-analytics: mode=test page=apply id= -->
+<script>
+(function(){
+  var PAGE_ID = 'apply';
+  var KEY = 'fl_analytics_events';
+  function load(){ try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch(e) { return []; } }
+  function save(list){ try { localStorage.setItem(KEY, JSON.stringify(list.slice(-200))); } catch(e) {} }
+  function baseParams(extra){
+    var p = {page_id: PAGE_ID, page_path: location.pathname, page_location: location.href, page_title: document.title};
+    if (extra) for (var k in extra) p[k] = extra[k];
+    return p;
+  }
+  window.flTrack = function(eventName, params){
+    var entry = {event: eventName, params: baseParams(params || {}), ts: new Date().toISOString()};
+    var list = load(); list.push(entry); save(list);
+    try { console.log('[FL Analytics:test]', eventName, entry.params); } catch(e) {}
+    return entry;
+  };
+  window.flAnalytics = {
+    getEvents: function(){ return load(); },
+    clear: function(){ try { localStorage.removeItem(KEY); } catch(e) {} }
+  };
+  // page_view
+  window.flTrack('page_view', {});
+  // click: data-event を持つ要素（委譲で動的要素にも対応）
+  document.addEventListener('click', function(e){
+    var el = e.target && e.target.closest ? e.target.closest('[data-event]') : null;
+    if (!el) return;
+    var name = el.getAttribute('data-event');
+    if (!name) return;
+    var params = {};
+    for (var i = 0; i < el.attributes.length; i++) {
+      var a = el.attributes[i];
+      if (a.name.indexOf('data-event-') === 0) params[a.name.slice(11).replace(/-/g, '_')] = a.value;
+    }
+    if (el.getAttribute('href')) params.link_url = el.getAttribute('href');
+    var txt = (el.textContent || '').trim().slice(0, 80);
+    if (txt) params.link_text = txt;
+    window.flTrack(name, params);
+  }, true);
+})();
+</script>
 </body></html>
