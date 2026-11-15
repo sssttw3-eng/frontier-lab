@@ -1,5 +1,20 @@
 <!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>柏原の見解 ─ FRONTIER LAB</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 4 L96 50 L50 96 L4 50 Z' fill='none' stroke='%230a4d8c' stroke-width='8'/%3E%3Cpath d='M50 30 L68 50 L50 70 L32 50 Z' fill='%23d4a24a'/%3E%3C/svg%3E">
+<meta name="description" content="FRONTIER LABの「柏原の見解」。決算カレンダーの各社について、事前に宣言した見る数字と決算の主要数字、強みと弱点、次に見る数字を出典つきで検証します。">
+<link rel="canonical" href="https://sssttw3-eng.github.io/frontier-lab/mock-design/view.html">
+<meta property="og:site_name" content="FRONTIER LAB">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="柏原の見解 ─ FRONTIER LAB">
+<meta property="og:description" content="FRONTIER LABの「柏原の見解」。決算カレンダーの各社について、事前に宣言した見る数字と決算の主要数字、強みと弱点、次に見る数字を出典つきで検証します。">
+<meta property="og:url" content="https://sssttw3-eng.github.io/frontier-lab/mock-design/view.html">
+<meta property="og:image" content="https://sssttw3-eng.github.io/frontier-lab/assets/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="柏原の見解 ─ FRONTIER LAB">
+<meta name="twitter:description" content="FRONTIER LABの「柏原の見解」。決算カレンダーの各社について、事前に宣言した見る数字と決算の主要数字、強みと弱点、次に見る数字を出典つきで検証します。">
+<meta name="twitter:image" content="https://sssttw3-eng.github.io/frontier-lab/assets/ogp.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -64,6 +79,18 @@ if (!d) {
   app.innerHTML = '<h1 style="margin-top:42px">この会社の見解ページはまだありません</h1><p class="body" style="margin-top:10px"><a href="top.html#calendar">決算カレンダーへ戻る</a></p>';
 } else {
   document.title = '柏原の見解 ─ ' + d.name + '｜FRONTIER LAB';
+  var metaDesc = '柏原の見解 ─ ' + d.name + '。' + (d.next || d.focus || '');
+  if (metaDesc.length > 160) metaDesc = metaDesc.slice(0, 157) + '…';
+  var descEl = document.querySelector('meta[name="description"]');
+  if (descEl) descEl.setAttribute('content', metaDesc);
+  var ogDescEl = document.querySelector('meta[property="og:description"]');
+  if (ogDescEl) ogDescEl.setAttribute('content', metaDesc);
+  var twDescEl = document.querySelector('meta[name="twitter:description"]');
+  if (twDescEl) twDescEl.setAttribute('content', metaDesc);
+  var ogTitleEl = document.querySelector('meta[property="og:title"]');
+  if (ogTitleEl) ogTitleEl.setAttribute('content', document.title);
+  var twTitleEl = document.querySelector('meta[name="twitter:title"]');
+  if (twTitleEl) twTitleEl.setAttribute('content', document.title);
   var logo = d.logo ? '<span class="clogo"><img src="' + d.logo + '" alt="" onerror="this.parentNode.innerHTML=\'<span class=mono>' + esc(d.name[0]) + '</span>\'"></span>' : '<span class="clogo"><span class="mono">' + esc(d.name[0]) + '</span></span>';
   var chipCls = d.status === '確定' ? 'ok' : 'est';
   var deck = d.deck ? '<h2 class="sec">関連資料</h2><p class="body">この会社の企業資料は、決算のたびに更新しています。</p><p style="margin-top:12px"><a class="btn" href="' + d.deck + '">' + esc(d.name) + 'の資料を開く</a></p>' : '';
