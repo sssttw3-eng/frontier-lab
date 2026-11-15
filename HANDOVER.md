@@ -76,3 +76,12 @@
 - 会員プランの価格 / Discord招待URL（site-config.js は空、ボタンは仮リンク）
 - 運営者の顔写真 / 特商法表記の連絡先メール / 独自ドメイン / 計測ID（GA等）
 - 会員ゲート（静的サイトでは実装不可。ホスティング移行か外部ゲートの判断待ち）
+
+## 2026-11-15 Muse側の追加（M3・M4・M5・論点自動化）
+- 入会導線：mock-design/apply.html（入力）・confirm.html（確認＝特商法の最終確認画面）・thanks.html（完了）を仕様txtどおりに作成。join.html のボタンは全て apply.html へ、料金は2,980円の表示文に差し替え済み。legal.html は仕様§10の文で置き換え済み（最終更新2026年11月15日）。
+- join/ 部品（config.js・flow.js・gate.js・gate.css）はリポジトリ直下の join/ に配置済み。各画面は ../join/ から読む。WORKER_URL 等の実値は config.js が正。
+- 見解ページ：mock-design/view.html?c=<slug> がひな形。会社データは生成器側の view-data.json。カレンダー各行からのリンクは決算カレンダー全社化（M2）と同時に接続する。
+- 資料保管庫：mock-design/archive.html（一覧＋講座動画の欄）と archive-<動画ID>.html。データは Claude の spec.json から生成。**縮小画像とPDFの置き場所は mock-design/archive-img/<動画ID>/（p01.jpg…と slides.pdf）に決定。バイナリは Muse の push では送れないため、Claude が git で push すること**。画像が無い間は番号タイル表示に落ちる。
+- 活用ガイド：mock-design/guide.html（依頼3の5行どおり）。
+- 論点の自動切替：生成器はリポジトリ直下の map_themes.json（新形式：THEMES=辞書の配列＋THEMES_META）を優先して読む。無ければローカルの従来形式にフォールバック。月曜7時過ぎに自動チェック→差分があればTOPと本番indexを再生成して push する仕組みを Muse 側に設置済み。Claude は従来どおり月曜6時に map_themes.json の THEMES と THEMES_META だけを差分 push すればよい。
+- ゲート（§7）の扱い：gate.js の本文クリップ方式はスライド形式（1ページ=1スライド）と競合するため、デッキとTOPには組み込んでいない。資料のロック表示は M1 の CSS 方式が正。gate.js は join/ に置いてあり、案B（Worker）移行時に使う。
